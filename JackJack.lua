@@ -1,6 +1,3 @@
--- lib imports
-local hbd = LibStub("HereBeDragons-2.0")
-
 -- set addon namespace
 local addonName, addon = ...
 
