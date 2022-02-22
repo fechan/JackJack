@@ -128,15 +128,19 @@ SlashCmdList["JACKJACK"] = function(msg, editBox)
     end)
 
     -- update UI
-    hideLocationButtons()
-    for buttonNumber, poi in ipairs(poiMatches) do
-        if not JJ_LOCATION_BUTTONS[buttonNumber] then
-            JJ_LOCATION_BUTTONS[buttonNumber] = addLocationButton(poi, buttonNumber)
-        else
-            local button = JJ_LOCATION_BUTTONS[buttonNumber]
-            modifyLocationButton(button, poi)
-            button:Show()
+    if #poiMatches ~= 0 then
+        hideLocationButtons()
+        for buttonNumber, poi in ipairs(poiMatches) do
+            if not JJ_LOCATION_BUTTONS[buttonNumber] then
+                JJ_LOCATION_BUTTONS[buttonNumber] = addLocationButton(poi, buttonNumber)
+            else
+                local button = JJ_LOCATION_BUTTONS[buttonNumber]
+                modifyLocationButton(button, poi)
+                button:Show()
+            end
         end
+        JJ_WINDOW:Show()
+    else
+        print("No locations found for " .. locationName)
     end
-    JJ_WINDOW:Show()
 end
