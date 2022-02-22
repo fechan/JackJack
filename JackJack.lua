@@ -17,6 +17,9 @@ JJ_BUTTON_WIDTH = JJ_WIDTH - JJ_SCROLLBAR_REGION_WIDTH - JJ_MARGIN
 JJ_BUTTON_HEIGHT = 20
 JJ_CLOSE_BUTTON_HEIGHT = 40
 
+--- Sets up the main JackJack window frame
+-- @return frame        UI frame for the window
+-- @return scrollChild  UI frame for the location buttons container
 local function setUpFrame()
     -- create the window
     local frame = CreateFrame("Frame", "JackJackFrame", UIParent, "BackdropTemplate")
@@ -68,6 +71,9 @@ end
 JJ_WINDOW, JJ_LOCATION_BUTTON_CONTAINER = setUpFrame()
 JJ_LOCATION_BUTTONS = {}
 
+--- Sets the data and callbacks for the location button to match the given location
+-- @param button    UI frame for the location button
+-- @param location  Location data containing Pos0 (global x), Pos1 (global y), Name_lang (name), and ContinentID
 local function modifyLocationButton(button, poi)
     button:SetText(poi["Name_lang"])
     button:SetScript("OnClick", function()
@@ -86,6 +92,10 @@ local function modifyLocationButton(button, poi)
     end)
 end
 
+--- Adds a new location button to the location button container for the given location
+-- @param poi           Location data containing Pos0 (global x), Pos1 (global y), Name_lang (name), and ContinentID
+-- @param buttonNumber  Index of the button to add in the location button container
+-- @return button       UI frame for the location button
 local function addLocationButton(poi, buttonNumber)
     local button = CreateFrame("Button", "JackJackLocationButton" .. buttonNumber, JJ_LOCATION_BUTTON_CONTAINER, "UIPanelButtonTemplate")
     button:SetSize(JJ_BUTTON_WIDTH, JJ_BUTTON_HEIGHT)
@@ -95,6 +105,7 @@ local function addLocationButton(poi, buttonNumber)
     return button
 end
 
+--- Hides all the location buttons
 local function hideLocationButtons()
     for i, button in ipairs(JJ_LOCATION_BUTTONS) do
         button:Hide()
@@ -104,17 +115,19 @@ end
 SlashCmdList["JACKJACK"] = function(msg, editBox)
     local locationName = msg
 
+    -- get all POIs that (fuzzy) match the location name
     local poiMatches = {}
-    -- addon.fzy
     for rowNumber, poi in pairs(addon.areapoi) do
         if addon.fzy.has_match(locationName, poi["Name_lang"]) then
             table.insert(poiMatches, poi)
         end
     end
+    -- sort by how close the match is to the location name
     table.sort(poiMatches, function(a, b)
         return addon.fzy.score(locationName, a["Name_lang"]) > addon.fzy.score(locationName, b["Name_lang"])
     end)
 
+    -- update UI
     hideLocationButtons()
     for buttonNumber, poi in ipairs(poiMatches) do
         if not JJ_LOCATION_BUTTONS[buttonNumber] then
