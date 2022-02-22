@@ -38,14 +38,14 @@ local function addLocationButton(poi, jackJackWindow, parentFrame, buttonNumber)
     end)
 end
 
-SlashCmdList["JACKJACK"] = function(msg, editBox)
-    local locationName = msg
-
+local function setUpFrame()
+    -- create the window
     local frame = CreateFrame("Frame", "JackJackFrame", UIParent, "BackdropTemplate")
     frame:SetSize(JJ_WIDTH, JJ_HEIGHT)
     frame:SetPoint("CENTER")
     frame:SetFrameStrata("HIGH")
     frame:SetFrameLevel(1)
+    frame:Hide()
 
     frame:SetBackdrop({
         bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
@@ -64,7 +64,7 @@ SlashCmdList["JACKJACK"] = function(msg, editBox)
     frame:SetScript("OnDragStart", frame.StartMoving)
     frame:SetScript("OnDragStop", frame.StopMovingOrSizing)
 
-    -- add a scroll frame to the frame with scroll bar and scroll child
+    -- add a scroll frame which will contain location buttons
     local scrollFrame = CreateFrame("ScrollFrame", "JackJackScrollFrame", frame, "UIPanelScrollFrameTemplate")
     scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN, -JJ_MARGIN)
     scrollFrame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -JJ_SCROLLBAR_REGION_WIDTH, JJ_MARGIN * 2 + JJ_CLOSE_BUTTON_HEIGHT)
@@ -83,11 +83,25 @@ SlashCmdList["JACKJACK"] = function(msg, editBox)
         frame:Hide()
     end)
 
-    local buttonNumber = 0 -- track how many buttons we've created. Each location gets a button.
+    return frame, scrollChild
+end
+
+JJ_WINDOW, JJ_LOCATION_BUTTON_CONTAINER = setUpFrame()
+
+SlashCmdList["JACKJACK"] = function(msg, editBox)
+    local locationName = msg
+
+    local poiMatches = {}
     for rowNumber, poi in pairs(addon.areapoi) do
-        if poi["Name_lang"]:lower():find(locationName:lower()) then
-            addLocationButton(poi, frame, scrollChild, buttonNumber)
-            buttonNumber = buttonNumber + 1
+        if string.find(poi["Name_lang"]:lower(), locationName:lower()) then
+            table.insert(poiMatches, poi)
         end
     end
+
+    local buttonNumber = 0 -- track how many buttons we've created. Each location gets a button.
+    for i, poi in ipairs(poiMatches) do
+        addLocationButton(poi, JJ_WINDOW, JJ_LOCATION_BUTTON_CONTAINER, buttonNumber)
+        buttonNumber = buttonNumber + 1
+    end
+    JJ_WINDOW:Show()
 end
