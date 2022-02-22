@@ -105,11 +105,15 @@ SlashCmdList["JACKJACK"] = function(msg, editBox)
     local locationName = msg
 
     local poiMatches = {}
+    -- addon.fzy
     for rowNumber, poi in pairs(addon.areapoi) do
-        if string.find(poi["Name_lang"]:lower(), locationName:lower()) then
+        if addon.fzy.has_match(locationName, poi["Name_lang"]) then
             table.insert(poiMatches, poi)
         end
     end
+    table.sort(poiMatches, function(a, b)
+        return addon.fzy.score(locationName, a["Name_lang"]) > addon.fzy.score(locationName, b["Name_lang"])
+    end)
 
     hideLocationButtons()
     for buttonNumber, poi in ipairs(poiMatches) do
