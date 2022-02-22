@@ -17,27 +17,6 @@ JJ_BUTTON_WIDTH = JJ_WIDTH - JJ_SCROLLBAR_REGION_WIDTH - JJ_MARGIN
 JJ_BUTTON_HEIGHT = 20
 JJ_CLOSE_BUTTON_HEIGHT = 40
 
-local function addLocationButton(poi, jackJackWindow, parentFrame, buttonNumber)
-    local button = CreateFrame("Button", "JackJackLocationButton" .. buttonNumber, parentFrame, "UIPanelButtonTemplate")
-    button:SetSize(JJ_BUTTON_WIDTH, 20)
-    button:SetPoint("TOPLEFT", 0, -(buttonNumber * 20))
-    button:SetText(poi["Name_lang"])
-    button:SetScript("OnClick", function()
-        local global_coords = CreateVector2D(poi["Pos0"], poi["Pos1"])
-        local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(poi["ContinentID"], global_coords)
-        local waypointUid = TomTom:AddWaypoint(uiMapId, mapPosition.x, mapPosition.y, {
-            title = poi["Name_lang"],
-            source = "JackJack",
-            persistent = true,
-            minimap = true,
-            world = true,
-            crazy = true
-        })
-        jackJackWindow:Hide()
-        print("Added waypoint for " .. poi["Name_lang"])
-    end)
-end
-
 local function setUpFrame()
     -- create the window
     local frame = CreateFrame("Frame", "JackJackFrame", UIParent, "BackdropTemplate")
@@ -87,6 +66,40 @@ local function setUpFrame()
 end
 
 JJ_WINDOW, JJ_LOCATION_BUTTON_CONTAINER = setUpFrame()
+JJ_LOCATION_BUTTONS = {}
+
+local function modifyLocationButton(button, poi)
+    button:SetText(poi["Name_lang"])
+    button:SetScript("OnClick", function()
+        local global_coords = CreateVector2D(poi["Pos0"], poi["Pos1"])
+        local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(poi["ContinentID"], global_coords)
+        TomTom:AddWaypoint(uiMapId, mapPosition.x, mapPosition.y, {
+            title = poi["Name_lang"],
+            source = "JackJack",
+            persistent = true,
+            minimap = true,
+            world = true,
+            crazy = true
+        })
+        JJ_WINDOW:Hide()
+        print("Added waypoint for " .. poi["Name_lang"])
+    end)
+end
+
+local function addLocationButton(poi, buttonNumber)
+    local button = CreateFrame("Button", "JackJackLocationButton" .. buttonNumber, JJ_LOCATION_BUTTON_CONTAINER, "UIPanelButtonTemplate")
+    button:SetSize(JJ_BUTTON_WIDTH, JJ_BUTTON_HEIGHT)
+    button:SetPoint("TOPLEFT", 0, -((buttonNumber - 1) * JJ_BUTTON_HEIGHT))
+    modifyLocationButton(button, poi)
+
+    return button
+end
+
+local function hideLocationButtons()
+    for i, button in ipairs(JJ_LOCATION_BUTTONS) do
+        button:Hide()
+    end
+end
 
 SlashCmdList["JACKJACK"] = function(msg, editBox)
     local locationName = msg
@@ -98,10 +111,15 @@ SlashCmdList["JACKJACK"] = function(msg, editBox)
         end
     end
 
-    local buttonNumber = 0 -- track how many buttons we've created. Each location gets a button.
-    for i, poi in ipairs(poiMatches) do
-        addLocationButton(poi, JJ_WINDOW, JJ_LOCATION_BUTTON_CONTAINER, buttonNumber)
-        buttonNumber = buttonNumber + 1
+    hideLocationButtons()
+    for buttonNumber, poi in ipairs(poiMatches) do
+        if not JJ_LOCATION_BUTTONS[buttonNumber] then
+            JJ_LOCATION_BUTTONS[buttonNumber] = addLocationButton(poi, buttonNumber)
+        else
+            local button = JJ_LOCATION_BUTTONS[buttonNumber]
+            modifyLocationButton(button, poi)
+            button:Show()
+        end
     end
     JJ_WINDOW:Show()
 end
