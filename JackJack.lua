@@ -6,6 +6,7 @@ local addonName, addon = ...
 
 -- slash commands
 SLASH_JACKJACK1 = "/jackjack"
+SLASH_JACKJACK2 = "/jj"
 
 SlashCmdList["JACKJACK"] = function(msg, editBox)
     local locationName = msg
