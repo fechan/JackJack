@@ -3,6 +3,9 @@ Adds TomTom waypoints based on location name (e.g. `/jackjack orgrimmar`). Locat
 
 Don't know where Kalimgrimmardrassil is? Now you don't have to waste time searching on Google where everything is and just add a waypoint directly there!
 
+## Download and install
+Check the [releases page](https://github.com/fechan/JackJack/releases) for the zip file. Unzip to a new folder called JackJack in your addons directory and enable JackJack in your in-game addons menu.
+
 ## Requirements
 This addon uses TomTom to add waypoints to the map. https://www.curseforge.com/wow/addons/tomtom
 
