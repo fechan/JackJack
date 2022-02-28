@@ -11,7 +11,7 @@ JJ_HEIGHT = 400
 JJ_MARGIN = 8
 JJ_SCROLLBAR_REGION_WIDTH = 30 -- not the actual width of the scrollbar, just the region the scrollbar is in
 JJ_BUTTON_WIDTH = JJ_WIDTH - JJ_SCROLLBAR_REGION_WIDTH - JJ_MARGIN
-JJ_BUTTON_HEIGHT = 20
+JJ_BUTTON_HEIGHT = 40
 JJ_CLOSE_BUTTON_HEIGHT = 40
 
 --- Sets up the main JackJack window frame
@@ -65,14 +65,39 @@ local function setUpFrame()
     return frame, scrollChild
 end
 
-JJ_WINDOW, JJ_LOCATION_BUTTON_CONTAINER = setUpFrame()
-JJ_LOCATION_BUTTONS = {}
+--- Sets up the location tooltip frame
+local function setUpLocationTooltip()
+    local tooltip = CreateFrame("GameTooltip", "JackJackLocationTooltip", UIParent, "GameTooltipTemplate")
+    return tooltip
+end
+
+--- Get the display name for a location
+-- @param poi Location to get display name for
+-- @return displayName Display name
+local function getLocationDisplayName(poi)
+    if poi["AreaName_lang"] == "" then
+        return poi["Name_lang"] .. "\n(" .. poi["MapName_lang"] .. ")"
+    else
+        return poi["Name_lang"] .. "\n(" .. poi["AreaName_lang"] .. ", " .. poi["MapName_lang"] .. ")"
+    end
+end
+
+--- Modify the location tooltip with info for the given location
+-- @param poi Location to get data from
+local function modifyLocationTooltip(poi)
+    JJ_TOOLTIP:SetOwner(UIParent, "ANCHOR_CURSOR", 0, 0)
+    JJ_TOOLTIP:ClearLines()
+    JJ_TOOLTIP:AddLine(getLocationDisplayName(poi))
+    if poi["Description_lang"] ~= "" then
+        JJ_TOOLTIP:AddLine("Description: " .. poi["Description_lang"])
+    end
+end
 
 --- Sets the data and callbacks for the location button to match the given location
 -- @param button    UI frame for the location button
 -- @param location  Location data containing Pos0 (global x), Pos1 (global y), Name_lang (name), and ContinentID
 local function modifyLocationButton(button, poi)
-    button:SetText(poi["Name_lang"])
+    button:SetText(getLocationDisplayName(poi))
     button:SetScript("OnClick", function()
         local global_coords = CreateVector2D(poi["Pos0"], poi["Pos1"])
         local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(poi["ContinentID"], global_coords)
@@ -86,6 +111,15 @@ local function modifyLocationButton(button, poi)
         })
         JJ_WINDOW:Hide()
         print("Added waypoint for " .. poi["Name_lang"])
+    end)
+
+    button:SetScript("OnEnter", function()
+        modifyLocationTooltip(poi)
+        JJ_TOOLTIP:Show()
+    end)
+
+    button:SetScript("OnLeave", function()
+        JJ_TOOLTIP:Hide()
     end)
 end
 
@@ -109,12 +143,16 @@ local function hideLocationButtons()
     end
 end
 
+JJ_WINDOW, JJ_LOCATION_BUTTON_CONTAINER = setUpFrame()
+JJ_LOCATION_BUTTONS = {}
+JJ_TOOLTIP = setUpLocationTooltip()
+
 SlashCmdList["JACKJACK"] = function(msg, editBox)
     local locationName = msg
 
     -- get all POIs that (fuzzy) match the location name
     local poiMatches = {}
-    for rowNumber, poi in pairs(addon.areapoi) do
+    for rowNumber, poi in pairs(addon.locations) do
         if addon.fzy.has_match(locationName, poi["Name_lang"]) then
             table.insert(poiMatches, poi)
         end

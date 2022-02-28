@@ -1,10 +1,10 @@
 ## Interface: 40200
-## Version: 0.1
+## Version: jj1.0-retail9.2.0.42488
 ## Title: JackJack
 ## Author: fechan
 ## Notes: Lets you search for known points of interest from WoW.tools and put them on the map as a points
 ## Dependencies: TomTom
 
 fzy_lua.lua
-areapoi.lua
+JackJackLocations.lua
 JackJack.lua
