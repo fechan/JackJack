@@ -1,4 +1,4 @@
-## Interface: 40200
+## Interface: 90200
 ## Version: jj1.0-retail9.2.0.42488
 ## Title: JackJack
 ## Author: fechan
