@@ -21,6 +21,7 @@ Typing `/jackjack orgrimmar` or `/jj orgrimmar` will show the following menu. Cl
 ## Current datasets used
 * AreaPOI - Points of Interest
 * WaypointNode - Portal exits
+* TaxiNodes - Flight points
 * Map - Continent names (provides foreign keys only)
 * AreaTable - Zone names (provides foreign keys only)
 
