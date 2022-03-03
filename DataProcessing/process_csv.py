@@ -20,6 +20,9 @@ AreaPOI_joined = (pd.merge(AreaPOI, Map, how="left", left_on="ContinentID", righ
                       .drop(labels=["ID"], axis=1))
 AreaPOI_joined = (pd.merge(AreaPOI_joined, AreaTable, how="left", left_on="AreaID", right_on="ID", suffixes=["", "_AreaTable"])
                       .drop(labels=["ID", "AreaID"], axis=1))
+AreaPOI_joined = AreaPOI_joined[~AreaPOI_joined.Name_lang.str.startswith("[DEPRECATED]", na=False)]
+AreaPOI_joined = AreaPOI_joined[~AreaPOI_joined.Name_lang.str.startswith("[Deprecated]", na=False)]
+AreaPOI_joined["Origin"] = "AreaPOI (Points of Interest table)"
 
 ### Process WaypointNode, WaypointSafeLocs
 
@@ -35,5 +38,16 @@ WaypointNode = WaypointNode[WaypointNode.NodeType == 2] # Keep only portal exits
 WaypointNode_joined = (pd.merge(WaypointNode, WaypointSafeLocs_joined, how="left", left_on="SafeLocID", right_on="ID")
                            .drop(labels=["SafeLocID", "ID", "NodeType"], axis=1)
                            .rename(columns={"MapID": "ContinentID"}))
+WaypointNode_joined = WaypointNode_joined[~WaypointNode_joined.Name_lang.str.startswith("Take the")] # Remove portals that say "Take the blahblah to SomeLocation"
+WaypointNode_joined["Origin"] = "WaypointNode (Portals table) - Exits only"
 
-pd.concat([AreaPOI_joined, WaypointNode_joined]).to_csv("JackJackLocations.csv", index=False)
+# TaxiNodes: Flight points
+TaxiNodes = pd.read_csv("TaxiNodes.csv", usecols=["Name_lang", "Pos[0]", "Pos[1]", "ContinentID"])
+TaxiNodes_joined = (pd.merge(TaxiNodes, Map, how="left", left_on="ContinentID", right_on="ID", suffixes=["", "_Map"])
+                   .drop(labels=["ID"], axis=1))
+TaxiNodes_joined = TaxiNodes_joined[~TaxiNodes_joined.Name_lang.str.startswith("Quest")] # Guessing that these flight points only show up for quests
+TaxiNodes_joined = TaxiNodes_joined[~TaxiNodes_joined.Name_lang.str.startswith("[Hidden]")]
+TaxiNodes_joined = TaxiNodes_joined[~TaxiNodes_joined.Name_lang.str.startswith("[HIDDEN]")]
+TaxiNodes_joined["Origin"] = "TaxiNodes (Flight points table)"
+
+pd.concat([AreaPOI_joined, WaypointNode_joined, TaxiNodes_joined]).to_csv("JackJackLocations.csv", index=False)
