@@ -91,6 +91,9 @@ local function modifyLocationTooltip(poi)
     if poi["Description_lang"] ~= "" then
         JJ_TOOLTIP:AddLine("Description: " .. poi["Description_lang"])
     end
+    if poi["Origin"] ~= "" then
+        JJ_TOOLTIP:AddLine("Dataset: " .. poi["Origin"])
+    end
 end
 
 --- Sets the data and callbacks for the location button to match the given location
