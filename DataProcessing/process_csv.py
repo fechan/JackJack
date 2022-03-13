@@ -41,6 +41,8 @@ WaypointNode_joined = (pd.merge(WaypointNode, WaypointSafeLocs_joined, how="left
 WaypointNode_joined = WaypointNode_joined[~WaypointNode_joined.Name_lang.str.startswith("Take the")] # Remove portals that say "Take the blahblah to SomeLocation"
 WaypointNode_joined["Origin"] = "WaypointNode (Portals table) - Exits only"
 
+### Process TaxiNodes
+
 # TaxiNodes: Flight points
 TaxiNodes = pd.read_csv("TaxiNodes.csv", usecols=["Name_lang", "Pos[0]", "Pos[1]", "ContinentID"])
 TaxiNodes_joined = (pd.merge(TaxiNodes, Map, how="left", left_on="ContinentID", right_on="ID", suffixes=["", "_Map"])
