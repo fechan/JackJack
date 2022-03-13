@@ -58,9 +58,9 @@ end
 -- @param location  Location data containing Pos0 (global x), Pos1 (global y), Name_lang (name), and ContinentID
 local function modifyLocationButton(button, poi)
     button:SetText(getLocationDisplayName(poi))
+    local global_coords = CreateVector2D(poi["Pos0"], poi["Pos1"])
+    local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(poi["ContinentID"], global_coords)
     button:SetScript("OnClick", function()
-        local global_coords = CreateVector2D(poi["Pos0"], poi["Pos1"])
-        local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(poi["ContinentID"], global_coords)
         TomTom:AddWaypoint(uiMapId, mapPosition.x, mapPosition.y, {
             title = poi["Name_lang"],
             source = "JackJack",
@@ -76,10 +76,19 @@ local function modifyLocationButton(button, poi)
     button:SetScript("OnEnter", function()
         modifyLocationTooltip(poi)
         JJ_TOOLTIP:Show()
-    end)
+        local tempWaypointUid = TomTom:AddWaypoint(uiMapId, mapPosition.x, mapPosition.y, {
+            title = poi["Name_lang"] .. " (temp)", -- (temp) is to prevent collisions with permanent waypoint, otherwise new waypoint won't be added
+            source = "JackJack",
+            persistent = false,
+            minimap = true,
+            world = true,
+            crazy = false
+        })
 
-    button:SetScript("OnLeave", function()
-        JJ_TOOLTIP:Hide()
+        button:SetScript("OnLeave", function()
+            TomTom:RemoveWaypoint(tempWaypointUid)
+            JJ_TOOLTIP:Hide()
+        end)
     end)
 end
 
@@ -195,7 +204,7 @@ local function setUpFrame()
     local closeButton = CreateFrame("Button", "JackJackCloseButton", frame, "UIPanelButtonTemplate")
     closeButton:SetSize(JJ_WIDTH - JJ_MARGIN, JJ_CLOSE_BUTTON_HEIGHT)
     closeButton:SetPoint("BOTTOM", frame, "BOTTOM", 0, JJ_MARGIN)
-    closeButton:SetText("Cancel")
+    closeButton:SetText("Close")
     closeButton:SetScript("OnClick", function()
         frame:Hide()
     end)
