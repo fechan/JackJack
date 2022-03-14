@@ -84,10 +84,13 @@ local function modifyLocationButton(button, poi)
             world = true,
             crazy = false
         })
+        local oldUiMapId = WorldMapFrame:GetMapID()
+        WorldMapFrame:SetMapID(uiMapId)
 
         button:SetScript("OnLeave", function()
             TomTom:RemoveWaypoint(tempWaypointUid)
             JJ_TOOLTIP:Hide()
+            WorldMapFrame:SetMapID(oldUiMapId)
         end)
     end)
 end
