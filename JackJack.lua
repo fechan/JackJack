@@ -54,12 +54,12 @@ local function modifyLocationTooltip(poi)
 end
 
 --- Sets the data and callbacks for the location button to match the given location
--- @param button    UI frame for the location button
--- @param location  Location data containing Pos0 (global x), Pos1 (global y), Name_lang (name), and ContinentID
-local function modifyLocationButton(button, poi)
+-- @param button        UI frame for the location button
+-- @param location      Location data containing Pos0 (global x), Pos1 (global y), Name_lang (name), and ContinentID
+-- @param uiMapId       The uiMapId of where the waypoint should be added
+-- @param mapPosition   Vector2D containing the x and y coordinates of the waypoint
+local function modifyLocationButton(button, poi, uiMapId, mapPosition)
     button:SetText(getLocationDisplayName(poi))
-    local global_coords = CreateVector2D(poi["Pos0"], poi["Pos1"])
-    local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(poi["ContinentID"], global_coords)
     button:SetScript("OnClick", function()
         TomTom:AddWaypoint(uiMapId, mapPosition.x, mapPosition.y, {
             title = poi["Name_lang"],
@@ -98,12 +98,14 @@ end
 --- Adds a new location button to the location button container for the given location
 -- @param poi           Location data containing Pos0 (global x), Pos1 (global y), Name_lang (name), and ContinentID
 -- @param buttonNumber  Index of the button to add in the location button container
+-- @param uiMapId       The uiMapId of where the waypoint should be added
+-- @param mapPosition   Vector2D containing the x and y coordinates of the waypoint
 -- @return button       UI frame for the location button
-local function addLocationButton(poi, buttonNumber)
+local function addLocationButton(poi, buttonNumber, uiMapId, mapPosition)
     local button = CreateFrame("Button", "JackJackLocationButton" .. buttonNumber, JJ_LOCATION_BUTTON_CONTAINER, "UIPanelButtonTemplate")
     button:SetSize(JJ_BUTTON_WIDTH, JJ_BUTTON_HEIGHT)
     button:SetPoint("TOPLEFT", 0, -((buttonNumber - 1) * JJ_BUTTON_HEIGHT))
-    modifyLocationButton(button, poi)
+    modifyLocationButton(button, poi, uiMapId, mapPosition)
 
     return button
 end
@@ -135,14 +137,22 @@ local function setLocationButtons(locationName)
     -- update UI
     hideLocationButtons()
     setSearchResultsText(#poiMatches)
-    for buttonNumber, poi in ipairs(poiMatches) do
-        if buttonNumber > 20 then break end
-        if not JJ_LOCATION_BUTTONS[buttonNumber] then
-            JJ_LOCATION_BUTTONS[buttonNumber] = addLocationButton(poi, buttonNumber)
-        else
-            local button = JJ_LOCATION_BUTTONS[buttonNumber]
-            modifyLocationButton(button, poi)
-            button:Show()
+
+    local buttonNumber = 1 -- use this instead of iterator because we might skip some buttons for inaccessible locations
+    for _, poi in ipairs(poiMatches) do
+        if buttonNumber > 20 then break end -- limit to 20 results to prevent lag
+
+        local global_coords = CreateVector2D(poi["Pos0"], poi["Pos1"])
+        local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(poi["ContinentID"], global_coords)
+        if mapPosition ~= nil and uiMapId ~= nil then -- don't show any inaccessible/dev locations
+            if not JJ_LOCATION_BUTTONS[buttonNumber] then
+                JJ_LOCATION_BUTTONS[buttonNumber] = addLocationButton(poi, buttonNumber, uiMapId, mapPosition)
+            else
+                local button = JJ_LOCATION_BUTTONS[buttonNumber]
+                modifyLocationButton(button, poi, uiMapId, mapPosition)
+                button:Show()
+            end
+            buttonNumber = buttonNumber + 1
         end
     end
 end
