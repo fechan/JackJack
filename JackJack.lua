@@ -7,12 +7,11 @@ SLASH_JACKJACK2 = "/jj"
 
 -- sizing for frames
 JJ_WIDTH = 400
-JJ_HEIGHT = 400
+JJ_HEIGHT = 500
 JJ_MARGIN = 8
 JJ_SCROLLBAR_REGION_WIDTH = 30 -- not the actual width of the scrollbar, just the region the scrollbar is in
 JJ_BUTTON_WIDTH = JJ_WIDTH - JJ_SCROLLBAR_REGION_WIDTH - JJ_MARGIN
 JJ_BUTTON_HEIGHT = 40
-JJ_CLOSE_BUTTON_HEIGHT = 40
 JJ_SEARCH_HEIGHT = 20
 JJ_SEARCH_WIDTH = JJ_WIDTH - (3 * JJ_MARGIN)
 
@@ -192,7 +191,7 @@ local function setUpFrame()
     local searchBox = CreateFrame("EditBox", "JackJackSearchBox", frame, "InputBoxTemplate")
     searchBox:SetFontObject("GameFontNormal")
     searchBox:SetSize(JJ_SEARCH_WIDTH, JJ_SEARCH_HEIGHT)
-    searchBox:SetPoint("TOP", frame, "TOP", 0, -JJ_MARGIN)
+    searchBox:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN * 2, -JJ_MARGIN)
     searchBox:SetAutoFocus(false)
     searchBox:SetScript("OnTextChanged", function(self)
         setLocationButtons(self:GetText())
@@ -212,15 +211,6 @@ local function setUpFrame()
     scrollFrame:SetScrollChild(scrollChild)
     scrollChild:SetWidth(1) -- not sure if setting this to 1 has any effect vs setting it to the parent's width
     scrollChild:SetHeight(1) -- this can be any value, it doesn't matter
-
-    -- add big close button on bottom
-    local closeButton = CreateFrame("Button", "JackJackCloseButton", frame, "UIPanelButtonTemplate")
-    closeButton:SetSize(JJ_WIDTH - JJ_MARGIN, JJ_CLOSE_BUTTON_HEIGHT)
-    closeButton:SetPoint("BOTTOM", frame, "BOTTOM", 0, JJ_MARGIN)
-    closeButton:SetText("Close")
-    closeButton:SetScript("OnClick", function()
-        frame:Hide()
-    end)
 
     frame:Show()
     return frame, scrollChild, searchBox, searchResultsText
