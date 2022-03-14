@@ -164,10 +164,10 @@ end
 -- @return searchResultsText    FontString showing number of search resutls
 local function setUpFrame()
     -- create the window
-    local frame = CreateFrame("Frame", "JackJackFrame", UIParent, "BackdropTemplate")
+    local frame = CreateFrame("Frame", "JackJackFrame", WorldMapFrame, "BackdropTemplate")
     frame:SetSize(JJ_WIDTH, JJ_HEIGHT)
     frame:SetPoint("CENTER")
-    frame:SetFrameStrata("HIGH")
+    frame:SetFrameStrata("DIALOG")
     frame:SetFrameLevel(1)
     frame:Hide()
 
@@ -222,6 +222,7 @@ local function setUpFrame()
         frame:Hide()
     end)
 
+    frame:Show()
     return frame, scrollChild, searchBox, searchResultsText
 end
 
@@ -240,4 +241,5 @@ SlashCmdList["JACKJACK"] = function(msg, editBox)
     setLocationButtons(locationName)
     JJ_SEARCH_BOX:SetText(locationName)
     JJ_WINDOW:Show()
+    WorldMapFrame:Show()
 end
