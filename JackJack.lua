@@ -39,9 +39,10 @@ local function getLocationDisplayName(poi)
 end
 
 --- Modify the location tooltip with info for the given location
--- @param poi Location to get data from
-local function modifyLocationTooltip(poi)
-    JJ_TOOLTIP:SetOwner(UIParent, "ANCHOR_CURSOR", 0, 0)
+-- @param poi       Location to get data from
+-- @param button    Button to anchor tooltip to
+local function modifyLocationTooltip(poi, button)
+    JJ_TOOLTIP:SetOwner(button, "ANCHOR_RIGHT", 0, -JJ_BUTTON_HEIGHT)
     JJ_TOOLTIP:ClearLines()
     JJ_TOOLTIP:AddLine(getLocationDisplayName(poi))
     if poi["Description_lang"] ~= "" then
@@ -73,7 +74,7 @@ local function modifyLocationButton(button, poi, uiMapId, mapPosition)
     end)
 
     button:SetScript("OnEnter", function()
-        modifyLocationTooltip(poi)
+        modifyLocationTooltip(poi, button)
         JJ_TOOLTIP:Show()
         local tempWaypointUid = TomTom:AddWaypoint(uiMapId, mapPosition.x, mapPosition.y, {
             title = poi["Name_lang"] .. " (temp)", -- (temp) is to prevent collisions with permanent waypoint, otherwise new waypoint won't be added
