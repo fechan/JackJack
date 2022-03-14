@@ -24,22 +24,22 @@ AreaPOI_joined = AreaPOI_joined[~AreaPOI_joined.Name_lang.str.startswith("[DEPRE
 AreaPOI_joined = AreaPOI_joined[~AreaPOI_joined.Name_lang.str.startswith("[Deprecated]", na=False)]
 AreaPOI_joined["Origin"] = "AreaPOI (Points of Interest table)"
 
-### Process WaypointNode, WaypointSafeLocs
+# ### Process WaypointNode, WaypointSafeLocs
 
-# WaypointNode: Portal entrances and exits
-WaypointNode = (pd.read_csv("WaypointNode.csv", usecols=["Name_lang", "Field_8_2_0_30080_005", "SafeLocID"])
-                    .rename(columns={"Field_8_2_0_30080_005": "NodeType"}))
-# WaypointSafeLocs: Portal coordinates
-WaypointSafeLocs = pd.read_csv("WaypointSafeLocs.csv", usecols=["ID", "Pos[0]", "Pos[1]", "MapID"])
+# # WaypointNode: Portal entrances and exits
+# WaypointNode = (pd.read_csv("WaypointNode.csv", usecols=["Name_lang", "Field_8_2_0_30080_005", "SafeLocID"])
+#                     .rename(columns={"Field_8_2_0_30080_005": "NodeType"}))
+# # WaypointSafeLocs: Portal coordinates
+# WaypointSafeLocs = pd.read_csv("WaypointSafeLocs.csv", usecols=["ID", "Pos[0]", "Pos[1]", "MapID"])
 
-WaypointSafeLocs_joined = (pd.merge(WaypointSafeLocs, Map, how="left", left_on="MapID", right_on="ID", suffixes=["", "_Map"])
-                                .drop(labels=["ID_Map"], axis=1))
-WaypointNode = WaypointNode[WaypointNode.NodeType == 2] # Keep only portal exits
-WaypointNode_joined = (pd.merge(WaypointNode, WaypointSafeLocs_joined, how="left", left_on="SafeLocID", right_on="ID")
-                           .drop(labels=["SafeLocID", "ID", "NodeType"], axis=1)
-                           .rename(columns={"MapID": "ContinentID"}))
-WaypointNode_joined = WaypointNode_joined[~WaypointNode_joined.Name_lang.str.startswith("Take the")] # Remove portals that say "Take the blahblah to SomeLocation"
-WaypointNode_joined["Origin"] = "WaypointNode (Portals table) - Exits only"
+# WaypointSafeLocs_joined = (pd.merge(WaypointSafeLocs, Map, how="left", left_on="MapID", right_on="ID", suffixes=["", "_Map"])
+#                                 .drop(labels=["ID_Map"], axis=1))
+# WaypointNode = WaypointNode[WaypointNode.NodeType == 2] # Keep only portal exits
+# WaypointNode_joined = (pd.merge(WaypointNode, WaypointSafeLocs_joined, how="left", left_on="SafeLocID", right_on="ID")
+#                            .drop(labels=["SafeLocID", "ID", "NodeType"], axis=1)
+#                            .rename(columns={"MapID": "ContinentID"}))
+# WaypointNode_joined = WaypointNode_joined[~WaypointNode_joined.Name_lang.str.startswith("Take the")] # Remove portals that say "Take the blahblah to SomeLocation"
+# WaypointNode_joined["Origin"] = "WaypointNode (Portals table) - Exits only"
 
 ### Process TaxiNodes
 
@@ -52,4 +52,4 @@ TaxiNodes_joined = TaxiNodes_joined[~TaxiNodes_joined.Name_lang.str.startswith("
 TaxiNodes_joined = TaxiNodes_joined[~TaxiNodes_joined.Name_lang.str.startswith("[HIDDEN]")]
 TaxiNodes_joined["Origin"] = "TaxiNodes (Flight points table)"
 
-pd.concat([AreaPOI_joined, WaypointNode_joined, TaxiNodes_joined]).to_csv("JackJackLocations.csv", index=False)
+pd.concat([AreaPOI_joined, TaxiNodes_joined]).to_csv("JackJackLocations.csv", index=False)

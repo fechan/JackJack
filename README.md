@@ -1,7 +1,9 @@
 # JackJack
-Adds TomTom waypoints based on location name (e.g. `/jackjack orgrimmar`). Locations and their coordinates are based on data from [WoW.tools](https://wow.tools/).
+Adds TomTom waypoints based on location name. Locations and their coordinates are based on data from [WoW.tools](https://wow.tools/).
 
 Don't know where Kalimgrimmardrassil is? Now you don't have to waste time searching on Google where everything is and just add a waypoint directly there!
+
+![Partial JackJack screenshot](https://user-images.githubusercontent.com/56131910/158126430-6cabc1c3-7182-42ed-ae6b-d924b8e68373.png)
 
 ## Download and install
 ### With Wowup
@@ -14,13 +16,16 @@ Check the [releases page](https://github.com/fechan/JackJack/releases) for the z
 This addon uses TomTom to add waypoints to the map. https://www.curseforge.com/wow/addons/tomtom
 
 ## Example usage
-Typing `/jackjack orgrimmar` or `/jj orgrimmar` will show the following menu. Click a button to add the corresponding TomTom waypoint to your map.
+You can either:
+* Open the map to show JackJack and type a location (like "orgrimmar") into the search box
+* Type `/jackjack orgrimmar` or `/jj orgrimmar` into the chat
 
-![Screenshot of JackJack](https://user-images.githubusercontent.com/56131910/155943487-ca33dac0-37dc-42e3-ae7d-ee2d3b1c4b36.png)
+Then select one of the locations to add it as a TomTom waypoint.
+
+![JackJack GIF demo](https://user-images.githubusercontent.com/56131910/158125400-dd507318-5fa8-4fd2-af0a-ea8a9a09f8d5.gif)
 
 ## Current datasets used
 * AreaPOI - Points of Interest
-* WaypointNode - Portal exits
 * TaxiNodes - Flight points
 * Map - Continent names (provides foreign keys only)
 * AreaTable - Zone names (provides foreign keys only)
