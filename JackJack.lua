@@ -12,7 +12,7 @@ JJ_MARGIN = 8
 JJ_SCROLLBAR_REGION_WIDTH = 30 -- not the actual width of the scrollbar, just the region the scrollbar is in
 JJ_BUTTON_WIDTH = JJ_WIDTH - JJ_SCROLLBAR_REGION_WIDTH - JJ_MARGIN
 JJ_BUTTON_HEIGHT = 40
-JJ_SEARCH_HEIGHT = 20
+JJ_SEARCH_HEIGHT = 25
 JJ_SEARCH_WIDTH = JJ_WIDTH - (3 * JJ_MARGIN)
 
 --- Set the text that displays the number of search results accordingly
@@ -190,7 +190,7 @@ local function setUpFrame()
 
     -- add a search box
     local searchBox = CreateFrame("EditBox", "JackJackSearchBox", frame, "InputBoxTemplate")
-    searchBox:SetFontObject("GameFontNormal")
+    searchBox:SetFontObject("GameFontNormalLarge")
     searchBox:SetSize(JJ_SEARCH_WIDTH, JJ_SEARCH_HEIGHT)
     searchBox:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN * 2, -JJ_MARGIN)
     searchBox:SetAutoFocus(false)
