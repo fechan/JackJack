@@ -6,7 +6,7 @@ SLASH_JACKJACK1 = "/jackjack"
 SLASH_JACKJACK2 = "/jj"
 
 -- sizing for frames
-JJ_WIDTH = 400
+JJ_WIDTH = 350
 JJ_HEIGHT = 500
 JJ_MARGIN = 8
 JJ_SCROLLBAR_REGION_WIDTH = 30 -- not the actual width of the scrollbar, just the region the scrollbar is in
@@ -14,6 +14,7 @@ JJ_BUTTON_WIDTH = JJ_WIDTH - JJ_SCROLLBAR_REGION_WIDTH - JJ_MARGIN
 JJ_BUTTON_HEIGHT = 40
 JJ_SEARCH_HEIGHT = 25
 JJ_SEARCH_WIDTH = JJ_WIDTH - (3 * JJ_MARGIN)
+JJ_TITLEBAR_HEIGHT = 64
 
 --- Set the text that displays the number of search results accordingly
 -- @param numResults the number of search results
@@ -69,7 +70,7 @@ local function modifyLocationButton(button, poi, uiMapId, mapPosition)
             world = true,
             crazy = true
         })
-        JJ_WINDOW:Hide()
+        --JJ_WINDOW:Hide() -- TODO: replace this with the search results hiding instead
         print("Added waypoint for " .. poi["Name_lang"])
     end)
 
@@ -166,7 +167,9 @@ local function setUpFrame()
     -- create the window
     local frame = CreateFrame("Frame", "JackJackFrame", WorldMapFrame, "BackdropTemplate")
     frame:SetSize(JJ_WIDTH, JJ_HEIGHT)
-    frame:SetPoint("CENTER")
+    if not frame:IsUserPlaced() then
+        frame:SetPoint("TOPLEFT", WorldMapFrame, "TOPRIGHT", 0, 0)
+    end
     frame:SetFrameStrata("DIALOG")
     frame:SetFrameLevel(1)
     frame:Hide()
@@ -188,11 +191,25 @@ local function setUpFrame()
     frame:SetScript("OnDragStart", frame.StartMoving)
     frame:SetScript("OnDragStop", frame.StopMovingOrSizing)
 
+    -- add title bar
+    local titleBar = frame:CreateTexture(nil, "ARTWORK")
+    titleBar:SetTexture("Interface\\DialogFrame\\UI-DialogBox-Header")
+    titleBar:SetPoint("CENTER", frame, "TOP", 0, -JJ_TITLEBAR_HEIGHT / 4)
+    titleBar:SetSize(256, JJ_TITLEBAR_HEIGHT)
+
+    -- add text to title bar
+    local titleText = frame:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+    titleText:SetPoint("CENTER", frame, "TOP", 0, -4)
+    titleText:SetText("JackJack")
+
+    -- extend drag area to include title bar
+    frame:SetHitRectInsets(0, 0, -JJ_TITLEBAR_HEIGHT / 2, 0)
+
     -- add a search box
     local searchBox = CreateFrame("EditBox", "JackJackSearchBox", frame, "InputBoxTemplate")
     searchBox:SetFontObject("GameFontNormalLarge")
     searchBox:SetSize(JJ_SEARCH_WIDTH, JJ_SEARCH_HEIGHT)
-    searchBox:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN * 2, -JJ_MARGIN)
+    searchBox:SetPoint("TOP", frame, "TOP", 0, (-JJ_TITLEBAR_HEIGHT / 4) - JJ_MARGIN)
     searchBox:SetAutoFocus(false)
     searchBox:SetScript("OnTextChanged", function(self)
         setLocationButtons(self:GetText())
@@ -205,7 +222,7 @@ local function setUpFrame()
 
     -- add a scroll frame which will contain location buttons
     local scrollFrame = CreateFrame("ScrollFrame", "JackJackScrollFrame", frame, "UIPanelScrollFrameTemplate")
-    scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN, -4 * JJ_MARGIN - JJ_SEARCH_HEIGHT)
+    scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN, -6 * JJ_MARGIN - JJ_SEARCH_HEIGHT)
     scrollFrame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -JJ_SCROLLBAR_REGION_WIDTH, JJ_MARGIN)
 
     local scrollChild = CreateFrame("Frame")
