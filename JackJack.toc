@@ -1,9 +1,10 @@
 ## Interface: 90200
-## Version: jj1.1-retail9.2.0.42488
+## Version: jj1.4.1-retail9.2.0.42698
 ## Title: JackJack
-## Author: fechan
-## Notes: Lets you search for known points of interest from WoW.tools and put them on the map as a points
+## Author: artifexsev/fechan
+## Notes: Lets you search for known points of interest from WoW.tools and put them on the map as TomTom waypoints
 ## Dependencies: TomTom
+## X-WoWI-ID: 26250
 
 fzy_lua.lua
 JackJackLocations.lua
