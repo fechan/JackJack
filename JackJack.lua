@@ -167,7 +167,9 @@ local function setUpFrame()
     -- create the window
     local frame = CreateFrame("Frame", "JackJackFrame", WorldMapFrame, "BackdropTemplate")
     frame:SetSize(JJ_WIDTH, JJ_HEIGHT)
-    frame:SetPoint("TOPLEFT", WorldMapFrame, "TOPRIGHT", 0, 0)
+    if not frame:IsUserPlaced() then
+        frame:SetPoint("TOPLEFT", WorldMapFrame, "TOPRIGHT", 0, 0)
+    end
     frame:SetFrameStrata("DIALOG")
     frame:SetFrameLevel(1)
     frame:Hide()
