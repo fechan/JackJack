@@ -6,7 +6,7 @@ SLASH_JACKJACK1 = "/jackjack"
 SLASH_JACKJACK2 = "/jj"
 
 -- sizing for frames
-JJ_WIDTH = 400
+JJ_WIDTH = 350
 JJ_HEIGHT = 500
 JJ_MARGIN = 8
 JJ_SCROLLBAR_REGION_WIDTH = 30 -- not the actual width of the scrollbar, just the region the scrollbar is in
@@ -70,7 +70,7 @@ local function modifyLocationButton(button, poi, uiMapId, mapPosition)
             world = true,
             crazy = true
         })
-        JJ_WINDOW:Hide() -- TODO: replace this with the search results hiding instead
+        --JJ_WINDOW:Hide() -- TODO: replace this with the search results hiding instead
         print("Added waypoint for " .. poi["Name_lang"])
     end)
 
