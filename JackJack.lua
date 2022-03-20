@@ -54,6 +54,25 @@ local function modifyLocationTooltip(poi, button)
     end
 end
 
+--- Try to find the location of the waypoint at a higher zoom level than the given map
+-- @param uiMapId       Map ID of the (possibly) lower zoom level map
+-- @param mapPosition   Position of the waypoint on the lower zoom level map
+-- @return uiMapId      Map ID of the higher zoom level map if available, otherwise same as input
+-- @return x            X coordinate of the waypoint on the higher zoom level map if available, otherwise same as mapPosition.x
+-- @return y            Y coordinate of the waypoint on the higher zoom level map if available, otherwise same as mapPosition.y
+local function getHigherZoomMapPosition(uiMapId, mapPosition)
+    local x = mapPosition.x
+    local y = mapPosition.y
+    local childMapInfo = C_Map.GetMapInfoAtPosition(uiMapId, mapPosition.x, mapPosition.y)
+    if childMapInfo then
+        local left, right, top, bottom = C_Map.GetMapRectOnMap(childMapInfo.mapID, uiMapId)
+        x = (mapPosition.x - left) / (right - left)
+        y = (mapPosition.y - top) / (bottom - top)
+        uiMapId = childMapInfo.mapID
+    end
+    return uiMapId, x, y
+end
+
 --- Sets the data and callbacks for the location button to match the given location
 -- @param button        UI frame for the location button
 -- @param location      Location data containing Pos0 (global x), Pos1 (global y), Name_lang (name), and ContinentID
@@ -61,8 +80,11 @@ end
 -- @param mapPosition   Vector2D containing the x and y coordinates of the waypoint
 local function modifyLocationButton(button, poi, uiMapId, mapPosition)
     button:SetText(getLocationDisplayName(poi))
+    local uiMapId, x, y = getHigherZoomMapPosition(uiMapId, mapPosition)
+
     button:SetScript("OnClick", function()
-        TomTom:AddWaypoint(uiMapId, mapPosition.x, mapPosition.y, {
+
+        TomTom:AddWaypoint(uiMapId, x, y, {
             title = poi["Name_lang"],
             source = "JackJack",
             persistent = true,
@@ -77,7 +99,7 @@ local function modifyLocationButton(button, poi, uiMapId, mapPosition)
     button:SetScript("OnEnter", function()
         modifyLocationTooltip(poi, button)
         JJ_TOOLTIP:Show()
-        local tempWaypointUid = TomTom:AddWaypoint(uiMapId, mapPosition.x, mapPosition.y, {
+        local tempWaypointUid = TomTom:AddWaypoint(uiMapId, x, y, {
             title = poi["Name_lang"] .. " (temp)", -- (temp) is to prevent collisions with permanent waypoint, otherwise new waypoint won't be added
             source = "JackJack",
             persistent = false,
