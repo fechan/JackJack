@@ -7,12 +7,12 @@ Don't know where Kalimgrimmardrassil is? Now you don't have to waste time search
 
 ## Download and install
 ### With Wowup
-First check if JackJack appears when you search JackJack in the "Get Addons" tab and install it from there. (I'm trying to upload this to Wowinterface, from which Wowup will detect my addon)
+Wowup is preferred because it will auto-update when new versions are uploaded. Search JackJack in the "Get Addons" tab and install it from there.
 
-Otherwise, in the "Get Addons" tab, click "Install from URL" in the top right, paste in `https://github.com/fechan/JackJack/`, click "Import", then "Install". This method is preferred since Wowup can automatically detect updates from this repo's releases.
+If it doesn't show up there, in the "Get Addons" tab, click "Install from URL" in the top right, paste in `https://github.com/fechan/JackJack/`, click "Import", then "Install". This method is preferred since Wowup can automatically detect updates from this repo's releases.
 
 ### Manually
-Check the [releases page](https://github.com/fechan/JackJack/releases) for the zip file. Unzip to a new folder called JackJack in your addons directory and enable JackJack in your in-game addons menu.
+Check the [releases page](https://github.com/fechan/JackJack/releases) for the zip file. Unzip to a new folder called JackJack in your addons directory and enable JackJack in your in-game addons menu. You will have to check the releases page periodically and manually install again for updates.
 
 ## Requirements
 This addon uses TomTom to add waypoints to the map. https://www.curseforge.com/wow/addons/tomtom
