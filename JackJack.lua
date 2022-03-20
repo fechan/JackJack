@@ -92,7 +92,6 @@ local function modifyLocationButton(button, poi, uiMapId, mapPosition)
             world = true,
             crazy = true
         })
-        --JJ_WINDOW:Hide() -- TODO: replace this with the search results hiding instead
         print("Added waypoint for " .. poi["Name_lang"])
     end)
 
