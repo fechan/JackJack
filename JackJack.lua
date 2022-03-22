@@ -144,7 +144,7 @@ end
 local function setLocationButtons(locationName)
     -- get all POIs that (fuzzy) match the location name
     local poiMatches = {}
-    for rowNumber, poi in pairs(addon.locations) do
+    for rowNumber, poi in pairs(addon.JackJackLocations) do
         if addon.fzy.has_match(locationName, poi["Name_lang"]) then
             -- it's faster to precompute score so table.sort doesn't constantly recompute it in comparisons
             poi["fzyScore"] = addon.fzy.score(locationName, poi["Name_lang"])
