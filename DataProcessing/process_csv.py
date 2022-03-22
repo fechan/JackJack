@@ -24,23 +24,6 @@ AreaPOI_joined = AreaPOI_joined[~AreaPOI_joined.Name_lang.str.startswith("[DEPRE
 AreaPOI_joined = AreaPOI_joined[~AreaPOI_joined.Name_lang.str.startswith("[Deprecated]", na=False)]
 AreaPOI_joined["Origin"] = "AreaPOI (Points of Interest table)"
 
-# ### Process WaypointNode, WaypointSafeLocs
-
-# # WaypointNode: Portal entrances and exits
-# WaypointNode = (pd.read_csv("WaypointNode.csv", usecols=["Name_lang", "Field_8_2_0_30080_005", "SafeLocID"])
-#                     .rename(columns={"Field_8_2_0_30080_005": "NodeType"}))
-# # WaypointSafeLocs: Portal coordinates
-# WaypointSafeLocs = pd.read_csv("WaypointSafeLocs.csv", usecols=["ID", "Pos[0]", "Pos[1]", "MapID"])
-
-# WaypointSafeLocs_joined = (pd.merge(WaypointSafeLocs, Map, how="left", left_on="MapID", right_on="ID", suffixes=["", "_Map"])
-#                                 .drop(labels=["ID_Map"], axis=1))
-# WaypointNode = WaypointNode[WaypointNode.NodeType == 2] # Keep only portal exits
-# WaypointNode_joined = (pd.merge(WaypointNode, WaypointSafeLocs_joined, how="left", left_on="SafeLocID", right_on="ID")
-#                            .drop(labels=["SafeLocID", "ID", "NodeType"], axis=1)
-#                            .rename(columns={"MapID": "ContinentID"}))
-# WaypointNode_joined = WaypointNode_joined[~WaypointNode_joined.Name_lang.str.startswith("Take the")] # Remove portals that say "Take the blahblah to SomeLocation"
-# WaypointNode_joined["Origin"] = "WaypointNode (Portals table) - Exits only"
-
 ### Process TaxiNodes
 
 # TaxiNodes: Flight points
@@ -53,3 +36,36 @@ TaxiNodes_joined = TaxiNodes_joined[~TaxiNodes_joined.Name_lang.str.startswith("
 TaxiNodes_joined["Origin"] = "TaxiNodes (Flight points table)"
 
 pd.concat([AreaPOI_joined, TaxiNodes_joined]).to_csv("JackJackLocations.csv", index=False)
+
+### Process portals (for directions feature)
+# To save on space, we will join WaypointEdge with WaypointNode in the addon and not here,
+# since we need them separately anyway during the walking/cross-join part
+
+# WaypointNode: Portal entrances and exits
+WaypointNode = pd.read_csv("WaypointNode.csv", usecols=["ID", "Name_lang", "SafeLocID"])
+# WaypointSafeLocs: Locations of portals
+WaypointSafeLocs = pd.read_csv("WaypointSafeLocs.csv")
+
+WaypointNode_Loc = (pd.merge(WaypointNode, WaypointSafeLocs,
+                            how="inner", # exclude portals that don't have a set location (e.g. mage portals)
+                            left_on="SafeLocID",
+                            right_on="ID",
+                            suffixes=["", "_WSL"])
+                        .drop(columns=["ID_WSL", "SafeLocID"]))
+WaypointNode_Loc.to_csv("WaypointNodeWithLocation.csv", index=False)
+
+# WaypointEdge: Portal connections
+WaypointEdge = pd.read_csv("WaypointEdge.csv", usecols=["Start", "End", "PlayerConditionID"])
+# PlayerCondition: Prerequisites for using a portal connection
+PlayerCondition = pd.read_csv("PlayerCondition.csv", usecols=["ID", "RaceMask"])
+
+WaypointEdge_prereq = WaypointEdge.merge(PlayerCondition, how="inner", left_on="PlayerConditionID", right_on="ID").drop(columns=["ID", "PlayerConditionID"])
+# remove edges that involve start or end points not in the WaypointNode_Loc table (removes mage portal edges etc.)
+WaypointEdge_prereq = WaypointEdge_prereq[WaypointEdge_prereq.Start.isin(WaypointNode_Loc.ID) & WaypointEdge_prereq.End.isin(WaypointNode_Loc.ID)]
+
+WaypointEdge_prereq.to_csv("WaypointEdgeWithRequirements.csv", index=False)
+# TODO: Add prerequisite completed quest IDs to WaypointEdgeWithRequirements
+
+ChrRaces = pd.read_csv("ChrRaces.csv", usecols=["ID", "PlayableRaceBit"])
+ChrRaces = ChrRaces[ChrRaces["PlayableRaceBit"] != -1]
+ChrRaces.to_csv("ChrRacesBitmasks.csv", index=False)
