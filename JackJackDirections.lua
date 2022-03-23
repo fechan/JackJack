@@ -9,16 +9,9 @@ local function distance3d(x1, y1, z1, x2, y2, z2)
     return math.sqrt(xd * xd + yd * yd + zd * zd)
 end
 
-local function playerMeetsPortalRequirements(raceMask)
-    -- TODO: apparently we live in bizzareo land where 6130900294268439629 % 2 == 0, so until I fix this, just return true
-    return true
-    -- if raceMask == 0 then
-    --     return true
-    -- end
-
-    -- local _, _, raceId = UnitRace("player")
-    -- local raceBit = addon.ChrRacesBitmasks[raceId]
-    -- return bit.band(raceMask, 2^raceBit) > 0
+local function playerMeetsPortalRequirements(playerConditionId)
+    local raceId = UnitRace("player")
+    return addon.PlayerConditionExpanded[playerConditionId]["race_" .. raceId] == 1
 end
 
 local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationContinent)
@@ -58,9 +51,9 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
     local nodeMapID = addon.WaypointNodeWithLocation[nodeId]["MapID"]
 
     -- step 1: get all the edges that start at the nodeId and add the end node to the adjacentNodes
-    for edgeId, edge in pairs(addon.WaypointEdgeWithRequirements) do
+    for edgeId, edge in pairs(addon.WaypointEdgeReduced) do
         if edge["Start"] == nodeId then
-            if playerMeetsPortalRequirements(edge["RaceMask"]) then
+            if playerMeetsPortalRequirements(edge["PlayerConditionID"]) then
                 table.insert(adjacentNodes, {
                     nodeId = edge["End"],
                     distance = LOADING_SCREEN_WEIGHT

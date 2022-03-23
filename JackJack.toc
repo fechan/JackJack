@@ -9,8 +9,8 @@
 PriorityQueue.lua
 fzy_lua.lua
 JackJackLocations.lua
-ChrRacesBitmasks.lua
-WaypointEdgeWithRequirements.lua
 WaypointNodeWithLocation.lua
+WaypointEdgeReduced.lua
+PlayerConditionExpanded.lua
 JackJackDirections.lua
 JackJack.lua

@@ -56,16 +56,32 @@ WaypointNode_Loc.to_csv("WaypointNodeWithLocation.csv", index=False)
 
 # WaypointEdge: Portal connections
 WaypointEdge = pd.read_csv("WaypointEdge.csv", usecols=["Start", "End", "PlayerConditionID"])
-# PlayerCondition: Prerequisites for using a portal connection
-PlayerCondition = pd.read_csv("PlayerCondition.csv", usecols=["ID", "RaceMask"])
 
-WaypointEdge_prereq = WaypointEdge.merge(PlayerCondition, how="inner", left_on="PlayerConditionID", right_on="ID").drop(columns=["ID", "PlayerConditionID"])
 # remove edges that involve start or end points not in the WaypointNode_Loc table (removes mage portal edges etc.)
-WaypointEdge_prereq = WaypointEdge_prereq[WaypointEdge_prereq.Start.isin(WaypointNode_Loc.ID) & WaypointEdge_prereq.End.isin(WaypointNode_Loc.ID)]
+WaypointEdgeReduced = WaypointEdge[WaypointEdge.Start.isin(WaypointNode_Loc.ID) & WaypointEdge.End.isin(WaypointNode_Loc.ID)]
+WaypointEdgeReduced.to_csv("WaypointEdgeReduced.csv", index=False)
 
-WaypointEdge_prereq.to_csv("WaypointEdgeWithRequirements.csv", index=False)
-# TODO: Add prerequisite completed quest IDs to WaypointEdgeWithRequirements
+# PlayerCondition: Prerequisites for using a portal connection. Keep this separate from the WaypointEdge because otherwise
+# there would be a lot of duplicate data
+PlayerCondition = pd.read_csv("PlayerCondition.csv", usecols=["ID", "RaceMask"])
+PlayerCondition_edgeonly = PlayerCondition[PlayerCondition.ID.isin(WaypointEdge.PlayerConditionID)] # only keep the ones that are in the WaypointEdge table
 
 ChrRaces = pd.read_csv("ChrRaces.csv", usecols=["ID", "PlayableRaceBit"])
 ChrRaces = ChrRaces[ChrRaces["PlayableRaceBit"] != -1]
-ChrRaces.to_csv("ChrRacesBitmasks.csv", index=False)
+
+def in_race_bit_mask(bitmask, raceID):
+    """Determines if a character with raceID can use a portal with bitmask"""
+    if bitmask == 0: return 1
+    race_bit = ChrRaces[ChrRaces.ID == raceID].PlayableRaceBit
+    return int(bitmask & (2**race_bit) == (2**race_bit))
+
+def expand_racemask(PlayerCondition):
+    """Expands the RaceMask in PlayerCondition into multiple binary (1/0) columns"""
+    newdf = PlayerCondition.copy()
+    for index, race in ChrRaces.iterrows():
+        newdf["race_" + str(race["ID"])] = newdf.apply(lambda x, y: in_race_bit_mask(x.RaceMask, y), args=([race["ID"]]), axis=1)
+    return newdf
+
+(expand_racemask(PlayerCondition_edgeonly)
+    .drop(columns=["RaceMask"])
+    .to_csv("PlayerConditionExpanded.csv", index=False))
