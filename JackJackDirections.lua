@@ -136,10 +136,14 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent)
     while nodeId ~= "player" do
         table.insert(path, nodeId)
         nodeId = prev[nodeId]
-        if addon.WaypointNodeWithLocation[nodeId] ~= nil then
+        if nodeId == nil then
+            print("No path found")
+        end
+                if addon.WaypointNodeWithLocation[nodeId] ~= nil then
             print(addon.WaypointNodeWithLocation[nodeId]["Name_lang"])
         else
             print(nodeId)
         end
     end
+
 end
