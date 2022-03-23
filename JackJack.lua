@@ -10,7 +10,8 @@ JJ_WIDTH = 350
 JJ_HEIGHT = 500
 JJ_MARGIN = 8
 JJ_SCROLLBAR_REGION_WIDTH = 30 -- not the actual width of the scrollbar, just the region the scrollbar is in
-JJ_BUTTON_WIDTH = JJ_WIDTH - JJ_SCROLLBAR_REGION_WIDTH - JJ_MARGIN
+JJ_DIRECTIONS_BUTTON_WIDTH = 40
+JJ_BUTTON_WIDTH = JJ_WIDTH - JJ_SCROLLBAR_REGION_WIDTH - JJ_MARGIN - JJ_DIRECTIONS_BUTTON_WIDTH
 JJ_BUTTON_HEIGHT = 40
 JJ_SEARCH_HEIGHT = 25
 JJ_SEARCH_WIDTH = JJ_WIDTH - (3 * JJ_MARGIN)
@@ -74,33 +75,31 @@ local function getHigherZoomMapPosition(uiMapId, mapPosition)
 end
 
 --- Sets the data and callbacks for the location button to match the given location
--- @param button        UI frame for the location button
+-- @param buttonGroup   Location button group table containing button UI frames
 -- @param poi           Location data containing Pos0 (global x), Pos1 (global y), Name_lang (name), and ContinentID
 -- @param uiMapId       The uiMapId of where the waypoint should be added
 -- @param mapPosition   Vector2D containing the x and y coordinates of the waypoint in the given uiMapId
-local function modifyLocationButton(button, poi, uiMapId, mapPosition)
-    button:SetText(getLocationDisplayName(poi))
+local function modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
+    local locationButton = buttonGroup["location"]
+    local directionsButton = buttonGroup["directions"]
+
+    locationButton:SetText(getLocationDisplayName(poi))
     local uiMapId, x, y = getHigherZoomMapPosition(uiMapId, mapPosition)
 
-    button:SetScript("OnClick", function(self, button, down)
-        if button == "LeftButton" then -- TODO: temp until I can add a "directions" button
-            TomTom:AddWaypoint(uiMapId, x, y, {
-                title = poi["Name_lang"],
-                source = "JackJack",
-                persistent = true,
-                minimap = true,
-                world = true,
-                crazy = true
-            })
-            print("Added waypoint for " .. poi["Name_lang"])
-        else
-            print("right click registered")
-            addon.getDirections(poi["Pos0"], poi["Pos1"], poi["ContinentID"])
-        end
+    locationButton:SetScript("OnClick", function(self, button, down)
+        TomTom:AddWaypoint(uiMapId, x, y, {
+            title = poi["Name_lang"],
+            source = "JackJack",
+            persistent = true,
+            minimap = true,
+            world = true,
+            crazy = true
+        })
+        print("Added waypoint for " .. poi["Name_lang"])
     end)
 
-    button:SetScript("OnEnter", function()
-        modifyLocationTooltip(poi, button)
+    locationButton:SetScript("OnEnter", function()
+        modifyLocationTooltip(poi, locationButton)
         JJ_TOOLTIP:Show()
         local tempWaypointUid = TomTom:AddWaypoint(uiMapId, x, y, {
             title = poi["Name_lang"] .. " (temp)", -- (temp) is to prevent collisions with permanent waypoint, otherwise new waypoint won't be added
@@ -113,11 +112,16 @@ local function modifyLocationButton(button, poi, uiMapId, mapPosition)
         local oldUiMapId = WorldMapFrame:GetMapID()
         WorldMapFrame:SetMapID(uiMapId)
 
-        button:SetScript("OnLeave", function()
+        locationButton:SetScript("OnLeave", function()
             TomTom:RemoveWaypoint(tempWaypointUid)
             JJ_TOOLTIP:Hide()
             WorldMapFrame:SetMapID(oldUiMapId)
         end)
+    end)
+
+    directionsButton:SetText("D")
+    directionsButton:SetScript("OnClick", function()
+        addon.getDirections(poi["Pos0"], poi["Pos1"], poi["ContinentID"])
     end)
 end
 
@@ -128,19 +132,24 @@ end
 -- @param mapPosition   Vector2D containing the x and y coordinates of the waypoint
 -- @return button       UI frame for the location button
 local function addLocationButton(poi, buttonNumber, uiMapId, mapPosition)
-    local button = CreateFrame("Button", "JackJackLocationButton" .. buttonNumber, JJ_LOCATION_BUTTON_CONTAINER, "UIPanelButtonTemplate")
-    button:RegisterForClicks("RightButtonUp", "LeftButtonUp") -- TODO: temp
-    button:SetSize(JJ_BUTTON_WIDTH, JJ_BUTTON_HEIGHT)
-    button:SetPoint("TOPLEFT", 0, -((buttonNumber - 1) * JJ_BUTTON_HEIGHT))
-    modifyLocationButton(button, poi, uiMapId, mapPosition)
-
-    return button
+    local locationbutton = CreateFrame("Button", "JackJackLocationButton" .. buttonNumber, JJ_LOCATION_BUTTON_CONTAINER, "UIPanelButtonTemplate")
+    locationbutton:SetSize(JJ_BUTTON_WIDTH, JJ_BUTTON_HEIGHT)
+    locationbutton:SetPoint("TOPLEFT", 0, -((buttonNumber - 1) * JJ_BUTTON_HEIGHT))
+    
+    local directionsbutton = CreateFrame("Button", "JackJackDirectionsButton" .. buttonNumber, JJ_LOCATION_BUTTON_CONTAINER, "UIPanelButtonTemplate")
+    directionsbutton:SetSize(JJ_DIRECTIONS_BUTTON_WIDTH, JJ_BUTTON_HEIGHT)
+    directionsbutton:SetPoint("TOPLEFT", JJ_BUTTON_WIDTH, -((buttonNumber - 1) * JJ_BUTTON_HEIGHT))
+    
+    local buttonGroup = {["location"]=locationbutton, ["directions"]=directionsbutton}
+    modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
+    return buttonGroup
 end
 
 --- Hides all the location buttons
 local function hideLocationButtons()
-    for i, button in ipairs(JJ_LOCATION_BUTTONS) do
-        button:Hide()
+    for i, buttonGroup in ipairs(JJ_LOCATION_BUTTON_GROUPS) do
+        buttonGroup["location"]:Hide()
+        buttonGroup["directions"]:Hide()
     end
 end
 
@@ -172,12 +181,13 @@ local function setLocationButtons(locationName)
         local global_coords = CreateVector2D(poi["Pos0"], poi["Pos1"])
         local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(poi["ContinentID"], global_coords)
         if mapPosition ~= nil and uiMapId ~= nil then -- don't show any inaccessible/dev locations
-            if not JJ_LOCATION_BUTTONS[buttonNumber] then
-                JJ_LOCATION_BUTTONS[buttonNumber] = addLocationButton(poi, buttonNumber, uiMapId, mapPosition)
+            if not JJ_LOCATION_BUTTON_GROUPS[buttonNumber] then
+                JJ_LOCATION_BUTTON_GROUPS[buttonNumber] = addLocationButton(poi, buttonNumber, uiMapId, mapPosition)
             else
-                local button = JJ_LOCATION_BUTTONS[buttonNumber]
-                modifyLocationButton(button, poi, uiMapId, mapPosition)
-                button:Show()
+                local buttongroup = JJ_LOCATION_BUTTON_GROUPS[buttonNumber]
+                modifyLocationButton(buttongroup, poi, uiMapId, mapPosition)
+                buttongroup["location"]:Show()
+                buttongroup["directions"]:Show()
             end
             buttonNumber = buttonNumber + 1
         end
@@ -267,7 +277,7 @@ local function setUpLocationTooltip()
 end
 
 JJ_WINDOW, JJ_LOCATION_BUTTON_CONTAINER, JJ_SEARCH_BOX, JJ_SEARCH_RESULTS_TXT = setUpFrame()
-JJ_LOCATION_BUTTONS = {}
+JJ_LOCATION_BUTTON_GROUPS = {} -- contains {["location"]=Button, ["directions"]=Button} for each button group
 JJ_TOOLTIP = setUpLocationTooltip()
 
 SlashCmdList["JACKJACK"] = function(msg, editBox)
