@@ -6,7 +6,6 @@
 ## Dependencies: TomTom
 ## X-WoWI-ID: 26250
 
-PriorityQueue.lua
 fzy_lua.lua
 JackJackLocations.lua
 WaypointNodeWithLocation.lua
