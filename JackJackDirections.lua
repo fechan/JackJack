@@ -10,7 +10,10 @@ local function distance3d(x1, y1, z1, x2, y2, z2)
 end
 
 local function playerMeetsPortalRequirements(playerConditionId)
-    local raceId = UnitRace("player")
+    if playerConditionId == 0 then
+        return true
+    end
+    local _, _, raceId = UnitRace("player")
     return addon.PlayerConditionExpanded[playerConditionId]["race_" .. raceId] == 1
 end
 
@@ -80,30 +83,42 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
     return adjacentNodes
 end
 
+local function getNodeWithMinDist(Q, dist)
+    local minDist = math.huge
+    local minNode = nil
+    local minNodeIndex = nil
+    for i = 1, #Q do
+        if dist[Q[i]] < minDist then
+            minDist = dist[Q[i]]
+            minNode = Q[i]
+            minNodeIndex = i
+        end
+    end
+    return minNodeIndex, minNode
+end
+
 addon.getDirections = function(destinationX, destinationY, destinationContinent)
-    print("starting dijkstra")
-    -- the starting point of Dijkstra's algorithm is always the player's current position
     local dist = {}
     local prev = {}
-    dist["player"] = 0
-
-    local Q = addon.PriorityQueue()
+    local Q = {}
     for nodeId, node in pairs(addon.WaypointNodeWithLocation) do
         dist[nodeId] = math.huge
         prev[nodeId] = nil
-        Q:put(nodeId, math.huge)
+        table.insert(Q, nodeId)
     end
-    -- add destination to the queue
     dist["destination"] = math.huge
     prev["destination"] = nil
-    Q:put("destination", math.huge)
-    -- add player (start) to the queue
+    table.insert(Q, "destination")
     dist["player"] = 0
-    prev["player"] = nil
-    Q:put("player", 0)
+    prev["player"] = "player"
+    table.insert(Q, "player")
 
-    while Q:size() > 0 do
-        local u = Q:pop()
+    while #Q > 0 do
+        local uIndex, u = getNodeWithMinDist(Q, dist)
+        table.remove(Q, uIndex)
+        if u == "destination" then
+            break
+        end
         local adjacentNodes = getAdjacentNodes(u, destinationX, destinationY, destinationContinent)
         for _, adjacentNode in pairs(adjacentNodes) do
             local v = adjacentNode["nodeId"]
@@ -111,22 +126,16 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent)
             if alt < dist[v] then
                 dist[v] = alt
                 prev[v] = u
-                Q:update(v, alt)
             end
         end
     end
 
+    -- reconstruct the path
     local path = {}
     local nodeId = "destination"
     while nodeId ~= "player" do
         table.insert(path, nodeId)
         nodeId = prev[nodeId]
-        if nodeId == nil then
-            print("no path")
-            break
-        end
-    end
-    for i, nodeId in pairs(path) do
         if addon.WaypointNodeWithLocation[nodeId] ~= nil then
             print(addon.WaypointNodeWithLocation[nodeId]["Name_lang"])
         else
