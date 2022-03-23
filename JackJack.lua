@@ -75,24 +75,28 @@ end
 
 --- Sets the data and callbacks for the location button to match the given location
 -- @param button        UI frame for the location button
--- @param location      Location data containing Pos0 (global x), Pos1 (global y), Name_lang (name), and ContinentID
+-- @param poi           Location data containing Pos0 (global x), Pos1 (global y), Name_lang (name), and ContinentID
 -- @param uiMapId       The uiMapId of where the waypoint should be added
--- @param mapPosition   Vector2D containing the x and y coordinates of the waypoint
+-- @param mapPosition   Vector2D containing the x and y coordinates of the waypoint in the given uiMapId
 local function modifyLocationButton(button, poi, uiMapId, mapPosition)
     button:SetText(getLocationDisplayName(poi))
     local uiMapId, x, y = getHigherZoomMapPosition(uiMapId, mapPosition)
 
-    button:SetScript("OnClick", function()
-
-        TomTom:AddWaypoint(uiMapId, x, y, {
-            title = poi["Name_lang"],
-            source = "JackJack",
-            persistent = true,
-            minimap = true,
-            world = true,
-            crazy = true
-        })
-        print("Added waypoint for " .. poi["Name_lang"])
+    button:SetScript("OnClick", function(self, button, down)
+        if button == "LeftButton" then -- TODO: temp until I can add a "directions" button
+            TomTom:AddWaypoint(uiMapId, x, y, {
+                title = poi["Name_lang"],
+                source = "JackJack",
+                persistent = true,
+                minimap = true,
+                world = true,
+                crazy = true
+            })
+            print("Added waypoint for " .. poi["Name_lang"])
+        else
+            print("right click registered")
+            addon.getDirections(poi["Pos0"], poi["Pos1"], poi["ContinentID"])
+        end
     end)
 
     button:SetScript("OnEnter", function()
@@ -125,6 +129,7 @@ end
 -- @return button       UI frame for the location button
 local function addLocationButton(poi, buttonNumber, uiMapId, mapPosition)
     local button = CreateFrame("Button", "JackJackLocationButton" .. buttonNumber, JJ_LOCATION_BUTTON_CONTAINER, "UIPanelButtonTemplate")
+    button:RegisterForClicks("RightButtonUp", "LeftButtonUp") -- TODO: temp
     button:SetSize(JJ_BUTTON_WIDTH, JJ_BUTTON_HEIGHT)
     button:SetPoint("TOPLEFT", 0, -((buttonNumber - 1) * JJ_BUTTON_HEIGHT))
     modifyLocationButton(button, poi, uiMapId, mapPosition)
