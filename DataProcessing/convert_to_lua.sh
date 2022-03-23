@@ -1,7 +1,7 @@
 node ./csv-to-lua/Converter.js ChrRacesBitmasks.csv luaDict
 mv -f ChrRacesBitmasks.lua ..
 
-node ./csv-to-lua/Converter.js WaypointNodeWithLocation.csv luaArray
+node ./csv-to-lua/Converter.js WaypointNodeWithLocation.csv luaDict
 mv -f WaypointNodeWithLocation.lua ..
 
 node ./csv-to-lua/Converter.js WaypointEdgeWithRequirements.csv luaArray
