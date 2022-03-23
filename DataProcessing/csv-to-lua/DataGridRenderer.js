@@ -391,7 +391,7 @@ var DataGridRenderer = {
 
     // Begin render loop
     for (var i=0; i<numRows; ++i) {
-      outputText += indent + '["' + dataGrid[i][0] + '"]=';
+      outputText += indent + '[' + _fmtVal(i, 0) + ']=';
       if (numColumns===2) {
         outputText += _fmtVal(i, 1);
       } else {
