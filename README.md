@@ -3,7 +3,7 @@ Adds TomTom waypoints based on location name. Locations and their coordinates ar
 
 Don't know where Kalimgrimmardrassil is? Now you don't have to waste time searching on Google where everything is and just add a waypoint directly there!
 
-![Partial JackJack screenshot](https://user-images.githubusercontent.com/56131910/158126430-6cabc1c3-7182-42ed-ae6b-d924b8e68373.png)
+![Partial JackJack screenshot](https://user-images.githubusercontent.com/56131910/159831814-c477782b-80cb-41b9-98ee-322b1eaa5536.png)
 
 ## Download and install
 ### With Wowup
@@ -17,7 +17,8 @@ Check the [releases page](https://github.com/fechan/JackJack/releases) for the z
 ## Requirements
 This addon uses TomTom to add waypoints to the map. https://www.curseforge.com/wow/addons/tomtom
 
-## Example usage
+## Features
+### Set a waypoint at a location
 You can either:
 * Open the map to show JackJack and type a location (like "orgrimmar") into the search box
 * Type `/jackjack orgrimmar` or `/jj orgrimmar` into the chat
@@ -26,11 +27,23 @@ Then select one of the locations to add it as a TomTom waypoint.
 
 ![JackJack GIF demo](https://user-images.githubusercontent.com/56131910/158125400-dd507318-5fa8-4fd2-af0a-ea8a9a09f8d5.gif)
 
+### Get directions to a location (experimental)
+You can get directions from your player to a location by typing a location into the search box, then clicking the directions icon button to the right of the location. This will add each step of the directions as a TomTom waypoint and print out the directions in chat.
+
+This is an experimental feature, meaning it might be wrong. For example, it might lead you to portals you haven't unlocked yet, or which are temporary during a quest. This will probably change as I update the addon.
+
+![Directions printout](https://user-images.githubusercontent.com/56131910/159830732-391fbc97-42bc-4cc1-8873-370f7eb260d5.png)
+
 ## Current datasets used
 * AreaPOI - Points of Interest
 * TaxiNodes - Flight points
-* Map - Continent names (provides foreign keys only)
-* AreaTable - Zone names (provides foreign keys only)
+* Map - Continent names
+* AreaTable - Zone names
+* WaypointNode - Portal entrances/exits
+* WaypointSafeLocs - Locations of portals
+* WaypointEdge - Connections between portals
+* PlayerCondition - Requirements for entering portals
+* ChrRaces - Player races
 
 ## Misc
 This addon is named JackJack after my WoW player friend Jack because we have a mututal friend named Tom, and this addon requires TomTom.
