@@ -47,8 +47,13 @@ local function modifyLocationTooltip(poi, button, isDirectionsButton)
     JJ_TOOLTIP:SetOwner(button, "ANCHOR_RIGHT", 0, -JJ_BUTTON_HEIGHT)
     JJ_TOOLTIP:ClearLines()
     if isDirectionsButton then
-        JJ_TOOLTIP:AddLine("Get directions to")
+        JJ_TOOLTIP:AddLine("(EXPERIMENTAL) Get directions to")
         JJ_TOOLTIP:AddLine(poi["Name_lang"])
+        JJ_TOOLTIP:AddLine("-")
+        JJ_TOOLTIP:AddLine("This feature is experimental and may ")
+        JJ_TOOLTIP:AddLine("lead you down dark alleyways and portals ")
+        JJ_TOOLTIP:AddLine("you might not have unlocked!")
+
     else
         JJ_TOOLTIP:AddLine(getLocationDisplayName(poi))
         if poi["Description_lang"] ~= "" then
