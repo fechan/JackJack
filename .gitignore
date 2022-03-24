@@ -8,3 +8,7 @@ WaypointNode.csv
 WaypointSafeLocs.csv
 WorldSafeLocs.csv
 TaxiNodes.csv
+PlayerCondition.csv
+WaypointEdge.csv
+WaypointNode.csv
+ChrRaces.csv
