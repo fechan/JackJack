@@ -43,15 +43,20 @@ end
 --- Modify the location tooltip with info for the given location
 -- @param poi       Location to get data from
 -- @param button    Button to anchor tooltip to
-local function modifyLocationTooltip(poi, button)
+local function modifyLocationTooltip(poi, button, isDirectionsButton)
     JJ_TOOLTIP:SetOwner(button, "ANCHOR_RIGHT", 0, -JJ_BUTTON_HEIGHT)
     JJ_TOOLTIP:ClearLines()
-    JJ_TOOLTIP:AddLine(getLocationDisplayName(poi))
-    if poi["Description_lang"] ~= "" then
-        JJ_TOOLTIP:AddLine("Description: " .. poi["Description_lang"])
-    end
-    if poi["Origin"] ~= "" then
-        JJ_TOOLTIP:AddLine("Dataset: " .. poi["Origin"])
+    if isDirectionsButton then
+        JJ_TOOLTIP:AddLine("Get directions to")
+        JJ_TOOLTIP:AddLine(poi["Name_lang"])
+    else
+        JJ_TOOLTIP:AddLine(getLocationDisplayName(poi))
+        if poi["Description_lang"] ~= "" then
+            JJ_TOOLTIP:AddLine("Description: " .. poi["Description_lang"])
+        end
+        if poi["Origin"] ~= "" then
+            JJ_TOOLTIP:AddLine("Dataset: " .. poi["Origin"])
+        end
     end
 end
 
@@ -122,6 +127,15 @@ local function modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
     directionsButton:SetText("D")
     directionsButton:SetScript("OnClick", function()
         addon.getDirections(poi["Pos0"], poi["Pos1"], poi["ContinentID"])
+    end)
+
+    directionsButton:SetScript("OnEnter", function()
+        modifyLocationTooltip(poi, directionsButton, true)
+        JJ_TOOLTIP:Show()
+
+        directionsButton:SetScript("OnLeave", function()
+            JJ_TOOLTIP:Hide()
+        end)
     end)
 end
 
