@@ -144,22 +144,35 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
     for _, nodeId in ipairs(path) do
         local direction = {}
         local globalCoords, uiMapId, mapPosition, name
+        local shouldAddDirection = true
         if addon.WaypointNodeWithLocation[nodeId] ~= nil then
             local nodeInfo = addon.WaypointNodeWithLocation[nodeId]
-            globalCoords = CreateVector2D(nodeInfo["Pos0"], nodeInfo["Pos1"])
-            uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["MapID"], globalCoords)
-            name = nodeInfo["Name_lang"]
+
+            -- skip directions that are a portal exit (Type=2), since the player will always be there
+            -- if they went through the entrance. Also some of the names of portal exits are misleading
+            if nodeInfo["Type"] ~= 2 then
+                globalCoords = CreateVector2D(nodeInfo["Pos0"], nodeInfo["Pos1"])
+                uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["MapID"], globalCoords)
+                name = nodeInfo["Name_lang"]
+                shouldAddDirection = true
+            else
+                shouldAddDirection = false
+            end
         else
             globalCoords = CreateVector2D(destinationX, destinationY)
             uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(destinationContinent, globalCoords)
-            name = "Fly or walk to " .. destinationName
+            name = "Fly/walk to arrive at " .. destinationName
+            shouldAddDirection = true
         end
-        direction["Name_lang"] = name
-        direction["uiMapId"] = uiMapId
-        direction["x"] = mapPosition.x
-        direction["y"] = mapPosition.y
-        
-        table.insert(directions, direction)
+
+        if shouldAddDirection then
+            direction["Name_lang"] = name
+            direction["uiMapId"] = uiMapId
+            direction["x"] = mapPosition.x
+            direction["y"] = mapPosition.y
+            
+            table.insert(directions, direction)
+        end
     end
 
     return directions

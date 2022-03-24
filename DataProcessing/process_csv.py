@@ -42,7 +42,7 @@ pd.concat([AreaPOI_joined, TaxiNodes_joined]).to_csv("JackJackLocations.csv", in
 # since we need them separately anyway during the walking/cross-join part
 
 # WaypointNode: Portal entrances and exits
-WaypointNode = pd.read_csv("WaypointNode.csv", usecols=["ID", "Name_lang", "SafeLocID"])
+WaypointNode = pd.read_csv("WaypointNode.csv", usecols=["ID", "Name_lang", "SafeLocID", "Field_8_2_0_30080_005"])
 # WaypointSafeLocs: Locations of portals
 WaypointSafeLocs = pd.read_csv("WaypointSafeLocs.csv")
 
@@ -51,7 +51,8 @@ WaypointNode_Loc = (pd.merge(WaypointNode, WaypointSafeLocs,
                             left_on="SafeLocID",
                             right_on="ID",
                             suffixes=["", "_WSL"])
-                        .drop(columns=["ID_WSL", "SafeLocID"]))
+                        .drop(columns=["ID_WSL", "SafeLocID"])
+                        .rename(columns={"Field_8_2_0_30080_005": "Type"}))
 WaypointNode_Loc.to_csv("WaypointNodeWithLocation.csv", index=False)
 
 # WaypointEdge: Portal connections
