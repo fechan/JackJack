@@ -125,7 +125,32 @@ local function modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
     end)
 
     directionsButton:SetScript("OnClick", function()
-        addon.getDirections(poi["Pos0"], poi["Pos1"], poi["ContinentID"])
+        for _, directionWaypoint in ipairs(JJ_DIRECTIONS_WAYPOINTS) do
+            TomTom:RemoveWaypoint(directionWaypoint)
+        end
+
+        local directions = addon.getDirections(poi["Pos0"], poi["Pos1"], poi["ContinentID"], poi["Name_lang"])
+        if directions ~= nil then
+            -- directions will arrive inverted, which is good since we want to the first direction to
+            -- show up as the crazy arrow by adding it last
+            for i, direction in ipairs(directions) do
+                local uid = TomTom:AddWaypoint(direction["uiMapId"], direction["x"], direction["y"], {
+                    title = #directions - i + 1 .. " " .. direction["Name_lang"],
+                    source = "JackJack (directions)",
+                    persistent = true,
+                    minimap = true,
+                    world = true,
+                    crazy = true,
+                })
+                table.insert(JJ_DIRECTIONS_WAYPOINTS, uid)
+            end
+            print("===")
+            print("Added direction waypoints to " .. poi["Name_lang"])
+            -- when we print directions, we want to read them in normal order, so we reverse the output
+            for i = #directions, 1, -1 do
+                print(#directions - i + 1, directions[i]["Name_lang"])
+            end
+        end
     end)
 
     directionsButton:SetScript("OnEnter", function()
@@ -195,8 +220,8 @@ local function setLocationButtons(locationName)
     for _, poi in ipairs(poiMatches) do
         if buttonNumber > 20 then break end -- limit to 20 results to prevent lag
 
-        local global_coords = CreateVector2D(poi["Pos0"], poi["Pos1"])
-        local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(poi["ContinentID"], global_coords)
+        local globalCoords = CreateVector2D(poi["Pos0"], poi["Pos1"])
+        local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(poi["ContinentID"], globalCoords)
         if mapPosition ~= nil and uiMapId ~= nil then -- don't show any inaccessible/dev locations
             if not JJ_LOCATION_BUTTON_GROUPS[buttonNumber] then
                 JJ_LOCATION_BUTTON_GROUPS[buttonNumber] = addLocationButton(poi, buttonNumber, uiMapId, mapPosition)
@@ -296,6 +321,7 @@ end
 JJ_WINDOW, JJ_LOCATION_BUTTON_CONTAINER, JJ_SEARCH_BOX, JJ_SEARCH_RESULTS_TXT = setUpFrame()
 JJ_LOCATION_BUTTON_GROUPS = {} -- contains {["location"]=Button, ["directions"]=Button} for each button group
 JJ_TOOLTIP = setUpLocationTooltip()
+JJ_DIRECTIONS_WAYPOINTS = {}
 
 SlashCmdList["JACKJACK"] = function(msg, editBox)
     local locationName = msg

@@ -97,7 +97,7 @@ local function getNodeWithMinDist(Q, dist)
     return minNodeIndex, minNode
 end
 
-addon.getDirections = function(destinationX, destinationY, destinationContinent)
+addon.getDirections = function(destinationX, destinationY, destinationContinent, destinationName)
     local dist = {}
     local prev = {}
     local Q = {}
@@ -137,13 +137,31 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent)
         table.insert(path, nodeId)
         nodeId = prev[nodeId]
         if nodeId == nil then
-            print("No path found")
-        end
-                if addon.WaypointNodeWithLocation[nodeId] ~= nil then
-            print(addon.WaypointNodeWithLocation[nodeId]["Name_lang"])
-        else
-            print(nodeId)
+            return nil
         end
     end
 
+    local directions = {}
+    for _, nodeId in ipairs(path) do
+        local direction = {}
+        local globalCoords, uiMapId, mapPosition, name
+        if addon.WaypointNodeWithLocation[nodeId] ~= nil then
+            local nodeInfo = addon.WaypointNodeWithLocation[nodeId]
+            globalCoords = CreateVector2D(nodeInfo["Pos0"], nodeInfo["Pos1"])
+            uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["MapID"], globalCoords)
+            name = nodeInfo["Name_lang"]
+        else
+            globalCoords = CreateVector2D(destinationX, destinationY)
+            uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(destinationContinent, globalCoords)
+            name = "Fly or walk to " .. destinationName
+        end
+        direction["Name_lang"] = name
+        direction["uiMapId"] = uiMapId
+        direction["x"] = mapPosition.x
+        direction["y"] = mapPosition.y
+        
+        table.insert(directions, direction)
+    end
+
+    return directions
 end
