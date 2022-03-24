@@ -124,7 +124,6 @@ local function modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
         end)
     end)
 
-    directionsButton:SetText("D")
     directionsButton:SetScript("OnClick", function()
         addon.getDirections(poi["Pos0"], poi["Pos1"], poi["ContinentID"])
     end)
@@ -153,6 +152,10 @@ local function addLocationButton(poi, buttonNumber, uiMapId, mapPosition)
     local directionsbutton = CreateFrame("Button", "JackJackDirectionsButton" .. buttonNumber, JJ_LOCATION_BUTTON_CONTAINER, "UIPanelButtonTemplate")
     directionsbutton:SetSize(JJ_DIRECTIONS_BUTTON_WIDTH, JJ_BUTTON_HEIGHT)
     directionsbutton:SetPoint("TOPLEFT", JJ_BUTTON_WIDTH, -((buttonNumber - 1) * JJ_BUTTON_HEIGHT))
+    local directionsTexture = directionsbutton:CreateTexture()
+    directionsTexture:SetTexture("Interface\\AddOns\\JackJack\\directions")
+    directionsTexture:SetPoint("CENTER")
+    directionsTexture:SetSize(JJ_DIRECTIONS_BUTTON_WIDTH / 2, JJ_BUTTON_HEIGHT / 2)
     
     local buttonGroup = {["location"]=locationbutton, ["directions"]=directionsbutton}
     modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
