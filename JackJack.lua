@@ -155,6 +155,8 @@ local function modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
             for i = #directions, 1, -1 do
                 print(#directions - i + 1, directions[i]["Name_lang"])
             end
+        else
+            print("No path found to " .. poi["Name_lang"] .. " from your current location! (It might be in an instance, like a dungeon or raid.)")
         end
     end)
 

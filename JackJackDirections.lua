@@ -18,8 +18,11 @@ local function playerMeetsPortalRequirements(playerConditionId)
 end
 
 local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationContinent)
+    if nodeId == "destination" or nodeId == nil then
+        return {}
+    end
+    
     local adjacentNodes = {} -- array of {nodeId, distance}
-
     if nodeId == "player" then
         local playerMap = C_Map.GetBestMapForUnit("player")
         local playerMapPosition = C_Map.GetPlayerMapPosition(playerMap, "player")
@@ -41,10 +44,6 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
                 distance = CalculateDistance(playerPosition.x, playerPosition.y, destinationX, destinationY)
             })
         end
-        return adjacentNodes
-    end
-
-    if nodeId == "destination" then
         return adjacentNodes
     end
 
