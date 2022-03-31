@@ -4,6 +4,7 @@ local addonName, addon = ...
 -- slash commands
 SLASH_JACKJACK1 = "/jackjack"
 SLASH_JACKJACK2 = "/jj"
+SLASH_JJRESET1 = "/jjreset"
 
 -- sizing for frames
 -- TODO: these are temporary until I move all the UI code to JackJackUI.lua
@@ -247,7 +248,7 @@ end
 -- @return searchBox            EditBox frame for the search box
 -- @return searchResultsText    FontString showing number of search resutls
 local function setUpFrame()
-    local titleFrame, searchBox = addon.setUpTitleFrame()
+    local titleFrame, searchBox, searchResultsText = addon.setUpTitleFrame()
     
     local contentFrame = addon.setUpContentFrame(titleFrame)
     contentFrame:Hide()
@@ -257,17 +258,13 @@ local function setUpFrame()
         setLocationButtons(query)
         if query == "" or query == nil then
             contentFrame:Hide()
+            searchResultsText:SetText('Search for a WoW location (e.g. "Orgrimmar")')
         else
             contentFrame:Show()
         end
     end)
 
     local frame = contentFrame -- TODO: just replace all the frame references with this one
-
-    -- add text below search box that shows the number of locations found
-    local searchResultsText = searchBox:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    searchResultsText:SetPoint("BOTTOMLEFT", searchBox, "BOTTOMLEFT", 0, -2 * JJ_MARGIN)
-    searchResultsText:SetText("No possible matching locations found!")
 
     -- add a scroll frame which will contain location buttons
     local scrollFrame = CreateFrame("ScrollFrame", "JackJackScrollFrame", frame, "UIPanelScrollFrameTemplate")
@@ -279,7 +276,7 @@ local function setUpFrame()
     scrollChild:SetWidth(1) -- not sure if setting this to 1 has any effect vs setting it to the parent's width
     scrollChild:SetHeight(1) -- this can be any value, it doesn't matter
 
-    return frame, scrollChild, searchBox, searchResultsText
+    return titleFrame, scrollChild, searchBox, searchResultsText
 end
 
 --- Sets up the location tooltip frame
@@ -288,7 +285,7 @@ local function setUpLocationTooltip()
     return tooltip
 end
 
-JJ_WINDOW, JJ_LOCATION_BUTTON_CONTAINER, JJ_SEARCH_BOX, JJ_SEARCH_RESULTS_TXT = setUpFrame()
+JJ_TITLE, JJ_LOCATION_BUTTON_CONTAINER, JJ_SEARCH_BOX, JJ_SEARCH_RESULTS_TXT = setUpFrame()
 JJ_LOCATION_BUTTON_GROUPS = {} -- contains {["location"]=Button, ["directions"]=Button} for each button group
 JJ_TOOLTIP = setUpLocationTooltip()
 JJ_DIRECTIONS_WAYPOINTS = {}
@@ -297,6 +294,11 @@ SlashCmdList["JACKJACK"] = function(msg, editBox)
     local locationName = msg
     setLocationButtons(locationName)
     JJ_SEARCH_BOX:SetText(locationName)
-    JJ_WINDOW:Show()
+    JJ_TITLE:Show()
     WorldMapFrame:Show()
+end
+
+SlashCmdList["JJRESET"] = function(msg, editBox)
+    JJ_TITLE:ClearAllPoints()
+    JJ_TITLE:SetPoint("TOPLEFT", WorldMapFrame, "TOPRIGHT", 0, 0)
 end

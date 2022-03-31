@@ -18,13 +18,14 @@ addon.UI_CONSTS["BUTTON_WIDTH"] = addon.UI_CONSTS.WIDTH -
 addon.UI_CONSTS["SEARCH_WIDTH"] = addon.UI_CONSTS.WIDTH - (3 * addon.UI_CONSTS.MARGIN)
 
 --- Sets up the title frame that's always visible when the map is open
--- @return frame            UI frame for the title
--- @return searchBox        UI frame for the search box in the title frame
+-- @return frame                UI frame for the title
+-- @return searchBox            UI frame for the search box in the title frame
+-- @return searchResultsText    FontString for number of search results
 addon.setUpTitleFrame = function ()
     local frame = CreateFrame("Frame", "JackJackTitle", WorldMapFrame, "BackdropTemplate")
     frame:SetSize(addon.UI_CONSTS.WIDTH, addon.UI_CONSTS.TITLE_FRAME_HEIGHT)
     if not frame:IsUserPlaced() then
-        frame:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 0, 0)
+        frame:SetPoint("TOPLEFT", WorldMapFrame, "TOPRIGHT", 0, 0)
     end
     frame:SetFrameStrata("DIALOG")
     frame:SetFrameLevel(1)
@@ -69,7 +70,12 @@ addon.setUpTitleFrame = function ()
     searchBox:SetAutoFocus(false)
     searchBox:SetScript("OnTextChanged", onSearchCallback)
 
-    return frame, searchBox
+    -- add text below search box that shows the number of locations found
+    local searchResultsText = searchBox:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    searchResultsText:SetPoint("BOTTOMLEFT", searchBox, "BOTTOMLEFT", 0, -2 * addon.UI_CONSTS.MARGIN)
+    searchResultsText:SetText("No possible matching locations found!")
+
+    return frame, searchBox, searchResultsText
 end
 
 --- Set up the content frame that's only visible when there's a search
