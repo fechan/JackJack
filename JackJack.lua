@@ -252,12 +252,12 @@ local function setUpFrame()
     local titleFrame, searchBox = addon.setUpTitleFrame()
     
     local contentFrame = addon.setUpContentFrame(titleFrame)
-    --contentFrame:Hide()
+    contentFrame:Hide()
     
     searchBox:SetScript("OnTextChanged", function(self)
         local query = self:GetText()
         setLocationButtons(query)
-        if query == "" and query == nil then
+        if query == "" or query == nil then
             contentFrame:Hide()
         else
             contentFrame:Show()
