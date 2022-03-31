@@ -271,7 +271,7 @@ local function setUpFrame()
 
     -- add a scroll frame which will contain location buttons
     local scrollFrame = CreateFrame("ScrollFrame", "JackJackScrollFrame", frame, "UIPanelScrollFrameTemplate")
-    scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN, JJ_MARGIN)
+    scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN, -JJ_MARGIN)
     scrollFrame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -JJ_SCROLLBAR_REGION_WIDTH, JJ_MARGIN)
 
     local scrollChild = CreateFrame("Frame")

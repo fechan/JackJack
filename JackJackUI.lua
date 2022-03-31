@@ -2,7 +2,7 @@ local addonName, addon = ...
 
 addon.UI_CONSTS = {
     ["WIDTH"] = 350,
-    ["TITLE_FRAME_HEIGHT"] = 100,
+    ["TITLE_FRAME_HEIGHT"] = 75,
     ["CONTENT_HEIGHT"] = 500,
     ["MARGIN"] = 8,
     ["SCROLLBAR_REGION_WIDTH"] = 30, -- not the actual width of the scrollbar, just the region the scrollbar is in
