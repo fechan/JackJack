@@ -249,56 +249,22 @@ end
 -- @return searchBox            EditBox frame for the search box
 -- @return searchResultsText    FontString showing number of search resutls
 local function setUpFrame()
-    -- create the window
-    local frame = CreateFrame("Frame", "JackJackFrame", WorldMapFrame, "BackdropTemplate")
-    frame:SetSize(JJ_WIDTH, JJ_HEIGHT)
-    if not frame:IsUserPlaced() then
-        frame:SetPoint("TOPLEFT", WorldMapFrame, "TOPRIGHT", 0, 0)
-    end
-    frame:SetFrameStrata("DIALOG")
-    frame:SetFrameLevel(1)
-    frame:Hide()
-
-    frame:SetBackdrop({
-        bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
-        edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
-        tile = true,
-        tileEdge = true,
-        tileSize = 8,
-        edgeSize = 8,
-        insets = { left = 1, right = 1, top = 1, bottom = 1 },
-    })
-
-    -- make it movable
-    frame:SetMovable(true)
-    frame:EnableMouse(true)
-    frame:RegisterForDrag("LeftButton")
-    frame:SetScript("OnDragStart", frame.StartMoving)
-    frame:SetScript("OnDragStop", frame.StopMovingOrSizing)
-
-    -- add title bar
-    local titleBar = frame:CreateTexture(nil, "ARTWORK")
-    titleBar:SetTexture("Interface\\DialogFrame\\UI-DialogBox-Header")
-    titleBar:SetPoint("CENTER", frame, "TOP", 0, -JJ_TITLEBAR_HEIGHT / 4)
-    titleBar:SetSize(256, JJ_TITLEBAR_HEIGHT)
-
-    -- add text to title bar
-    local titleText = frame:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-    titleText:SetPoint("CENTER", frame, "TOP", 0, -4)
-    titleText:SetText("JackJack")
-
-    -- extend drag area to include title bar
-    frame:SetHitRectInsets(0, 0, -JJ_TITLEBAR_HEIGHT / 2, 0)
-
-    -- add a search box
-    local searchBox = CreateFrame("EditBox", "JackJackSearchBox", frame, "InputBoxTemplate")
-    searchBox:SetFontObject("GameFontNormalLarge")
-    searchBox:SetSize(JJ_SEARCH_WIDTH, JJ_SEARCH_HEIGHT)
-    searchBox:SetPoint("TOP", frame, "TOP", 0, (-JJ_TITLEBAR_HEIGHT / 4) - JJ_MARGIN)
-    searchBox:SetAutoFocus(false)
+    local titleFrame, searchBox = addon.setUpTitleFrame()
+    
+    local contentFrame = addon.setUpContentFrame(titleFrame)
+    --contentFrame:Hide()
+    
     searchBox:SetScript("OnTextChanged", function(self)
-        setLocationButtons(self:GetText())
+        local query = self:GetText()
+        setLocationButtons(query)
+        if query == "" and query == nil then
+            contentFrame:Hide()
+        else
+            contentFrame:Show()
+        end
     end)
+
+    local frame = contentFrame -- TODO: just replace all the frame references with this one
 
     -- add text below search box that shows the number of locations found
     local searchResultsText = searchBox:CreateFontString(nil, "OVERLAY", "GameFontNormal")
@@ -307,7 +273,7 @@ local function setUpFrame()
 
     -- add a scroll frame which will contain location buttons
     local scrollFrame = CreateFrame("ScrollFrame", "JackJackScrollFrame", frame, "UIPanelScrollFrameTemplate")
-    scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN, -6 * JJ_MARGIN - JJ_SEARCH_HEIGHT)
+    scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN, JJ_MARGIN)
     scrollFrame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -JJ_SCROLLBAR_REGION_WIDTH, JJ_MARGIN)
 
     local scrollChild = CreateFrame("Frame")
@@ -315,7 +281,6 @@ local function setUpFrame()
     scrollChild:SetWidth(1) -- not sure if setting this to 1 has any effect vs setting it to the parent's width
     scrollChild:SetHeight(1) -- this can be any value, it doesn't matter
 
-    frame:Show()
     return frame, scrollChild, searchBox, searchResultsText
 end
 
