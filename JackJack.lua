@@ -6,16 +6,14 @@ SLASH_JACKJACK1 = "/jackjack"
 SLASH_JACKJACK2 = "/jj"
 
 -- sizing for frames
-JJ_WIDTH = 350
-JJ_HEIGHT = 500
-JJ_MARGIN = 8
-JJ_SCROLLBAR_REGION_WIDTH = 30 -- not the actual width of the scrollbar, just the region the scrollbar is in
-JJ_DIRECTIONS_BUTTON_WIDTH = 40
-JJ_BUTTON_WIDTH = JJ_WIDTH - JJ_SCROLLBAR_REGION_WIDTH - JJ_MARGIN - JJ_DIRECTIONS_BUTTON_WIDTH
-JJ_BUTTON_HEIGHT = 40
-JJ_SEARCH_HEIGHT = 25
-JJ_SEARCH_WIDTH = JJ_WIDTH - (3 * JJ_MARGIN)
-JJ_TITLEBAR_HEIGHT = 64
+-- TODO: these are temporary until I move all the UI code to JackJackUI.lua
+JJ_WIDTH = addon.UI_CONSTS.WIDTH
+JJ_HEIGHT = addon.UI_CONSTS.CONTENT_HEIGHT
+JJ_MARGIN = addon.UI_CONSTS.MARGIN
+JJ_SCROLLBAR_REGION_WIDTH = addon.UI_CONSTS.SCROLLBAR_REGION_WIDTH
+JJ_DIRECTIONS_BUTTON_WIDTH = addon.UI_CONSTS.DIRECTIONS_BUTTON_WIDTH
+JJ_BUTTON_WIDTH = addon.UI_CONSTS.BUTTON_WIDTH
+JJ_BUTTON_HEIGHT = addon.UI_CONSTS.BUTTON_HEIGHT
 
 --- Set the text that displays the number of search results accordingly
 -- @param numResults the number of search results
