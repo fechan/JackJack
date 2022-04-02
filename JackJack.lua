@@ -4,18 +4,17 @@ local addonName, addon = ...
 -- slash commands
 SLASH_JACKJACK1 = "/jackjack"
 SLASH_JACKJACK2 = "/jj"
+SLASH_JJRESET1 = "/jjreset"
 
 -- sizing for frames
-JJ_WIDTH = 350
-JJ_HEIGHT = 500
-JJ_MARGIN = 8
-JJ_SCROLLBAR_REGION_WIDTH = 30 -- not the actual width of the scrollbar, just the region the scrollbar is in
-JJ_DIRECTIONS_BUTTON_WIDTH = 40
-JJ_BUTTON_WIDTH = JJ_WIDTH - JJ_SCROLLBAR_REGION_WIDTH - JJ_MARGIN - JJ_DIRECTIONS_BUTTON_WIDTH
-JJ_BUTTON_HEIGHT = 40
-JJ_SEARCH_HEIGHT = 25
-JJ_SEARCH_WIDTH = JJ_WIDTH - (3 * JJ_MARGIN)
-JJ_TITLEBAR_HEIGHT = 64
+-- TODO: these are temporary until I move all the UI code to JackJackUI.lua
+JJ_WIDTH = addon.UI_CONSTS.WIDTH
+JJ_HEIGHT = addon.UI_CONSTS.CONTENT_HEIGHT
+JJ_MARGIN = addon.UI_CONSTS.MARGIN
+JJ_SCROLLBAR_REGION_WIDTH = addon.UI_CONSTS.SCROLLBAR_REGION_WIDTH
+JJ_DIRECTIONS_BUTTON_WIDTH = addon.UI_CONSTS.DIRECTIONS_BUTTON_WIDTH
+JJ_BUTTON_WIDTH = addon.UI_CONSTS.BUTTON_WIDTH
+JJ_BUTTON_HEIGHT = addon.UI_CONSTS.BUTTON_HEIGHT
 
 --- Set the text that displays the number of search results accordingly
 -- @param numResults the number of search results
@@ -249,65 +248,27 @@ end
 -- @return searchBox            EditBox frame for the search box
 -- @return searchResultsText    FontString showing number of search resutls
 local function setUpFrame()
-    -- create the window
-    local frame = CreateFrame("Frame", "JackJackFrame", WorldMapFrame, "BackdropTemplate")
-    frame:SetSize(JJ_WIDTH, JJ_HEIGHT)
-    if not frame:IsUserPlaced() then
-        frame:SetPoint("TOPLEFT", WorldMapFrame, "TOPRIGHT", 0, 0)
-    end
-    frame:SetFrameStrata("DIALOG")
-    frame:SetFrameLevel(1)
-    frame:Hide()
-
-    frame:SetBackdrop({
-        bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
-        edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
-        tile = true,
-        tileEdge = true,
-        tileSize = 8,
-        edgeSize = 8,
-        insets = { left = 1, right = 1, top = 1, bottom = 1 },
-    })
-
-    -- make it movable
-    frame:SetMovable(true)
-    frame:EnableMouse(true)
-    frame:RegisterForDrag("LeftButton")
-    frame:SetScript("OnDragStart", frame.StartMoving)
-    frame:SetScript("OnDragStop", frame.StopMovingOrSizing)
-
-    -- add title bar
-    local titleBar = frame:CreateTexture(nil, "ARTWORK")
-    titleBar:SetTexture("Interface\\DialogFrame\\UI-DialogBox-Header")
-    titleBar:SetPoint("CENTER", frame, "TOP", 0, -JJ_TITLEBAR_HEIGHT / 4)
-    titleBar:SetSize(256, JJ_TITLEBAR_HEIGHT)
-
-    -- add text to title bar
-    local titleText = frame:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-    titleText:SetPoint("CENTER", frame, "TOP", 0, -4)
-    titleText:SetText("JackJack")
-
-    -- extend drag area to include title bar
-    frame:SetHitRectInsets(0, 0, -JJ_TITLEBAR_HEIGHT / 2, 0)
-
-    -- add a search box
-    local searchBox = CreateFrame("EditBox", "JackJackSearchBox", frame, "InputBoxTemplate")
-    searchBox:SetFontObject("GameFontNormalLarge")
-    searchBox:SetSize(JJ_SEARCH_WIDTH, JJ_SEARCH_HEIGHT)
-    searchBox:SetPoint("TOP", frame, "TOP", 0, (-JJ_TITLEBAR_HEIGHT / 4) - JJ_MARGIN)
-    searchBox:SetAutoFocus(false)
+    local titleFrame, searchBox, searchResultsText = addon.setUpTitleFrame()
+    
+    local contentFrame = addon.setUpContentFrame(titleFrame)
+    contentFrame:Hide()
+    
     searchBox:SetScript("OnTextChanged", function(self)
-        setLocationButtons(self:GetText())
+        local query = self:GetText()
+        setLocationButtons(query)
+        if query == "" or query == nil then
+            contentFrame:Hide()
+            searchResultsText:SetText('Search for a WoW location (e.g. "Orgrimmar")')
+        else
+            contentFrame:Show()
+        end
     end)
 
-    -- add text below search box that shows the number of locations found
-    local searchResultsText = searchBox:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    searchResultsText:SetPoint("BOTTOMLEFT", searchBox, "BOTTOMLEFT", 0, -2 * JJ_MARGIN)
-    searchResultsText:SetText("No possible matching locations found!")
+    local frame = contentFrame -- TODO: just replace all the frame references with this one
 
     -- add a scroll frame which will contain location buttons
     local scrollFrame = CreateFrame("ScrollFrame", "JackJackScrollFrame", frame, "UIPanelScrollFrameTemplate")
-    scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN, -6 * JJ_MARGIN - JJ_SEARCH_HEIGHT)
+    scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", JJ_MARGIN, -JJ_MARGIN)
     scrollFrame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -JJ_SCROLLBAR_REGION_WIDTH, JJ_MARGIN)
 
     local scrollChild = CreateFrame("Frame")
@@ -315,8 +276,7 @@ local function setUpFrame()
     scrollChild:SetWidth(1) -- not sure if setting this to 1 has any effect vs setting it to the parent's width
     scrollChild:SetHeight(1) -- this can be any value, it doesn't matter
 
-    frame:Show()
-    return frame, scrollChild, searchBox, searchResultsText
+    return titleFrame, scrollChild, searchBox, searchResultsText
 end
 
 --- Sets up the location tooltip frame
@@ -325,7 +285,7 @@ local function setUpLocationTooltip()
     return tooltip
 end
 
-JJ_WINDOW, JJ_LOCATION_BUTTON_CONTAINER, JJ_SEARCH_BOX, JJ_SEARCH_RESULTS_TXT = setUpFrame()
+JJ_TITLE, JJ_LOCATION_BUTTON_CONTAINER, JJ_SEARCH_BOX, JJ_SEARCH_RESULTS_TXT = setUpFrame()
 JJ_LOCATION_BUTTON_GROUPS = {} -- contains {["location"]=Button, ["directions"]=Button} for each button group
 JJ_TOOLTIP = setUpLocationTooltip()
 JJ_DIRECTIONS_WAYPOINTS = {}
@@ -334,6 +294,11 @@ SlashCmdList["JACKJACK"] = function(msg, editBox)
     local locationName = msg
     setLocationButtons(locationName)
     JJ_SEARCH_BOX:SetText(locationName)
-    JJ_WINDOW:Show()
+    JJ_TITLE:Show()
     WorldMapFrame:Show()
+end
+
+SlashCmdList["JJRESET"] = function(msg, editBox)
+    JJ_TITLE:ClearAllPoints()
+    JJ_TITLE:SetPoint("TOPLEFT", WorldMapFrame, "TOPRIGHT", 0, 0)
 end

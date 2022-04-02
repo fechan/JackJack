@@ -12,4 +12,5 @@ WaypointNodeWithLocation.lua
 WaypointEdgeReduced.lua
 PlayerConditionExpanded.lua
 JackJackDirections.lua
+JackJackUI.lua
 JackJack.lua
