@@ -1,0 +1,2642 @@
+Name_lang,Description_lang,Pos[0],Pos[1],ContinentID,AreaName_lang
+Anvilmar,,-6134.28,383.763,0,Coldridge Valley
+Brill,,2249.85,278.414,0,Brill
+Darkshire,,-10564.7,-1170.65,0,Duskwood
+Deathknell,,1879.83,1588.2,0,Deathknell
+Dun Algaz,,-4191.02,-2373.14,0,Dun Algaz
+Dun Modr,,-2610.26,-2350.56,0,Dun Modr
+Goldshire,,-9480.09,63.5218,0,Goldshire
+Ironforge,,-4798.776,-1107.4966,0,Dun Morogh
+Kharanos,,-5585.95,-482.127,0,Kharanos
+Lakeshire,,-9227.69,-2201.47,0,Redridge Mountains
+Menethil Harbor,,-3672.7,-828.455,0,Wetlands
+Moonbrook,,-11017.1,1510.17,0,Moonbrook
+Northshire Abbey,,-8896.16,-179.328,0,Northshire Abbey
+Raven Hill,,-10752.5,310.433,0,Raven Hill
+Sentinel Hill,,-10503.7,1027.76,0,Westfall
+Stormwind City,,-8678.426,729.6007,0,Elwynn Forest
+The Sepulcher,,508.073,1619.02,0,Silverpine Forest
+Undercity,,1594.3385,240.2882,0,Tirisfal Glades
+Thelsamar,,-5349.27,-2959.91,0,Loch Modan
+Alliance,,-448.982,-1028.22,37,
+Horde,,-669.134,-483.289,37,
+Southshore,,-803.031,-531.727,0,Hillsbrad Foothills
+Tarren Mill,,-27.0354,-900.562,0,Hillsbrad Foothills
+Refuge Pointe,,-1251.05,-2526.81,0,Refuge Pointe
+Hammerfall,,-991.57,-3528.34,0,Arathi Highlands
+Kargath,,-6676.42,-2186.68,0,Badlands
+Angor Fortress,,-6392.65,-3158.0,0,Angor Fortress
+Bloodhoof Village,,-2323.92,-394.981,1,Bloodhoof Village
+Thunder Bluff,,-1205.41,29.4214,1,Mulgore
+Camp Narache,,-2906.49,-253.607,1,Camp Narache
+Razor Hill,,312.659,-4745.52,1,Razor Hill
+The Den,,-604.098,-4202.92,1,The Den
+Orgrimmar,,1381.77,-4371.16,1,Durotar
+Sen'jin Village,,-819.492,-4918.24,1,Sen'jin Village
+The Crossroads,,-455.9,-2652.15,1,Northern Barrens
+Aldrassil,,10462.7,805.993,1,Shadowglen
+Dolanaar,,9787.99,949.897,1,7th Legion Base Camp
+Darnassus,,9951.75,2254.5,1,Teldrassil
+Ratchet,,-951.364,-3680.07,1,Ratchet
+Booty Bay,,-14383.3,487.139,0,Booty Bay
+Grom'gol Base Camp,,-12378.4,185.734,0,Northern Stranglethorn
+Astranaar,,2720.43,-382.391,1,Ashenvale
+Stonetalon Peak,,2658.78,1449.71,1,Stonetalon Peak
+Thalanaar,,-4510.03,-779.474,1,Thalanaar
+Freewind Post,,-5454.07,-2445.5,1,Freewind Post
+Mirror Lake,,-9389.26,458.427,0,Mirror Lake
+Slaughter Hollow,,861.216,-558.217,0,Crushridge Hold
+Drywhisker Gorge,,-1014.22,-3827.39,0,Hammerfall
+Sun Rock Retreat,,936.308,910.974,1,Stonetalon Mountains
+Temple of Zin-Malor,,3549.15,-5359.12,1,Ruins of Eldarath 
+Hetaera's Clutch,,3556.64,-6232.79,1,Bay of Storms
+Uther's Tomb,,969.176,-1825.52,0,Sorrow Hill
+Scholomance,,1262.19,-2579.41,0,Caer Darrow
+Whitereach Post,,-4917.35,-1375.5,1,Camp E'thok
+Stonard,,-10443.7,-3277.49,0,Swamp of Sorrows
+Gadgetzan,,-7139.15,-3752.11,1,Tanaris
+Camp Mojache,,-4394.98,215.611,1,Mulgore
+Theramore Isle,,-3680.17,-4388.51,1,Dustwallow Marsh
+Aerie Peak,,234.85,-2127.76,0,The Hinterlands
+Everlook,,6723.46,-4662.5,1,Winterspring
+Shadowprey Village,,-1657.85,3097.92,1,Desolace
+Feathermoon Stronghold,,-4517.382,2240.9324,1,Feralas
+Auberdine,,6439.33,411.951,1,Darkshore
+Nijel's Point,,202.521,1308.24,1,Desolace
+Aldrassil,,10479.6,812.281,1,Shadowglen
+Shadowthread Cave,,10756.2,921.301,1,Shadowglen
+Fel Rock,,10050.6,1031.2,1,Dolanaar
+Ban'ethil Barrow Den,,9864.17,1557.41,1,Ban'ethil Hollow
+The Cleft,,10316.4,1200.62,1,Wellspring Lake
+Razorwind Canyon,,636.963,-4534.04,1,Razorwind Canyon
+Tor'kren Farm,,726.297,-4242.41,1,Thunder Ridge
+Steelgrill's Depot,,-5488.04,-658.67,0,Kharanos
+Ironband's Compound,,-5858.7,-2004.1,0,Helm's Bed Lake
+Echo Ridge Mine,,-8676.57,-119.634,0,Northshire Abbey
+Maclure Vineyards,,-9948.39,69.1568,0,Fargodeep Mine
+Stonefield Farm,,-9901.14,378.19,0,Fargodeep Mine
+Northshire Vineyards,,-9067.35,-333.965,0,Northshire Abbey
+Tower of Ilgalar,,-9281.33,-3318.81,0,Galardell Valley
+Render's Rock,,-8674.12,-2290.05,0,Render's Camp
+Spirit Den,,-13751.4,-18.3165,0,Mistvale Valley
+Rethban Caverns,,-8970.76,-2002.7,0,Rethban Caverns
+Boulderfist Outpost,,-1194.05,-2119.16,0,Boulder'gor
+Grosh'gok Compound,,-11112.2,-2335.63,0,The Vice
+Stagalbog Cave,,-10803.2,-3739.01,0,Stagalbog
+Temple of Atal'Hakkar,,-10429.9,-3828.52,0,Pool of Tears
+The Tower of Arathor,,-1778.21,-1513.16,0,Stromgarde Keep
+Wildhammer Keep,,316.946,-2119.3,0,Aerie Peak
+Night Web's Hollow,,2046.11,1829.45,0,Deathknell
+Terrorweb Tunnel,,3035.33,-2773.9,0,Terrordale
+Browman Mill,,2483.98,-5183.79,0,Eastwall Tower
+Uldaman,,-6092.01,-3179.35,0,The Maker's Terrace
+Dustbelch Grotto,,-7320.59,-2265.09,0,Camp Cagg
+Westbrook Garrison,,-9615.71,667.327,0,Forest's Edge
+Jasperlode Mine,,-9184.5,-605.891,0,Tower of Azora
+Janeiro's Point,,-14179.6,718.0,0,Booty Bay
+Algaz Station,,-4817.79,-2666.7,0,North Gate Pass
+Grim Batol,,-4055.0,-3448.54,0,Dragonmaw Gates
+Venture Co. Mine,,-1501.49,-1036.19,1,The Golden Plains
+Blackwood Den,,4619.42,25.6126,1,The Master's Glaive
+Wildbend River,,5056.04,220.755,1,Grove of the Ancients
+Cliffspring Falls,,6870.57,-662.396,1,Cliffspring River
+Fray Island,,-1668.51,-4329.2,1,Fray Island
+Wailing Caverns,,-837.968,-2037.0,1,Lushwater Oasis
+Shady Rest Inn,,-3723.63,-2535.18,1,The Quagmire
+Darkmist Cavern,,-2829.79,-2722.81,1,Brackenwall Village
+North Point Tower,,-2884.79,-3429.99,1,Brackenwall Village
+Bluefen,,-2685.32,-3087.58,1,Brackenwall Village
+Lost Point,,-3925.5,-2862.15,1,The Quagmire
+Tidefury Cove,,-4300.98,-4062.71,1,Wyrmbog
+Stonemaul Ruins,,-4346.02,-3321.15,1,The Dragonmurk
+Onyxia's Lair,,-4698.06,-3720.58,1,Wyrmbog
+Emberstrife's Den,,-4987.73,-3832.99,1,Wyrmbog
+Bloodfen Burrow,,-4335.04,-2639.53,1,The Den of Flame
+Sentry Point,,-3476.59,-4109.08,1,Witch Hill
+Swamplight Manor,,-2949.47,-3893.5,1,Witch Hill
+Irondeep Mine,Alliance Controlled,793.751,-330.197,30,
+Stonehearth Outpost,,1.66764,-292.675,30,
+Iceblood Garrison,,-537.807,-168.363,30,
+Coldtooth Mine,Horde Controlled,-946.912,-195.454,30,
+Frostwolf Keep,,-1369.01,-225.37,30,
+Marshal's Refuge,,-6143.21,-1078.89,1,Lakkari Tar Pits
+Fungal Rock,,-6370.15,-1836.52,1,Lakkari Tar Pits
+Wavestrider Beach,,-7693.45,-4878.96,1,Lost Rigger Cove
+Uldum,,-9635.41,-2787.2,1,Valley of the Watchers
+Darkcloud Pinnacle,,-5086.21,-1919.44,1,Darkcloud Pinnacle
+Roguefeather Den,,-5466.71,-1636.27,1,The Screeching Canyon
+Mirage Raceway,,-6239.42,-3973.12,1,The Shimmering Flats
+Sunken Dig Site,,-6490.61,-3449.15,1,The Shimmering Flats
+Splithoof Hold,,-5065.61,-2367.61,1,Splithoof Crag
+The Weathered Nook,,-5213.85,-2794.53,1,Splithoof Crag
+Ironstone Camp,,-5848.05,-3412.38,1,Windbreak Canyon
+Weazel's Crater,,-5799.94,-3899.53,1,The Shimmering Flats
+Tahonda Ruins,,-6569.91,-3894.97,1,The Shimmering Flats
+Roland's Doom,,-11076.0,-1139.98,0,The Rotting Orchard
+Beggar's Haunt,,-10349.7,-1538.8,0,Darkshire
+Bolgan's Hole,,-2281.95,2499.6,1,Gelkis Village
+Maraudon,,-1422.62,2918.45,1,Valley of Spears
+Ghost Walker Post,,-1224.06,1736.67,1,Kodo Graveyard
+Scrabblescrew's Camp,,-1407.87,1493.13,1,Mannoroc Coven
+Valley of Bones,,-2251.19,1513.55,1,Mannoroc Coven
+Rage Scar Hold,,-3842.71,1738.94,1,The Twin Colossals
+Ruins of Solarsal,,-4852.91,3616.63,1,Ruins of Solarsal
+Ravaged Twilight Camp,,-6206.25,1766.95,1,The Crystal Vale
+Twilight Post,,-6740.04,1636.32,1,Twilight Post
+Twilight Outpost,,-7929.11,1833.28,1,Hive'Zora
+Woodpaw Hills,,-4915.81,199.275,1,The Writhing Deep
+Lariss Pavillion,,-4052.72,81.5525,1,Gordunni Outpost
+Slither Rock,,-7652.52,-3030.61,0,Terror Wing Path
+Flame Crest,,-7479.77,-2186.4,0,Ruins of Thaurissan
+Shalzaru's Lair,,-5492.37,3622.79,1,Isle of Dread
+Stormpike Graveyard,Alliance Controlled,666.927,-305.544,30,
+Snowfall Graveyard,Horde Controlled,-202.695,-112.569,30,
+Frostwolf Graveyard,Horde Controlled,-1083.31,-307.402,30,
+Scalebeard's Cave,,3705.1,-6043.45,1,Bay of Storms
+Timbermaw Hold,,6900.63,-2298.18,1,Frostfire Hot Springs
+The Ruins of Kel'Theril,,6426.76,-4304.99,1,Lake Kel'Theril
+Dun Mandarr,,5718.83,-4507.31,1,Mazthoril
+Talrendis Point,,2707.72,-3869.25,1,Shadowsong Shrine
+Rethress Sanctum,,2195.67,-6438.33,1,The Ruined Reaches
+Moon Horror Den,,7123.02,-4631.57,1,Everlook
+Timbermaw Hold,,6817.78,-2097.68,1,Felpaw Village
+Irontree Cavern,,6481.87,-1571.0,1,Irontree Woods
+Bloodvenom Post,,5111.98,-353.403,1,Bloodvenom Falls
+Sishir Canyon,,515.845,624.05,1,Sishir Canyon
+Cragpool Lake,,1543.57,70.1338,1,Windshear Crag
+Windshear Mine,,981.949,-358.9,1,Windshear Crag
+The Talondeep Path,,1531.94,-576.57,1,Windshear Crag
+The Talon Den,,2416.89,1792.39,1,Stonetalon Peak
+The Ruins of Ordil'Aran,,3493.89,-119.601,1,Maestra's Post
+Bathran's Haunt,,3827.37,-161.305,1,Maestra's Post
+Zoram'gar Outpost,,3362.22,1010.16,1,The Zoram Strand
+Falfarren River,,2231.21,-2222.91,1,Night Run
+Xavian,,2936.56,-2822.67,1,Satyrnaar
+Forest Song,,2880.33,-3287.54,1,Satyrnaar
+Demon Fall Canyon,,1702.45,-3150.99,1,Felfire Hill
+Silverwing Outpost,,1776.64,-2065.15,1,Fallen Sky Lake
+The Dor'Danil Barrow Den,,1776.23,-2678.36,1,Fallen Sky Lake
+Silverwind Refuge,,2130.27,-1190.25,1,Mystral Lake
+Greenpaw Village,,2291.29,-1444.96,1,Mystral Lake
+Bloodtooth Camp,,1612.52,-1465.1,1,Mystral Lake
+The Talondeep Path,,1930.26,-732.677,1,Mystral Lake
+Shrine of Remulos,,7856.18,-2215.45,1,Lake Elune'ara
+Nighthaven,,7961.75,-2491.77,1,Lake Elune'ara
+Stormrage Barrow Dens,,7564.51,-2951.72,1,Lake Elune'ara
+Dun Baldar South Bunker,Alliance Controlled,571.535,-80.543,30,
+Dun Baldar North Bunker,Alliance Controlled,668.04,-128.176,30,
+Icewing Bunker,Alliance Controlled,217.425,-359.764,30,
+Iceblood Tower,Horde Controlled,-562.172,-273.554,30,
+Tower Point,Horde Controlled,-760.664,-347.326,30,
+East Frostwolf Tower,Horde Controlled,-1312.65,-315.886,30,
+Warsong Labor Camp,,1575.91,-2463.94,1,Fallen Sky Lake
+Ariden's Camp,,-10443.3,-2141.1,0,Deadman's Crossing
+Deadwind Ravine,,-10572.0,-1841.05,0,Deadman's Crossing
+Sleeping Gorge,,-10740.8,-1973.68,0,Sleeping Gorge
+Chillwind Camp,,921.054,-1421.46,0,Sorrow Hill
+Dun Baldar,,693.095,-19.197,30,
+Stonehearth Bunker,Alliance Controlled,-160.17,-454.107,30,
+Stormpike Aid Station,Alliance Controlled,640.261,-18.6661,30,
+Iceblood Graveyard,Horde Controlled,-531.316,-405.584,30,
+Stonehearth Graveyard,Alliance Controlled,65.9825,-415.573,30,
+Frostwolf Relief Hut,Horde Controlled,-1415.05,-305.986,30,
+Dun Baldar North Bunker,Destroyed,678.076,-137.378,30,
+Dun Baldar North Bunker,In Conflict,678.437,-137.095,30,
+Dun Baldar North Bunker,In Conflict,678.371,-137.14,30,
+Dun Baldar South Bunker,Destroyed,557.858,-88.1394,30,
+Dun Baldar South Bunker,In Conflict,557.849,-88.2827,30,
+Dun Baldar South Bunker,In Conflict,557.752,-88.2432,30,
+Coldtooth Mine,Alliance Controlled,-948.309,-193.286,30,
+Coldtooth Mine,Kobold Controlled,-948.542,-193.079,30,
+East Frostwolf Tower,Destroyed,-1311.22,-316.564,30,
+East Frostwolf Tower,In Conflict,-1311.4,-317.196,30,
+East Frostwolf Tower,In Conflict,-1311.47,-317.241,30,
+Frostwolf Graveyard,Alliance Controlled,-1083.54,-307.433,30,
+Frostwolf Graveyard,In Conflict,-1083.49,-307.617,30,
+Frostwolf Graveyard,In Conflict,-1083.67,-307.436,30,
+Frostwolf Relief Hut,Alliance Controlled,-1414.93,-305.602,30,
+Frostwolf Relief Hut,In Conflict,-1414.79,-306.018,30,
+Frostwolf Relief Hut,In Conflict,-1414.89,-306.056,30,
+Iceblood Graveyard,Alliance Controlled,-531.344,-405.273,30,
+Iceblood Graveyard,In Conflict,-531.402,-405.326,30,
+Iceblood Graveyard,In Conflict,-531.425,-405.326,30,
+Iceblood Tower,Destroyed,-560.3,-271.439,30,
+Iceblood Tower,In Conflict,-560.261,-271.528,30,
+Iceblood Tower,In Conflict,-560.376,-271.281,30,
+Icewing Bunker,Destroyed,209.101,-367.837,30,
+Icewing Bunker,In Conflict,208.785,-367.938,30,
+Icewing Bunker,In Conflict,209.023,-368.034,30,
+Irondeep Mine,Horde Controlled,801.661,-330.015,30,
+Irondeep Mine,Trogg Controlled,801.41,-330.128,30,
+Snowfall Graveyard,Alliance Controlled,-202.963,-112.575,30,
+Snowfall Graveyard,In Conflict,-203.153,-112.587,30,
+Snowfall Graveyard,In Conflict,-203.09,-112.598,30,
+Stonehearth Bunker,Destroyed,-160.264,-454.198,30,
+Stonehearth Bunker,In Conflict,-160.169,-454.076,30,
+Stonehearth Bunker,In Conflict,-160.403,-454.183,30,
+Stonehearth Graveyard,Horde Controlled,65.9149,-415.562,30,
+Stonehearth Graveyard,In Conflict,65.8907,-415.551,30,
+Stonehearth Graveyard,In Conflict,65.8889,-415.616,30,
+Stormpike Aid Station,Horde Controlled,641.501,-17.3997,30,
+Stormpike Aid Station,In Conflict,640.908,-18.1867,30,
+Stormpike Aid Station,In Conflict,640.699,-18.1078,30,
+Stormpike Graveyard,Horde Controlled,666.642,-305.542,30,
+Stormpike Graveyard,In Conflict,666.699,-305.533,30,
+Stormpike Graveyard,In Conflict,666.571,-305.432,30,
+Tower Point,Destroyed,-759.186,-348.19,30,
+Tower Point,In Conflict,-759.141,-348.12,30,
+Tower Point,In Conflict,-759.266,-348.044,30,
+Camp Taurajo,,-2352.66,-1921.67,1,Northern Barrens
+Splintertree Post,,2286.41,-2564.67,1,Ashenvale
+The Swarming Pillar,,-7066.79,731.852,1,Cenarion Hold
+Bones of Grakkarond,,-7234.61,874.224,1,Cenarion Hold
+Woodpaw Den,,-4835.2,863.048,1,The Writhing Deep
+Revantusk Village,,-573.459,-4590.51,0,The Overlook Cliffs
+Thorium Point,,-6513.68,-1142.76,0,Firewatch Ridge
+Mor'shan Base Camp,,1035.13,-2113.34,1,The Mor'shan Rampart
+Silverwing Grove,,1462.48,-1858.93,1,Fallen Sky Lake
+West Frostwolf Tower,Horde Controlled,-1288.9,-256.613,30,
+West Frostwolf Tower,Destroyed,-1288.92,-256.629,30,
+West Frostwolf Tower,In Conflict,-1288.02,-256.508,30,
+West Frostwolf Tower,In Conflict,-1288.09,-256.702,30,
+Pre-alliance POI test,,451.372,-127.12,30,
+The Weeping Cave,,2249.61,-2389.63,0,The Weeping Cave
+Wildpaw Cavern,,-1436.1,-455.651,30,Frostwolf Keep
+Icewing Cavern,,276.056,61.1517,30,Dun Baldar
+Yojamba Isle,,-11874.6,1250.73,0,Northern Stranglethorn
+Stables,Neutral,1181.51,1185.65,529,
+Blacksmith,Neutral,988.693,1012.81,529,
+Lumber Mill,Neutral,812.715,1182.26,529,
+Gold Mine,Neutral,1178.15,822.624,529,
+Farm,Neutral,824.015,826.696,529,
+Snowfall Graveyard,Uncontrolled,-202.932,-112.716,30,
+Misty Reed Post,,-10854.8,-4093.43,0,Misty Reed Strand
+Brackenwall Village,,-3132.98,-2880.71,1,Brackenwall Village
+Cenarion Hold,,-6886.15,718.398,1,Cenarion Hold
+Twilight Base Camp,,-6996.15,1195.01,1,Twilight Base Camp
+Staghelm Point,,-6517.49,97.5554,1,Staghelm Point
+Twilight's Run,,-6310.14,136.591,1,Staghelm Point
+Ortell's Hideout,,-7586.17,226.396,1,Hive'Regal
+Bronzebeard Encampment,,-8021.76,1105.84,1,Bronzebeard Encampment
+Under Attack,Winterspring,6519.57,-4117.1,1,
+Under Attack,Azshara,3366.79,-6226.81,1,
+Under Attack,Blasted Lands,-11456.9,-2981.41,0,Blasted Lands
+Under Attack,Burning Steppes,-7741.19,-2722.21,0,Burning Steppes
+Under Attack,Tanaris Desert,-8277.12,-3484.09,1,
+Under Attack,Eastern Plaguelands,2414.5,-3919.26,0,Eastern Plaguelands
+Ivar's Patch,,1233.05,1214.28,0,Silverpine Forest
+Valgan's Field,,908.754,1255.63,0,Valgan's Field
+Silvermoon City,,9504.23,-7297.86,530,Silvermoon City
+Falconwing Square,,9443.57,-6889.18,530,Falconwing Square
+Sunstrider Isle,,10251.2,-6243.67,530,Sunstrider Isle
+The Sunspire,,10339.4,-6393.8,530,
+Sunsail Anchorage,,8760.85,-6099.67,530,Sunsail Anchorage
+Fairbreeze Village,,8722.06,-6675.4,530,Fairbreeze Village
+Farstride Retreat,,8986.2,-7461.7,530,Farstrider Retreat
+Deatholme,,6494.17,-6367.48,530,Deatholme
+Windrunner Spire,,7018.83,-5731.5,530,Windrunner Spire
+Tranquillien,,7567.08,-6818.75,530,Tranquillien
+Honor Hold,,-715.967,2670.63,530,Honor Hold
+Thrallmar,,138.907,2703.56,530,Thrallmar
+The Stair of Destiny,,-250.472,1029.01,530,The Stair of Destiny
+Throne of Kil'Jaeden,,815.059,2331.75,530,Throne of Kil'jaeden
+Hellfire Citadel,,-315.158,3099.17,530,
+Den of Haal'esh,,-1105.52,4200.52,530,Den of Haal'esh
+Falcon Watch,,-699.534,4260.89,530,Falcon Watch
+Ruins of Sha'naar,,-236.269,4935.25,530,Ruins of Sha'naar
+Clan Post,,500.537,3850.62,530,Mag'har Post
+Pools of Aggonar,,244.889,3467.86,530,Pools of Aggonar
+Sandworm!,A Silithyst beast has surfaced,-6548.72,1150.51,1,Silithus
+Sandworm!,A Silithyst beast has surfaced,-7786.01,978.815,1,Silithus
+Sandworm!,A Silithyst beast has surfaced,-7463.3,1411.7,1,Silithus
+Sandworm!,A Silithyst beast has surfaced,-7377.08,447.046,1,Silithus
+Wrathscale Point,,-4959.96,-11815.9,530,Wrathscale Point
+Bristlelimb Village,,-4588.5,-11603.5,530,Bristlelimb Village
+Pod Cluster,,-4414.18,-11970.8,530,Pod Cluster
+Pod Wreckage,,-4464.58,-12661.0,530,Pod Wreckage
+Geezle's Camp,,-4583.14,-12879.8,530,Geezle's Camp
+Azure Watch,,-4179.47,-12501.5,530,Azure Watch
+The Exodar,,-4007.31,-11873.6,530,The Exodar
+Valaar's Berth,,-4257.04,-11424.7,530,Valaar's Berth
+Silting Shore,,-3390.31,-11887.0,530,Silting Shore
+Stillpine Hold,,-3354.12,-12348.4,530,Stillpine Hold
+Menagerie Wreckage,,-3300.91,-12730.9,530,Menagerie Wreckage
+The Sacred Grove,,-3811.64,-13374.7,530,The Sacred Grove
+Wildwind Peak,,-3768.73,-11465.4,530,Wildwind Peak
+Emberglade,,-3284.43,-12901.0,530,Emberglade
+Odesyus' Landing,,-4694.52,-12411.2,530,Odesyus' Landing
+Traitor's Cove,,-5081.78,-11265.1,530,Traitor's Cove
+Crash Site,,-4145.27,-13739.4,530,Ammen Vale
+Shadow Ridge,,-4537.33,-13338.0,530,Shadow Ridge
+Silverline Lake,,-4386.85,-13595.1,530,Silverline Lake
+Nestlewood Thicket,,-4397.99,-13805.5,530,Nestlewood Thicket
+Ammen Fields,,-4164.96,-13487.2,530,Ammen Fields
+Moonwing Den,,-5065.18,-11067.8,530,Moonwing Den
+Tide's Hollow,,-4871.51,-11598.0,530,Tides' Hollow
+Suncrown Village,,7988.71,-7299.7,530,Suncrown Village
+Zeb'Sora,,8014.57,-7793.08,530,Zeb'Sora
+Dawnstar Spire,,7828.3,-7844.05,530,Dawnstar Spire
+Farstrider Enclave,,7543.67,-7665.41,530,Farstrider Enclave
+Zeb'Tela,,7371.75,-7805.6,530,Zeb'Tela
+Sanctum of the Sun,,7186.54,-7125.71,530,Sanctum of the Sun
+An'telas,,7451.8,-7290.97,530,An'telas
+Amani Catacombs,,7638.25,-7310.51,530,Amani Catacombs
+Zeb'Nowa,,6909.73,-7378.86,530,Zeb'Nowa
+Amani Pass,,6857.14,-7680.32,530,Amani Pass
+Andilien Estate,,7034.17,-6823.45,530,Andilien Estate
+Howling Ziggurat,,7168.21,-6615.66,530,Howling Ziggurat
+Bleeding Ziggurat,,7219.75,-6416.48,530,Bleeding Ziggurat
+Underlight Mines,,7208.95,-6247.08,530,Underlight Mines
+Windrunner Village,,7260.98,-5936.89,530,Windrunner Village
+Sanctum of the Moon,,7536.23,-6408.08,530,Sanctum of the Moon
+An'daroth,,7933.11,-6507.79,530,An'daroth
+Tor'Watha,,8538.68,-7931.78,530,Tor'Watha
+Zeb'Watha,,8445.3,-7596.97,530,Zeb'Watha
+East Sanctum,,8742.78,-7105.38,530,East Sanctum
+Saltheril's Haven,,8645.7,-6372.79,530,Saltheril's Haven
+West Sanctum,,9100.33,-6223.32,530,West Sanctum
+North Sanctum,,9297.83,-6659.46,530,North Sanctum
+Stillwhisper Pond,,9215.16,-7211.67,530,Stillwhisper Pond
+The Vector Coil,,-1944.84,-10678.4,530,The Vector Coil
+The Cryo-Core,,-2077.3,-11344.5,530,The Cryo-Core
+The Warp Piston,,-1209.9,-11802.8,530,The Warp Piston
+Bladewood,,-1753.26,-11622.5,530,Bladewood
+Wrathscale Lair,,-2220.94,-12324.7,530,Wrathscale Lair
+Ruins of Loreth'Aran,,-1746.56,-12079.8,530,Ruins of Loreth'Aran
+Nazzivian,,-2415.29,-11295.7,530,Nazzivian
+Axxarien,,-1515.3,-11384.8,530,Axxarien
+The Hidden Reef,,-1220.49,-11143.2,530,The Hidden Reef
+Amberweb Pass,,-1516.76,-10755.1,530,Amberweb Pass
+Ragefeather Ridge,,-1549.41,-11889.5,530,Ragefeather Ridge
+Talon Stand,,-1217.23,-12449.1,530,Talon Stand
+Bristlelimb Enclave,,-2496.43,-12216.7,530,Bristlelimb Enclave
+The Overlook,Neutral,-199.731,3466.6,530,Hellfire Peninsula
+The Overlook,Alliance Controlled,-199.628,3466.98,530,Hellfire Peninsula
+The Overlook,Horde Controlled,-199.434,3467.1,530,Hellfire Peninsula
+Broken Hill,Neutral,-466.044,3467.61,530,Hellfire Peninsula
+Broken Hill,Alliance Controlled,-465.609,3467.81,530,Hellfire Peninsula
+Broken Hill,Horde Controlled,-465.397,3467.81,530,Hellfire Peninsula
+The Stadium,Neutral,-291.268,3702.61,530,Hellfire Peninsula
+The Stadium,Alliance Controlled,-290.921,3702.59,530,Hellfire Peninsula
+The Stadium,Horde Controlled,-290.818,3702.22,530,Hellfire Peninsula
+West Beacon,Alliance Controlled,374.82,7333.08,530,Zangarmarsh
+West Beacon,Horde Controlled,374.83,7333.08,530,Zangarmarsh
+West Beacon,,374.813,7333.08,530,Zangarmarsh
+Twinspire Graveyard,,246.488,7084.32,530,Zangarmarsh
+Twinspire Graveyard,Alliance Controlled,246.489,7084.33,530,Zangarmarsh
+Twinspire Graveyard,Horde Controlled,246.491,7084.32,530,Zangarmarsh
+East Beacon,Alliance Controlled,341.394,6833.16,530,Zangarmarsh
+East Beacon,Horde Controlled,341.234,6833.17,530,Zangarmarsh
+East Beacon,,341.409,6833.08,530,Zangarmarsh
+Alliance Field Scout,,374.129,6229.92,530,Zangarmarsh
+Alliance Field Scout,,374.146,6229.91,530,Zangarmarsh
+Horde Field Scout,,296.583,7820.33,530,Zangarmarsh
+Horde Field Scout,,296.632,7820.35,530,Zangarmarsh
+Wyvern Camp,Uncontrolled,-1656.53,7733.27,530,Nagrand
+Wyvern Camp,Horde Controlled,-1656.64,7733.22,530,Nagrand
+Wyvern Camp,Alliance Controlled,-1656.65,7733.18,530,Nagrand
+Wyvern Camp,Uncontrolled,-1512.81,8135.79,530,Nagrand
+Wyvern Camp,Alliance Controlled,-1512.88,8135.7,530,Nagrand
+Wyvern Camp,Horde Controlled,-1512.85,8135.71,530,Nagrand
+Wyvern Camp,Uncontrolled,-1817.36,8038.34,530,Nagrand
+Wyvern Camp,Horde Controlled,-1817.4,8038.21,530,Nagrand
+Wyvern Camp,Alliance Controlled,-1817.37,8038.18,530,Nagrand
+Wyvern Camp,Uncontrolled,-1387.35,7781.24,530,Nagrand
+Wyvern Camp,Alliance Controlled,-1387.23,7781.24,530,Nagrand
+Wyvern Camp,Horde Controlled,-1387.35,7781.25,530,Nagrand
+Halaa,,-1573.7,7942.06,530,Nagrand
+Halaa,Horde Controlled,-1573.61,7942.09,530,Nagrand
+Halaa,Alliance Controlled,-1573.6,7942.03,530,Nagrand
+Halaa,,-1573.6,7942.06,530,Nagrand
+Halaa,,-1573.68,7942.0,530,Nagrand
+Spirit Tower,,-3082.84,5329.92,530,Terokkar Forest
+Spirit Tower,Alliance Controlled,-3082.89,5329.91,530,Terokkar Forest
+Spirit Tower,Horde Controlled,-3082.88,5329.91,530,Terokkar Forest
+Spirit Tower,,-2944.75,4788.92,530,Terokkar Forest
+Spirit Tower,Alliance Controlled,-2944.78,4788.99,530,Terokkar Forest
+Spirit Tower,Horde Controlled,-2944.75,4789.01,530,Terokkar Forest
+Spirit Tower,,-3170.13,4438.59,530,Terokkar Forest
+Spirit Tower,Alliance Controlled,-3170.17,4438.58,530,Terokkar Forest
+Spirit Tower,Horde Controlled,-3170.19,4438.55,530,Terokkar Forest
+Spirit Tower,,-3601.07,4533.99,530,Terokkar Forest
+Spirit Tower,Alliance Controlled,-3600.99,4533.97,530,Terokkar Forest
+Spirit Tower,Horde Controlled,-3601.06,4533.97,530,Terokkar Forest
+Spirit Tower,,-3807.71,4896.94,530,Terokkar Forest
+Spirit Tower,Alliance Controlled,-3807.66,4896.9,530,Terokkar Forest
+Spirit Tower,Horde Controlled,-3807.7,4896.87,530,Terokkar Forest
+Blood Watch,,-1990.97,-11866.2,530,Blood Watch
+Blood Elf Tower,Uncontrolled,2048.9219,1393.5851,566,Eye of the Storm
+Blood Elf Tower,Alliance Controlled,2048.6458,1393.8212,566,Eye of the Storm
+Blood Elf Tower,Horde Controlled,2048.29,1394.2153,566,Eye of the Storm
+Fel Reaver Ruins,Uncontrolled,2026.33,1749.76,566,Eye of the Storm
+Fel Reaver Ruins,Alliance Controlled,2026.35,1749.75,566,Eye of the Storm
+Fel Reaver Ruins,Horde Controlled,2026.35,1749.75,566,Eye of the Storm
+Mage Tower,Uncontrolled,2284.889,1731.1146,566,Eye of the Storm
+Mage Tower,Alliance Controlled,2284.7883,1731.3959,566,Eye of the Storm
+Mage Tower,Horde Controlled,2284.9548,1731.224,566,Eye of the Storm
+Draenei Ruins,Uncontrolled,2302.85,1388.07,566,Eye of the Storm
+Draenei Ruins,Alliance Controlled,2302.86,1388.07,566,Eye of the Storm
+Draenei Ruins,Horde Controlled,2302.85,1388.07,566,Eye of the Storm
+Draenei Ruins,In Conflict,2302.84,1388.07,566,Eye of the Storm
+Draenei Ruins,In Conflict,2302.85,1388.07,566,Eye of the Storm
+Mage Tower,In Conflict,2284.6963,1731.4202,566,Eye of the Storm
+Mage Tower,In Conflict,2284.8489,1731.5087,566,Eye of the Storm
+Fel Reaver Ruins,In Conflict,2026.35,1749.76,566,Eye of the Storm
+Fel Reaver Ruins,In Conflict,2026.34,1749.76,566,Eye of the Storm
+Blood Elf Tower,In Conflict,2048.2048,1393.2795,566,Eye of the Storm
+Blood Elf Tower,In Conflict,2048.0347,1393.9445,566,Eye of the Storm
+Shattrath City,,-1863.83,5429.83,530,Shattrath City
+Netherstorm Flag,Not Controlled,2174.5,1569.48,566,Eye of the Storm
+Wyvern Camp,Uncontrolled,-1817.41,8038.24,530,Nagrand
+Wyvern Camp,Uncontrolled,-1512.78,8135.72,530,Nagrand
+Wyvern Camp,Uncontrolled,-1387.29,7781.21,530,Nagrand
+Wyvern Camp,Uncontrolled,-1656.66,7733.23,530,Nagrand
+"Falconwing Square, Paladin Trainer",,9516.0,-6871.03,530,Falconwing Square
+Shalandris Isle,,7704.54,-5690.85,530,Shalandis Isle
+An'owyn,,6822.26,-7202.79,530,An'owyn
+Golden Strand,,9050.31,-5844.63,530,Golden Strand
+The Dead Scar,,9146.88,-6966.3,530,The Dead Scar
+Thuron's Livery,,9263.48,-7495.62,530,Thuron's Livery
+Duskwither Spire,,9335.37,-7884.4,530,Duskwither Spire
+Golden Strand,,8732.59,-5701.58,530,Golden Strand
+The Dead Scar,,8433.61,-7008.6,530,The Dead Scar
+Coilfang Reservoir,,567.344,6943.26,530,Coilfang Reservoir
+Serpent Lake,,546.771,7214.29,530,Serpent Lake
+Serpent Lake,,574.777,6613.34,530,Serpent Lake
+Umbrafen Lake,,-325.616,5702.5,530,Umbrafen Lake
+Umbrafen Lake,,-712.157,5700.55,530,Umbrafen Lake
+Toshley's Station,,1917.5,5566.59,530,Toshley's Station
+Zabra'jin,,256.993,7853.89,530,Zabra'jin
+Sporeggar,,233.297,8498.02,530,Sporeggar
+Orebor Harborage,,999.593,7369.97,530,Orebor Harborage
+Telredor,,281.781,6042.78,530,Telredor
+Cenarion Refuge,,-237.101,5519.13,530,Cenarion Refuge
+Swamprat Post,,103.671,5204.96,530,Swamprat Post
+Garadar,,-1322.49,7214.32,530,Garadar
+Telaar,,-2657.54,7282.29,530,Telaar
+Sylvanaar,,2057.07,6845.29,530,Sylvanaar
+Evergrove,,2990.17,5470.22,530,Evergrove
+Temple of Telhamat,,143.138,4333.41,530,Temple of Telhamat
+The Stormspire,,4119.72,2995.7,530,The Stormspire
+Area 52,,3031.08,3687.24,530,Area 52
+Cosmowrench,,2964.62,1789.14,530,Cosmowrench
+Stonebreaker Hold,,-2643.03,4416.87,530,Stonebreaker Hold
+Allerian Stronghold,,-2958.41,3971.65,530,Allerian Stronghold
+Shadowmoon Village,,-3022.78,2582.05,530,Shadowmoon Village
+Wildhammer Stronghold,,-3995.69,2186.96,530,Wildhammer Stronghold
+Sanctum of the Stars,,-4099.49,1117.34,530,Sanctum of the Stars
+Altar of Sha'tar,,-3042.85,804.584,530,Altar of Sha'tar
+Ogri'la,,2329.84,7297.04,530,Ogri'la
+Mudsprocket,,-4590.83,-3182.5,1,Mudsprocket
+Westguard Keep,,1386.61,-3247.23,571,Westguard Keep
+Kamagua,,767.473,-2904.19,571,Kamagua
+Valgarde,,616.887,-5007.05,571,Valgarde
+Vengeance Landing,,1923.22,-6160.07,571,Vengeance Landing
+New Agamand,,407.822,-4599.75,571,New Agamand
+Fort Wildervar,,2448.53,-5114.01,571,Fort Wildervar
+Camp Winterhoof,,2666.23,-4362.25,571,
+Sun's Reach Sanctum,Held by the enemy,12787.3,-6885.54,530,Isle of Quel'Danas
+Sun's Reach Sanctum,Shattered Sun Offensive,12787.4,-6885.6,530,Isle of Quel'Danas
+Sun's Reach Armory,Held by the enemy,12683.2,-6957.78,530,Isle of Quel'Danas
+Sun's Reach Armory,Shattered Sun Offensive,12683.3,-6957.8,530,Isle of Quel'Danas
+Sun's Reach Harbor,Held by the enemy,12825.6,-7015.24,530,Isle of Quel'Danas
+Sun's Reach Harbor,Shattered Sun Offensive,12825.7,-7015.17,530,Isle of Quel'Danas
+Town Hall,Town Hall,2355.44,1195.52,595,The Culling of Stratholme
+Elder's Square Gate,Elder's Square Gate,2279.17,1138.86,595,The Culling of Stratholme
+Festival Lane Gate,Festival Lane Gate,2184.28,1236.69,595,The Culling of Stratholme
+Market Row Gate,Market Row Gate,2225.75,1331.91,595,The Culling of Stratholme
+King's Square Fountain,King's Square Fountain,2122.57,1354.61,595,The Culling of Stratholme
+Stormwind Harbor,Harbor Entrance,-8573.47,990.095,0,7th Legion Front
+Gate of the Purple Amethyst,,1216.33,79.1829,607,Strand of the Ancients
+Gate of the Red Sun,,1232.38,-210.044,607,Strand of the Ancients
+Gate of the Blue Sapphire,,1433.07,-216.331,607,Strand of the Ancients
+Gate of the Green Emerald,,1414.54,104.746,607,Strand of the Ancients
+The Frostbreaker,Alliance Offense,1571.42,87.6971,607,Strand of the Ancients
+The Graceful Maiden,Alliance Offense,1570.41,-145.681,607,Strand of the Ancients
+The Blightbringer,Horde Offense,1571.34,-143.83,607,Strand of the Ancients
+The Casket Carrier,Horde Offense,1571.31,87.2816,607,Strand of the Ancients
+Horde Defense,,794.829,-108.578,607,Strand of the Ancients
+Alliance Defense,,794.854,-108.89,607,Strand of the Ancients
+East Graveyard,Horde Controlled,1338.26,-155.265,607,Strand of the Ancients
+East Graveyard,Alliance Controlled,1338.91,-155.733,607,Strand of the Ancients
+West Graveyard,Alliance Controlled,1308.6,8.67329,607,Strand of the Ancients
+South Graveyard,Horde Controlled,1220.74,-70.5094,607,Strand of the Ancients
+South Graveyard,Alliance Controlled,1220.39,-70.6197,607,Strand of the Ancients
+Gate of the Yellow Moon,,1058.72,-107.526,607,Strand of the Ancients
+Death's Rise,,7424.22,4187.86,571,Death's Rise
+The Shadow Vault,,8428.89,2707.51,571,The Shadow Vault
+Shadowsight Tower,,4556.98,3623.77,571,Wintergrasp
+Winter's Edge Tower,,4397.97,2822.6,571,Wintergrasp
+Flamewatch Tower,,4458.95,1944.13,571,Wintergrasp
+Wintergrasp Fortress Tower (SW),,5161.26,2934.32,571,Wintergrasp
+Wintergrasp Fortress Tower (SE),,5164.64,2747.98,571,Wintergrasp
+Wintergrasp Fortress Tower (NE),,5279.47,2632.11,571,Wintergrasp
+Wintergrasp Fortress Tower (NW),,5280.07,3046.51,571,Wintergrasp
+Fortress Vehicle Workshop (E),,5389.97,2712.18,571,Wintergrasp
+Fortress Vehicle Workshop (W),,5390.88,2979.48,571,Wintergrasp
+Eastspark Vehicle Workshop,,4360.35,2352.27,571,Wintergrasp
+Westspark Vehicle Workshop,,4355.01,3308.44,571,Wintergrasp
+Broken Temple Vehicle Workshop,,4961.23,3384.18,571,Wintergrasp
+Sunken Ring Vehicle Workshop,,4942.8193,2390.4307,571,Wintergrasp
+PvP Activity Detected,,5048.52,2847.42,571,Wintergrasp
+PvP Activity Detected,,4484.44,2826.67,571,Wintergrasp
+PvP Activity Detected,,4763.67,2881.21,571,Wintergrasp
+PvP Activity Detected,,5052.91,3192.65,571,Wintergrasp
+PvP Activity Detected,,4812.1,3304.64,571,Wintergrasp
+PvP Activity Detected,,4730.25,2414.65,571,Wintergrasp
+PvP Activity Detected,,5018.89,2578.16,571,Wintergrasp
+PvP Activity Detected,,4493.03,3337.28,571,Wintergrasp
+PvP Activity Detected,,4497.72,2326.91,571,Wintergrasp
+PvP Activity Detected,,5010.88,2701.46,571,Wintergrasp
+PvP Activity Detected,,4821.56,2618.59,571,Wintergrasp
+PvP Activity Detected,,4450.37,2529.12,571,Wintergrasp
+PvP Activity Detected,,4516.68,2087.62,571,Wintergrasp
+PvP Activity Detected,,4774.63,2045.92,571,Wintergrasp
+PvP Activity Detected,,4402.92,3090.83,571,Wintergrasp
+PvP Activity Detected,,4789.57,3074.77,571,Wintergrasp
+PvP Activity Detected,,5046.72,3024.94,571,Wintergrasp
+PvP Activity Detected,,4400.1,3479.49,571,Wintergrasp
+PvP Activity Detected,,4558.4,3490.13,571,Wintergrasp
+PvP Activity Detected,,4837.71,3456.31,571,Wintergrasp
+PvP Activity Detected,,5085.96,3437.93,571,Wintergrasp
+Wintergrasp Fortress Wall,,5372.89,3047.3,571,Wintergrasp
+Wintergrasp Fortress Wall,,5331.85,3046.55,571,Wintergrasp
+Wintergrasp Fortress Wall,,5280.8,2995.93,571,Wintergrasp
+Wintergrasp Fortress Wall,,5279.13,2954.81,571,Wintergrasp
+Wintergrasp Fortress Wall,,5255.6,2934.08,571,Wintergrasp
+Wintergrasp Fortress Wall,,5216.08,2933.99,571,Wintergrasp
+Wintergrasp Fortress Wall,,5162.25,2882.84,571,Wintergrasp
+Wintergrasp Fortress Gate,,5162.54,2841.25,571,Wintergrasp
+Wintergrasp Fortress Wall,,5163.71,2798.72,571,Wintergrasp
+Wintergrasp Fortress Wall,,5215.36,2747.99,571,Wintergrasp
+Wintergrasp Fortress Wall,,5256.52,2747.55,571,Wintergrasp
+Wintergrasp Fortress Wall,,5279.76,2725.12,571,Wintergrasp
+Wintergrasp Fortress Wall,,5279.45,2683.91,571,Wintergrasp
+Wintergrasp Fortress Wall,,5330.66,2630.69,571,Wintergrasp
+Wintergrasp Fortress Wall,,5372.93,2630.77,571,Wintergrasp
+Wintergrasp Fortress Wall,,5386.46,2909.89,571,Wintergrasp
+Wintergrasp Fortress Wall,,5343.39,2909.19,571,Wintergrasp
+Wintergrasp Fortress Wall,,5300.49,2909.33,571,Wintergrasp
+Wintergrasp Fortress Wall,,5279.34,2883.16,571,Wintergrasp
+Wintergrasp Fortress Wall,,5280.86,2840.4,571,Wintergrasp
+Wintergrasp Fortress Wall,,5280.32,2798.61,571,Wintergrasp
+Wintergrasp Fortress Wall,,5302.01,2771.67,571,Wintergrasp
+Wintergrasp Fortress Wall,,5343.66,2771.01,571,Wintergrasp
+Wintergrasp Fortress Wall,,5384.4,2772.53,571,Wintergrasp
+Wintergrasp Fortress,,5394.58,2841.49,571,Wintergrasp
+PvP Activity Detected,,5217.2,2842.45,571,Wintergrasp
+PvP Activity Detected,,5214.84,3011.21,571,Wintergrasp
+PvP Activity Detected,,5213.37,2684.88,571,7th Legion Front
+PvP Activity Detected,,5339.85,2700.9,571,Wintergrasp
+PvP Activity Detected,,5338.95,2841.39,571,Wintergrasp
+PvP Activity Detected,,5336.29,2978.43,571,Wintergrasp
+PvP Activity Detected,,4481.82,1993.34,571,Wintergrasp
+PvP Activity Detected,,4403.42,2349.1,571,Wintergrasp
+PvP Activity Detected,,4446.22,2820.74,571,Wintergrasp
+PvP Activity Detected,,4530.66,3584.57,571,Wintergrasp
+PvP Activity Detected,,4394.79,3294.74,571,Wintergrasp
+PvP Activity Detected,,4946.42,3331.67,571,Wintergrasp
+PvP Activity Detected,,4932.31,2440.47,571,Wintergrasp
+PvP Activity Detected,,4860.4,2023.33,571,Wintergrasp
+PvP Activity Detected,,4310.33,1810.36,571,Wintergrasp
+PvP Activity Detected,,4489.01,4028.89,571,Wintergrasp
+PvP Activity Detected,,4696.33,3806.99,571,Wintergrasp
+Wintergrasp,Control of Wintergrasp,5121.38,2845.14,571,Wintergrasp
+Sunken Ring Graveyard,,5105.61,2300.68,571,Wintergrasp
+Broken Temple Graveyard,,5102.12,3463.95,571,Wintergrasp
+Fortress Graveyard,,5538.38,2894.84,571,Wintergrasp
+Southwest Graveyard,,4336.28,3234.63,571,Wintergrasp
+Southeast Graveyard,,4318.94,2408.0,571,Wintergrasp
+Chamber of Ancient Relics,,881.703,-108.355,607,Strand of the Ancients
+Wyrmrest Temple,,3546.8,273.257,571,Wyrmrest Temple
+Venomspite,,3240.58,-692.569,571,Venomspite
+Stars' Rest,,3495.58,1993.21,571,Stars' Rest
+Agmar's Hammer,,3830.9,1580.96,571,Agmar's Hammer
+Moa'ki Harbor,,2780.97,878.934,571,Moa'ki Harbor
+Valiance Keep,,2279.52,5248.36,571,Valiance Keep
+Warsong Hold,,2837.43,6186.49,571,Warsong Hold
+Unu'pe,,3013.88,4103.26,571,Unu'pe
+Taunka'le Village,,3445.23,4111.0,571,Taunka'le Village
+Fizzcrank Airstrip,,4158.73,5281.77,571,Fizzcrank Airstrip
+Bor'gorok Outpost,,4497.92,5727.56,571,Bor'gorok Outpost
+Wintergarde Keep,,3780.27,-734.763,571,Wintergarde Keep
+Conquest Hold,,3250.52,-2252.59,571,Conquest Hold
+Amberpine Lodge,,3415.69,-2788.0,571,Amberpine Lodge
+Camp Oneqwah,,3855.81,-4524.73,571,Camp Oneqwah
+Westfall Brigade Encampment,,4554.15,-4213.86,571,Westfall Brigade Encampment
+The Argent Stand,,5450.08,-2575.08,571,The Argent Stand
+Zim'Torga,,5764.67,-3563.47,571,Zim'Torga
+Nesingwary Base Camp,,5565.21,5757.52,571,Nesingwary Base Camp
+Dalaran,,5805.22,639.992,571,Dalaran
+Camp Tunka'lo,,7795.98,-2885.31,571,Camp Tunka'lo
+Brunnhildar Village,,6953.43,-1653.6,571,Brunnhildar Village
+K3,,6124.23,-1061.87,571,K3
+Frosthold,,6680.32,-231.676,571,Frosthold
+Grom'arsh Crash-Site,,7857.19,-749.898,571,Grom'arsh Crash-Site
+Crusaders' Pinnacle,,6410.24,441.831,571,Crusaders' Pinnacle
+West Graveyard,Horde Controlled,1309.0,8.65516,607,Strand of the Ancients
+Tower of Life,Provides power to Freya's Ward,-223.332,-299.08,603,Ulduar
+Tower of Flames,Provides power to Mimiron's Inferno,-79.7775,89.057,603,Ulduar
+Tower of Frost,Provides power to Hodir's Fury,82.2553,-392.476,603,Ulduar
+Tower of Storms,Provides power to Thorim's Hammer,341.266,317.85,603,Ulduar
+Workshop,Alliance Controlled,772.7344,-805.5174,628,Isle of Conquest
+Workshop,Horde Controlled,772.7344,-805.5174,628,Isle of Conquest
+Workshop,In Conflict,772.7344,-805.5174,628,Isle of Conquest
+Workshop,In Conflict,772.7344,-805.5174,628,Isle of Conquest
+Workshop,Uncontrolled,772.7344,-805.5174,628,Isle of Conquest
+Hangar,Alliance Controlled,690.2934,-1125.382,628,Isle of Conquest
+Hangar,Horde Controlled,690.2882,-1125.3959,628,Isle of Conquest
+Hangar,In Conflict,690.2674,-1125.3716,628,Isle of Conquest
+Hangar,In Conflict,690.30206,-1125.3889,628,Isle of Conquest
+Hangar,Uncontrolled,690.29517,-1125.4045,628,Isle of Conquest
+Docks,In Conflict,796.9948,-379.9479,628,Isle of Conquest
+Docks,Horde Controlled,797.0018,-379.91495,628,Isle of Conquest
+Docks,Alliance Controlled,797.00696,-379.908,628,Isle of Conquest
+Docks,In Conflict,796.9983,-379.91147,628,Isle of Conquest
+Docks,Uncontrolled,796.9965,-379.9375,628,Isle of Conquest
+Quarry,Uncontrolled,225.0382,-1188.757,628,Isle of Conquest
+Quarry,Alliance Controlled,225.0382,-1188.757,628,Isle of Conquest
+Quarry,Horde Controlled,225.0382,-1188.757,628,Isle of Conquest
+Quarry,In Conflict,225.0382,-1188.757,628,Isle of Conquest
+Quarry,In Conflict,225.0382,-1188.757,628,Isle of Conquest
+Refinery,Horde Controlled,1267.118,-396.06946,628,Isle of Conquest
+Refinery,Alliance Controlled,1267.118,-396.06946,628,Isle of Conquest
+Refinery,In Conflict,1267.118,-396.06946,628,Isle of Conquest
+Refinery,In Conflict,1267.118,-396.06946,628,Isle of Conquest
+Refinery,Uncontrolled,1267.118,-396.06946,628,Isle of Conquest
+Horde Gate,Front Gate,1151.1892,-762.52606,628,Isle of Conquest
+Horde Gate,Destroyed,1151.1892,-762.52606,628,Isle of Conquest
+Horde Gate,East Gate,1218.5851,-850.99304,628,Isle of Conquest
+Horde Gate,Destroyed,1218.6302,-851.1024,628,Isle of Conquest
+Horde Gate,West Gate,1218.0781,-677.0816,628,Isle of Conquest
+Horde Gate,Destroyed,1218.0521,-677.1215,628,Isle of Conquest
+Alliance Gate,East Gate,352.00348,-901.0434,628,Isle of Conquest
+Alliance Gate,Destroyed,411.3854,-833.7969,628,Isle of Conquest
+Alliance Gate,Destroyed,352.00348,-901.0434,628,Isle of Conquest
+Alliance Gate,West Gate,351.6684,-764.71704,628,Isle of Conquest
+Alliance Gate,Destroyed,351.6684,-764.71704,628,Isle of Conquest
+Alliance Gate,Front Gate,411.3854,-833.7969,628,Isle of Conquest
+Alliance Keep,Uncontrolled,347.7604,-831.559,628,Isle of Conquest
+Alliance Keep,Alliance Controlled,347.7604,-831.559,628,Isle of Conquest
+Alliance Keep,In Conflict,347.7604,-831.559,628,Isle of Conquest
+Alliance Keep,In Conflict,347.7604,-831.559,628,Isle of Conquest
+Alliance Keep,Horde Controlled,347.7604,-831.559,628,Isle of Conquest
+Horde Keep,Horde Controlled,1212.8923,-765.4184,628,Isle of Conquest
+Horde Keep,Alliance Controlled,1212.8923,-765.4184,628,Isle of Conquest
+Horde Keep,In Conflict,1212.8923,-765.4184,628,Isle of Conquest
+Horde Keep,In Conflict,1212.8923,-765.4184,628,Isle of Conquest
+Horde Keep,Uncontrolled,1212.8923,-765.4184,628,Isle of Conquest
+Stoneward Prison,Alliance Controlled,1978.74,829.606,728,Eye of the Storm
+Stoneward Prison,In Conflict,1978.94,829.552,728,Eye of the Storm
+Stoneward Prison,In Conflict,1978.88,829.538,728,Eye of the Storm
+Stoneward Prison,Horde Controlled,1979.11,830.01,728,Eye of the Storm
+Stoneward Prison,Uncontrolled,1976.22,828.076,728,Eye of the Storm
+Mines,,1249.625,958.7483,761,The Battle for Gilneas
+Waterworks,,980.462,948.932,761,The Battle for Gilneas
+Lighthouse,,1057.2882,1278.1736,761,The Battle for Gilneas
+Trade District,,-8839.79,614.043,0,Stormwind City
+Old Town,,-8722.51,417.172,0,Stormwind City
+The Dwarven District,,-8444.19,595.262,0,Stormwind City
+Cathedral Square,,-8635.6,795.168,0,Stormwind City
+Lion's Rest,,-8756.01,1106.16,0,Stormwind City
+The Mage Quarter,,-8979.6,874.806,0,Stormwind City
+Stormwind Harbor,,-8503.96,1011.85,0,Stormwind City
+Elder Rise,,-1072.98,-281.852,1,Thunder Bluff
+Hunter Rise,,-1457.86,-88.8611,1,Thunder Bluff
+Spirit Rise,,-974.498,283.786,1,Thunder Bluff
+Pools of Vision,,-1058.27,194.363,1,Thunder Bluff
+Thunder Bluff,,-1197.69,30.8854,1,Thunder Bluff
+Ironclad Garrison,Alliance Controlled,-914.184,979.191,732,Tol Barad
+Ironclad Garrison,Horde Controlled,-914.184,979.191,732,Tol Barad
+Ironclad Garrison,In Conflict,-914.184,979.191,732,Tol Barad
+Ironclad Garrison,In Conflict,-914.184,979.191,732,Tol Barad
+Warden's Vigil,Alliance Controlled,-1496.24,1312.83,732,Tol Barad
+Warden's Vigil,Horde Controlled,-1496.24,1312.83,732,Tol Barad
+Warden's Vigil,In Conflict,-1496.24,1312.83,732,Tol Barad
+Warden's Vigil,In Conflict,-1496.24,1312.83,732,Tol Barad
+Slagworks,Alliance Controlled,-1436.89,685.561,732,Tol Barad
+Slagworks,Horde Controlled,-1436.89,685.561,732,Tol Barad
+Slagworks,In Conflict,-1436.89,685.561,732,Tol Barad
+Slagworks,In Conflict,-1436.89,685.561,732,Tol Barad
+West Spire,Alliance Controlled,-950.056,1469.46,732,Tol Barad
+West Spire,Horde Controlled,-950.056,1469.46,732,Tol Barad
+West Spire,"Horde Controlled, Damaged",-950.056,1469.46,732,Tol Barad
+West Spire,"Alliance Controlled, Damaged",-950.056,1469.46,732,Tol Barad
+West Spire,Damaged,-950.056,1469.46,732,Tol Barad
+West Spire,Destroyed,-950.056,1469.46,732,Tol Barad
+West Spire,Uncontrolled,-950.056,1469.46,732,Tol Barad
+East Spire,Uncontrolled,-1012.88,530.448,732,Tol Barad
+East Spire,Destroyed,-1012.88,530.448,732,Tol Barad
+East Spire,Damaged,-1012.88,530.448,732,Tol Barad
+East Spire,Alliance Controlled,-1012.88,530.448,732,Tol Barad
+East Spire,"Alliance Controlled, Damaged",-1012.88,530.448,732,Tol Barad
+East Spire,Horde Controlled,-1012.88,530.448,732,Tol Barad
+East Spire,"Horde Controlled, Damaged",-1012.88,530.448,732,Tol Barad
+South Spire,Uncontrolled,-1618.03,953.585,732,Tol Barad
+South Spire,Damaged,-1618.03,953.585,732,Tol Barad
+South Spire,Destroyed,-1618.03,953.585,732,Tol Barad
+South Spire,Alliance Controlled,-1618.03,953.585,732,Tol Barad
+South Spire,"Alliance Controlled, Damaged",-1618.03,953.585,732,Tol Barad
+South Spire,Horde Controlled,-1618.03,953.585,732,Tol Barad
+South Spire,"Horde Controlled, Damaged",-1618.03,953.585,732,Tol Barad
+Hall of Explorers,,-4703.6,-1217.26,0,Ironforge
+Mystic Ward,,-4645.04,-944.885,0,Ironforge
+The Commons,,-4930.1,-943.351,0,Ironforge
+The Forlorn Cavern,,-4639.32,-1098.48,0,Ironforge
+The Great Forge,,-4818.28,-1090.15,0,Ironforge
+The Military Ward,,-4983.07,-1220.4,0,Ironforge
+The Cleft of Shadow,,1773.42,-4336.81,1,Orgrimmar
+The Drag,,1841.67,-4519.81,1,Orgrimmar
+Baradin Hold,Alliance Controlled,-1292.11,980.354,732,Tol Barad
+Baradin Hold,Horde Controlled,-1292.11,980.354,732,Tol Barad
+The Goblim Slums,,1581.96,-4204.51,1,Orgrimmar
+New Kargath,,-6764.0103,-2433.2847,0,Badlands
+Dragon's Mouth,,-7011.733,-2554.184,0,Badlands
+Fuselight,,-6615.3384,-3892.4758,0,Badlands
+Nethergarde Keep,,-10994.636,-3435.7952,0,Blasted Lands
+Dreadmaul Hold,,-10930.781,-2728.7883,0,Blasted Lands
+Surwich,,-12706.021,-2873.4307,0,Blasted Lands
+Light's Hope Chapel,,2302.9758,-5341.2954,0,Eastern Plaguelands
+Eastvale Logging Camp,,-9478.264,-1290.3802,0,Elwynn Forest
+Farstrider Lodge,,-5656.009,-4274.7485,0,Loch Modan
+Fort Livingston,,-12836.271,-425.6736,0,Northern Stranglethorn
+Iron Summit,,-7095.238,-1202.0521,0,Searing Gorge
+Forsaken Rear Guard,,1065.5104,1559.382,0,Silverpine Forest
+Bogpaddle,,-9767.96,-3912.948,0,Swamp of Sorrows
+The Harborage,,-10110.455,-2804.2605,0,Swamp of Sorrows
+Hardwrench Hideaway,,-13272.816,728.36633,0,Northern Stranglethorn
+Hiri'watha Research Station,,-25.463541,-2815.5,0,The Hinterlands
+Stormfeather Outpost,,340.6684,-4128.1284,0,The Hinterlands
+The Bulwark,,1712.1754,-751.52954,0,Tirisfal Glades
+Dragonmaw Port,,-4013.1458,-6417.5728,0,Twilight Highlands
+Highbank,,-4812.7085,-6678.2915,0,Twilight Highlands
+Firebeard's Patrol,,-4186.21,-5608.1616,0,Twilight Highlands
+Bloodgulch,,-3663.5278,-5303.932,0,Twilight Highlands
+The Krazzworks,,-2743.804,-6410.026,0,Twilight Highlands
+Kirthaven,,-2769.2258,-5333.9443,0,Twilight Highlands
+Thundermar,,-3201.3176,-5029.646,0,Twilight Highlands
+Victor's Point,,-4194.932,-4724.7446,0,Twilight Highlands
+Crushblow,,-4840.4946,-4821.4985,0,Twilight Highlands
+Deepmist Grotto,,-5132.0415,3282.9062,0,Vashj'ir
+Silver Tide Hollow,,-6116.9775,4294.889,0,Vashj'ir
+Tranquil Wash,,-6608.521,4285.433,0,Vashj'ir
+Legion's Rest,,-6778.962,4193.5254,0,Vashj'ir
+Darkbreak Cove,,-6876.415,6009.471,0,Vashj'ir
+Tenebrous Cavern,,-6549.0312,6126.4087,0,Vashj'ir
+Andorhal,,1537.4791,-1596.3403,0,Western Plaguelands
+Swiftgear Station,,-2871.9949,-1493.7709,0,Wetlands
+Greenwarden's Grove,,-3280.6667,-2752.481,0,Wetlands
+Keel Harbor,,-1380.6892,2126.2847,0,Gilneas
+Hellscream's Watch,,3015.7708,-514.8507,1,Ashenvale
+Bilgewater Harbor,,3511.2004,-6549.8384,1,Azshara
+Lor'danel,,7415.803,-272.47397,1,Darkshore
+Karnum's Glade,,-977.8316,1640.6875,1,Desolace
+Whisperwind Grove,,6089.463,-871.80206,1,Felwood
+Talonbranch Glade,,6197.8647,-1931.3473,1,Felwood
+Camp Ataya,,-3077.5295,2573.9878,1,Feralas
+Stonemaul Hold,,-4573.4395,1832.9601,1,Feralas
+Dreamer's Rest,,-3168.9688,1909.2726,1,Feralas
+Nordrassil,,5523.9375,-3609.8665,1,Mount Hyjal
+Grove of Aessina,,5136.8335,-1755.382,1,Mount Hyjal
+Shrine of Aviana,,4919.508,-2727.566,1,Mount Hyjal
+Nozzlepot's Outpost,,1169.868,-3390.9758,1,Northern Barrens
+Hunter's Hill,,-789.2674,-1568.9861,1,Southern Barrens
+Honor's Stand,,-442.16495,-1475.0798,1,Southern Barrens
+Northwatch Hold,,-2171.9097,-3632.0435,1,Southern Barrens
+Desolation Hold,,-3253.8247,-1725.4375,1,Southern Barrens
+Fort Triumph,,-3146.6494,-2280.6233,1,Southern Barrens
+Krom'gar Fortress,,902.5382,3.7708333,1,Stonetalon Mountains
+Windshear Hold,,1202.0035,443.18402,1,Stonetalon Mountains
+Farwatcher's Glen,,1025.5192,2003.1163,1,Stonetalon Mountains
+Thal'darah Overlook,,2127.559,1592.0452,1,Stonetalon Mountains
+Bootlegger Outpost,,-8670.891,-4065.6284,1,Tanaris
+Fizzle and Pozzik's Speedbarge,,-6126.9097,-3852.3403,1,Thousand Needles
+Ramkahen,,-9440.91,-958.63544,1,Uldum
+Oasis of Vir'sar,,-8340.511,788.28644,1,Uldum
+Schnottz's Landing,,-10676.896,1052.0955,1,Uldum
+Marshal's Stand,,-7504.5645,-1503.8785,1,Un'Goro Crater
+Chiselgrip,,-7924.009,-1918.4254,0,Burning Steppes
+Smuggler's Scar,,-4635.432,3535.1675,0,Kelp'thar Forest
+Blood Elf Tower,,2048.4219,1394.0469,968,Eye of the Storm
+Fel Reaver Ruins,,2043.8298,1730.0278,968,Eye of the Storm
+Mage Tower,,2284.9028,1731.5399,968,Eye of the Storm
+Draenei Ruins,,2286.5676,1402.5035,968,Eye of the Storm
+Darkmoon Faire,,-9548.009,90.97396,0,Elwynn Forest
+Darkmoon Faire,,-1524.8507,176.76216,1,Mulgore
+Portal 1,CoT Well of Eternity - Portal 1,3289.2205,-4993.1997,939,Courtyard of Lights
+Portal 2,CoT Well of Eternity - Portal 2,3452.3125,-4880.193,939,Courtyard of Lights
+Portal 3,CoT Well of Eternity - Portal 3,3478.842,-4851.0156,939,Courtyard of Lights
+Power Orb,Uncontrolled,1716.89,1249.9,998,
+Power Orb,Uncontrolled,1850.26,1416.84,998,
+Power Orb,Uncontrolled,1850.24,1250.28,998,
+Power Orb,Uncontrolled,1716.79,1416.74,998,
+Temple of the White Tiger,,3821.9062,537.47394,870,Kun-Lai Summit
+Eye of the Storm Flag,Not Controlled,2174.4497,1569.4983,968,Eye of the Storm
+Klaxxi'vess Alchemy,,156.88368,3162.639,870,Klaxxi'vess
+Seat of Knowledge Archaeology,,1421.0555,364.27432,870,Seat of Knowledge
+Setting Sun Garrison Blacksmith,,726.54865,1928.2812,870,Setting Sun Garrison
+Halfhill Cooking,,-256.1441,611.6059,870,The Halfhill Market
+Dawn's Blossom Enchanting,,1656.757,-1817.5156,870,Dawn's Blossom
+Nesingwary's Safari Engineering,,-1079.4827,2048.7065,870,Nesingwary's Safari
+Nesingwary's Safari Skinning,,-1078.0973,2054.2673,870,Nesingwary Safari
+Anglers Wharf Fishing,,-1469.7344,-261.86807,870,Anglers Wharf
+Seat of Knowledge Inscription,,1464.6736,406.39062,870,Seat of Knowledge
+Greenstone Village Jewelcrafting,,2025.5712,-1905.2101,870,Greenstone Village
+Greenstone Quarry Mining,,2283.7153,-1764.8073,870,Greenstone Quarry
+Silken Fields Tailoring,,-466.42883,219.73264,870,Silken Fields
+The Grummle Bazaar Leatherworking,,3079.2935,793.36456,870,The Grummle Bazaar
+Serpent's Spine Alliance Conquest Quartermasters,,200.55556,2203.1355,870,Serpent's Spine
+Gate of the Setting Sun Honor Quartermaster,,894.033,2324.6545,870,Gate of the Setting Sun
+Valor & Justice Quartermaster,,2084.592,4903.283,870,Niuzao Temple
+Niuzao Temple Justice Quartermaster,,2083.9705,4900.0176,870,Niuzao Temple
+Anglers Wharf Anglers Quartermaster,,-1469.9913,-260.47397,870,Anglers Wharf
+Stormstout Brewery Brewmasters Quartermaster,,-695.30554,1253.743,870,Stormstout Brewery
+Mogu'shan Palace Golden Lotus Quartermaster - Alliance,,888.40625,346.85245,870,Mogu'shan Palace
+Klaxxi'vess Klaxxi Quartermaster,,149.92361,3193.0112,870,Klaxxi'vess
+Seat of Knowledge Lorewalkers Quartermaster,,1453.3611,405.46875,870,Seat of Knowledge
+Halfhill Tillers Quartermaster,,-258.21875,599.3455,870,Halfhill
+Shrine of Seven Stars Flight Trainer,,911.73267,348.4757,870,Shrine of Seven Stars
+Halfhill Herbalism,,-246.35938,570.88544,870,Halfhill
+Shado-Pan Garrison Quartermaster,,1856.3403,4274.068,870,Shado-Pan Garrison
+Conquest & Honor Quartermaster,,200.55556,2203.1355,870,Serpent's Spine
+Serpent's Spine Horde Conquest Quartermasters,,2141.6477,2620.6885,870,Serpent's Spine
+Conquest & Honor Quartermaster,,2141.6477,2620.6885,870,Gate of the Setting Sun
+The Arboretum Order of the Cloud Serpent Quartermaster,,1461.1666,-2498.7969,870,The Arboretum
+Domination Point Graveyard,Horde Controlled,-1964.7795,2282.3542,870,Krasarang Wilds
+Domination Point Graveyard,Alliance Controlled,-1964.8733,2282.3855,870,Krasarang Wilds
+Domination Point Tower,Horde Controlled,-2183.4705,2331.5676,870,Krasarang Wilds
+Domination Point Tower,Alliance Controlled,-2183.4324,2331.54,870,Krasarang Wilds
+Lion's Landing Graveyard,Horde Controlled,-773.4149,-1033.6111,870,Krasarang Wilds
+Lion's Landing Graveyard,Alliance Controlled,-773.40106,-1033.5625,870,Krasarang Wilds
+Lion's Landing Tower,Horde Controlled,-881.5399,-769.26215,870,Krasarang Wilds
+Lion's Landing Tower,Alliance Controlled,-881.5399,-769.3108,870,Krasarang Wilds
+Elder Adler,,-1292.8281,1513.9531,1104,Krasarang Wilds
+Rosey Axlerod,,-1188.4305,1147.7413,1104,Krasarang Wilds
+Duff McStrum,,-1175.6788,1210.5573,1104,Krasarang Wilds
+Blacksand Oilfield,Horde Controlled,-2116.4565,1768.3507,870,Krasarang Wilds
+Blacksand Oilfield,Alliance Controlled,-2116.4602,1768.3872,870,Krasarang Wilds
+Ogudei Shrine,Horde Controlled,-717.52954,-1030.0469,870,Krasarang Wilds
+Ogudei Shrine,Alliance Controlled,-717.53125,-1030.0017,870,Krasarang Wilds
+Master Brownstone,,-1163.4045,1037.4635,1104,Krasarang Wilds
+Ferra Pearl,,-1093.6216,1256.6927,1104,Krasarang Wilds
+The Zandalari Battlements,Aid the Kirin Tor war effort to gain access to the city.,6820.8525,5458.492,1064,Isle of Thunder
+The Zandalari Battlements,You need to gain a foothold on the island before attacking the city.,6820.9834,5458.362,1064,Isle of Thunder
+The Thunder Forges,Aid the Kirin Tor war effort to gain access to the forge.,7348.343,5403.2656,1064,Isle of Thunder
+The Thunder Forges,You need to break through the battlements before attacking this area.,7347.894,5401.1396,1064,Isle of Thunder
+Stormsea Landing,Aid the Kirin Tor war effort to gain access to the landing.,6924.854,4903.9185,1064,Isle of Thunder
+Stormsea Landing,You need to control the Thunder Forges before attacking this area.,6923.6484,4902.349,1064,Isle of Thunder
+The Foot of Lei Shen,Aid the Kirin Tor war effort to gain access to this area.,7301.731,4973.28,1064,Isle of Thunder
+The Foot of Lei Shen,You need to hold Stormsea Landing before attacking this area.,7301.441,4973.6953,1064,Isle of Thunder
+Shaol'mara,Aid the Kirin Tor war effort to gain access to this area.,6134.277,5011.243,1064,Isle of Thunder
+Zeb'tula,Aid the Sunreaver war effort to gain access to this area.,7203.191,6302.98,1064,Isle of Thunder
+The Zandalari Battlements,Aid the Sunreaver war effort to gain access to the city.,6820.8525,5458.492,1064,Isle of Thunder
+The Thunder Forges,Aid the Sunreaver war effort to gain access to the forge.,7347.783,5401.788,1064,Isle of Thunder
+Stormsea Landing,Aid the Sunreaver war effort to gain access to the landing.,6923.2397,4902.9653,1064,Isle of Thunder
+The Foot of Lei Shen,Aid the Sunreaver war effort to gain access to this area.,7300.356,4973.5454,1064,Isle of Thunder
+The Zandalari Battlements,You need to gain a foothold on the island before attacking the city.,6820.9834,5458.362,1064,Isle of Thunder
+The Thunder Forges,You need to break through the battlements before attacking this area.,7347.4673,5401.8203,1064,Isle of Thunder
+Stormsea Landing,You need to control the Thunder Forges before attacking this area.,6923.1987,4902.674,1064,Isle of Thunder
+The Foot of Lei Shen,You need to hold Stormsea Landing before attacking this area.,7303.1353,4975.5645,1064,Isle of Thunder
+Ogudei Shrine,Horde Controlled,-717.52954,-1030.0469,870,Ruins of Ogudei
+Ogudei Shrine,Alliance Controlled,-717.53125,-1030.0017,870,Ruins of Ogudei
+Pandaren Mine,In Conflict,68.30729,431.6146,1105,Deepwind Gorge
+Pandaren Mine,In Conflict,68.37153,432.05728,1105,Deepwind Gorge
+Pandaren Mine,Alliance Controlled,68.37847,431.90973,1105,Deepwind Gorge
+Pandaren Mine,Horde Controlled,68.39931,431.4462,1105,Deepwind Gorge
+Pandaren Mine,Uncontrolled,68.30035,431.76736,1105,Deepwind Gorge
+Center Mine,Uncontrolled,-165.35243,502.55383,1105,Deepwind Gorge
+Goblin Mine,In Conflict,-397.2639,573.61115,1105,Deepwind Gorge
+Goblin Mine,Uncontrolled,-397.55902,573.4948,1105,Deepwind Gorge
+Goblin Mine,In Conflict,-397.94965,573.83856,1105,Deepwind Gorge
+Goblin Mine,Horde Controlled,-397.7014,573.55554,1105,Deepwind Gorge
+Goblin Mine,Alliance Controlled,-397.58682,573.75867,1105,Deepwind Gorge
+Center Mine,In Conflict,-165.13716,502.54514,1105,Deepwind Gorge
+Center Mine,In Conflict,-164.99306,502.48264,1105,Deepwind Gorge
+Center Mine,Horde Controlled,-165.07118,502.60938,1105,Deepwind Gorge
+Center Mine,Alliance Controlled,-164.94966,502.4236,1105,Deepwind Gorge
+Kor'kron Commander,,377.13022,-1968.3473,1,
+Kor'kron Commander,,517.6528,-1586.9514,1,
+Kor'kron Commander,,-493.6059,-2055.3489,1,
+Kor'kron Commander,,-742.6528,-2485.9878,1,
+Kor'kron Commander,,-41.258682,-1414.4827,1,
+Kor'kron Commander,,-672.0972,-3744.9602,1,
+Kor'kron Commander,,54.79514,-3024.6094,1,
+Kor'kron Commander,,437.97745,-3451.1633,1,
+Kor'kron Commander,,765.4514,-2894.3176,1,
+Overturned Kor'kron Caravan,Lumber,570.3299,-1747.1702,1,
+Overturned Kor'kron Caravan,Oil,482.15277,-2635.7153,1,
+Overturned Kor'kron Caravan,Meat,-234.42882,-2511.7344,1,
+Overturned Kor'kron Caravan,Stone,-898.5278,-3441.0676,1,
+Overturned Kor'kron Caravan,Lumber,674.92017,-2125.816,1,
+Overturned Kor'kron Caravan,Lumber,305.88715,-1595.6389,1,
+Overturned Kor'kron Caravan,Oil,345.52084,-3268.5798,1,
+Overturned Kor'kron Caravan,Oil,922.30035,-2969.0972,1,
+Overturned Kor'kron Caravan,Meat,103.66493,-1952.5504,1,
+Overturned Kor'kron Caravan,Meat,35.25,-2615.8298,1,
+Overturned Kor'kron Caravan,Stone,-810.46875,-3087.337,1,
+Overturned Kor'kron Caravan,Stone,-378.0,-3627.3438,1,
+Julia Stevens,Aspiring Pet Tamer,-9876.11,89.52,0,
+Old Macdonald,Master Pet Tamer,-9831.59,886.78,0,
+Lindsay,Master Pet Tamer,-9414.94,-2334.44,0,
+Eric Davidson,Master Pet Tamer,-10528.03,297.28,0,
+Steven Lisbane,Master Pet Tamer,-12122.29,-142.4,0,
+Bill Buckler,Master Pet Tamer,-14447.72,77.53,0,
+Zunta,Aspiring Pet Tamer,791.04,-4281.26,1,
+Dagra the Fierce,Master Pet Tamer,-221.81,-3165.47,1,
+Analynn,Master Pet Tamer,3537.08,535.17,1,
+Zonya the Sadist,Master Pet Tamer,588.54,382.45,1,
+Merda Stronghoof,Master Pet Tamer,-917.52,1665.68,1,
+Cassandra Kaboom,Master Pet Tamer,-3707.71,-1582.18,1,
+Traitor Gluk,Master Pet Tamer,-4666.74,1288.99,1,
+Grazzle the Great,Master Pet Tamer,-4653.96,-3802.35,1,
+Kela Grimtotem,Master Pet Tamer,-4932.9,-1835.98,1,
+Zoltan,Master Pet Tamer,4951.15,-624.15,1,
+Elena Flutterfly,Master Pet Tamer,7563.73,-2446.02,1,
+Stone Cold Trixxy,Grand Master Pet Tamer,6148.53,-5028.3,1,
+David Kosse,Master Pet Tamer,65.62,-3999.93,0,
+Deiza Plaguehorn,Master Pet Tamer,2295.27,-4986.98,0,
+Kortas Darkhammer,Master Pet Tamer,-6512.87,-1110.56,0,
+Everessa,Master Pet Tamer,-10229.63,-4008.05,0,
+Durin Darkhammer,Master Pet Tamer,-7982.93,-1269.64,0,
+Lydia Accoste,Grand Master Pet Tamer,-11141.02,-1834.53,0,
+Nicki Tinytech,Master Pet Tamer,-216.6,2218.0,530,
+Ras'an,Master Pet Tamer,241.98,8608.06,530,
+Narrok,Master Pet Tamer,-1778.9,6927.21,530,
+Morulu the Elder,Master Pet Tamer,-2084.03,5367.8,530,
+Bloodknight Antari,Grand Master Pet Tamer,-3479.28,2546.71,530,
+Beegle Blastfuse,Master Pet Tamer,1750.8,-3127.52,571,
+Nearly Headless Jacob,Master Pet Tamer,5432.46,78.96,571,
+Orkut Dragonwaste,Master Pet Tamer,2693.34,316.89,571,
+Gutretch,Master Pet Tamer,5445.3,-1260.61,571,
+Major Payne,Grand Master Pet Tamer,8609.03,590.56,571,
+Brok,Master Pet Tamer,5269.79,-3534.61,1,
+Bordin Steadyfist,Master Pet Tamer,856.13,508.82,646,
+Goz Banefury,Master Pet Tamer,-4152.23,-5420.39,0,
+Obalis,Grand Master Pet Tamer,-9763.45,-1061.34,1,
+Hyuna of the Shrines,Grand Master Pet Tamer,1130.8,-1897.38,870,
+Farmer Nishi,Grand Master Pet Tamer,-47.16,871.1,870,
+Mo'ruk,Grand Master Pet Tamer,-1545.16,30.58,870,
+Courageous Yon,Grand Master Pet Tamer,2546.45,2596.29,870,
+Seeker Zusshi,Grand Master Pet Tamer,2559.26,4992.9,870,
+Wastewalker Shu,Grand Master Pet Tamer,76.04,3190.32,870,
+Aki the Chosen,Grand Master Pet Tamer,697.2,1689.28,870,Vale of Eternal Blossoms
+Jeremy Feasel,Master Pet Tamer,-4099.4966,6382.1797,974,
+Whispering Pandaren Spirit,Grand Master Pet Tamer,1975.2812,-565.71356,870,
+Thundering Pandaren Spirit,Grand Master Pet Tamer,1705.0399,775.07117,870,
+Burning Pandaren Spirit,Grand Master Pet Tamer,2946.092,3796.9436,870,
+Flowing Pandaren Spirit,Grand Master Pet Tamer,-1706.0817,2867.6736,870,
+Mogu'shan Palace Golden Lotus Quartermaster - Horde,,1575.7223,879.16144,870,Mogu'shan Palace
+Rokk,Laughing Skull Ruins,5636.434,1858.9202,1116,
+Rokk,Tank Base,5366.982,1534.9514,1116,
+Rokk,Ogre Slave Camp,6263.3003,1691.231,1116,
+Rokk,Pipeworks Camp,5743.8047,894.8333,1116,
+Rokk,Steam Capping Camp,7363.087,1573.5608,1116,
+Rokk,Shipyard Camp,6792.8716,312.8611,1116,
+Arena Spectator's Chest,,7169.229,6024.3696,1116,Frostfire Ridge
+Arena Master's Warhorn,,7257.686,6089.362,1116,Frostfire Ridge
+Slave's Stash,,6457.64,5789.28,1116,Frostfire Ridge
+Lagoon Pool,Requires Fishing,7882.47,6167.6,1116,Frostfire Ridge
+Fallen Ogre,,7512.6587,4439.047,1116,Frostfire Ridge
+Young Orc Traveler,,6829.731,4152.8403,1116,Frostfire Ridge
+Young Orc Woman,,7675.647,3629.5383,1116,Frostfire Ridge
+Thunderlord Cache,,7317.838,5415.4556,1116,Frostfire Ridge
+Emberfall Tower,In Conflict,4801.473,-4211.3647,1191,
+Volrath's Advance,Horde Controlled,4678.3145,-4222.1963,1191,
+Crossroads,In Conflict,4535.019,-4211.8213,1191,
+Tremblade's Vanguard,Alliance Controlled,4353.568,-4190.1895,1191,
+Archmage Overwatch,Alliance Controlled,4226.889,-4171.1978,1191,
+Volrath's Advance,In Conflict,4677.9585,-4223.139,1191,
+Volrath's Advance,Alliance Controlled,4677.8604,-4222.2847,1191,
+Emberfall Tower,Alliance Controlled,4801.799,-4211.2275,1191,
+Emberfall Tower,Horde Controlled,4801.356,-4210.3735,1191,
+Crossroads,Alliance Controlled,4535.08,-4211.788,1191,
+Crossroads,Horde Controlled,4535.0337,-4211.858,1191,
+Tremblade's Vanguard,Horde Controlled,4354.8594,-4191.2954,1191,
+Tremblade's Vanguard,In Conflict,4354.5454,-4190.9204,1191,
+Archmage Overwatch,In Conflict,4226.4707,-4171.528,1191,
+Stormshield Stronghold,Alliance Controlled,3994.8665,-4095.481,1191,
+Archmage Overwatch,Horde Controlled,4226.776,-4171.2446,1191,
+Stormshield Stronghold,In Conflict,3995.1008,-4093.4915,1191,
+Warspear Outpost,Horde Controlled,5052.596,-4184.4946,1191,
+Warspear Outpost,In Conflict,5052.5728,-4182.8506,1191,
+Throne of the Ogre King,Inactive,4532.258,-4381.585,1191,
+Throne of the Ogre King,Active,4532.896,-4380.896,1191,
+Alliance Graveyard,,4533.3706,-4003.0227,1191,
+Horde Graveyard,,4532.9116,-4002.7275,1191,
+Alliance Graveyard,,4198.7153,-4152.422,1191,
+Horde Graveyard,,4843.078,-4184.377,1191,
+Neutral Graveyard,,4532.9116,-4002.7275,1191,
+Ogre Fire,In Conflict,5072.691,-4556.139,1191,
+Hanging Satchel ,,604.92017,-890.7083,1116,
+Scaly Rylakk Egg,near Rexxar capper on south island,-1388.7327,-2275.856,1116,
+Peaceful Offering ,008D - basket,19.043404,-712.0226,1116,
+Peaceful Offering ,008C,-47.28472,-662.69965,1116,
+Peaceful Offering ,008B,-41.407986,-760.84204,1116,
+Peaceful Offering ,008A - jar,-178.97917,-711.6042,1116,
+Waterlogged Chest ,chest buried in the sand near Lobstroks,-1088.89,-357.47,1116,
+Kaliri Egg,large egg in a nest,636.46704,-1612.1041,1116,
+Veema's Herb Bag,anguish fortress catacombs,715.9774,-23.305555,1116,
+Uzko's Knickknacks,anguish fortress catacombs,834.6875,-133.05208,1116,
+Greka's Urn,anguish fortress catacombs,736.3351,-309.19098,1116,Shadowmoon Valley
+Rovo's Dagger,anguish fortress catacombs,670.316,-189.09375,1116,
+Ashes of A'kumbo,anguish fortress catacombs,679.44794,-262.375,1116,Shadowmoon Valley
+Carved Drinking Horn,anguish fortress catacombs,891.2639,27.565973,1116,
+Giant Beehive,"beehive in botani area, have to climb tree to reach",-684.5955,-1432.4479,1116,
+Mikkal's Chest,draenei painter,1678.11,-1675.38,1116,
+Ronokk's Belongings,anguish fortress catacombs,916.0035,176.8802,1116,
+Giant Moonwillow Seed,"giant seed, needs new reward",595.36804,-35.28472,1116,
+Armored Elekk Tusk,elekk skeleton being scavenged by wolves,1410.7882,-506.0816,1116,
+Astrologer's Box,in observatory,981.0573,-1035.1337,1116,
+Iron Horde Tribute ,chest inside Shaz'gul,11.6923,-249.389,1116,
+Shadowmoon Exile Treasure,inside the exile cave with ner'zhul CSI,1575.71,-812.825,1116,
+Sacrificial Dagger,at the top of the steps in anguish fortress,632.6268,261.53473,1116,
+Rotting Basket,,1148.15,735.252,1116,
+Vindicator's Cache,,-873.79517,-1157.6945,1116,
+Demonic Cache,,1455.4479,861.53125,1116,
+Bubbling Cauldron,crazed squirrels,1627.3351,-222.00174,1116,
+Cargo of the Raven Queen,sunken cargo in the harbor,760.875,-3233.625,1116,
+Fantastic Fish,fantastic fish,2406.6338,491.45312,1116,
+Sunken Treasure,chest under iron horde ship,2338.802,337.63196,1116,
+Stolen Treasure,pale cave treasure,2549.6658,456.70834,1116,
+Smoldering True Iron Deposit,,6967.17,5294.63,1116,Frostfire Ridge
+Cragmaul Brute,,7512.6587,4439.047,1116,Frostfire Ridge
+Borokk the Devourer,,6540.52,3721.04,1116,Frostfire Ridge
+Arena Master's War Horn,,7224.77,6104.65,1116,Frostfire Ridge
+Lady Sena's Extra Stash,,5534.6035,4713.3535,1152,Frostfire Ridge
+Buried Supplies,Buried Supplies,1875.5173,203.68056,1158,
+Buried Supplies,Buried Supplies,1869.1719,196.72049,1158,
+Buried Supplies,Buried Supplies,1740.9497,210.09723,1158,
+Buried Supplies,Buried Supplies,1965.4966,333.35416,1158,
+Lunarfall Egg,Lunarfall raven egg,1772.1615,244.67882,1116,
+Beloved Offering,anguish fortress catacombs,810.38367,-194.96875,1116,
+Alchemist's Satchel,Alchemist satchel in the Verdant Mire,650.0347,-1411.0365,1116,
+Relics of the Ancestors,2H axe left in a graveyard,500.0521,-1270.3403,1116,
+Strange Spore,atop some zangarshrooms,1768.5486,-1471.2517,1116,
+Sunken Fishing Boat,fishing boat at the bottom of the lake,1498.6389,-223.22049,1116,
+Iron Horde Cargo Shipment,Iron Horde caravan,-74.20139,-551.69965,1116,
+Glowing Cave Mushroom,treasure in cave by waterfall,535.50696,-995.34894,1116,
+Shadowmoon Treasure,,908.7049,378.6979,1116,
+Pale Fishmonger,,5558.3145,5776.5537,1116,Frostfire Ridge
+Deceptia's Smoldering Boots,,3949.5999,2324.9324,1116,Frostfire Ridge
+Rook's Tacklebox,,3900.2292,1963.0278,1116,Frostfire Ridge
+Jehil the Climber,,7190.413,3729.8274,1116,Frostfire Ridge
+Slave's Stash,,6529.838,5815.3193,1116,Frostfire Ridge
+Obsidian Petroglyph,,6733.249,5164.507,1116,Frostfire Ridge
+Wiggling Egg,,5589.77,3568.4895,1116,Frostfire Ridge
+Iron Horde Supplies,,5457.7534,3293.0876,1116,Frostfire Ridge
+Cragmaul Cache,,7574.5767,5080.94,1116,Frostfire Ridge
+Arena Master's War Horn,,7257.686,6089.362,1116,Frostfire Ridge
+Crag-Leaper's Cache,,6980.578,4897.7334,1116,Frostfire Ridge
+Supply Dump,,6247.9556,6520.4653,1116,Frostfire Ridge
+Survivalist's Cache,,7225.838,3548.8118,1116,Frostfire Ridge
+Grimfrost Treasure,,6405.2153,3340.942,1116,Frostfire Ridge
+Goren Leftovers,,7198.6484,3427.2239,1116,Frostfire Ridge
+Frozen Orc Skeleton,,6148.3525,4010.7327,1116,Frostfire Ridge
+Frozen Frostwolf Axe,,6293.7144,6027.578,1116,Frostfire Ridge
+Burning Pearl,,7487.992,4928.118,1116,Frostfire Ridge
+Sealed Jug,,6426.817,6905.155,1116,Frostfire Ridge
+Lucky Coin,,7785.124,6331.7554,1116,Frostfire Ridge
+Snow-Covered Strongbox,,7748.58,6040.3594,1116,Frostfire Ridge
+Gnawed Bone,,7439.2144,5945.6206,1116,Frostfire Ridge
+Pale Loot Sack,,6205.389,6180.6094,1116,Frostfire Ridge
+Forgotten Supplies,,6007.518,4836.4844,1116,Frostfire Ridge
+Lady Sena's Materials Stash,,5534.6035,4713.3535,1116,Frostfire Ridge
+Raided Loot,,5863.6885,5228.0303,1116,Frostfire Ridge
+Ogre Booty,,6838.816,5883.857,1116,Bladespire Citadel
+Gorr'thogg's Personal Reserve,,6790.1,5891.89,1116,Bladespire Citadel
+Ogre Booty,,6869.01,5771.9453,1116,Bladespire Citadel
+Ogre Booty,,6678.7485,5807.52,1116,Bladespire Citadel
+Doorog's Secret Stash,,6665.021,5879.452,1116,Bladespire Citadel
+Ogre Booty,,6895.4478,5819.1304,1116,Bladespire Citadel
+Ogre Booty,,6740.029,5784.96,1116,Bladespire Citadel
+Ogre Booty,,6884.815,5788.954,1116,Bladespire Citadel
+Ogre Booty,,6673.973,5666.999,1116,Bladespire Citadel
+Ogre Booty,,6697.491,5627.5337,1116,Bladespire Citadel
+Ogre Booty,,6694.982,5838.4956,1116,Bladespire Citadel
+Iron Horde Munitions,,5345.3022,4038.3203,1116,Frostfire Ridge
+Peaceful Offering,,-178.97917,-711.6042,1116,Shadowmoon Valley
+Hanging Satchel,,604.32465,-890.1059,1116,Shadowmoon Valley
+Scaly Rylak Egg,,-1099.7986,-2223.375,1116,Shadowmoon Valley
+Waterlogged Chest,,-1087.4531,-357.43228,1116,Shadowmoon Valley
+Iron Horde Tribute,,14.104167,-244.68404,1116,Shadowmoon Valley
+Alchemist's Satchel,,650.0347,-1411.0365,1116,Shadowmoon Valley
+Shadowmoon Exile Treasure,,1562.731,-801.0573,1116,Shadowmoon Valley
+Shadowmoon Sacrificial Dagger,,634.2656,259.6389,1116,Shadowmoon Valley
+Rotting Basket,,1148.342,734.8507,1116,Shadowmoon Valley
+Vindicator's Cache,,-873.79517,-1157.6945,1116,Shadowmoon Valley
+Demonic Cache,,1291.441,903.61285,1116,Shadowmoon Valley
+Peaceful Offering,,-41.407986,-760.84204,1116,Shadowmoon Valley
+Peaceful Offering,,-47.28472,-662.69965,1116,Shadowmoon Valley
+Peaceful Offering,,19.043404,-712.0226,1116,Shadowmoon Valley
+Astrologer's Box,,981.0573,-1035.1337,1116,Shadowmoon Valley
+Armored Elekk Tusk,,1410.7882,-506.0816,1116,Shadowmoon Valley
+Ronokk's Belongings,,916.0035,176.8802,1116,Shadowmoon Valley
+Giant Moonwillow Cone,,595.36804,-35.28472,1116,Shadowmoon Valley
+Cargo of the Raven Queen,,660.2708,-3396.606,1116,Shadowmoon Valley
+Sunken Treasure,,2338.802,337.63196,1116,Shadowmoon Valley
+Stolen Treasure,,2549.6658,456.70834,1116,Shadowmoon Valley
+Mushroom-Covered Chest,,1550.1146,-1274.4427,1116,Shadowmoon Valley
+Kaliri Egg,,636.46704,-1612.1041,1116,Shadowmoon Valley
+Carved Drinking Horn,,891.2639,27.565973,1116,Shadowmoon Valley
+Rovo's Dagger,,670.316,-189.09375,1116,Shadowmoon Valley
+Uzko's Knickknacks,,834.6875,-133.05208,1116,Shadowmoon Valley
+Veema's Herb Bag,,715.9774,-23.305555,1116,Shadowmoon Valley
+Beloved's Offering,,810.38367,-194.96875,1116,Shadowmoon Valley
+Swamplighter Hive,,-683.7552,-1435.7223,1116,Shadowmoon Valley
+Ancestral Greataxe,,499.6684,-1270.8055,1116,Shadowmoon Valley
+Strange Spore,,1768.5486,-1471.2517,1116,Shadowmoon Valley
+Mikkal's Chest,,1680.8646,-1675.9219,1116,Shadowmoon Valley
+Shadowmoon Treasure,,907.53125,377.4861,1116,Shadowmoon Valley
+Glowing Cave Mushroom,,537.2899,-995.59204,1116,Shadowmoon Valley
+Orc Skeleton,,1164.4584,-2217.7986,1116,Shadowmoon Valley
+Strange Looking Dagger,,5232.3525,735.2917,1116,Gorgrond
+Horned Skull,,7036.0176,1584.5382,1116,Gorgrond
+Ancient Titan Chest,,7039.3203,704.5018,1116,Gorgrond
+Laughing Skull Cache,,5541.935,1452.1632,1116,Gorgrond
+Aged Stone Container,,6948.7065,1054.3594,1116,Gorgrond
+Mysterious Petrified Pod,,6468.098,426.60416,1116,Gorgrond
+Remains of Grimnir Ashpick,,6238.682,831.19617,1116,Gorgrond
+Unknown Petrified Egg,,5651.58,843.88715,1116,Gorgrond
+Forgotten Ogre Cache,,5293.4185,1006.3802,1116,Gorgrond
+Forgotten Skull Cache,,5826.502,1222.625,1116,Gorgrond
+Remains of Explorer Engineer Toldirk Ashlamp,,4489.8135,1308.092,1116,Gorgrond
+Obsidian Crystal Formation,,5920.5234,1718.2448,1116,Gorgrond
+Mysterious Petrified Pod,,5379.155,1702.5192,1116,Gorgrond
+Unknown Petrified Egg,,5123.1006,1361.2639,1116,Gorgrond
+Botani Essence Seed,,5145.028,1633.6945,1116,Gorgrond
+Ancient Titan Chest,,6659.6094,965.6458,1116,Gorgrond
+Unknown Petrified Egg,,7218.8594,1558.0695,1116,Gorgrond
+Aged Stone Container,,6604.423,1604.8212,1116,Gorgrond
+Mysterious Petrified Pod,,5624.428,119.86111,1116,Gorgrond
+Forgotten Skull Cache,,4722.0835,1321.4375,1116,Gorgrond
+Femur of Improbability,,5653.2847,1792.8455,1116,Gorgrond
+Warm Goren Egg,,7011.0234,1064.4045,1116,Gorgrond
+Mysterious Petrified Pod,,6472.645,-107.85416,1116,Gorgrond
+Brokor's Sack,,6702.7456,1654.592,1116,Gorgrond
+Weapons Cache,,7211.8203,1036.8698,1116,Gorgrond
+Petrified Rylak Egg,,7248.598,1285.3195,1116,Gorgrond
+Stashed Emergency Rucksack,,4500.7163,1131.7223,1116,Gorgrond
+Remains of Balldir Deeprock,,6539.0425,337.2934,1116,Gorgrond
+Suntouched Spear,,6880.0615,1330.691,1116,Gorgrond
+Iron Supply Chest,,7274.203,1493.9358,1116,Gorgrond
+Explorer Canister,,5414.9956,1766.1389,1116,Gorgrond
+Discarded Pack,,5043.693,1603.0938,1116,Gorgrond
+Vindicator's Hammer,,6112.9834,218.5243,1116,Gorgrond
+Sasha's Secret Stash,,5880.9287,1874.9098,1116,Gorgrond
+Sniper's Crossbow,,7266.9946,1390.8247,1116,Gorgrond
+Harvestable Precious Crystal,,6865.279,1296.7067,1116,Gorgrond
+Remains of Balik Orecrusher,,5529.6763,723.40454,1116,Gorgrond
+Evermorn Supply Cache,,5337.2446,1647.1788,1116,Gorgrond
+Ancient Titan Chest,,6818.8135,1025.5295,1116,Gorgrond
+Unknown Petrified Egg,,5280.54,732.9774,1116,Gorgrond
+Mysterious Petrified Pod,,5404.3115,1171.1372,1116,Gorgrond
+Mysterious Petrified Pod,,5824.107,835.02606,1116,Gorgrond
+Forgotten Skull Cache,,6523.04,1850.7448,1116,Gorgrond
+Aged Stone Container,,7211.749,1181.9062,1116,Gorgrond
+Unknown Petrified Egg,,6766.718,1203.7135,1116,Gorgrond
+Ancient Titan Chest,,7078.941,1625.8108,1116,Gorgrond
+Obsidian Crystal Formation,,7062.096,1132.5625,1116,Gorgrond
+Aged Stone Container,,6902.4253,1335.6771,1116,Gorgrond
+Aged Stone Container,,7096.8613,1532.474,1116,Gorgrond
+Aged Stone Container,,7122.329,1652.0209,1116,Gorgrond
+Ancient Titan Chest,,6753.9976,1616.5209,1116,Gorgrond
+Obsidian Crystal Formation,,6380.192,1644.6875,1116,Gorgrond
+Obsidian Crystal Formation,,6085.777,1627.9288,1116,Gorgrond
+Aged Stone Container,,6583.3228,1132.3298,1116,Gorgrond
+Ancient Titan Chest,,6772.521,1520.9584,1116,Gorgrond
+Obsidian Crystal Formation,,7047.2188,1454.2743,1116,Gorgrond
+Ancient Ogre Cache,,7247.283,1342.941,1116,Gorgrond
+Aged Stone Container,,7379.3975,869.15106,1116,Gorgrond
+Ancient Titan Chest,,7410.8506,1147.8091,1116,Gorgrond
+Aged Stone Container,,6153.528,1300.8802,1116,Gorgrond
+Ancient Ogre Cache,,5778.4844,1381.2517,1116,Gorgrond
+Ancient Titan Chest,,5961.171,951.75867,1116,Gorgrond
+Aged Stone Container,,6784.9565,314.4375,1116,Gorgrond
+Ancient Ogre Cache,,6398.533,33.385418,1116,Gorgrond
+Aged Stone Container,,5624.8447,196.42535,1116,Gorgrond
+Ancient Ogre Cache,,5604.0815,630.5417,1116,Gorgrond
+Ancient Titan Chest,,5094.4287,1049.8767,1116,Gorgrond
+Aged Stone Container,,4781.8975,1326.4601,1116,Gorgrond
+Ancient Ogre Cache,,4516.721,1618.5677,1116,Gorgrond
+Ancient Ogre Cache,,4874.0522,1671.8889,1116,Gorgrond
+Odd Skull,,5940.388,772.6875,1116,Gorgrond
+Jug of Aged Ironwine,,3977.395,1929.9774,1116,Talador
+Luminous Shell,,3254.9368,2699.6016,1116,Talador
+Amethyl Crystal,,3141.9124,2131.8628,1116,Talador
+Foreman's Lunchbox,,3290.0686,2413.1736,1116,Talador
+Curious Deathweb Egg,,973.2448,1868.349,1116,Talador
+Charred Sword,,2443.3196,1239.8334,1116,Talador
+Farmer's Bounty,,590.9983,3722.2708,1116,Talador
+Relic of Aruuna,,2651.515,1315.1736,1116,Talador
+Iron Box,,1280.9132,1982.5348,1116,Talador
+Barrel of Fish,,2522.2344,2112.0017,1116,Talador
+Draenei Weapons,,1777.2466,2539.3352,1116,Talador
+Soulbinder's Reliquary,,2239.0312,3479.8838,1116,Tomb of Souls
+Webbed Sac,,907.5,1931.4427,1116,Talador
+Relic of Telmor,,782.4965,3033.6206,1116,Talador
+Treasure of Ango'rosh,,1070.2291,3548.034,1116,Talador
+Light of the Sea,,3935.6614,3556.5312,1116,Talador
+Bonechewer Remnants,,1376.4879,3848.2734,1116,Talador
+Aruuna Mining Cart,,3040.2517,953.38544,1116,Talador
+Keluu's Belongings,,2783.6807,1320.7656,1116,Talador
+Pure Crystal Dust,,3844.2605,1169.9618,1116,Talador
+Rusted Lockbox,,1045.1216,1900.3767,1116,Talador
+Ketya's Stash,,3328.6511,2615.092,1116,Talador
+Bright Coin,,2387.2935,1449.8959,1116,Talador
+Gift of the Ancients,,1480.2709,4140.854,1116,Talador
+Rooby's Roo,,-659.1285,2416.2864,1116,Spires of Arak
+Outcast's Belongings,,690.1285,2450.0452,1116,Spires of Arak
+Misplaced Scrolls,,643.38544,2093.8733,1116,Spires of Arak
+Relics of the Outcasts,,722.13196,2077.4602,1116,Spires of Arak
+Fractured Sunstone,,490.56424,1620.5104,1116,Spires of Arak
+Lost Herb Satchel,,222.2882,1603.9445,1116,Spires of Arak
+Ogron Plunder,,-1049.9879,1123.8455,1116,Spires of Arak
+Relics of the Outcasts,,-400.30728,1896.1077,1116,Spires of Arak
+Relics of the Outcasts,,282.22223,2065.7188,1116,Spires of Arak
+Relics of the Outcasts,,-225.70139,598.1493,1116,Spires of Arak
+Relics of the Outcasts,,-794.2743,1032.257,1116,Spires of Arak
+Relics of the Outcasts,,-592.9549,1536.625,1116,Spires of Arak
+Shattered Hand Lockbox,,145.03299,1776.8906,1116,Spires of Arak
+Shattered Hand Cache,,219.63368,1273.3507,1116,Spires of Arak
+Shattered Hand Spoils,,-93.71702,1146.6077,1116,Spires of Arak
+Toxicfang Venom,,68.58681,1387.1094,1116,Spires of Arak
+Spray-O-Matic 5000 XT,,-1902.6198,1067.5435,1116,Spires of Arak
+Sailor Zazzuk's 180-Proof Rum,,-2278.1807,1095.2604,1116,Spires of Arak
+Campaign Contributions,,-2286.8594,1315.9132,1116,Spires of Arak
+Elixir of Shadow Sight,,775.5469,2020.0278,1116,Spires of Arak
+Elixir of Shadow Sight,,388.908,2024.7692,1116,Spires of Arak
+Elixir of Shadow Sight,,-367.41147,490.5,1116,Spires of Arak
+Elixir of Shadow Sight,,-1143.8073,1713.441,1116,Spires of Arak
+Elixir of Shadow Sight,,490.8021,1308.5243,1116,Spires of Arak
+Elixir of Shadow Sight,,-2029.9185,1460.2014,1116,Spires of Arak
+Orcish Signaling Horn,,-205.77605,2482.236,1116,Spires of Arak
+Offering to the Raven Mother,,-859.2899,1450.4271,1116,Spires of Arak
+Offering to the Raven Mother,,-741.86285,1750.8959,1116,Spires of Arak
+Offering to the Raven Mother,,-826.4167,1717.4913,1116,Spires of Arak
+Offering to the Raven Mother,,-1228.3385,1537.0104,1116,Spires of Arak
+Offering to the Raven Mother,,-1196.8177,986.0139,1116,Spires of Arak
+Lost Ring,,-75.62327,1786.1997,1116,Spires of Arak
+Reagent Pouch,,-42.012154,2429.1423,1116,Spires of Arak
+Misplaced Scroll,,-345.5295,1501.5104,1116,Spires of Arak
+Ephial's Dark Grimoire,,-955.90625,2464.3247,1116,Spires of Arak
+Garrison Supplies,,-535.48267,2429.7778,1116,Spires of Arak
+Sun-Touched Cache,,271.85764,2612.0747,1116,Spires of Arak
+Sun-Touched Cache,,281.70312,2663.765,1116,Spires of Arak
+Smuggled Apexis Artifacts,,-446.87326,1269.6233,1116,Spires of Arak
+Iron Horde Explosives,,341.58853,1631.2466,1116,Spires of Arak
+Assassin's Spear,,-119.6059,1699.2535,1116,Spires of Arak
+Outcast's Pouch,,7.6059027,1838.6129,1116,Spires of Arak
+Outcast's Belongings,,507.533,2125.6875,1116,Spires of Arak
+Sethekk Ritual Brew,,-579.58856,339.84723,1116,Spires of Arak
+Garrison Workman's Hammer,,-653.5573,2144.6719,1116,Spires of Arak
+Coinbender's Payment,,-2211.2327,534.4705,1116,Spires of Arak
+Mysterious Mushrooms,,-1338.191,828.3143,1116,Spires of Arak
+Waterlogged Satchel,,-900.2205,652.6493,1116,Spires of Arak
+Shredder Parts,,-2034.4166,992.79865,1116,Spires of Arak
+Abandoned Mining Pick,,-837.24304,2221.2327,1116,Spires of Arak
+Admiral Taylor's Coffer,,-816.69446,2488.1338,1116,Spires of Arak
+Treasure of Kull'krosh,,2249.9548,7168.2935,1116,Nagrand
+Adventurer's Pack,,2938.8254,5338.54,1116,Nagrand
+Goblin Pack,,2113.915,6629.7256,1116,Nagrand
+Steamwheedle Supplies,,1809.8507,6463.887,1116,Nagrand
+Void-Infused Crystal,,2406.6511,6472.311,1116,Nagrand
+Steamwheedle Supplies,,1893.1302,6319.139,1116,Nagrand
+Goblin Pack,,2572.533,5167.3213,1116,Nagrand
+Steamwheedle Supplies,,2957.6423,4891.4287,1116,Nagrand
+Warsong Spoils,,2632.434,4731.5503,1116,Nagrand
+Steamwheedle Supplies,,3310.394,4299.127,1116,Nagrand
+Hidden Stash,,3221.0798,4335.7485,1116,Nagrand
+Mountain Climber's Pack,,4398.923,5305.6304,1116,Nagrand
+Steamwheedle Supplies,,4219.137,5301.935,1116,Nagrand
+Steamwheedle Supplies,,4256.3794,5642.7173,1116,Nagrand
+Fungus-Covered Chest,,4232.8994,4263.482,1116,Nagrand
+Brilliant Dreampetal,,3513.4922,4707.116,1116,Nagrand
+Steamwheedle Supplies,,4155.8125,4337.0415,1116,Nagrand
+Appropriated Warsong Supplies,,2064.8767,5162.5176,1116,Nagrand
+Warsong Lockbox,,2261.1128,5163.3193,1116,Nagrand
+Warsong Spear,,2278.2656,4992.127,1116,Nagrand
+Freshwater Clam,,4108.2744,5162.79,1116,Nagrand
+Golden Kaliri Egg,,2937.1182,6001.19,1116,Nagrand
+Warsong Cache,,2642.1077,6373.4644,1116,Nagrand
+Burning Blade Cache,,2899.928,4461.472,1116,Nagrand
+Abandoned Cargo,,2663.8342,5469.4395,1116,Nagrand
+Adventurer's Pack,,2781.6008,4639.7534,1116,Nagrand
+A Pile of Dirt,,4514.3237,5161.796,1116,Nagrand
+Adventurer's Staff,,4428.327,4685.4766,1116,Nagrand
+Elemental Offering,,4185.468,5508.5166,1116,Nagrand
+Adventurer's Sack,,4391.368,5112.8135,1116,Nagrand
+Adventurer's Pack,,2955.4524,6718.9287,1116,Nagrand
+Warsong Supplies,,2430.6267,4234.758,1116,Nagrand
+Bone-Carved Dagger,,3861.0,4921.224,1116,Nagrand
+Genedar Debris,,2745.7864,6855.3613,1116,Nagrand
+Genedar Debris,,2648.7612,6580.6616,1116,Nagrand
+Genedar Debris,,2366.6736,6772.2256,1116,Nagrand
+Genedar Debris,,2169.2014,6551.2153,1116,Nagrand
+Genedar Debris,,2339.7327,6167.44,1116,Nagrand
+Fragment of Oshu'gun,,2414.8108,6706.011,1116,Nagrand
+Pokkar's Thirteenth Axe,,2678.8525,6000.099,1116,Nagrand
+Polished Saberon Skull,,2618.1042,5182.1284,1116,Nagrand
+Elemental Shackles,,4334.3267,4830.916,1116,Nagrand
+Highmaul Sledge,,3066.684,5484.2856,1116,Nagrand
+Telaar Defender Shield,,2432.2258,5635.9863,1116,Nagrand
+Ogre Beads,,1904.0555,4713.988,1116,Nagrand
+Adventurer's Pouch,,2163.2847,6098.297,1116,Nagrand
+Grizzlemaw's Bonepile,,2165.7466,4365.1797,1116,Nagrand
+Watertight Bag,,3571.0557,5632.9756,1116,Nagrand
+Warsong Helm,,3243.7239,6333.9194,1116,Nagrand
+Gambler's Purse,,3140.645,5031.0703,1116,Nagrand
+Adventurer's Mace,,2576.1858,5005.8506,1116,Nagrand
+Lost Pendant,,2748.736,5803.4644,1116,Nagrand
+Adventurer's Pouch,,2492.0122,6279.0747,1116,Nagrand
+Important Exploration Supplies,,2440.0503,5039.1865,1116,Nagrand
+Saberon Stash,,2465.9426,5042.0312,1116,Nagrand
+Goldtoe's Plunder,,2701.1685,7132.761,1116,Nagrand
+Pale Elixir,,2575.4045,6028.5176,1116,Nagrand
+Bag of Herbs,,2385.1667,5759.047,1116,Nagrand
+Bounty of the Elements,,4294.3135,4934.3066,1116,Nagrand
+Spirit's Gift,,2757.1362,7295.27,1116,Nagrand
+Smuggler's Cache,,3669.4888,4253.5146,1116,Nagrand
+Bubbling Cauldron,,1627.3351,-222.00174,1116,Shadowmoon Valley
+Fantastic Fish,,2406.6338,491.45312,1116,Shadowmoon Valley
+Lady Sena's Other Materials Stash,,5549.8315,4364.098,1116,Frostfire Ridge
+Unused Wood Pile,,5670.6885,4537.518,1116,Frostfire Ridge
+Ogre Fire,In Conflict,4832.618,-4378.014,1191,
+Ogre Fire,In Conflict,4918.098,-4406.6704,1191,
+Ogre Fire,In Conflict,4905.6396,-4497.6025,1191,
+Ogre Fire,In Conflict,4896.2173,-4578.6665,1191,
+Strange Spore,,6031.0,398.882,1116,Gorgrond
+Burning Blade Cache,,4150.79,1653.69,1116,Talador
+Sunken Fishing Boat,,1498.6389,-223.22049,1116,Shadowmoon Valley
+Spirit Coffer,,2326.16,7018.98,1116,Nagrand
+False-Bottomed Jar,,1075.13,-1198.34,1116,Shadowmoon Valley
+Sethekk Idol,,-189.405,539.862,1116,Spires of Arak
+Rukhmar's Image,,896.797,1994.45,1116,Spires of Arak
+Gift of Anzu,,-853.58,978.34,1116,Spires of Arak
+Gift of Anzu,,-250.215,1836.16,1116,Spires of Arak
+Gift of Anzu,,592.319,1527.95,1116,Spires of Arak
+Ashlei,Grand Master Pet Tamer,1264.13,-1083.5,1116,
+Gargra,Grand Master Pet Tamer,5634.6304,3312.514,1116,
+Vesharr,Grand Master Pet Tamer,-447.3316,1875.7413,1116,
+Tarr the Terrible,Grand Master Pet Tamer,4551.971,6117.2544,1116,
+Cymre Brightblade,Grand Master Pet Tamer,5743.671,890.8403,1116,
+Taralune,Grand Master Pet Tamer,1234.7379,2905.961,1116,
+Statue of Anzu,,483.049,1169.05,1116,Spires of Arak
+Forgotten Frostwolf Cache,,6735.09,4870.43,1116,Frostfire Ridge
+Conquest & Honor Quartermaster,,3831.4827,-3986.2239,1116,
+Conquest & Honor Quartermaster,,5235.772,-3977.0989,1116,Gate of the Setting Sun
+Strange Sapphire,,4411.6616,-198.35591,1116,Tanaan Jungle
+Weathered Axe,,4191.4854,872.32294,1116,Tanaan Jungle
+Stolen Captain's Chest,,4080.802,815.1684,1116,Tanaan Jungle
+The Blade of Kra'nak,,4500.1987,695.40454,1116,Tanaan Jungle
+Jewel of Hellfire,,5116.3604,199.79514,1116,Tanaan Jungle
+Tome of Secrets,,3469.5825,5.977431,1116,Tanaan Jungle
+Forgotten Sack,,3656.6824,-1282.2067,1116,Tanaan Jungle
+Lodged Hunting Spear,,3507.308,-1165.4254,1116,Tanaan Jungle
+Blackfang Island Cache,,3280.1824,-1504.8923,1116,Tanaan Jungle
+Crystallized Fel Spike,,3458.3481,-1552.1719,1116,Tanaan Jungle
+Polished Crystal,,3414.467,112.81424,1116,Tanaan Jungle
+Snake Charmer's Flute,,3140.4402,-423.21527,1116,Tanaan Jungle
+The Perfect Blossom,,3289.3438,-432.76215,1116,Tanaan Jungle
+Pale Removal Equipment,,4313.882,-236.78993,1116,Tanaan Jungle
+Forgotten Champion's Blade,,3367.066,-473.79166,1116,Tanaan Jungle
+Bleeding Hollow Warchest,,4261.5366,553.309,1116,Tanaan Jungle
+Jewel of the Fallen Star,,5050.8604,-1364.6649,1116,Tanaan Jungle
+Censer of Torment,,5214.644,-1578.026,1116,Tanaan Jungle
+Rune Etched Femur,,5082.651,-1007.7153,1116,Tanaan Jungle
+Strange Fruit,,4459.4287,-1683.4584,1116,Tanaan Jungle
+Discarded Helm,,3090.2014,-911.4601,1116,Tanaan Jungle
+Scout's Belongings,,3146.5017,-913.78644,1116,Tanaan Jungle
+Forgotten Iron Horde Supplies,,3973.533,-1953.2692,1116,Tanaan Jungle
+Crystalized Essence of the Elements,,3469.2292,-807.16144,1116,Tanaan Jungle
+Overgrown Relic,,3659.8403,-959.6424,1116,Tanaan Jungle
+Jeweled Arakkoa Effigy,,4845.5312,59.685764,1116,Tanaan Jungle
+"""Borrowed"" Enchanted Spyglass",,4174.2207,378.908,1116,Tanaan Jungle
+Mysterious Corrupted Obelisk,,3385.8098,-719.908,1116,Tanaan Jungle
+Forgotten Shard of the Cipher,,4950.329,-1620.7014,1116,Tanaan Jungle
+Looted Bleeding Hollow Treasure,,3729.5833,315.09897,1116,Tanaan Jungle
+Skull of the Mad Chief,,4721.9062,-112.98785,1116,Tanaan Jungle
+Axe of the Weeping Wolf,,4028.8508,922.7344,1116,Tanaan Jungle
+Spoils of War,,3941.606,797.06946,1116,Tanaan Jungle
+Ironbeard's Treasure,,3183.8525,-175.79861,1116,Tanaan Jungle
+The Eye of Grannok,,3854.408,868.8768,1116,Tanaan Jungle
+Stashed Iron Sea Booty,,3198.5557,-71.38021,1116,Tanaan Jungle
+Stashed Iron Sea Booty,,3226.9202,-130.85591,1116,Tanaan Jungle
+Stashed Iron Sea Booty,,3192.9253,-98.02431,1116,Tanaan Jungle
+Book of Zyzzix,,4650.619,-752.40106,1116,Tanaan Jungle
+Fel-Drenched Satchel,,4380.742,-755.9983,1116,Tanaan Jungle
+Sacrificial Blade,,4457.2256,-751.75,1116,Tanaan Jungle
+Stashed Bleeding Hollow Loot,,4420.9854,-2157.908,1116,Tanaan Jungle
+Brazier of Awakening,,3106.711,-272.1337,1116,Tanaan Jungle
+Bleeding Hollow Mushroom Stash,,3246.2979,-914.23956,1116,Tanaan Jungle
+Looted Mystical Staff,,3300.8247,-839.28125,1116,Tanaan Jungle
+The Commander's Shield,,4591.291,-559.3958,1116,Tanaan Jungle
+Dazzling Rod,,4694.9775,-541.3993,1116,Tanaan Jungle
+Partially Mined Apexis Crystal,,4722.0537,192.3507,1116,Tanaan Jungle
+Fel-Tainted Apexis Formation,,4789.866,-1002.4445,1116,Tanaan Jungle
+Bejeweled Egg,,2957.7996,-1751.5538,1116,Tanaan Jungle
+Dead Man's Chest,,2759.64,-1175.7466,1116,Tanaan Jungle
+The Dark Portal,,-11874.8,-3204.22,0,The Dark Portal
+Sanctum of Light,"Portal to the Sanctum of Light, Home of the Silver Hand",-966.403,4604.31,1220,Dalaran
+Sanctum of Light,"Portal to the Sanctum of Light, Home of the Silver Hand",-657.476,4363.69,1220,Dalaran
+Maelstrom,"Portal to the Maelstrom, Home of the Earthen Ring",-847.401,4321.26,1220,Dalaran
+Skyhold,"Entrance to Skyhold, Home of the Valarjar",-844.213,4256.11,1220,Dalaran
+Dreadscar Rift,"Portal to Dreadscar Rift, Home of the Black Harvest",-795.599,4581.99,1220,Dalaran
+Netherlight Temple,"Portal to Netherlight Temple, Home of the Conclave",-897.584,4547.74,1220,Dalaran
+Netherlight Temple,"Portal to Netherlight Temple, Home of the Conclave",-680.028,4355.89,1220,Dalaran
+Acherus,Home of the Knights of the Ebon Blade,-1507.42,1050.57,1220,
+Locked Door,,3415.2222,4750.5557,1516,The Arcway
+Locked Door,,3414.736,4749.33,1516,The Arcway
+Locked Door,,3414.5442,4860.6685,1516,The Arcway
+Locked Door,,3414.5442,4860.6685,1516,The Arcway
+Locked Door,,3386.087,4711.308,1516,The Arcway
+Locked Door,,3385.9888,4711.9517,1516,The Arcway
+Locked Door,,3400.4827,4885.579,1516,The Arcway
+Locked Door,,3400.4827,4885.579,1516,The Arcway
+Locked Door,,3351.6042,4904.7065,1516,The Arcway
+Locked Door,,3351.6042,4904.7065,1516,The Arcway
+Locked Door,,3351.6042,4904.7065,1516,The Arcway
+Locked Door,,3322.837,4935.2915,1516,The Arcway
+Locked Door,,3322.837,4935.2915,1516,The Arcway
+Locked Door,,3322.837,4935.2915,1516,The Arcway
+Locked Door,,3297.8325,4962.671,1516,The Arcway
+Locked Door,,3220.5852,4783.2744,1516,The Arcway
+Locked Door,,3220.5286,4783.1084,1516,The Arcway
+Locked Door,,3220.605,4783.114,1516,The Arcway
+Locked Door,,3400.4827,4885.579,1516,The Arcway
+Locked Door,,3245.4758,4805.097,1516,The Arcway
+Locked Door,,3245.5034,4805.118,1516,The Arcway
+Dalaran Portal,Teleports players to Dalaran.,-8501.06,1057.45,0,Stormwind City
+Eye of Azshara,Dungeon,-0.268681,5800.76,1220,Hatecoil Warcamp
+Vault of the Wardens,Dungeon,-1802.33,6663.9,1220,Isle of the Watchers
+Black Rook Hold,Dungeon,3116.42,7555.51,1220,Black Rook Hold
+Darkheart Thicket,Dungeon,3812.909,6347.5894,1220,Shala'nir
+The Emerald Nightmare,Raid,3588.2751,6483.405,1220,Shaladrassil
+Halls of Valor,Dungeon,2449.6926,818.1528,1220,Gates of Valor
+Maw of Souls,Dungeon,3419.0088,1988.6354,1220,Helmouth Cliffs
+Assault on Violet Hold,Dungeon,-953.0573,4333.46,1220,Dalaran
+The Arcway,Dungeon,1168.83,4372.7,1220,The Grand Promenade
+Court of Stars,Dungeon,1019.8,3839.74,1220,Concourse of Destiny
+The Nighthold,Raid,1324.7448,4230.587,1220,The Grand Promenade
+Hall of Shadows,Home of the Uncrowned,-969.19,4439.4,1220,
+Neltharion's Lair,Dungeon,3732.3542,4184.5884,1220,Snowblind Mesa
+Idle Researchers,Begin research to increase Artifact Power gain.,4083.7,7488.55,1220,The Dreamgrove
+Idle Researchers,Begin research to increase Artifact Power gain.,-941.059,4559.29,1220,The Hall of Shadows
+Idle Researchers,Begin research to increase Artifact Power gain.,-1522.64,1053.38,1220,Acherus: The Ebon Hold
+Idle Researchers,Begin research to increase Artifact Power gain.,1503.94,1400.26,1519,"Mardum, the Shattered Abyss"
+Idle Researchers,Begin research to increase Artifact Power gain.,4495.83,5213.02,1220,Trueshot Lodge
+Idle Researchers,Begin research to increase Artifact Power gain.,-829.376,4680.25,1513,Hall of the Guardian
+Idle Researchers,Begin research to increase Artifact Power gain.,954.674,3730.89,1514,The Wandering Isle
+Idle Researchers,Begin research to increase Artifact Power gain.,2399.28,-5321.16,0,Sanctum of Light
+Idle Researchers,Begin research to increase Artifact Power gain.,1394.99,1297.54,1512,Netherlight Temple
+Idle Researchers,Begin research to increase Artifact Power gain.,1019.78,1066.31,1469,The Maelstrom
+Idle Researchers,Begin research to increase Artifact Power gain.,3071.74,959.066,1107,Dreadscar Rift
+Idle Researchers,Begin research to increase Artifact Power gain.,1066.49,7323.99,1479,Skyhold
+Trial of Valor,Raid,2360.0886,906.5625,1220,Gates of Valor
+Dadanga,,-6973.9844,-1477.6666,1,
+Sherazin,,-6715.8594,-1864.5625,1,
+Giantfin,,-7415.08,-830.125,1,
+Skrox,,-6990.7954,-681.0243,1,
+Queen Zavra,,-7427.257,-1980.4375,1,
+Akaridal,,-7199.4897,-240.77257,1,
+Clutchmother Zavas,,-7937.6494,-1324.9497,1,
+Tar Tyrant,,-6488.8193,-1377.9166,1,
+Sunkeeper Croesus,,-8208.933,-1111.2361,1,
+Tyrantus,,-7897.3647,-1020.6858,1,
+Legion Assault,Azsuna is under attack!,12.751737,6658.053,1220,
+Legion Assault,Highmountain is under attack!,4379.4087,4248.8784,1220,
+Legion Assault,Stormheim is under attack!,3110.9375,1885.1788,1220,
+Random Brawls,Speak to a grunt to fight a random brawl.,2004.53,-4760.25,1043,
+Financial Participation Incentive,Speak to Pit Boss Buxdoggle to guess the next fight's winner.,2005.75,-4745.5767,1043,
+Brawler's Graveyard,,1988.03,-4763.77,1043,
+Free Drinks,Drinks are on the house!,1966.64,-4732.65,1043,
+Free Potions,No charge for brawlers' potions.,2059.51,-4751.95,1043,
+Free Zeppelin Rides,Enjoy the view!,1990.97,-4730.95,1043,
+Random Brawls,Speak to a bouncer to fight a random brawl.,-92.8293,2478.64,369,
+Financial Participation Incentive,Speak to Lord Winifred Browne to guess the next fight's winner.,-100.196,2478.27,369,
+Brawler's Graveyard,,-111.074,2529.79,369,
+Free Drinks,Drinks are on the house!,-107.789,2464.02,369,
+Free Potions,No charge for brawlers' potions.,-80.8219,2493.15,369,
+Free VIP Room,Enjoy the view!,-73.6684,2531.38,369,
+Cloudwalker Express,Take a balloon tour of the Valley of the Four Winds.,547.52954,-654.02954,870,
+Schnottz' Hot Air Balloon,Take a balloon tour of Uldum.,-9520.56,-1009.3,1,
+Chen's Balloon,Take a balloon tour of Crystalsong Forest.,5259.48,-669.275,571,
+Nagrand Sky Tours,Take a balloon tour of Nagrand.,3153.6,4903.04,1116,
+Boscoe and Rungle's Sky Chariot,Take a balloon tour of Azsuna.,470.571,6518.46,1220,
+Cloudwalker Express,Take a balloon tour of Suramar.,1661.55,4788.58,1220,
+The Killem'jaro,Take a balloon tour of Highmountain.,4506.19,4857.14,1220,
+Emi-Lan's Skylounge,Take a balloon tour of Stormheim.,3842.33,2065.05,1220,
+Lumber Mill,Neutral,856.451,1148.98,2177,
+Stables,Neutral,1166.86,1200.12,2177,
+Gold Mine,Neutral,1146.93,848.227,2177,
+Farm,Neutral,806.25,874.28,2177,
+Blacksmith,Neutral,977.481,1051.02,2177,
+Blacksmith,Neutral,988.693,1012.81,1681,
+Farm,Neutral,824.015,826.696,1681,
+Stables,Neutral,1181.51,1185.65,1681,
+Gold Mine,Neutral,1178.15,822.624,1681,
+Lumber Mill,Neutral,812.715,1182.26,1681,
+Legion Assault,Val'sharah is under attack!,2756.6216,6486.9507,1220,
+Legionfall,,-1113.52,3282.2,1220,
+Legion Ship,Scenario,3101.26,7169.78,1220,
+Legion Ship,Scenario,3930.34,4148.45,1220,
+Legion Ship,Scenario,866.386,5987.82,1220,
+Legion Ship,Scenario,4897.86,299.697,1220,
+Tomb of Sargeras,Raid,-552.58,2452.31,1220,The Tomb of Sargeras
+Cathedral of Eternal Night,Dungeon,-434.19446,2421.158,1220,The Tomb of Sargeras
+The Sentinax,,-1054.5851,3244.3455,1220,Broken Shore
+Glowcap Festival,Celebrate the blooming of Fshoo with the Sporelings.,216.716,8513.7,530,
+The Sentinax,,-1137.3577,2969.3176,1220,Broken Shore
+The Sentinax,,-1243.4358,3207.8403,1220,Broken Shore
+The Sentinax,,-1659.6736,2868.9487,1220,Broken Shore
+The Sentinax,,-1164.3403,2706.0166,1220,Broken Shore
+The Sentinax,,-1199.0677,1739.7101,1220,Broken Shore
+The Sentinax,,-701.1493,1823.1719,1220,Broken Shore
+The Sentinax,,-373.18924,2872.6182,1220,Broken Shore
+The Sentinax,,-647.5677,3477.2014,1220,Broken Shore
+Green Dunkball,Uncontrolled,-398.16495,574.42017,1105,
+Orange Dunkball,Orange Dunkball,68.27778,431.6007,1105,
+Purple Dunkball,Purple Dunkball,-166.32986,500.18402,1105,
+Sentinax Attack Point,Use your Attack Beacon here!,-102.176,6971.52,1220,
+Sentinax Attack Point,Use your Attack Beacon here!,3091.7,5810.29,1220,
+Sentinax Attack Point,Use your Attack Beacon here!,4847.79,3969.32,1220,
+Sentinax Attack Point,Use your Attack Beacon here!,3850.47,2019.22,1220,
+Sentinax Attack Point,Use your Attack Beacon here!,-850.604,4375.63,1220,
+Legion Assault,Stormheim is under attack!,3353.09,447.327,1220,Stormheim
+Legion Assault,Highmountain is under attack!,6291.22,3516.6,1220,Highmountain
+Legion Assault,Val'sharah is under attack!,3485.82,7838.39,1220,Val'sharah
+Legion Assault,Azsuna is under attack!,-1106.39,7297.26,1220,Azsuna
+Lighthouse,,1055.8507,1278.2291,761,
+Overlook,,1090.7396,1106.0087,761,
+Coast,,1294.1094,1228.9202,761,
+Crossroad,,1006.868,1050.5573,761,
+Waterworks,,980.2917,948.73785,761,
+Bridge,,969.0868,1165.316,761,
+Ledge,,1102.2795,994.86633,761,
+Mines,,1250.4688,958.2257,761,
+Power Orb,Uncontrolled,1849.5435,1333.3403,998,
+Power Orb,Uncontrolled,1716.9149,1333.4254,998,
+Malgrazoth,,-702.13367,2757.6328,1220,Broken Shore
+Salethan the Broodwalker,,-832.07117,2415.7588,1220,Broken Shore
+Malorus the Soulkeeper,,-1103.8767,3286.804,1220,Broken Shore
+Emberfire,,-1133.2031,2910.9905,1220,Broken Shore
+Potionmaster Gloop,,-1453.849,2722.9915,1220,Broken Shore
+Felmaw Emberfiend,,-1084.3594,3406.8142,1220,Broken Shore
+Inquisitor Chillbane,,-985.09375,2523.8872,1220,Broken Shore
+Doombringer Zar'thoz,,-988.29517,2999.9993,1220,Broken Shore
+Dreadblade Annihilator,,-788.0347,2709.9688,1220,Broken Shore
+Felbringer Xar'thok,,-1198.27,2654.8,1220,Broken Shore
+Xorogun the Flamecarver,,-1235.0938,3024.6926,1220,Broken Shore
+Corrupted Bonebreaker,,-1374.2118,2569.3923,1220,Broken Shore
+Felcaller Zelthae,,-796.0139,1469.0903,1220,Broken Shore
+Dreadeye,,-2059.98,3336.62,1220,Broken Shore
+Lord Hel'Nurath,,-1369.5677,3197.9246,1220,Broken Shore
+Imp Mother Bruva,,-1159.8368,2588.9575,1220,Broken Shore
+Flllurlokkr,,-1535.8507,3360.1614,1220,Broken Shore
+Aqueux,,-2030.592,2838.159,1220,Broken Shore
+Brood Mother Nix,,-751.498,3390.92,1220,Broken Shore
+Grossir,,-610.7153,1922.467,1220,Broken Shore
+Lady Eldrathe,,-437.1007,3322.382,1220,Broken Shore
+Somber Dawn,,-1493.36,3777.04,1220,Broken Shore
+Duke Sithizi,,-719.0851,1907.401,1220,Broken Shore
+Eye of Gurgh,,-887.986,2352.04,1220,Broken Shore
+Brother Badatin,,-1017.5833,1910.3837,1220,Broken Shore
+Void Tear,Crumbling Ruins,6039.5513,10576.108,1753,The Seat of the Triumvirate
+Void Tear,Lower Void Breach,5632.9517,10658.706,1753,The Seat of the Triumvirate
+Void Tear,Lower Nether Gate,5762.126,10694.464,1753,The Seat of the Triumvirate
+Void Tear,Ruined Overlook,5564.646,10579.58,1753,The Seat of the Triumvirate
+Void Tear,Upper Void Breach,6018.4272,10652.884,1753,The Seat of the Triumvirate
+Void Tear,Temple Foundation,5870.3423,10465.504,1753,The Seat of the Triumvirate
+Zorathides,,14544.685,14303.333,1756,Dragonblight
+Obsidian Dragonshrine,,14544.685,14303.333,1756,Dragonblight
+Talar Icechill,,13883.332,13756.489,1756,Dragonblight
+Ruby Dragonshrine,,13883.332,13756.489,1756,Dragonblight
+Void Gargantuan,,13234.88,13253.045,1756,Dragonblight
+Azure Dragonshrine,,13234.88,13253.045,1756,Dragonblight
+Thalas Vylethorn,,12994.021,12842.761,1756,Dragonblight
+Emerald Dragonshrine,,12994.021,12842.761,1756,Dragonblight
+Chronoportals,,13679.9,13073.5,1756,Dragonblight
+Argus,Lightforged Beacon to the Vindicaar,-853.7049,4262.1196,1220,Dalaran
+Seat of the Triumvirate,Dungeon,5392.79,10823.6,1669,Triad's Conservatory
+War Supply Cache,Free For All PvP Active,2905.3298,488.92014,1643,Stormsong Valley
+War Supply Cache,Free For All PvP Active,2905.3298,488.92014,1643,Stormsong Valley
+Army of the Light,Light's Shield,-3079.144,9387.714,1669,Antoran Wastes
+Army of the Light,Light's Shield,-2859.2605,8840.949,1669,Antoran Wastes
+Army of the Light,Light's Shield,-3441.54,8861.02,1669,Antoran Wastes
+Army of the Light,Light's Shield,-2395.7986,8950.795,1669,Antoran Wastes
+Army of the Light,Light's Shield,-3201.802,9063.782,1669,Antoran Wastes
+Army of the Light,Light's Shield,-2461.198,9497.8545,1669,Antoran Wastes
+Twilight Grove,,-410.0486,2514.8213,1677,Cathedral of Eternal Night
+The Emerald Archives,,-633.34375,2517.4758,1677,Cathedral of Eternal Night
+Invasion Point,Invasion Point: Sangua,1815.8351,995.35596,1669,
+Hall of the Moon,,-418.26736,2514.6016,1677,Cathedral of Eternal Night
+Twilight Grove,,-631.0052,2521.8801,1677,Cathedral of Eternal Night
+Path of Illumination,,-457.6007,2510.8984,1677,Cathedral of Eternal Night
+The Emerald Archives,,-463.36285,2512.7612,1677,Cathedral of Eternal Night
+Sacristy of Elune,,-621.5382,2519.4565,1677,Cathedral of Eternal Night
+Path of Illumination,,-619.73615,2518.7249,1677,Cathedral of Eternal Night
+Invasion Point,Invasion Point: Cen'gar,630.24304,1172.2865,1669,
+Invasion Point,Invasion Point: Val,736.94617,1977.3334,1669,
+Invasion Point,Invasion Point: Bonich,6215.0547,9508.46,1669,
+Invasion Point,Invasion Point: Aurinor,6351.9897,10231.771,1669,
+Invasion Point,Invasion Point: Naigtal,5786.729,9198.628,1669,
+Invasion Point,Invasion Point: Sangua,-2545.0017,8949.614,1669,
+Invasion Point,Invasion Point: Cen'gar,-2763.94,9230.54,1669,
+Invasion Point,Invasion Point: Bonich,-2226.6963,9333.897,1669,
+Invasion Point,Invasion Point: Val,-3267.486,8757.391,1669,
+Invasion Point,Invasion Point: Aurinor,-3357.2864,9032.254,1669,
+Invasion Point,Invasion Point: Naigtal,-2459.0312,9347.276,1669,
+Greater Invasion Point,Greater Invasion Point: Mistress Alluradel,-2692.4722,8935.101,1669,
+Greater Invasion Point,Greater Invasion Point: Occularus,-2915.6667,9327.691,1669,
+Greater Invasion Point,Greater Invasion Point: Pit Lord Vilemus,-2473.9932,9122.139,1669,
+The Jeweled Estate,,1033.2466,3257.091,1571,Midnight Court
+Greater Invasion Point,Greater Invasion Point: Inquisitor Meto,-3220.6511,9056.188,1669,
+Greater Invasion Point,Greater Invasion Point: Sotanathor,5519.4907,10020.769,1669,
+Greater Invasion Point,Greater Invasion Point: Matron Folnuna,2016.981,1470.5677,1669,
+Court of Stars,,1026.3993,3250.7292,1571,
+The Grand Hall,,3145.7534,7415.7275,1501,Black Rook Hold
+The Ravenscrypt,,3146.2004,7415.2485,1501,Black Rook Hold
+Ravenshold,,3150.5696,7335.8813,1501,Black Rook Hold
+The Grand Hall,,3154.2952,7334.475,1501,Black Rook Hold
+The Rook's Roost,,3180.8376,7398.694,1501,Black Rook Hold
+Ravenshold,,3178.928,7399.0557,1501,Black Rook Hold
+Lord Ravencrest's Chamber,,3193.31,7366.97,1501,Black Rook Hold
+The Rook's Roost,,3187.32,7374.58,1501,Black Rook Hold
+The Raven's Crown,,3163.55,7366.8,1501,Black Rook Hold
+Lord Ravencrest's Chamber,,3165.4202,7371.1304,1501,Black Rook Hold
+Field of the Eternal Hunt,,3249.4202,634.85767,1477,
+The High Gate,,3204.64,2887.75,1477,
+Halls of Valor,,3260.2551,528.9774,1477,Halls of Valor
+The High Gate,,3238.8152,528.68054,1477,
+The Hold,,7412.9707,7255.6665,1492,
+The Naglfar,,2933.2544,648.1389,1492,
+The Hold,,2933.442,663.06946,1492,
+Lower Broken Stair,,-11070.433,-2004.8125,1651,
+Upper Broken Stair,,-11065.703,-1979.2639,1651,
+Lower Broken Stair,,-11062.654,-1980.7274,1651,
+The Menagerie,,-11039.201,-1961.2396,1651,
+Upper Broken Stair,,-11032.223,-1954.2067,1651,
+Guardian's Library,,-11160.255,-1902.0798,1651,
+The Menagerie,,-4484.0728,-2224.0227,1651,
+Library Floor,,-4644.408,-2517.6946,1651,
+Gamesman's Hall,,3975.5703,-2244.7205,1651,
+Upper Library,,3973.5981,-2245.4983,1651,
+Netherspace,,3696.2925,-2211.0383,1651,
+Gamesman's Hall,,3695.8699,-2209.0574,1651,
+The Guest Chambers,,-11072.226,-1935.9062,1651,
+Master's Terrace,,-11066.799,-1943.3004,1651,
+The Banquet Hall,,-10924.138,-2046.1007,1651,
+Servant's Quarters,,-10871.399,-1898.3195,1651,
+The Guest Chambers,,-10867.724,-1887.441,1651,
+Opera Hall Balcony,,-10851.151,-1861.2778,1651,
+The Guest Chambers,,-10943.092,-1798.25,1651,
+Opera Hall Balcony,,-10945.5,-1790.1302,1651,
+The Banquet Hall,,-11053.4,-1968.01,1651,
+Upper Livery Stables,,-11149.42,-1891.8646,1651,
+Servant's Quarters,,-11141.799,-1887.0695,1651,
+The Banquet Hall,,-11037.545,-1923.8055,1651,
+Servant's Quarters,,-11057.899,-2013.6406,1651,
+Upper Livery Stables,,-11029.192,-1924.599,1651,
+Servant's Quarters,,-11052.3,-1968.0,1651,
+The Guest Chambers,,-10934.5,-2034.31,1651,
+Vault of the Wardens,,4479.4595,-451.14758,1493,
+"Antorus, the Burning Throne",Raid,-3206.9602,9415.294,1669,Antoran Wastes
+The Warden's Court,,4477.309,-451.3021,1493,
+Vault of the Betrayer,,4450.9697,-304.52258,1493,
+Vault of the Wardens,,4450.752,-321.27777,1493,
+The Abyssal Throne,,6103.428,-707.21356,1676,
+The Guardian's Sanctum,,6209.08,-796.229,1676,
+Terrace of the Moon,,6142.54,-923.4722,1676,
+Chamber of the Moon,,6141.45,-915.162,1676,
+The Abyssal Throne,,6026.53,-1101.45,1676,
+Terrace of the Moon,,6027.53,-1108.58,1676,
+Chamber of the Moon,,6107.83,-727.494,1676,
+Terrace of the Moon,,5969.39,-1001.62,1676,
+The Abyssal Throne,,5975.3,-1018.68,1676,
+Chamber of the Moon,,6221.87,-773.858,1676,
+Chamber of the Avatar,,6324.647,-794.99133,1676,
+The Guardian's Sanctum,,6350.472,-795.9219,1676,
+The Twisting Nether,,6754.3066,-797.61456,1676,
+Arcing Depths,,385.1337,3313.4036,1530,
+The Nightwell,,467.0955,3377.6702,1530,
+The Nighthold,,540.9566,3394.2805,1530,
+Arcing Depths,,526.545,3379.88,1530,
+Captain's Quarters,,292.696,3349.76,1530,
+Astromancer's Rise,,491.374,3128.18,1530,
+Shal'Dorei Terrace,,591.945,3051.12,1530,
+The Nighthold,,596.6719,3046.73,1530,
+The Balconies,,927.65106,3193.7344,1571,
+The Balconies,,974.059,3153.7473,1571,
+The Jeweled Estate,,972.40625,3152.9844,1571,Midnight Court
+The Jeweled Estate,,927.67017,3192.1753,1571,Midnight Court
+Master's Terrace,,-10851.7,-1848.39,1651,
+Master's Terrace,,-11141.101,-1962.4202,1651,
+Upper Livery Stables,,-11137.9,-1963.44,1651,
+Master's Terrace,,-11070.772,-2009.7396,1651,
+The Nightspire,,314.38715,3104.23,1530,
+The Font of Night,,334.002,3187.05,1530,
+Trial of Valor,,3290.49,5953.84,1648,
+Helheim,,3606.97,5611.45,1648,
+Haustvald,,345.93576,366.79514,1648,
+Grizzly Hills,,1997.2639,1344.901,1520,
+The Emerald Nightmare,,1926.092,1282.1632,1520,
+Mulgore,,1833.1615,1258.6216,1520,
+Clutch of Corruption,,1732.2031,1467.283,1520,
+Core of the Nightmare,,-12968.7,12230.4,1520,
+Moonglade,,1876.5486,1327.8507,1520,
+Un'goro Crater,,1797.5729,1329.7865,1520,
+Core of the Nightmare,,11328.1,11057.6,1520,
+Core of the Nightmare,,11189.7,-12625.1,1520,
+Rift of Aln,,11361.8,-12797.3,1520,
+Core of the Nightmare,,459.38,-12757.3,1520,
+Core of the Nightmare,,-12364.5,-12958.0,1520,
+Core of the Nightmare,,1738.9375,1456.0435,1520,
+"Vindicaar, Krokuun",,443.0,1447.0,1669,Darkfall Ridge
+"Vindicaar, Eredath",,4664.6,9850.46,1669,Triumvirate's End
+"Vindicaar, Antoran Wastes",,-2623.0,8646.0,1669,Hope's Landing
+Halls of the Boundless Reach,,-3092.2136,10158.575,1712,"Antorus, the Burning Throne"
+The Exhaust,,-3435.9253,10157.873,1712,"Antorus, the Burning Throne"
+Gaze of the Legion,,-2881.625,10781.54,1712,"Antorus, the Burning Throne"
+Light's Breach,,-3703.5781,-1614.0712,1712,"Antorus, the Burning Throne"
+Elunaria,,-3790.533,-1517.9879,1712,"Antorus, the Burning Throne"
+Halls of the Boundless Reach,,-4315.269,-11160.042,1712,"Antorus, the Burning Throne"
+Elarian Sanctuary,,-3993.408,-10939.388,1712,"Antorus, the Burning Throne"
+Elunaria,,-3974.1284,-10917.073,1712,"Antorus, the Burning Throne"
+Light's Breach,,-10575.045,8788.32,1712,"Antorus, the Burning Throne"
+Door,,-10574.979,8783.693,1712,"Antorus, the Burning Throne"
+The Burning Throne,,-10581.415,8770.194,1712,"Antorus, the Burning Throne"
+The Exhaust,,-12633.857,-3381.54,1712,"Antorus, the Burning Throne"
+The World Soul,,-12634.205,-2644.4653,1712,"Antorus, the Burning Throne"
+Temple of Anguish,,-12633.021,-2595.375,1712,"Antorus, the Burning Throne"
+Chamber of Anguish,,-12633.583,-2889.0156,1712,"Antorus, the Burning Throne"
+Temple of Anguish,,-12541.716,-2823.415,1712,"Antorus, the Burning Throne"
+Main Entrance,7.3 Argus Raid - Eonar - Warp Icon - A - Main Entrance,-3980.8108,-10925.538,1712,Elarian Sanctuary
+Lower Entrance,7.3 Argus Raid - Eonar - Warp Icon - B -Lower Entrance,-3868.8628,-10938.221,1712,Elarian Sanctuary
+High Temple Entrance,7.3 Argus Raid - Eonar - Warp Icon - C - High Temple Entrance,-3925.5852,-10665.326,1712,Elarian Sanctuary
+Light's Breach,,-2855.2917,10818.952,1712,"Antorus, the Burning Throne"
+Sacrificial Pits,,-755.4184,2204.8628,1763,
+Sacrificial Pits,,-935.41144,2208.5278,1763,
+Atal'Dazar,,-791.03644,2239.816,1763,Sacrificial Pits
+Atal'Dazar,,-904.2708,2239.0417,1763,Sacrificial Pits
+Hatchet Ridge,Allows for collection of wood.,-789.832,-1775.65,1876,Arathi Highlands
+Hatchet Ridge,Allows for collection of wood.,-789.832,-1775.65,1876,Arathi Highlands
+Northfold Crossing,Secure a foothold in Arathi.,-1022.47,-1989.17,1876,Arathi Highlands
+Northfold Crossing,Secure a foothold in Arathi.,-1022.47,-1989.17,1876,Arathi Highlands
+High Perch,"Construct a tower, providing fast|naccess to captured locations.",-1193.78,-1900.16,1876,Arathi Highlands
+High Perch,"Construct a tower, providing fast|naccess to captured locations.",-1193.78,-1900.16,1876,Arathi Highlands
+Circle of Elements,Construct a Spirit Lodge to bring|npowerful caster units to your army.,-1186.38,-2210.45,1876,Arathi Highlands
+Circle of Elements,Construct a Spirit Lodge to bring|npowerful caster units to your army.,-1186.38,-2210.45,1876,Arathi Highlands
+Drywhisker Mine,Allows for the collection of Iron.,-1003.03,-2307.06,1876,Arathi Highlands
+Drywhisker Mine,Allows for the collection of Iron.,-1003.03,-2307.06,1876,Arathi Highlands
+Newstead,Construct a Bestiary to recruit|nmounted troops.,-1085.58,-1688.0,1876,Arathi Highlands
+Newstead,Construct a Bestiary to recruit|nmounted troops.,-1085.58,-1688.0,1876,Arathi Highlands
+Valorcall Pass,Train Demolishers to lay siege to Stromgarde.,-1337.49,-1840.35,1876,Arathi Highlands
+Valorcall Pass,Capture to lay siege to Stromgarde.,-1337.49,-1840.35,1876,Arathi Highlands
+Valorcall Pass,Horde,-1320.33,-1849.5,1943,Arathi Highlands
+Valorcall Pass,Alliance,-1320.33,-1849.5,1943,Arathi Highlands
+Stormgarde Keep,Horde,-1570.37,-1803.21,1876,Arathi Highlands
+Drywhisker Mine,Allows for the collection of Iron.,-1003.03,-2307.06,1876,
+Circle of Elements,Construct a Spirit Lodge to bring|npowerful caster units to your army.,-1186.38,-2210.45,1876,
+The Antechamber of Ulduar,,980.03644,-10.46875,603,Ulduar
+The Grand Approach,,1493.2743,-24.315973,603,Ulduar
+The Inner Sanctum of Ulduar,,1805.7344,-23.876736,603,Ulduar
+The Prison of Yogg-Saron,,1903.1459,248.41145,603,Ulduar
+The Inner Sanctum of Ulduar,,1904.1528,286.0087,603,Ulduar
+The Spark of Imagination,,2268.1094,292.43924,603,Ulduar
+The Inner Sanctum of Ulduar,,2343.4497,2570.9028,603,Ulduar
+Northfold,Horde,-867.3351,-2112.1355,1876,Arathi Highlands
+Destroyed Great Hall,Capture and Rebuild!,-867.335,-2112.14,1876,
+Zidormi,Travel through time to another point in Silithus' history.,-6467.59,-219.787,1,Silithus
+Zidormi,Travel through time to another point in the Blasted Lands' history.,-10761.1,-2957.73,0,Blasted Lands
+Zidormi,Travel through time to another point in Dustwallow Marsh's history.,-3766.9,-3910.26,1,Dustwallow Marsh
+Zidormi,Travel through time to another point in Kun-Lai Summit's history.,3830.45,1801.8,870,Kun-Lai Summit
+The Drain,,133.8368,-2745.0278,1771,
+Tol Dagor,,139.55035,-2737.0244,1771,
+The Drain,,193.45486,-2693.6824,1771,
+The Brig,,188.2118,-2700.769,1771,
+Detention Block,,104.01736,-2653.8108,1771,
+The Brig,,102.20313,-2656.6372,1771,
+Officer's Quarters,,122.70139,-2627.8699,1771,
+Detention Block,,120.35069,-2631.2415,1771,
+Overseer's Redoubt,,184.07986,-2703.9358,1771,
+Officer's Quarters,,208.24306,-2696.1145,1771,
+Overseer's Summit,,176.781,-2743.95,1771,
+Overseer's Redoubt,,193.61111,-2719.7222,1771,
+Locked Prison Grate,,137.92882,-2651.8872,1771,
+Locked Prison Grate,,154.8368,-2702.8333,1771,
+Locked Prison Grate,,117.42361,-2667.7952,1771,
+Locked Prison Grate,,154.56944,-2702.7622,1771,
+Barracks,Primary troop production building.,-924.063,-2084.24,1876,Arathi Highlands
+Altar of Storms,Access to powerful player bonuses.,-809.205,-2078.84,1876,Arathi Highlands
+Workshop,Vehicle production building.,-809.63,-2016.11,1876,Arathi Highlands
+Great Hall,Main structure which improves the base.,-853.733,-2134.14,1876,Arathi Highlands
+Barracks,Primary troop production building.,-924.063,-2084.24,1876,Arathi Highlands
+Altar of Storms,Access to powerful player bonuses.,-809.205,-2078.84,1876,Arathi Highlands
+Workshop,Vehicle production building.,-809.63,-2016.11,1876,Arathi Highlands
+Armory,Upgrade the weapons and armor of units.,6755.17,-49.1807,2111,Darkshore
+Stronghold,Horde,-853.733,-2134.14,1876,Arathi Highlands
+Stromgarde Keep,Assault and defeat the enemy commander.,-1675.3473,-1802.6858,1876,
+Fortress,Horde,-853.733,-2134.14,1876,Arathi Highlands
+The Cellar,,-589.74133,-251.77605,1862,Waycrest Manor
+The Cellar,,-463.34375,-300.72223,1862,Waycrest Manor
+Upstairs,,-572.0643,-259.34027,1862,Waycrest Manor
+Upstairs,,-510.0,-207.3941,1862,Waycrest Manor
+The Grand Foyer,,-555.7118,-259.81772,1862,Waycrest Manor
+The Grand Foyer,,-575.0347,-182.82118,1862,Waycrest Manor
+The Grand Foyer,,-492.43402,-207.46701,1862,Waycrest Manor
+The Grand Foyer,,-512.4948,-208.23091,1862,Waycrest Manor
+The Grand Foyer,,-465.4861,-300.80902,1862,Waycrest Manor
+The Cellar,,-488.9514,-208.02951,1862,Waycrest Manor
+Catacombs,,-539.6024,-231.98264,1862,
+Upstairs,,-552.559,-182.55035,1862,Waycrest Manor
+The Rupture,,-526.9427,-288.84027,1862,
+Catacombs,,-489.67014,-328.3646,1862,
+Ruins of Undercity,,1594.3385,240.2882,0,Tirisfal Glades
+High Perch,"Construct a tower, providing fast|naccess to captured locations.",-1206.83,-1902.9,1943,Arathi Highlands
+High Perch,"Construct a tower, providing fast|naccess to captured locations.",-1206.83,-1902.9,1943,Arathi Highlands
+Northfold Crossing,Alliance,-1030.07,-1986.36,1943,Arathi Highlands
+Northfold Crossing,Horde,-1030.07,-1986.36,1943,Arathi Highlands
+Circle of Elements,Construct an Arcane Sanctum to bring|npowerful caster units to your army.,-1186.38,-2210.45,1943,Arathi Highlands
+Circle of Elements,Construct an Arcane Sanctum to bring|npowerful caster units to your army.,-1186.38,-2210.45,1943,Arathi Highlands
+Circle of Elements,Construct an Arcane Sanctum to bring|npowerful caster units to your army.,-1186.38,-2210.45,1943,
+Newstead,Construct a Stable to recruit|nmounted troops.,-1085.58,-1688.0,1943,Arathi Highlands
+Newstead,Construct a Stable to recruit|nmounted troops.,-1085.58,-1688.0,1943,Arathi Highlands
+Ar'gorok,Assault and defeat the enemy commander.,-881.652,-2091.17,1943,
+Highlands Mill,Allows for collection of wood.,-1355.93,-1554.97,1943,Arathi Highlands
+Highlands Mill,Allows for collection of wood.,-1355.93,-1554.97,1943,Arathi Highlands
+Galson's Lode,Allows for the collection of Iron.,-1420.22,-2143.94,1943,Arathi Highlands
+Galson's Lode,Allows for the collection of Iron.,-1420.22,-2143.94,1943,Arathi Highlands
+Galson's Lode,Allows for the collection of Iron.,-1420.22,-2143.94,1943,Arathi Highlands
+Zidormi,Travel through time to another point in Tirisfal Glades' history.,1945.61,-105.153,0,Tirisfal Glades
+Zidormi,Travel through time to another point in Darkshore's history.,7168.55,-141.976,1,Darkshore
+Upstairs,,-597.42883,-181.92708,1862,Waycrest Manor
+Remains of Darnassus,,9951.75,2254.5,1,Teldrassil
+Ruin's Descent,,-269.22397,-256.39758,1861,Uldir
+Ring of Containment,,-6.25,-255.35243,1861,Uldir
+Hall of Sanitation,,-1.9756944,-255.6493,1861,Uldir
+Archives of Eternity,,254.55382,-27.203125,1861,Uldir
+Ring of Containment,,255.45486,-20.901041,1861,Uldir
+Plague Vault,,480.27603,-255.27605,1861,Uldir
+Ring of Containment,,491.87848,-255.0677,1861,Uldir
+Gallery of Failures,,255.46701,-480.94446,1861,Uldir
+Ring of Containment,,254.9948,-494.96008,1861,Uldir
+Chamber of Corruption,,255.06076,-255.5382,1861,Uldir
+The Oblivion Door,,212.06944,-260.86807,1861,Uldir
+Destroyed Town Hall,Capture and Rebuild!,-1668.6,-1803.07,1943,
+Town Hall,Main structure which improves the base.,-1668.6,-1803.07,1943,Arathi Highlands
+Barracks,Primary troop production building.,-1535.39,-1734.49,1943,Arathi Highlands
+Barracks,Primary troop production building.,-1535.39,-1734.49,1943,Arathi Highlands
+Armory,Upgrade the weapons and armor of units.,-1569.58,-1909.94,1943,Arathi Highlands
+Armory,Upgrade the weapons and armor of units.,-1569.58,-1909.94,1943,Arathi Highlands
+Altar of Kings,Access to powerful player bonuses.,-1653.83,-1896.58,1943,Arathi Highlands
+Altar of Kings,Access to powerful player bonuses.,-1653.83,-1896.58,1943,Arathi Highlands
+Workshop,Vehicle production building.,-1515.82,-1855.08,1943,Arathi Highlands
+Workshop,Vehicle production building.,-1515.82,-1855.08,1943,Arathi Highlands
+Keep,Alliance,-1668.6,-1803.07,1943,Arathi Highlands
+Castle,Alliance,-1668.6,-1803.07,1943,Arathi Highlands
+Storm's End,,3631.3472,-1353.5938,1864,"Antorus, the Burning Throne"
+The Blessed Path,,3622.4973,-1369.3577,1864,"Antorus, the Burning Throne"
+The Bazaar of Watchful Eyes,,3758.03,3404.64,1877,Temple of Sethraliss
+The Galvanized Grotto,,3814.67,3446.95,1877,Temple of Sethraliss
+Ruin's Descent,,1087.7031,1333.8281,1841,The Underrot
+The Underrot,,1113.356,1344.4202,1841,The Underrot
+Siege of Boralus,Dungeon,-211.11632,-1560.8298,1643,Plunder Harbor
+Tol Dagor,Dungeon,27.362848,-2655.0903,1643,Tol Dagor
+Waycrest Manor,Dungeon,784.9323,3372.3125,1643,Waycrest Manor
+Siege of Boralus,Dungeon,1099.6649,-622.72394,1643,Boralus Harbor
+Freehold,Dungeon,-1582.6962,-1284.941,1643,The Wailing Tideway
+Shrine of the Storm,Dungeon,4154.922,-1118.1562,1643,Shrine of the Storm
+The MOTHERLODE!!,Dungeon,-1996.8108,961.4983,1642,Port of Zandalar
+The MOTHERLODE!!,Dungeon,-2657.3542,2383.6458,1642,Xibala
+Atal'Dazar,Dungeon,-848.49133,2025.1875,1642,Atal'Dazar
+Kings' Rest,Dungeon,-848.25867,2528.388,1642,Atal'Dazar
+Temple of Sethraliss,Dungeon,3180.8906,3152.079,1642,Skycallers' Spire
+The Underrot,Dungeon,1263.0504,753.74133,1642,Altar of Rot
+Uldir,Raid,1320.0573,601.8958,1642,Altar of Rot
+Return to Zuldazar,,-393.3,4122.2,1643,Drustvar
+Return to Zuldazar,,-218.9,-1528.1,1643,Tiragarde Sound
+Return to Zuldazar,,4235.8,394.5,1643,Stormsong Valley
+Return to Boralus,,2780.41,4190.48,1642,Vol'dun
+Return to Boralus,,2123.4,186.5,1642,Nazmir
+Return to Boralus,,-2628.0,2285.5,1642,Zuldazar
+War Headquarters (PvP),,1048.78,-286.418,1643,Ashvane Company Yards
+War Headquarters (PvP),,-1901.19,1338.49,1642,The Mugambala
+The Grand Foyer,,-553.51044,-385.5625,1862,Waycrest Manor
+Upstairs,,-552.5643,-377.80383,1862,Waycrest Manor
+Warfront,,-2036.3385,725.3993,1642,
+Warfront,,1025.1354,-470.70834,1643,
+Barracks,Primary troop production building.,-1535.39,-1734.49,1943,Arathi Highlands
+Barracks,Primary troop production building.,-924.063,-2084.24,1876,Arathi Highlands
+Altar of Storms,Access to powerful player bonuses.,-809.205,-2078.84,1876,Arathi Highlands
+Altar of Kings,Access to powerful player bonuses.,-1653.83,-1896.58,1943,Arathi Highlands
+Armory,Upgrade the weapons and armor of units.,-1569.58,-1909.94,1943,Arathi Highlands
+Armory,Upgrade the weapons and armor of units.,6755.17,-49.1807,2111,Darkshore
+Keep,Alliance,-1668.6,-1803.07,1943,Arathi Highlands
+Castle,Alliance,-1668.6,-1803.07,1943,Arathi Highlands
+Stronghold,Horde,-853.733,-2134.14,1876,Arathi Highlands
+Fortress,Horde,-853.733,-2134.14,1876,Arathi Highlands
+Workshop,Vehicle production building.,-1515.82,-1855.08,1943,Arathi Highlands
+Workshop,Vehicle production building.,-809.63,-2016.11,1876,Arathi Highlands
+Stronghold,Horde,-853.733,-2134.14,1876,Arathi Highlands
+Fortress,Horde,-853.733,-2134.14,1876,Arathi Highlands
+"Boat to Menethil Harbor, Wetlands",,-4004.0,-4731.7,1,
+"Boat to Theramore Isle, Dustwallow Marsh",,-3864.8,-656.7,0,
+"Boat to Daggercap Bay, Howling Fjord",,-3709.8,-576.5,0,
+"Boat to Menethil Harbor, Wetlands",,588.7,-5102.3,571,
+Boat to Stormwind City,,2231.2,5131.2,571,
+"Boat to Valiance Keep, Borean Tundra",,-8294.0,1406.2,0,
+"Boat to Boralus Harbor, Tiragarde Sound",,-8647.0,1325.6,0,
+Boat to Stormwind City,,1046.8,-635.7,1643,
+"Boat to Ratchet, Northern Barrens",,-14284.9,556.2,0,
+"Boat to Booty Bay, Stranglethorn Vale",,-995.6,-3828.7,1,
+Zeppelin to Orgrimmar,,-12451.5,219.2,0,
+"Zeppelin to Grom'gol, Stranglethorn Vale",,1868.6,-4417.3,1,Orgrimmar
+"Zeppelin to Warsong Hold, Borean Tundra",,1763.2,-4283.4,1,Orgrimmar
+Zeppelin to Orgrimmar,,2835.6,6183.9,571,
+"Boat to Dazar'alor, Zuldazar",,-985.1,-5772.6,1,
+"Boat to Echo Isles, Durotar",,-2289.7,799.5,1642,
+"Portal to Honeydew Village, Jade Forest",,2014.7,-4699.1,1,
+Portal to Orgrimmar,,3000.1,-540.1,870,
+"Portal to Paw'don Village, Jade Forest",,-8194.8,528.5,0,
+Portal to Stormwind City,,-311.8,-1776.5,870,
+Assault,Tiragarde Sound is under attack by the Horde!,258.54,-1021.3,1643,
+Withering Thicket,Allows for the collection of Wood.,6519.78,277.883,2105,Darkshore
+Withering Thicket,Allows for the collection of Wood.,6519.78,277.883,2105,Darkshore
+Cinderfall Grove,Allows wisps to collect wood.,6962.3,-167.173,2105,Darkshore
+Cinderfall Grove,Allows wisps to collect wood.,6962.3,-167.173,2105,Darkshore
+Lor'danel Landing,Alliance,7438.87,-130.223,2105,Darkshore
+Lor'danel Landing,Horde,7438.87,-130.223,2105,Darkshore
+Lornesta Mine,Allows for the collection of Iron.,6539.66,-183.761,2105,Darkshore
+Lornesta Mine,Allows for the collection of Iron.,6539.66,-183.761,2105,Darkshore
+Lornesta Mine,Allows for the collection of Iron.,6539.66,-183.761,2105,Darkshore
+Gloomtide Strand,Alliance,6883.92,126.678,2105,Darkshore
+Gloomtide Strand,Horde,6883.92,126.678,2105,Darkshore
+Gloomtide Strand,Neutral,6883.92,126.678,2105,Darkshore
+Bitterstone Quarry,Allows for the collection of Iron.,6274.06,62.9095,2105,Darkshore
+Bitterstone Quarry,Allows for the collection of Iron.,6274.06,62.9095,2105,Darkshore
+Ashwood Depot,Alliance,7166.58,30.4592,2105,Darkshore
+Ashwood Depot,Horde,7166.58,30.4592,2105,Darkshore
+Ruins of Auberdine,Alliance,6408.52,501.473,2105,Darkshore
+Ruins of Auberdine,Secure a foothold in Darkshore.,6408.52,501.473,2105,Darkshore
+Forlorn Crossing,Alliance,6908.44,-30.7736,2105,Darkshore
+Forlorn Crossing,Horde,6908.44,-30.7736,2105,Darkshore
+Bashal'Aran,Construct a base to recapture Darkshore.,6718.17,-0.175312,2105,Darkshore
+Injured Tree of Life,Revive!,6745.14,-51.6171,2105,Darkshore
+Tree of Life,Main structure which improves the base.,6745.14,-51.6171,2105,Darkshore
+Tree of Ages,Alliance,6735.8223,-43.953125,2105,Darkshore
+Tree of Ages,Alliance,6735.588,-43.890625,2105,Darkshore
+Tree of Eternity,Alliance,6734.335,-43.5,2105,Darkshore
+Tree of Eternity,Alliance,6734.705,-43.947918,2105,Darkshore
+Glaiveworks,Vehicle production building.,6708.12,18.7343,2105,Darkshore
+Glaiveworks,Vehicle production building.,6708.12,18.7343,2105,Darkshore
+Glaiveworks,Vehicle production building.,6708.12,18.7343,2105,Darkshore
+Ancient of War,Primary troop production building.,6637.18,-9.70434,2105,Darkshore
+Ancient of War,Primary troop production building.,6637.18,-9.70434,2105,Darkshore
+Ancient of War,Primary troop production building.,6637.18,-9.70434,2105,Darkshore
+Hunter's Hall,Upgrade the weapons and armor of units.,6705.2173,-98.0,2105,Darkshore
+Hunter's Hall,Upgrade the weapons and armor of units.,6706.0625,-98.0191,2105,Darkshore
+Hunter's Hall,Upgrade the weapons and armor of units.,6705.612,-97.68403,2105,Darkshore
+Altar of Elders,Access to powerful player bonuses.,6652.16,-88.4032,2105,Darkshore
+Altar of Elders,Access to powerful player bonuses.,6652.16,-88.4032,2105,Darkshore
+Altar of Elders,Access to powerful player bonuses.,6652.16,-88.4032,2105,Darkshore
+Ashwood Depot,Horde,7166.58,30.4592,2111,Darkshore
+Ashwood Depot,Alliance,7166.58,30.4592,2111,Darkshore
+Bashal'Aran,Construct a base to recapture Darkshore.,6718.17,-0.175312,2111,Darkshore
+Bitterstone Quarry,Allows for the collection of Iron.,6274.06,62.9095,2111,Darkshore
+Bitterstone Quarry,Allows for the collection of Iron.,6274.06,62.9095,2111,Darkshore
+Cinderfall Grove,Allows for the collection of Wood.,6962.3,-167.173,2111,Darkshore
+Cinderfall Grove,Allows for the collection of Wood.,6962.3,-167.173,2111,Darkshore
+Forlorn Crossing,Alliance,6908.44,-30.7736,2111,Darkshore
+Forlorn Crossing,Horde,6908.44,-30.7736,2111,Darkshore
+Gloomtide Strand,Alliance,6883.92,126.678,2111,Darkshore
+Gloomtide Strand,Horde,6883.92,126.678,2111,Darkshore
+Gloomtide Strand,Neutral,6883.92,126.678,2111,Darkshore
+Lor'danel Landing,Alliance,7438.87,-130.223,2111,Darkshore
+Lor'danel Landing,Horde,7438.87,-130.223,2111,Darkshore
+Lornesta Mine,Allows for the collection of Iron.,6539.66,-183.761,2111,Darkshore
+Lornesta Mine,Allows for the collection of Iron.,6539.66,-183.761,2111,Darkshore
+Lornesta Mine,Allows for the collection of Iron.,6539.66,-183.761,2111,Darkshore
+Ruins of Auberdine,Horde,6408.52,501.473,2111,Darkshore
+Ruins of Auberdine,Secure a foothold in Darkshore.,6408.52,501.473,2111,Darkshore
+Withering Thicket,Allows for the collection of Wood.,6519.78,277.883,2111,Darkshore
+Withering Thicket,Allows for the collection of Wood.,6519.78,277.883,2111,Darkshore
+Assault,Drustvar is under attack by the Horde!,-751.567,3168.43,1643,
+Assault,Stormsong Valley is under attack by the Horde!,3431.24,-326.055,1643,
+Assault,Nazmir is under attack by the Alliance!,1975.96,814.365,1642,
+Assault,Vol'dun is under attack by the Alliance!,2068.16,3494.83,1642,
+Assault,Zuldazar is under attack by the Alliance!,-895.297,803.297,1642,
+Altar of Storms,Access to powerful player bonuses.,6711.47,22.3339,2111,Darkshore
+Altar of Storms,Access to powerful player bonuses.,6711.47,22.3339,2111,Darkshore
+Altar of Storms,Access to powerful player bonuses.,6711.47,22.3339,2111,Darkshore
+Barracks,Primary troop production building.,6643.19,-13.2654,2111,Darkshore
+Barracks,Primary troop production building.,6643.19,-13.2654,2111,Darkshore
+Barracks,Primary troop production building.,6643.19,-13.2654,2111,Darkshore
+Plagueworks,Vehicle production building.,6695.56,-117.753,2111,Darkshore
+Plagueworks,Vehicle production building.,6695.56,-117.753,2111,Darkshore
+Plagueworks,Vehicle production building.,6695.56,-117.753,2111,Darkshore
+Stronghold,Horde,6654.58,-88.2115,2111,Darkshore
+Stronghold,Horde,6654.58,-88.2115,2111,Darkshore
+Fortress,Horde,6654.58,-88.2115,2111,Darkshore
+Fortress,Horde,6654.58,-88.2115,2111,Darkshore
+Destroyed Great Hall,Capture and Rebuild!,6654.58,-88.2115,2111,Darkshore
+Great Hall,Main structure which improves the base.,6654.58,-88.2115,2111,Darkshore
+Zidormi,Travel through time to another point in Arathi Highlands' history.,-2230.7,-2456.94,0,Arathi Highlands
+Thoras'tal Spire,Naga Controlled,863.526,-413.809,1718,Nazjatar
+Thoras'tal Spire,Uncontrolled,863.526,-413.809,1718,Nazjatar
+Thoras'tal Spire,Alliance Controlled,863.526,-413.809,1718,Nazjatar
+Thoras'tal Spire,Horde Controlled,863.526,-413.809,1718,Nazjatar
+Alathir Spire,Uncontrolled,1712.94,171.438,1718,Nazjatar
+Alathir Spire,Naga Controlled,1712.94,171.438,1718,Nazjatar
+Alathir Spire,Horde Controlled,1712.94,171.438,1718,Nazjatar
+Alathir Spire,Alliance Controlled,1712.94,171.438,1718,Nazjatar
+Lemor'athra Spire,Uncontrolled,1366.8906,-1764.9653,1718,Nazjatar
+Lemor'athra Spire,Naga Controlled,1366.8906,-1764.9653,1718,Nazjatar
+Lemor'athra Spire,Horde Controlled,1366.8906,-1764.9653,1718,Nazjatar
+Lemor'athra Spire,Alliance Controlled,1366.8906,-1764.9653,1718,Nazjatar
+Realm of the Soultwister,Defeat the Soultwister and take her loot!,3442.54,261.095,2160,
+Armory,Upgrade the weapons and armor of units.,-885.097,-2015.97,1876,Arathi Highlands
+Armory,Upgrade the weapons and armor of units.,-885.097,-2015.97,1876,Arathi Highlands
+Armory,Upgrade the weapons and armor of units.,-885.097,-2015.97,1876,Arathi Highlands
+Battle of Dazar'alor,Raid,-309.882,1117.42,1642,Zanchul
+Battle of Dazar'alor,Raid,908.13367,-530.2101,1643,Boralus Harbor
+Stormwind Portal Room,,-9016.31,876.244,0,Stormwind City
+Orgrimmar Portal Room,,1445.96,-4503.86,1,Orgrimmar
+Heart of the Empire,Dazar'alor - Zocalo to Walk of Kings,-964.7847,805.2674,2070,Battle of Dazar'alor
+Walk of Kings,,-1155.6562,804.8368,2070,
+Heart of the Empire,,-1122.8577,805.32465,2070,
+Loa's Sanctum,,-1153.974,690.3976,2070,
+Walk of Kings,,-1152.856,689.7222,2070,
+The Zocalo,,-1037.7986,804.9583,2070,
+Port of Zandalar,,-1357.2257,805.30035,2070,
+Halls of Opulence,,-856.5781,804.44446,2070,
+Loa's Sanctum,,-858.13715,878.691,2070,
+Port of Zandalar,,-1288.5591,805.36456,2070,
+Halls of Opulence,,-1392.3976,805.6649,2070,
+Wintergrasp Fortress,Epic Battleground,5394.58,2841.49,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5384.4,2772.53,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5343.66,2771.01,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5302.01,2771.67,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5280.32,2798.61,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5280.86,2840.4,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5279.34,2883.16,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5300.49,2909.33,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5343.39,2909.19,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5386.46,2909.89,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5372.93,2630.77,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5330.66,2630.69,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5279.45,2683.91,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5279.76,2725.12,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5256.52,2747.55,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5215.36,2747.99,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5163.71,2798.72,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5162.25,2882.84,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5216.08,2933.99,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5255.6,2934.08,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5279.13,2954.81,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5280.8,2995.93,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5331.85,3046.55,2118,Wintergrasp
+Wintergrasp Fortress Wall,Epic Battleground,5372.89,3047.3,2118,Wintergrasp
+Wintergrasp Fortress Tower (NW),Epic Battleground,5280.07,3046.51,2118,Wintergrasp
+Wintergrasp Fortress Tower (NE),Epic Battleground,5279.47,2632.11,2118,Wintergrasp
+Wintergrasp Fortress Tower (SE),Epic Battleground,5164.64,2747.98,2118,Wintergrasp
+Wintergrasp Fortress Tower (SW),Epic Battleground,5161.26,2934.32,2118,Wintergrasp
+Wintergrasp Fortress Gate,Epic Battleground,5162.54,2841.25,2118,Wintergrasp
+Sunken Ring Graveyard,Epic Battleground,5105.61,2300.68,2118,Wintergrasp
+Sunken Ring Vehicle Workshop,Epic Battleground,4942.8193,2390.4307,2118,Wintergrasp
+Broken Temple Vehicle Workshop,EpicBattleground,4961.23,3384.18,2118,Wintergrasp
+Broken Temple Graveyard,EpicBattleground,5102.12,3463.95,2118,Wintergrasp
+Westspark Vehicle Workshop,EpicBattleground,4355.01,3308.44,2118,Wintergrasp
+Southwest Graveyard,EpicBattleground,4336.28,3234.63,2118,Wintergrasp
+Winter's Edge Tower,EpicBattleground,4397.97,2822.6,2118,Wintergrasp
+Flamewatch Tower,EpicBattleground,4458.95,1944.13,2118,Wintergrasp
+Shadowsight Tower,EpicBattleground,4556.98,3623.77,2118,Wintergrasp
+Eastspark Vehicle Workshop,EpicBattleground,4360.35,2352.27,2118,Wintergrasp
+Southeast Graveyard,Epic Battleground,4318.94,2408.0,2118,Wintergrasp
+Fortress Graveyard,Epic Battleground,5538.38,2894.84,2118,Wintergrasp
+Fortress Vehicle Workshop (W),Epic Battleground,5390.88,2979.48,2118,Wintergrasp
+Fortress Vehicle Workshop (E),Epic Battleground,5389.97,2712.18,2118,Wintergrasp
+Gold Mine,Neutral,1178.15,822.624,2107,
+Farm,Neutral,824.015,826.696,2107,
+Lumber Mill,Neutral,812.715,1182.26,2107,
+Blacksmith,Neutral,988.693,1012.81,2107,
+Stables,Neutral,1181.51,1185.65,2107,
+Tendril of Corruption,Shrine Raid - Pit Down,3656.64,-1743.48,2096,Crucible of Storms
+Shrine of Shadows,Shrine Raid - Pit Up,3631.1885,-1716.651,2096,Crucible of Storms
+Halls of Sanitation,Nazmir Raid - Halls of Sanitation POI marker,-306.44446,-255.81598,1861,Uldir
+Ruin's Descent,Nazmir Raid - Ruin's Descent POI marker,-310.896,-255.742,1861,Uldir
+The Oblivion Door,Nazmir Raid - The Oblivion Door,255.1302,-175.56944,1861,Uldir
+The Oblivion Door,Nazmir Raid - The Oblivion Door,255.23958,-333.52603,1861,Uldir
+Ring of Containment,Nazmir Raid - Ring of Containment,255.29514,-322.1736,1861,Uldir
+Ring of Containment,Nazmir Raid - Ring of Containment,255.09201,-190.1441,1861,Uldir
+Ring of Containment,Nazmir Raid - Ring of Containment,320.29166,-255.3993,1861,Uldir
+The Oblivion Door,Nazmir Raid - The Oblivion Door,333.5434,-255.44966,1861,Uldir
+The Festering Core,Nazmir Raid - The Festering Core,222.04167,-255.85243,1861,Uldir
+Crucible of Storms,Raid,3386.6233,-1419.1858,1643,Shrine of the Storm
+Alathir Spire,Nazjatar PvP Event - Tower 04,1925.54,208.861,1718,
+Zin-Azshari,Nazjatar PvP Event - Tower 01,1889.408,-1535.8438,1718,
+Thoras'tal Spire,Nazjatar PvP Event - Tower 03,919.527,-507.814,1718,
+Lemor'athra Spire,Nazjatar PvP Event - Tower 02,1332.78,-1778.92,1718,
+Tidal Conflux,Nazjatar PvP Event - Tower 05,1898.5764,-426.8854,1718,
+The Valley of Spirits,,1663.68,-4118.1,2212,Vision of Orgrimmar
+The Drag,,1794.2,-4529.68,2212,Vision of Orgrimmar
+The Valley of Honor,,2019.84,-4704.51,2212,Vision of Orgrimmar
+The Valley of Wisdom,,1916.27,-4279.45,2212,Vision of Orgrimmar
+Operation: Mechagon,Dungeon,3112.61,4915.9,1643,Rustbolt
+The Robodrome,,560.088,68.7893,2097,
+Mechagon Island,,552.564,79.5994,2097,
+The Underjunk,,464.73264,224.68924,2097,
+The Robodrome,,460.22,212.425,2097,
+Mechagon City,,656.49304,375.5382,2097,
+The Underjunk,,666.731,390.615,2097,
+Return to Zandalar,,3328.29,4856.77,1643,Mechagon
+Boat to Nazjatar,Speak to Captain Rez'okun to travel to Nazjatar,-2055.02,958.242,1642,
+Boat to Nazjatar,Speak to Cyrus Crestfall to travel to Nazjatar,1066.97,-485.614,1643,
+Grommash Hold,,1646.82,-4356.85,2212,Vision of Orgrimmar
+Halls of the Chosen,,299.9462,366.67535,2164,
+Dais of Eternity,,286.10416,355.59897,2164,
+Darkest Depths,,90.49653,669.4566,2164,
+Halls of the Chosen,,30.52257,712.73615,2164,
+Halls of the Chosen,,296.379,655.277,2164,
+The Traverse,,295.14584,668.7656,2164,
+The Hatchery,,265.24133,637.80554,2164,
+The Traverse,,321.73264,617.8333,2164,
+The Queen's Court,,188.42708,1224.257,2164,
+The Hatchery,,196.07639,1273.0573,2164,
+Precipice of Dreams,,196.42535,1531.3646,2164,
+The Queen's Court,,196.0573,1544.7466,2164,
+The Last Prison,,220.66667,2056.5278,2164,
+Precipice of Dreams,,216.37848,2398.6562,2164,
+The Dwarven District,,-8448.37,588.612,2213,Vision of Stormwind
+Trade District,,-8830.13,623.046,2213,Vision of Stormwind
+Old Town,,-8675.33,450.747,2213,Vision of Stormwind
+The Mage Quarter,,-8966.02,862.504,2213,Vision of Stormwind
+Stormwind Cathedral,,-8566.52,819.114,2213,Vision of Stormwind
+Anima Anomaly,Dark forces are in play here. The Jailer watches this area closely.,4570.26,7368.48,2222,
+Extraction Point,Return to Oribos,4622.58,6698.45,2222,
+Irondeep Mine,Alliance Controlled,793.751,-330.197,2197,
+Stonehearth Outpost,,1.66764,-292.675,2197,
+Iceblood Garrison,,-537.807,-168.363,2197,
+Coldtooth Mine,Horde Controlled,-946.912,-195.454,2197,
+Frostwolf Keep,,-1369.01,-225.37,2197,
+Stormpike Graveyard,Alliance Controlled,666.927,-305.544,2197,
+Snowfall Graveyard,Horde Controlled,-202.695,-112.569,2197,
+Frostwolf Graveyard,Horde Controlled,-1083.31,-307.402,2197,
+Dun Baldar South Bunker,Alliance Controlled,571.535,-80.543,2197,
+Dun Baldar North Bunker,Alliance Controlled,668.04,-128.176,2197,
+Icewing Bunker,Alliance Controlled,217.425,-359.764,2197,
+Iceblood Tower,Horde Controlled,-562.172,-273.554,2197,
+Tower Point,Horde Controlled,-760.664,-347.326,2197,
+East Frostwolf Tower,Horde Controlled,-1312.65,-315.886,2197,
+Dun Baldar,,693.095,-19.197,2197,
+Stonehearth Bunker,Alliance Controlled,-160.17,-454.107,2197,
+Stormpike Aid Station,Alliance Controlled,640.261,-18.6661,2197,
+Iceblood Graveyard,Horde Controlled,-531.316,-405.584,2197,
+Stonehearth Graveyard,Alliance Controlled,65.9825,-415.573,2197,
+Frostwolf Relief Hut,Horde Controlled,-1415.05,-305.986,2197,
+Dun Baldar North Bunker,Destroyed,678.076,-137.378,2197,
+Dun Baldar North Bunker,In Conflict,678.437,-137.095,2197,
+Dun Baldar North Bunker,In Conflict,678.371,-137.14,2197,
+Dun Baldar South Bunker,Destroyed,557.858,-88.1394,2197,
+Dun Baldar South Bunker,In Conflict,557.849,-88.2827,2197,
+Dun Baldar South Bunker,In Conflict,557.752,-88.2432,2197,
+Coldtooth Mine,Alliance Controlled,-948.309,-193.286,2197,
+Coldtooth Mine,Kobold Controlled,-948.542,-193.079,2197,
+East Frostwolf Tower,Destroyed,-1311.22,-316.564,2197,
+East Frostwolf Tower,In Conflict,-1311.4,-317.196,2197,
+East Frostwolf Tower,In Conflict,-1311.47,-317.241,2197,
+Frostwolf Graveyard,Alliance Controlled,-1083.54,-307.433,2197,
+Frostwolf Graveyard,In Conflict,-1083.49,-307.617,2197,
+Frostwolf Graveyard,In Conflict,-1083.67,-307.436,2197,
+Frostwolf Relief Hut,Alliance Controlled,-1414.93,-305.602,2197,
+Frostwolf Relief Hut,In Conflict,-1414.79,-306.018,2197,
+Frostwolf Relief Hut,In Conflict,-1414.89,-306.056,2197,
+Iceblood Graveyard,Alliance Controlled,-531.344,-405.273,2197,
+Iceblood Graveyard,In Conflict,-531.402,-405.326,2197,
+Iceblood Graveyard,In Conflict,-531.425,-405.326,2197,
+Iceblood Tower,Destroyed,-560.3,-271.439,2197,
+Iceblood Tower,In Conflict,-560.261,-271.528,2197,
+Iceblood Tower,In Conflict,-560.376,-271.281,2197,
+Icewing Bunker,Destroyed,209.101,-367.837,2197,
+Icewing Bunker,In Conflict,208.785,-367.938,2197,
+Icewing Bunker,In Conflict,209.023,-368.034,2197,
+Irondeep Mine,Horde Controlled,801.661,-330.015,2197,
+Irondeep Mine,Trogg Controlled,801.41,-330.128,2197,
+Snowfall Graveyard,Alliance Controlled,-202.963,-112.575,2197,
+Snowfall Graveyard,In Conflict,-203.153,-112.587,2197,
+Snowfall Graveyard,In Conflict,-203.09,-112.598,2197,
+Stonehearth Bunker,Destroyed,-160.264,-454.198,2197,
+Stonehearth Bunker,In Conflict,-160.169,-454.076,2197,
+Stonehearth Bunker,In Conflict,-160.403,-454.183,2197,
+Stonehearth Graveyard,Horde Controlled,65.9149,-415.562,2197,
+Stonehearth Graveyard,In Conflict,65.8907,-415.551,2197,
+Stonehearth Graveyard,In Conflict,65.8889,-415.616,2197,
+Stormpike Aid Station,Horde Controlled,641.501,-17.3997,2197,
+Stormpike Aid Station,In Conflict,640.908,-18.1867,2197,
+Stormpike Aid Station,In Conflict,640.699,-18.1078,2197,
+Stormpike Graveyard,Horde Controlled,666.642,-305.542,2197,
+Stormpike Graveyard,In Conflict,666.699,-305.533,2197,
+Stormpike Graveyard,In Conflict,666.571,-305.432,2197,
+Tower Point,Destroyed,-759.186,-348.19,2197,
+Tower Point,In Conflict,-759.141,-348.12,2197,
+Tower Point,In Conflict,-759.266,-348.044,2197,
+West Frostwolf Tower,Horde Controlled,-1288.9,-256.613,2197,
+West Frostwolf Tower,Destroyed,-1288.92,-256.629,2197,
+West Frostwolf Tower,In Conflict,-1288.02,-256.508,2197,
+West Frostwolf Tower,In Conflict,-1288.09,-256.702,2197,
+Pre-alliance POI test,,451.372,-127.12,2197,
+Wildpaw Cavern,,-1436.1,-455.651,2197,Frostwolf Keep
+Icewing Cavern,,276.056,61.1517,2197,Dun Baldar
+Snowfall Graveyard,Uncontrolled,-202.932,-112.716,2197,
+Temple of Purity (Disabled for BlizzCon Playtest GJC 9/17/19),Progress on empowering the temple.,-4024.22,-5727.99,2222,Bastion
+Assault: N'Zoth,N'Zoth's forces are invading Uldum!,-10057.1,-1075.1,1,
+Assault: Amathet,The Amathet are assaulting the Forge of Origination!,-10057.1,-1075.1,1,
+Assault: Aqir,The Aqir are swarming across Uldum!,-10057.1,-1075.1,1,
+Assault: N'Zoth,N'Zoth's forces are invading the Vale of Eternal Blossoms!,1195.29,1204.32,870,
+Assault: Mogu,The mogu clans are advancing upon the Vale of Eternal Blossoms!,1195.29,1204.32,870,
+Assault: Mantid,The mantid swarm is threatening to consume the Vale of Eternal Blossoms!,1195.29,1204.32,870,
+Temple of Wisdom (Disabled for BlizzCon Playtest GJC 9/17/19),Progress on empowering the temple.,-1741.83,-4083.83,2222,Bastion
+Ancient Inferno,Slay the Ancient Inferno to gain the power of the Ancient Artifact,4531.2734,-3758.1702,1191,
+Solar Sphere,Neutral,4666.171,-3933.125,1191,
+Gold Mine,Neutral,4666.171,-3933.125,1191,
+Scarlet Halls,Dungeon,2865.2,-822.243,0,
+Scarlet Monastery,Dungeon,2920.66,-799.569,0,
+Blackfathom Deeps,Dungeon,4142.1,883.06,1,
+Blackrock Depths,Dungeon,-7178.86,-926.035,0,
+The Deadmines,Dungeon,-11071.0,1527.08,0,
+Dire Maul,Dungeon,-4235.0,1305.11,1,
+Gnomeregan,Dungeon,-5183.73,599.62,0,
+Maraudon,Dungeon,-1422.55,2919.42,1,
+Hellfire Citadel,Raid,4090.8967,-757.3351,1116,
+Blackrock Foundry,Raid,8107.2,850.103,1116,
+Highmaul,Raid,3471.11,7437.35,1116,
+Siege of Orgrimmar,Raid,1230.9,613.852,870,
+Throne of Thunder,Raid,7264.847,5014.462,1064,
+Terrace of Endless Spring,Raid,955.529,-56.073,870,
+Heart of Fear,Raid,167.673,4056.4,870,
+Mogu'shan Vaults,Raid,3984.16,1109.09,870,
+Dragon Soul,Raid,-8220.872,-4502.5415,1,
+The Battle for Mount Hyjal,Raid,-8185.11,-4224.69,1,
+Firelands,Raid,3976.534,-2916.0989,1,The Throne of Flame
+Throne of the Four Winds,Raid,-11391.785,149.3698,1,Throne of the Four Winds
+Bastion of Twilight,Raid,-4893.59,-4234.72,0,Throne of the Four Winds
+Blackwing Descent,Raid,-7539.79,-1193.71,0,
+Baradin Hold,Raid,-1204.52,1082.57,732,
+The Ruby Sanctum,Raid,3608.34,186.464,571,
+The Obsidian Sanctum,Raid,3442.75,261.04,571,
+Icecrown Citadel,Raid,5785.58,2069.73,571,
+Trial of the Crusader,Raid,8515.35,730.17,571,
+Ulduar,Raid,9353.97,-1115.03,571,
+Naxxramas,Raid,3667.73,-1271.57,571,
+The Eye of Eternity,Raid,3870.26,6984.23,571,
+Vault of Archavon,Raid,5484.91,2840.3,571,
+Onyxia's Lair,Raid,-4691.13,-3716.3,1,
+Karazhan,Raid,-11115.1,-2008.0,0,
+Gruul's Lair,Raid,3535.18,5098.8,530,
+Serpentshrine Cavern,Raid,812.832,6865.65,530,
+Magtheridon's Lair,Raid,-338.294,3134.06,530,
+Black Temple,Raid,-3644.99,316.818,530,
+Sunwell Plateau,Raid,12556.9,-6774.73,530,
+The Eye,Raid,3087.93,1380.17,530,
+Molten Core,Raid,-7498.6562,-1036.151,0,
+Blackwing Lair,Raid,-7664.7812,-1217.3524,0,
+Temple of Ahn'Qiraj,Raid,-8235.22,1996.34,1,
+Ruins of Ahn'Qiraj,Raid,-8417.66,1504.38,1,
+"Ny'alotha, the Waking City",Raid,1140.58,1465.63,870,
+"Ny'alotha, the Waking City",Raid,-9844.04,-976.202,1,
+Vision of N'Zoth,,1038.62,354.606,870,
+Quarry,Neutral,117.33681,706.5226,2245,
+Market,Neutral,-166.5243,500.29166,2245,
+Shrine,Neutral,-466.687,335.216,2245,
+Farm,Neutral,63.368057,301.56076,2245,
+Ruins,Neutral,-374.58682,717.1719,2245,
+Zidormi,Travel through time to another point in Uldum's history.,-9480.24,-1027.91,1,Uldum
+Zidormi,Travel through time to another point in Uldum's history.,-9480.24,-1027.91,1,Uldum
+Ny'alotha,,-936.158,-43.529514,2217,
+Annex of Prophecy,,-857.3524,-43.720486,2217,
+The Ritual Chamber,,-541.783,-163.5868,2217,
+Ny'alotha,,-536.7257,-226.73958,2217,
+The Hive,,-402.17535,103.27952,2217,
+Ny'alotha,,-375.30902,136.06076,2217,
+Terrace of Desolation,,-218.27605,320.0625,2217,
+The Hive,,-222.18576,315.78647,2217,
+Maw of Gor'ma,,-530.7639,19.961805,2217,
+Ny'alotha,,-519.03644,15.947917,2217,
+Maw of Gor'ma,,-492.81424,19.873264,2217,
+Warren of Decay,,-477.66495,34.239582,2217,
+Maw of Gor'ma,,-558.3889,54.60764,2217,
+Chamber of Rebirth,,-545.8715,75.68056,2217,
+Ny'alotha,,-11697.611,9297.363,2217,
+N'Zoth,,-93.760414,-49.225697,2217,
+Twilight Landing,,-516.625,-458.001,2217,
+The Ritual Chamber,,-516.01,-457.359,2217,
+Lords of the Blade,Raid Level Challenge,5016.483,7502.703,2222,
+Obalis,Grand Master Pet Tamer,-9582.29,-930.1,1,
+Aki the Chosen,Grand Master Pet Tamer,1419.92,364.27,870,Vale of Eternal Blossoms
+Vision of N'Zoth,,-9336.12,-1066.75,1,
+Zidormi,Travel through time to another point in the Vale's history.,1408.68,442.455,870,Vale of Eternal Blossoms
+Zidormi,Travel through time to another point in the Vale's history.,1408.68,442.455,870,Vale of Eternal Blossoms
+Astarii Starseeker,Obtain a Cypher of Extrication to free Astarii from her cage.,4702.98,7660.58,2222,
+Tower of the Progenitors,Use Stygia to create Cyphers or turn in Constellan Writs to Ve'nari.,4397.31,6847.4,2222,
+The Necrotic Wake,Dungeon,-3317.1494,-4098.309,2222,Temple of Courage
+Spires of Ascension,Dungeon,-2132.804,-5325.686,2222,Seat of Eternal Hymns
+Theater of Pain,Dungeon,2594.18,-2718.95,2222,Maldraxxus
+Plaguefall,Dungeon,2085.9236,-3115.1128,2222,Blighted Scar
+Mists of Tirna Scithe,Dungeon,-6935.4463,1785.0087,2222,Ardenweald
+De Other Side,Dungeon,-7529.19,-583.578,2222,Forest's Edge
+Halls of Atonement,Dungeon,-2185.12,5000.87,2222,Revendreth
+Sanguine Depths,Dungeon,-1473.9,6542.78,2222,Menagerie of the Master
+Castle Nathria,Raid,-1900.55,6804.51,2222,Castle Nathria
+Ven'ari's Favor,This location has an item of interest for Ven'ari.  |cFFE51D05 |cFFE51D05 (PH: THESE ARE OTHERWISE LOW DROPRATE RANDOM DROPS),5371.88,7469.51,2222,
+Hunt: Mist Lurkers,Hunting Mist Lurkers will draw the attention of a powerful beast.  |cFFE51D05 |cFFE51D05,3477.79,6628.15,2222,
+"Torghast, Tower of the Damned",,4600.0,5130.0,2222,
+Amphitheater of Sorrow,,-1565.5,6323.01,2284,Sanguine Depths
+Depths of Despair,,-1541.8785,6298.5,2284,Sanguine Depths
+Upper Blackrock Spire,Dungeon,-7485.54,-1324.3455,0,
+Lower Blackrock Spire,Dungeon,-7524.1963,-1334.5209,0,
+Blackrock Caverns,Dungeon,-7570.731,-1326.6649,0,
+The Culling of Stratholme,Dungeon,-8756.8955,-4492.5884,1,
+The Black Morass,Dungeon,-8775.839,-4157.1685,1,
+Well of Eternity,Dungeon,-8592.316,-3996.5938,1,
+Old Hillsbrad Foothills,Dungeon,-8322.18,-4051.39,1,
+End Time,Dungeon,-8261.13,-4452.5,1,
+Hour of Twilight,Dungeon,-8293.65,-4600.63,1,
+The Everbloom,Dungeon,7100.98,194.899,1116,
+Grimrail Depot,Dungeon,7860.21,556.242,1116,
+Iron Docks,Dungeon,8851.93,1353.11,1116,
+Bloodmaul Slag Mines,Dungeon,7263.71,4453.39,1116,
+Auchindoun,Dungeon,1489.8,3073.14,1116,
+Skyreach,Dungeon,25.5242,2524.66,1116,
+Shadowmoon Burial Grounds,Dungeon,759.759,134.111,1116,
+Temple of the Jade Serpent,Dungeon,958.832,-2470.58,870,
+Stormstout Brewery,Dungeon,-712.193,1263.64,870,
+Siege of Niuzao Temple,Dungeon,1436.8,5086.68,870,
+Shado-Pan Monastery,Dungeon,3638.19,2542.12,870,
+Mogu'shan Palace,Dungeon,1390.4,439.261,870,
+Gate of the Setting Sun,Dungeon,692.153,2080.2,870,
+Zul'Gurub,Dungeon,-11916.7,-1212.5,0,
+Zul'Aman,Dungeon,6851.12,-7987.93,530,
+Throne of the Tides,Dungeon,-5592.43,5408.11,0,
+The Vortex Pinnacle,Dungeon,-11512.4,-2309.03,1,
+Lost City of the Tol'vir,Dungeon,-10678.4,-1306.93,1,
+The Stonecore,Dungeon,1025.97,635.518,646,
+Halls of Origination,Dungeon,-10210.7,-1837.76,1,
+Grim Batol,Dungeon,-4058.27,-3449.87,0,
+Utgarde Pinnacle,Dungeon,1242.39,-4857.42,571,
+Utgarde Keep,Dungeon,1120.77,-4897.29,571,
+Trial of the Champion,Dungeon,8572.02,792.325,571,
+The Oculus,Dungeon,3842.4,7037.41,571,
+The Nexus,Dungeon,3832.27,6922.58,571,
+The Forge of Souls,Dungeon,5669.83,2004.35,571,
+Pit of Saron,Dungeon,5593.57,2011.73,571,
+Halls of Reflection,Dungeon,5628.6,1975.29,571,
+Halls of Lightning,Dungeon,9179.3,-1382.14,571,
+Halls of Stone,Dungeon,8922.5,-974.032,571,
+Gundrak,Dungeon,6956.0,-4417.14,571,
+Drak'Tharon Keep,Dungeon,4774.61,-2032.1,571,
+Azjol-Nerub,Dungeon,3675.44,2169.16,571,
+Ahn'kahet: The Old Kingdom,Dungeon,3642.57,2035.15,571,
+The Slave Pens,Dungeon,731.021,7013.75,530,
+The Steamvault,Dungeon,817.924,6937.56,530,
+The Underbog,Dungeon,781.119,6751.41,530,
+The Blood Furnace,Dungeon,-302.408,3162.92,530,
+Hellfire Ramparts,Dungeon,-358.693,3064.7,530,
+The Shattered Halls,Dungeon,-306.675,3057.14,530,
+The Botanica,Dungeon,3409.85,1486.26,530,
+The Mechanar,Dungeon,2867.93,1550.95,530,
+The Arcatraz,Dungeon,3309.93,1337.23,530,
+Shadow Labyrinth,Dungeon,-3634.63,4943.43,530,
+Auchenai Crypts,Dungeon,-3361.59,5210.65,530,
+Mana-Tombs,Dungeon,-3090.5,4942.55,530,
+Sethekk Halls,Dungeon,-3361.95,4674.96,530,
+Magisters' Terrace,Dungeon,12886.9,-7330.66,530,
+Zul'Farrak,Dungeon,-6831.22,-2910.63,1,
+Wailing Caverns,Dungeon,-820.924,-2124.55,1,
+Uldaman,Dungeon,-6088.95,-3192.82,0,
+The Temple of Atal'hakkar,Dungeon,-10431.0,-3828.88,0,
+The Stockade,Dungeon,-8781.1,833.441,0,
+Stratholme,Dungeon,3394.67,-3379.08,0,
+Shadowfang Keep,Dungeon,-234.23,1563.2,0,
+Scholomance,Dungeon,1257.74,-2584.35,0,
+Razorfen Kraul,Dungeon,-4464.09,-1666.46,1,
+Razorfen Downs,Dungeon,-4651.13,-2490.25,1,
+Chamber of Conquest,,2864.9705,-2546.7065,2293,Theater of Pain
+Barrow of Carnage,,2850.0044,-2494.3958,2293,Theater of Pain
+Barrow of Carnage,,2951.16,-2312.28,2293,Theater of Pain
+Barrow of Carnage,,2947.17,-2310.62,2293,Theater of Pain
+Barrow of Carnage,,2879.28,-2288.41,2293,Theater of Pain
+Barrow of Carnage,,2860.3342,-2295.5034,2293,Theater of Pain
+Barrow of Carnage,,2824.0244,-2430.0278,2293,Theater of Pain
+Chamber of Conquest,,2853.38,-2485.11,2293,Theater of Pain
+Altars of Agony,,2895.3064,-2545.8645,2293,Theater of Pain
+Chamber of Conquest,,2899.784,-2545.9167,2293,Theater of Pain
+Theater of Pain,,2835.23,-2545.92,2293,Theater of Pain
+Terrace of Reanimation,,868.738,-1953.72,2236,
+Bonebreaker Hall,,854.087,-1963.09,2236,
+De Other Side,,2741.7,-2481.39,2291,
+Ardenweald,,2739.7188,-2455.6824,2291,
+De Other Side,,2479.5088,-2223.481,2291,
+Mechagon,,2534.875,-2223.6753,2291,
+Zul'Gurub,,2741.2415,-1984.217,2291,
+De Other Side,,2740.4949,-1929.3125,2291,
+Gardens of Repose,,-1190.342,-6262.0522,2285,
+Honor's Ascent,,-1081.4045,-6520.6685,2285,
+Font of Fealty,,-897.94446,-6952.757,2285,
+Gardens of Repose,,-496.5625,-7356.2812,2285,
+Seat of the Archon,,-198.65973,-7521.29,2285,
+Font of Fealty,,-145.41667,-7551.307,2285,
+Plaguefall,,1104.3368,-3703.448,2289,
+Festering Sanctum,,1161.92,-3678.62,2289,
+The Nave of Pain,,-2209.79,5508.6,2287,
+The Narthex of Sins,,-2210.07,5513.1,2287,
+The Sanctuary of Souls,,-2189.72,5678.69,2287,
+The Crimson Apse,,-2209.91,5535.32,2287,
+The Stitchwerks,,-3316.83,-3462.94,2286,
+Zolramus,,-11.0,-2.4,2355,
+The Purloined Stores,,-1636.2587,7005.889,2296,
+Halls of the Faithful,,-1917.2153,6769.913,2296,
+The Grand Walk,,-1924.03,6769.83,2296,
+The Grand Walk,,-1644.8073,6963.1978,2296,
+Feast of Arrogance,,-2005.94,6513.17,2296,
+Feast of Arrogance,,-2181.76,6519.84,2296,
+Pride's Prison,,-2207.48,6506.35,2296,
+Halls of the Faithful,,-2208.11,6522.57,2296,
+Halls of the Faithful,,-2210.71,6518.01,2296,
+Halls of the Faithful,,-1976.64,6524.25,2296,
+The Grand Walk,,-1844.5695,-9412.754,2296,
+Nightcloak Sanctum,,-1865.14,6630.2,2296,
+The Master's Vestibule,,-1586.33,6728.81,2296,
+The Kennels,,-1835.24,6909.96,2296,
+The Master's Vestibule,,-2180.68,6403.27,2296,
+Halls of the Faithful,,-1895.52,6910.06,2296,
+Feast of Arrogance,,-1895.52,6939.05,2296,
+The Master's Vestibule,,-2093.69,6582.95,2296,
+The Purloined Stores,,-1836.3,6924.62,2296,
+The Grand Walk,,-1834.38,6924.66,2296,
+Steward of the Day: Wylia,9.0 Bastion Map Icons for the Steward of the Day repeatable treasures - SBV,-3835.283,-3677.3923,2222,
+Steward of the Day: Ioanna,9.0 Bastion Map Icons for the Steward of the Day repeatable treasures - SBV,-2316.8438,-3153.111,2222,
+Steward of the Day: Burnsios,9.0 Bastion Map Icons for the Steward of the Day repeatable treasures - SBV,-3487.9,-4547.8,2222,
+Steward of the Day: Platnos,9.0 Bastion Map Icons for the Steward of the Day repeatable treasures - SBV,-3625.5,-5461.1,2222,
+Steward of the Day: Pagius,9.0 Bastion Map Icons for the Steward of the Day repeatable treasures - SBV,-3728.3,-4421.0,2222,
+Steward of the Day: Alexandros,9.0 Bastion Map Icons for the Steward of the Day repeatable treasures - SBV,-4697.2,-4921.0,2222,
+Steward of the Day: Chaddius,9.0 Bastion Map Icons for the Steward of the Day repeatable treasures - SBV,-4330.4443,-5175.889,2222,
+Steward of the Day: Angeliki,9.0 Bastion Map Icons for the Steward of the Day repeatable treasures - SBV,-2093.929,-4232.5415,2222,
+Steward of the Day: Covinkles,9.0 Bastion Map Icons for the Steward of the Day repeatable treasures - SBV,-1269.5,-4948.6,2222,
+Steward of the Day: Giannakis,Map Icons for the Steward of the Day repeatable treasures,-2535.1,-6169.1,2222,
+Chromie,Timewalking Campaign,-8196.3,745.4,0,Stormwind City
+Chromie,Timewalking Campaign,1557.16,-4216.37,1,Orgrimmar
+The Violet Hold,,5693.415,503.3316,571,
+Ragefire Chasm,Dungeon,1807.8541,-4405.533,1,
+,,-1724.38,1209.39,2222,
+Fatescribe Roh-Tahl,Change Fate and experience Shadowlands in a new way.,-1828.1,1063.6,2222,Ring of Fates
+Anima Conductor,,-1758.82,-5693.86,2222,Elysian Hold
+Anima Conductor,,1851.82,-2547.89,2222,Seat of the Primus
+Anima Conductor,,-6884.68,1038.15,2222,Heart of the Forest
+Anima Conductor,,-1957.28,7791.92,2222,Sinfall
+Transportation Network,,-1715.28,-5792.89,2222,Elysian Hold
+Sanctum Upgrades,,-1663.23,-5738.47,2222,Elysian Hold
+Sanctum Upgrades,,1830.14,-2569.44,2222,Seat of the Primus
+Sanctum Upgrades,,-6866.2,1071.38,2222,Heart of the Forest
+Sanctum Upgrades,,-1860.89,7634.7,2222,Sinfall
+Forge of Bonds,,-1555.86,-5896.69,2222,Elysian Hold
+Forge of Bonds,,1849.53,-2460.31,2222,Seat of the Primus
+Forge of Bonds,,-6917.65,1116.55,2222,Heart of the Forest
+Forge of Bonds,,-1835.62,7691.78,2222,Sinfall
+Path of Ascension,,-1588.4,-5614.2,2222,Elysian Hold
+Abomination Factory,,1933.52,-2840.1,2222,Maldraxxus
+Queen's Conservatory,,-6895.95,1001.19,2222,Heart of the Forest
+Ember Court,,-1969.66,7827.83,2222,Sinfall
+Black Bell,|cff20ff20Anima Conductor: Temple of Loyalty|r,-1878.16,-2932.72,2222,
+Temple of Humility,|cff20ff20Anima Conductor|r,-2528.51,-6177.72,2222,
+Horn of Courage,|cff20ff20Anima Conductor: Temple of Courage|r,-3286.31,-4197.84,2222,
+Quests Available,|cff20ff20Anima Conductor: Eternal Forge|r,-1806.44,-4776.19,2222,
+Kyrian Enhancements Available,|cff20ff20Anima Conductor: Eonian Archives|r,-1721.52,-4098.48,2222,
+Penitence of Purity,|cff20ff20Anima Conductor: Temple of Purity|r,-4337.84,-5439.65,2222,
+Chosen Runecoffer,|cff20ff20Anima Conductor: House of the Chosen|r,2063.5,-1769.2,2222,
+Final Thread,|cff20ff20Anima Conductor: House of Constructs|r,3333.1,-1360.97,2222,
+Quests Available,|cff20ff20Anima Conductor: House of Eyes|r,4128.54,-2603.36,2222,
+Necrolord Enhancements Available,|cff20ff20Anima Conductor: House of Rituals|r,3470.17,-3549.13,2222,
+House of Plagues,|cff20ff20Anima Conductor|r,1459.8,-3307.24,2222,
+Spoiling For A Fight,|cff20ff20Anima Conductor: Theater of Pain|r,2821.04,-2750.11,2222,
+Tirna Vaal,|cff20ff20Anima Conductor|r,-6104.82,-338.825,2222,
+Quests Available,|cff20ff20Anima Conductor: Hibernal Hollow|r,-6873.47,56.9425,2222,
+Large Lunarlight Pod,|cff20ff20Anima Conductor: Glitterfall Basin|r,-5897.8,628.473,2222,
+Dapperdew,|cff20ff20Anima Conductor: Dreamsong Fenn|r,-6492.31,1355.9,2222,
+Sparkling Animaseed,|cff20ff20Anima Conductor: Tirna Scithe|r,-7002.25,2145.43,2222,
+Quests Available,|cff20ff20Anima Conductor: Pridefall Hamlet|r,-3193.49,5349.46,2222,
+Dredterror Ballista,|cff20ff20Anima Conductor: Wanecrypt Hill|r,-3315.08,6836.97,2222,
+Madalav's Hammer,|cff20ff20Anima Conductor: Dominance Keep|r,-900.623,7578.7,2222,
+Castle Ward,|cff20ff20Anima Conductor|r,-1898.87,7053.75,2222,
+Greater Greedstone,|cff20ff20Anima Conductor: Crypt of the Forgotten|r,-1637.11,5346.49,2222,
+Venthyr Enhancements Available,|cff20ff20Anima Conductor: The Shrouded Asylum|r,-2425.36,8189.74,2222,
+Night Fae Enhancements Available,|cff20ff20Anima Conductor: Claw's Edge|r,-7624.41,615.314,2222,
+Command Table,,-1591.54,-5744.98,2222,Elysian Hold
+Command Table,,1791.89,-2473.46,2222,Seat of the Primus
+Command Table,,-7041.9,1126.09,2222,Heart of the Forest
+Command Table,,-1958.2,7634.21,2222,Sinfall
+Transportation Network,,1848.91,-2613.19,2222,Seat of the Primus
+Heart of the Forest,|cff20ff20Mushroom Network|r,-6793.89,1008.96,2222,Heart of the Forest
+Sixfold Recluse,|cff20ff20Portal: Seat of the Primus,3003.17,-1006.65,2222,Maldraxxus
+House of Rituals,|cff20ff20Portal: Seat of the Primus,3403.74,-4057.85,2222,Maldraxxus
+Halls of Atonement,|cff20ff20Mirror Network: Ceremony Ward|r,-1991.59,5273.64,2222,
+Nurakkir,|cff20ff20Portal: Seat of the Primus,4129.87,-2616.86,2222,Maldraxxus
+Dominance Keep,|cff20ff20Mirror Network: Military Ward|r,-1352.69,7981.64,2222,
+The Banewood,|cff20ff20Mirror Network: Forest Ward|r,-2487.2,6970.3,2222,
+Feeders' Thicket,|cff20ff20Mirror Network: Village Ward|r,-2700.22,6139.34,2222,
+The Eternal Terrace,|cff20ff20Mirror Network: Castle Ward|r,-1565.39,6221.49,2222,
+Pridefall Hamlet,|cff20ff20Mirror Network: Village Ward|r,-3173.53,5435.95,2222,
+Crumbled Ridge,|cff20ff20Mushroom Network|r,-5559.07,-942.25,2222,
+The Eternal Terrace,|cff20ff20Mirror Network: Castle Ward|r,-1923.51,7676.85,2222,
+Pridefall Hamlet,|cff20ff20Mirror Network: Village Ward|r,-1890.74,7691.64,2222,
+The Banewood,|cff20ff20Mirror Network: Forest Ward|r,-1917.1,7748.17,2222,
+Feeders' Thicket,|cff20ff20Mirror Network: Village Ward|r,-1884.37,7709.12,2222,
+Halls of Atonement,|cff20ff20Mirror Network: Ceremony Ward|r,-1950.04,7733.03,2222,
+Dominance Keep,|cff20ff20Mirror Network: Military Ward|r,-1941.37,7682.54,2222,
+Stillglade,|cff20ff20Mushroom Network|r,-6385.59,213.66,2222,Ardenweald
+Banks of Life,|cff20ff20Mushroom Network|r,-5668.74,792.037,2222,Ardenweald
+The Stalks,|cff20ff20Mushroom Network|r,-6005.73,2213.12,2222,Ardenweald
+The Elder Stand,|cff20ff20Mushroom Network|r,-6797.4,2430.43,2222,Ardenweald
+Eventide Grove,|cff20ff20Mushroom Network|r,-7668.81,1385.34,2222,Ardenweald
+Gormhide,|cff20ff20Mushroom Network|r,-8121.7,514.792,2222,Ardenweald
+Tirna Scithe,|cff20ff20Mushroom Network|r,-7545.5,2870.56,2222,Ardenweald
+Forest's Edge,|cff20ff20Mushroom Network|r,-7227.09,-374.245,2222,Ardenweald
+To the Heart of the Forest,|cff20ff20Mushroom Network|r,-6029.6,2185.36,2222,The Ring
+To the Gormhive,|cff20ff20Mushroom Network|r,-6035.33,2193.75,2222,The Ring
+To the Crumbled Ridge,|cff20ff20Mushroom Network|r,-6034.02,2206.48,2222,The Ring
+To the Great Unknown,|cff20ff20Mushroom Network|r,-6021.36,2219.1,2222,The Ring
+To the Banks of Life,|cff20ff20Mushroom Network|r,-6014.5,2220.57,2222,The Ring
+To the Stalks,|cff20ff20Mushroom Network|r,-6005.79,2215.4,2222,The Ring
+To the Eventide Grove,|cff20ff20Mushroom Network|r,-5999.68,2206.53,2222,The Ring
+To the Elder Stand,|cff20ff20Mushroom Network|r,-5998.88,2199.0,2222,The Ring
+To the Stillglade,|cff20ff20Mushroom Network|r,-6000.35,2189.89,2222,The Ring
+To the Tirna Scithe,|cff20ff20Mushroom Network|r,-6006.34,2185.99,2222,The Ring
+To the Deep Unknown,|cff20ff20Mushroom Network|r,-6018.5,2182.84,2222,The Ring
+Zerekriss,|cff20ff20Portal: Seat of the Primus,1.30241,-2.34758,2276,Maldraxxus
+To the Heart of the Forest,|cff20ff20Mushroom Network|r,-6029.6,2185.36,2222,The Ring
+To the Gormhive,|cff20ff20Mushroom Network|r,-6035.33,2193.75,2222,The Ring
+To the Crumbled Ridge,|cff20ff20Mushroom Network|r,-6034.02,2206.48,2222,The Ring
+To the Great Unknown,|cff20ff20Mushroom Network|r,-6021.36,2219.1,2222,The Ring
+To the Banks of Life,|cff20ff20Mushroom Network|r,-6014.5,2220.57,2222,The Ring
+To the Stalks,|cff20ff20Mushroom Network|r,-6005.79,2215.4,2222,The Ring
+To the Eventide Grove,|cff20ff20Mushroom Network|r,-5999.68,2206.53,2222,The Ring
+To the Elder Stand,|cff20ff20Mushroom Network|r,-5998.88,2199.0,2222,The Ring
+To the Stillglade,|cff20ff20Mushroom Network|r,-6000.35,2189.89,2222,The Ring
+To the Tirna Scithe,|cff20ff20Mushroom Network|r,-6006.34,2185.99,2222,The Ring
+To the Deep Unknown,|cff20ff20Mushroom Network|r,-6018.5,2182.84,2222,The Ring
+Ring of Fates,,-1779.45,1129.14,2222,
+Ring of Fates,,-1888.52,1128.04,2222,
+The Broker's Den,,-1886.51,1132.33,2222,
+The Broker's Den,,-1781.59,1131.64,2222,
+To the Forest's Edge,|cff20ff20Mushroom Network|r,-6028.75,2215.1,2222,The Ring
+Great Vault,"Defeat bosses in the Sanctum of Domination, complete Mythic Keystone dungeons, and earn Honor in Rated PvP to unlock rewards in the Great Vault.",-1726.14,1175.9,2222,
+Timewalking Vendor,Mists of Pandaria,-649.884,-5117.54,870,
+Timewalking Vendor,The Burning Crusade,-1811.16,5424.92,530,
+Timewalking Vendor,Wrath of the Lich King,5810.51,634.908,571,
+Timewalking Vendor,Cataclysm,2004.6,-4413.28,1,
+Timewalking Vendor,Cataclysm,-8196.54,399.193,0,
+Timewalking Vendor,Warlords of Draenor,5248.25,-3932.75,1116,
+Timewalking Vendor,Warlords of Draenor,3573.28,-3879.36,1116,
+Great Vault,|cff20ff20Rewards are now available. Return to the Great Vault to claim your reward.|r,-1726.14,1175.9,2222,
+Necrolord Assault,Draka leads the Maldraxxi assault on Perdition Hold!,4216.17,7266.13,2222,
+Venthyr Assault,Prince Renathal leads the Venthyr assault on the Tremaculum!,5256.43,7423.28,2222,
+Kyrian Assault,Xandria leads the Kyrian assault on Cocyrus!,4544.4,6860.51,2222,
+Night Fae Assault,Lord Herne leads the Night Fae assault on Crucible of the Damned,4539.79,7729.2,2222,
+Sanctum of Domination,Raid,4849.5024,5779.5063,2222,Helgarde Keep
+Shadowsteel Foundry,,190.511,-833.426,2450,
+Tazavesh,Myza's Oasis -> Tazavesh,3804.57,-1181.13,2441,
+Myza's Oasis,Tazavesh -> Myza's Oasis,3798.9,-1184.37,2441,
+Tazavesh,The Grand Menagerie -> Tazavesh,3479.64,-1219.13,2441,
+The Grand Menagerie,Tazavesh -> The Grand Menagerie,3486.41,-1214.73,2441,
+Tazavesh,The P.O.S.T. -> Tazavesh,3670.5,-1160.47,2441,
+The P.O.S.T.,Tazavesh -> The P.O.S.T.,3665.4,-1165.07,2441,
+Stormheim,Tazavesh -> Stormheim,3567.62,-1050.84,2441,
+Boralus Harbor,Aggramar's Vault -> Boralus Harbor,12413.3,13942.8,2441,
+The Opulent Nexus,Boralus Harbor -> The Opulent Nexus,-12657.3,-11414.1,2441,
+Stormheim,Aggramar's Vault -> Stormheim,12464.6,14063.5,2441,
+Aggramar's Vault,Stormheim -> Aggramar's Vault,12478.3,14071.4,2441,
+The Torment Chambers,,233.481,-1003.36,2450,
+"Torghast, Tower of the Damned",,-283.69272,-1257.25,2450,
+The Torment Chambers,,291.252,-775.202,2450,
+The Torment Chambers,,291.034,-891.08,2450,
+Shadowsteel Foundry,,276.124,-790.078,2450,
+Shadowsteel Foundry,,277.15625,-876.72394,2450,
+Crown of Gorgoa,,354.3889,-1122.7882,2450,
+Pinnacle of Domination,,233.42708,-607.908,2450,
+Crown of Gorgoa,,269.06424,-791.53644,2450,
+Portal to Korthia,,-1710.95,1405.16,2222,
+Timewalking Vendor,Legion,-853.086,4308.53,1220,
+Portal to Zereth Mortis,,-1723.01,1282.88,2222,
+Waystone to Oribos,,-4317.68,760.022,2374,
+Sepulcher of the First Ones,Raid,-3829.78,-1532.21,2374,The Sepulcher of the First Ones
+Genesis Cradle,,-3813.7031,-2417.5557,2481,
+Ephemeral Plains,,-3846.53,-2417.75,2481,
+Domination's Grasp,,-3830.2483,-2435.3525,2481,
+Immortal Hearth,,-3371.9878,-2789.5798,2481,
+The Endless Foundry,,-2788.3,-3368.34,2481,
+Genesis Cradle,,-2746.9688,-3409.144,2481,
+Immortal Hearth,,-4222.92,-2857.46,2481,
+Immortal Hearth,,-3825.01,-2610.22,2481,
+The Grand Design,,-3825.1338,-2884.962,2481,
+Domination's Grasp,,-5448.2603,-3876.304,2481,
+Heart of Eternity,,-6180.36,-4098.96,2481,
+The Grand Design,,-6215.8228,-4120.363,2481,
+Great Vault,"Defeat bosses in the Sepulcher of the First Ones, complete Mythic Keystone dungeons, and earn Honor in Rated PvP to unlock rewards in the Great Vault.",-1726.14,1175.9,2222,
+Between A Rock & A Rock,Available quest,-2935.92,47.3058,2374,

@@ -1,0 +1,1109 @@
+ID,MapName_lang,InstanceType
+0,Eastern Kingdoms,0
+1,Kalimdor,0
+13,Art Team Map,0
+25,Scott Test,0
+30,Alterac Valley,3
+33,Shadowfang Keep,1
+34,Stormwind Stockade,1
+35,<unused>StormwindPrison,0
+36,Deadmines,1
+37,Azshara Crater,0
+42,Collin's Test,0
+43,Wailing Caverns,1
+44,<unused> Monastery,1
+47,Razorfen Kraul,1
+48,Blackfathom Deeps,1
+70,Uldaman,1
+90,Gnomeregan,1
+109,Sunken Temple,1
+129,Razorfen Downs,1
+169,Emerald Dream,2
+189,Scarlet Monastery of Old,1
+209,Zul'Farrak,1
+229,Lower Blackrock Spire,1
+230,Blackrock Depths,1
+249,Onyxia's Lair,2
+269,Opening of the Dark Portal,1
+289,Scholomance OLD,1
+309,Ancient Zul'Gurub,1
+329,Stratholme,1
+349,Maraudon,1
+369,Deeprun Tram,0
+389,Ragefire Chasm,1
+409,Molten Core,2
+429,Dire Maul,1
+449,Alliance PVP Barracks,0
+450,Horde PVP Barracks,0
+451,Development Land,0
+469,Blackwing Lair,2
+489,Classic Warsong Gulch,3
+509,Ruins of Ahn'Qiraj,2
+529,Classic Arathi Basin,3
+530,Outland,0
+531,Ahn'Qiraj Temple,2
+532,Karazhan,2
+533,Naxxramas,2
+534,The Battle for Mount Hyjal,2
+540,Hellfire Citadel: The Shattered Halls,1
+542,Hellfire Citadel: The Blood Furnace,1
+543,Hellfire Citadel: Ramparts,1
+544,Magtheridon's Lair,2
+545,Coilfang: The Steamvault,1
+546,Coilfang: The Underbog,1
+547,Coilfang: The Slave Pens,1
+548,Coilfang: Serpentshrine Cavern,2
+550,Tempest Keep,2
+552,Tempest Keep: The Arcatraz,1
+553,Tempest Keep: The Botanica,1
+554,Tempest Keep: The Mechanar,1
+555,Auchindoun: Shadow Labyrinth,1
+556,Auchindoun: Sethekk Halls,1
+557,Auchindoun: Mana-Tombs,1
+558,Auchindoun: Auchenai Crypts,1
+559,Nagrand Arena (old),4
+560,The Escape from Durnholde,1
+562,zzOldBlade's Edge Arena,4
+564,Black Temple,2
+565,Gruul's Lair,2
+566,Eye of the Storm,3
+568,Zul'Aman,1
+571,Northrend,0
+572,Ruins of Lordaeron,4
+573,ExteriorTest,0
+574,Utgarde Keep,1
+575,Utgarde Pinnacle,1
+576,The Nexus,1
+578,The Oculus,1
+580,The Sunwell,2
+582,Transport: Rut'theran to Auberdine,0
+584,Transport: Menethil to Theramore,0
+585,Magisters' Terrace,1
+586,Transport: Exodar to Auberdine,0
+587,Transport: Feathermoon Ferry,0
+588,Transport: Menethil to Auberdine,0
+589,Transport: Orgrimmar to Grom'Gol,0
+590,Transport: Grom'Gol to Undercity,0
+591,Transport: Undercity to Orgrimmar,0
+592,Transport: Borean Tundra Test,0
+593,Transport: Booty Bay to Ratchet,0
+594,Transport: Howling Fjord Sister Mercy (Quest),0
+595,The Culling of Stratholme,1
+596,Transport: Naglfar,0
+597,Craig Test,0
+598,Sunwell Fix (Unused),1
+599,Halls of Stone,1
+600,Drak'Tharon Keep,1
+601,Azjol-Nerub,1
+602,Halls of Lightning,1
+603,Ulduar,2
+604,Gundrak,1
+605,Development Land (non-weighted textures),2
+606,QA and DVD,0
+607,Strand of the Ancients,3
+608,Violet Hold,1
+609,Ebon Hold,0
+610,Transport: Tirisfal to Vengeance Landing,0
+612,Transport: Menethil to Valgarde,0
+613,Transport: Orgrimmar to Warsong Hold,0
+614,Transport: Stormwind to Valiance Keep,0
+615,The Obsidian Sanctum,2
+616,The Eye of Eternity,2
+617,Dalaran Sewers,4
+618,The Ring of Valor,4
+619,Ahn'kahet: The Old Kingdom,1
+620,Transport: Moa'ki to Unu'pe,0
+621,Transport: Moa'ki to Kamagua,0
+622,Transport: Orgrim's Hammer,0
+623,Transport: The Skybreaker,0
+624,Vault of Archavon,2
+627,Unused (DELETE ME),5
+628,Isle of Conquest,3
+631,Icecrown Citadel,2
+632,The Forge of Souls,1
+637,Abyssal Maw Exterior,1
+638,Gilneas,0
+641,Transport: Alliance Airship BG,0
+642,Transport: HordeAirshipBG,0
+643,Throne of the Tides,1
+644,Halls of Origination,1
+645,Blackrock Caverns,1
+646,Deepholm,0
+647,Transport: Orgrimmar to Thunder Bluff,0
+648,LostIsles,0
+649,Trial of the Crusader,2
+650,Trial of the Champion,1
+651,ElevatorSpawnTest,0
+654,Gilneas2,0
+655,GilneasPhase1,0
+656,GilneasPhase2,0
+657,The Vortex Pinnacle,1
+658,Pit of Saron,1
+659,Lost Isles Volcano Eruption,0
+660,Deephome Ceiling,0
+661,Lost Isles Town in a Box,0
+662,Transport: Alliance Vashj'ir Ship,0
+668,Halls of Reflection,1
+669,Blackwing Descent,2
+670,Grim Batol,1
+671,The Bastion of Twilight,2
+672,Transport: The Skybreaker (Icecrown Citadel Raid),0
+673,Transport: Orgrim's Hammer (Icecrown Citadel Raid),0
+674,Transport: Ship to Vashj'ir,0
+712,Transport: The Skybreaker (IC Dungeon),0
+713,Transport: Orgrim's Hammer (IC Dungeon),0
+718,Transport: The Mighty Wind (Icecrown Citadel Raid),0
+719,Mount Hyjal Phase 1,0
+720,Firelands,2
+721,Firelands Terrain 2,1
+723,Stormwind,0
+724,The Ruby Sanctum,2
+725,The Stonecore,1
+726,Twin Peaks,3
+727,Silvershard Mines,3
+728,The Battle for Gilneas (Old City Map),3
+730,Maelstrom Zone,0
+731,Stonetalon Bomb,0
+732,Tol Barad,0
+734,Ahn'Qiraj Terrace,1
+736,Twilight Highlands Dragonmaw Phase,0
+738,Ship to Vashj'ir (Orgrimmar -> Vashj'ir),0
+739,Vashj'ir Sub - Horde,0
+740,Vashj'ir Sub - Alliance,0
+741,Twilight Highlands Horde Transport,0
+742,Vashj'ir Sub - Horde - Circling Abyssal Maw,0
+743,Vashj'ir Sub - Alliance circling Abyssal Maw,0
+746,Uldum Phase Oasis,0
+747,Transport: Deepholm Gunship,0
+748,Transport: Onyxia/Nefarian Elevator,0
+749,Transport: Gilneas Moving Gunship,0
+750,Transport: Gilneas Static Gunship,0
+751,Redridge - Orc Bomb,0
+752,Redridge - Bridge Phase One,0
+753,Redridge - Bridge Phase Two,0
+754,Throne of the Four Winds,2
+755,Lost City of the Tol'vir,1
+757,Baradin Hold,2
+759,Uldum Phased Entrance,0
+760,Twilight Highlands Phased Entrance,0
+761,The Battle for Gilneas,3
+762,Twilight Highlands Zeppelin 1,0
+763,Twilight Highlands Zeppelin 2,0
+764,Uldum - Phase Wrecked Camp,0
+765,Krazzworks Attack Zeppelin,0
+766,Transport: Gilneas Moving Gunship 02,0
+767,Transport: Gilneas Moving Gunship 03,0
+859,Zul'Gurub,1
+860,The Wandering Isle,0
+861,Molten Front,0
+870,Pandaria,0
+930,A Dark Place,5
+938,End Time,1
+939,Well of Eternity,1
+940,Hour of Twilight,1
+951,Nexus Legendary,1
+959,Shado-Pan Monastery,1
+960,Temple of the Jade Serpent,1
+961,Stormstout Brewery,1
+962,Gate of the Setting Sun,1
+967,Dragon Soul,2
+968,Rated Eye of the Storm,3
+971,Jade Forest Alliance Hub Phase,0
+972,Jade Forest Battlefield Phase,0
+974,Darkmoon Faire,0
+975,Turtle Ship Phase 01,0
+976,Turtle Ship Phase 02,0
+977,Maelstrom Deathwing Fight,1
+980,Tol'Viron Arena,4
+994,Mogu'shan Palace,1
+995,The Depths [UNUSED],1
+996,Terrace of Endless Spring,2
+998,Temple of Kotmogu,3
+999,Theramore's Fall (H),5
+1000,Theramore's Fall (A),5
+1001,Scarlet Halls,1
+1004,Scarlet Monastery,1
+1005,A Brewing Storm,5
+1007,Scholomance,1
+1008,Mogu'shan Vaults,2
+1009,Heart of Fear,2
+1010,CTF3,3
+1011,Siege of Niuzao Temple,1
+1014,Peak of Serenity,5
+1019,Ruins of Theramore,0
+1024,Greenstone Village,5
+1028,(UNUSED) Scenario: Mogu Ruins,5
+1029,(UNUSED) Scenario: Mogu Crypt,5
+1030,Crypt of Forgotten Kings,5
+1031,Arena of Annihilation,5
+1032,Pet Battle - Jade Forest,1
+1035,Temple of Kotmogu,5
+1043,Brawl'gar Arena,0
+1048,Unga Ingoo,5
+1049,(UNUSED) Scenario: Black Ox Temple,5
+1050,Assault on Zan'vess,5
+1051,Brewmoon Festival,5
+1060,Level Design Land - Dev Only,0
+1061,Horde Beach Daily Area,0
+1062,Alliance Beach Daily Area,0
+1064,Mogu Island Daily Area,0
+1066,Stormwind Gunship Pandaria Start Area,0
+1074,Orgrimmar Gunship Pandaria Start,0
+1075,Theramore's Fall Phase,0
+1076,Jade Forest Horde Starting Area,0
+1095,Dagger in the Dark,5
+1098,Throne of Thunder,2
+1099,Naval Battle Scenario,5
+1101,Defense Of The Ale House BG,0
+1102,Domination Point,5
+1103,Lion's Landing,5
+1104,A Little Patience,5
+1105,Deepwind Gorge (Legacy),3
+1106,Jaina Dalaran Scenario,0
+1107,Dreadscar Rift,0
+1112,Pursuing the Black Harvest,5
+1113,Transport: DarkmoonCarousel,0
+1116,Draenor,0
+1120,Thunder King Horde Hub,0
+1121,Thunder Island Alliance Hub,0
+1122,City Siege - Mogu Island Progression Scenario,5
+1123,Lightning Forge - Mogu Island Progression Scenario,5
+1124,Shipyard - Mogu Island Progression Scenario,5
+1125,Alliance Hub - Mogu Island Progression Scenario,5
+1126,Mogu Island Progression Events,5
+1127,Final Gate - Mogu Island Progression Scenario,5
+1128,Mogu Island Events - Horde Base,0
+1129,Mogu Island Events - Alliance Base,0
+1130,Blood in the Snow,5
+1131,The Secrets of Ragefire,5
+1132,Transport: The Skybag (Brawl'gar Arena),0
+1133,Transport: Zandalari Ship (Mogu Island),0
+1134,The Tiger's Peak,4
+1135,Mogu Island Loot Room,5
+1136,Siege of Orgrimmar,2
+1144,Heart of the Old God Scenario,5
+1148,Proving Grounds,5
+1152,FW Horde Garrison Level 1,1
+1153,FW Horde Garrison Level 3,1
+1154,FW Horde Garrison Level 4,1
+1155,Stromgarde Keep,5
+1157,Halfhill Scenario,5
+1158,SMV Alliance Garrison Level 1,1
+1159,SMV Alliance Garrison Level 3,1
+1160,SMV Alliance Garrison Level 4,1
+1161,Celestial Tournament,5
+1166,Small Battleground A,0
+1168,The Purge Of Grommar - Scenario,5
+1169,Small Battleground B,0
+1170,Shado-Pan Showdown,4
+1171,Small Battleground D,3
+1172,Transport: Siege of Orgrimmar (Alliance),0
+1173,Transport: Siege of Orgrimmar (Horde),0
+1175,Bloodmaul Slag Mines,1
+1176,Shadowmoon Burial Grounds,1
+1179,Warcraft Heroes,0
+1181,PattyMack Test Garrison Bldg Map,0
+1182,Auchindoun,1
+1187,GOR Alliance Garrison Level 1,1
+1188,GOR Alliance Garrison Level 2,1
+1189,GOR Alliance Garrison Level 3,1
+1190,Blasted Lands Phase,0
+1191,Ashran,3
+1192,Transport: Gorgrond Train,0
+1195,Iron Docks,1
+1200,Bonetown Scenario,5
+1203,Frostfire Finale Scenario,5
+1205,Blackrock Foundry,2
+1207,The Battle for Shattrath,5
+1208,Grimrail Depot,1
+1209,Skyreach,1
+1212,Garrison - Alliance - Blacksmith 3,0
+1213,Garrison - Alliance - Alchemy 1,0
+1214,Garrison - Alliance - Enchanting 3,0
+1215,Garrison - Alliance - Engineering 3,0
+1216,Garrison - Alliance - Farm1,0
+1217,Garrison - Alliance - Inscription 1,0
+1218,Garrison - Alliance - Jewelcrafting 1,0
+1219,Garrison - Alliance - Leatherworking 1,0
+1220,Broken Isles,0
+1221,Garrison - Alliance Mine 1,0
+1222,Garrison - Alliance Mine 2,0
+1223,Garrison - Alliance Mine 3,0
+1224,Garrison - Alliance Stable 1,0
+1225,Garrison - Alliance Stable 2,0
+1226,Garrison - Alliance Stable 3,0
+1227,Garrison - Alliance - Tailoring 3,0
+1228,Highmaul,2
+1229,Garrison - Alliance - Inn 1,0
+1230,Garrison - Alliance - Barn 1,0
+1231,Transport: Wavemurder Barge,0
+1232,GOR Horde Garrison Level 0,1
+1233,GOR Horde Garrison Level 3,1
+1234,TAL Alliance Garrison Level 0,1
+1235,TAL Alliance Garrison Level 3,1
+1236,TAL Horde Garrison Level 0,1
+1237,TAL Horde Garrison Level 3,1
+1238,SOA Alliance Garrison Level 0,1
+1239,SOA Alliance Garrison Level 3,1
+1240,SOA Horde Garrison Level 0,1
+1241,SOA Horde Garrison Level 3,1
+1242,NAG Alliance Garrison Level 0,1
+1243,NAG Alliance Garrison Level 3,1
+1244,NAG Horde Garrison Level 0,1
+1245,NAG Horde Garrison Level 3,1
+1247,Garrison - Alliance - Armory 1,0
+1248,Garrison - Alliance - Barracks 1,0
+1249,Garrison - Alliance - Engineering 1,0
+1250,Alliance - Garrison - Herb Garden 1 (UNUSED),0
+1251,Alliance - Garrison - Inn 1 DONT USE,0
+1252,Garrison - Alliance - Lumbermill 1,0
+1253,Garrison - Alliance - Mage Tower 1,0
+1254,Garrison - Alliance - Sparring Arena 1,0
+1255,Garrison - Alliance - Salvage Yard 1,0
+1256,Garrison - Alliance - StoreHouse 1,0
+1257,Garrison - Alliance - Trading Post 1,0
+1258,Garrison - Alliance - Tailoring 1,0
+1259,Garrison - Alliance - Enchanting 1,0
+1260,Garrison - Alliance - Blacksmith 1,0
+1261,Garrison - Alliance - Plot Small,0
+1262,Garrison - Allilance - Plot Medium,0
+1263,Garrison - Alliance - Plot Large,0
+1264,Propland - Dev Only,0
+1265,Tanaan Jungle Intro,0
+1266,Circle of Blood Scenario,5
+1268,Teron'gor's Confrontation,1
+1270,Development Land 3,0
+1273,Nagrand - Garrison Camp - Stable2,0
+1277,Defense of Karabor,5
+1278,Garrison - Horde - Barracks 1,0
+1279,The Everbloom,1
+1280,Southshore vs. Tarren Mill,3
+1281,Garrison - Horde - Alchemy 1,0
+1282,Garrison - Horde - Armory 1,0
+1283,Garrison - Horde - Barn 1,0
+1284,Garrison - Horde - Blacksmith 1,0
+1285,Garrison - Horde - Enchanting 1,0
+1286,Garrison - Horde - Engineering 1,0
+1287,Garrison - Horde - Inn 1,0
+1288,Garrison - Horde - Inscription 1,0
+1289,Garrison - Horde - Jewelcrafting 1,0
+1290,Garrison - Horde - Leatherworking 1,0
+1291,Garrison - Horde - Lumbermill 1,0
+1292,Garrison - Horde - Mage Tower 1,0
+1293,Garrison - Horde - Mine 1,0
+1294,Garrison - Horde - Pet Stable 1,0
+1295,Garrison - Horde - Salvage Yard 1,0
+1296,Garrison - Horde - Sparring Arena 1,0
+1297,Garrison - Horde - Stable 1,0
+1298,Garrison - Horde Storehouse 1,0
+1299,Garrison - Horde - Tailoring 1,0
+1300,Garrison - Horde - Trading Post 1,0
+1301,Garrison - Horde - Workshop 1,0
+1302,Garrison - Alliance - Workshop 1,0
+1303,Garrison - Horde - Farm1,0
+1304,Garrison - Horde - Plot Large,0
+1305,Garrison - Horde - Plot Medium,0
+1306,Garrison - Horde - Plot Small,0
+1307,Tanaan Jungle Intro - Forge Phase,0
+1308,Garrison - Horde - Fishing 1,0
+1309,Garrison - Alliance - Fishing 1,0
+1310,Expansion 5 QA Model Map,0
+1311,Outdoor Garrison - Arena - Horde (NEEDS WMO),0
+1312,Outdoor Garrison - Arena - Alliance (NEEDS WMO),0
+1313,Outdoor Garrison - Lumber Mill - Alliance,0
+1314,Outdoor Garrison - Lumber Mill - Horde,0
+1315,Outdoor Garrison - Armory - Horde,0
+1316,Outdoor Garrison - Armory - Alliance,0
+1317,Outdoor Garrison - Mage Tower - Horde,0
+1318,Outdoor Garrison - Mage Tower - Alliance,0
+1319,Outdoor Garrison - Stables - Horde,0
+1320,Outdoor Garrison - Stables - Alliance,0
+1321,Outdoor Garrison - Workshop - Horde,0
+1322,Outdoor Garrison - Workshop - Alliance,0
+1323,Outdoor Garrison - Inn - Horde,0
+1324,Outdoor Garrison - Inn - Alliance,0
+1325,Outdoor Garrison - Tradiing Post 1 - Horde,0
+1326,Outdoor Garrison - Tradiing Post - Alliance,0
+1327,"Outdoor Garrison - Construction Plot, Medium - Horde",0
+1328,"Outdoor Garrison - Construction Plot, Medium - Alliance",0
+1329,Grommashar Scenario,5
+1330,FW Horde Garrison Level 2,1
+1331,SMV Alliance Garrison Level 2,1
+1332,Garrison - Horde - Barracks 2,0
+1333,Garrison - Horde - Armory 2,0
+1334,Garrison - Horde - Barn 2,0
+1335,Garrison - Horde - Inn 2,0
+1336,Garrison - Horde - Lumbermill 2,0
+1337,Garrison - Horde - Mage Tower 2,0
+1338,Garrison - Horde - Pet Stable 2,0
+1339,Garrison - Horde - Stable 2,0
+1340,Garrison - Horde - Trading Post 2,0
+1341,Garrison - Horde - Workshop 2,0
+1342,Garrison - Horde - Barracks 3,0
+1343,Garrison - Horde - Armory 3,0
+1344,Garrison - Horde - Barn 3,0
+1345,Garrison - Horde - Inn 3,0
+1346,Garrison - Horde - Mage Tower 3,0
+1347,Garrison - Horde - Pet Stable 3,0
+1348,Garrison - Horde - Stable 3,0
+1349,Garrison - Horde - Trading Post 3,0
+1350,Garrison - Horde - Workshop 3,0
+1351,Garrison - Alliance - Large - Construction,0
+1352,Garrison - Alliance - Medium - Construction,0
+1353,Garrison - Horde - Large - Construction,0
+1354,Garrison - Horde - Medium - Construction,0
+1358,Upper Blackrock Spire,1
+1361,Garrison - Alliance - Mage Tower 2,0
+1362,Garrison - Alliance - Mage Tower 3,0
+1363,Garrison - Horde - Mine 2,0
+1364,Garrison - Horde - Mine 3,0
+1367,Garrison - Alliance - Workshop 2,0
+1368,Garrison - Alliance - Workshop 3,0
+1369,Garrison - Alliance - Lumbermill 2,0
+1370,Garrison - Alliance - Lumbermill 3,0
+1371,Garrison - Horde - Small - Construction,0
+1372,Garrison - Alliance - Small - Construction,0
+1374,Auchindoun Quest,5
+1375,Garrison - Alliance - Alchemy 2,0
+1376,Garrison - Alliance - Alchemy 3,0
+1377,Garrison - Alliance - Blacksmith 2,0
+1378,Garrison - Alliance - Enchanting 2,0
+1379,Garrison - Alliance - Engineering 2,0
+1380,Garrison - Alliance - Inscription 2,0
+1381,Garrison - Alliance - Inscription 3,0
+1382,Garrison - Alliance - Jewelcrafting 2,0
+1383,Garrison - Alliance - Jewelcrafting 3,0
+1384,Garrison - Alliance - Leatherworking 2,0
+1385,Garrison - Alliance - Leatherworking 3,0
+1386,Garrison - Alliance - Tailoring 2,0
+1387,Garrison - Alliance - StoreHouse 2,0
+1388,Garrison - Alliance - StoreHouse 3,0
+1389,Garrison - Horde Storehouse 2,0
+1390,Garrison - Horde Storehouse 3,0
+1391,Garrison - Alliance - Salvage Yard 2,0
+1392,Garrison - Alliance - Salvage Yard 3,0
+1393,Garrison - Horde - Lumbermill 3,0
+1394,Garrison - Alliance - Sparring Arena 2,0
+1395,Garrison - Alliance - Sparring Arena 3,0
+1396,Garrison - Alliance - Trading Post 2,0
+1397,Garrison - Alliance - Trading Post 3,0
+1398,Garrison - Alliance - Barn 2,0
+1399,Garrison - Alliance - Barn 3,0
+1400,Garrison - Alliance - Inn 2,0
+1401,Garrison - Alliance - Inn 3,0
+1402,Gorgrond Finale,5
+1403,Garrison - Alliance - Barracks 2,0
+1404,Garrison - Alliance - Barracks 3,0
+1405,Garrison - Alliance - Armory 2,0
+1406,Garrison - Alliance - Armory 3,0
+1407,zzzOld,5
+1409,Garrison - Horde - Sparring Arena 2,0
+1410,Garrison - Horde - Sparring Arena 3,0
+1411,Garrison - Horde - Alchemy 2,0
+1412,Garrison - Horde - Alchemy 3,0
+1413,Garrison - Horde - Blacksmith 2,0
+1414,Garrison - Horde - Blacksmith 3,0
+1415,Garrison - Horde - Enchanting 2,0
+1416,Garrison - Horde - Enchanting 3,0
+1417,Garrison - Horde - Inscription 2,0
+1418,Garrison - Horde - Inscription 3,0
+1419,Garrison - Horde - Leatherworking 2,0
+1420,Garrison - Horde - Leatherworking 3,0
+1421,Garrison - Horde - Jewelcrafting 2,0
+1422,Garrison - Horde - Jewelcrafting 3,0
+1423,Garrison - Horde - Tailoring 2,0
+1424,Garrison - Horde - Tailoring 3,0
+1425,Garrison - Horde - Salvage Yard 2,0
+1426,Garrison - Horde - Salvage Yard 3,0
+1427,PattyMack Test Garrison Bld Map2,0
+1429,Garrison - Horde - Engineering 2,0
+1430,Garrison - Horde - Engineering 3,0
+1431,The Coliseum,5
+1432,Garrison - Horde - Fishing 2,0
+1433,Garrison - Horde - Fishing 3,0
+1434,Garrison - Alliance - Fishing 2,0
+1435,Garrison - Alliance - Fishing 3,0
+1437,Garrison - Alliance - Pet Stable 1,0
+1438,Garrison - Alliance - Pet Stable 2,0
+1439,Garrison - Alliance - Pet Stable 3,0
+1440,Garrison - Alliance - Infirmary 1,0
+1441,Garrison - Alliance - Infirmary 2,0
+1442,Garrison - Alliance - Infirmary 3,0
+1446,"Outdoor Garrison - Construction Plot, Large - Alliance",0
+1447,"Outdoor Garrison - Construction Plot, Large - Horde",0
+1448,Hellfire Citadel,2
+1451,Tanaan Legion Test,5
+1453,Scourge of Northshire,5
+1454,The Broken Shore (old - delete),5
+1455,Edge of Reality,5
+1456,Eye of Azshara,1
+1457,Test Dungeon,2
+1458,Neltharion's Lair,1
+1459,Transport: The Iron Mountain,0
+1460,Broken Shore Scenario,5
+1461,Azsuna Scenario,5
+1462,Illidans Rock,0
+1463,Helhiem Exterior Area,0
+1464,Tanaan Jungle,0
+1465,Tanaan Jungle - No Hubs Phase,0
+1466,Darkheart Thicket,1
+1468,Warden Prison DH Quests,0
+1469,The Heart of Azeroth,0
+1470,Legion Dungeon,1
+1471,Dungeon Test Map 1466,0
+1473,Garrison - Alliance - Shipyard,0
+1474,Garrison - Horde - Shipyard,0
+1475,The Maw of Nashal,5
+1476,Transport: The Maw of Nashal,0
+1477,Halls of Valor,1
+1478,The Temple of Elune,5
+1479,Skyhold,0
+1480,Icecrown Citadel,5
+1481,Mardum,0
+1482,Garrison Shipyard - Submarine - Alliance,0
+1483,Garrison Shipyard - Destroyer - Alliance,0
+1484,Garrison Shipyard - Transport,0
+1485,Garrison Shipyard - Battleship - Alliance,0
+1486,Garrison Shipyard - Carrier - Horde,0
+1487,Garrison Shipyard - Submarine - Horde,0
+1488,Garrison Shipyard - Destroyer - Horde,0
+1489,Niskara,5
+1492,Maw of Souls,1
+1493,Vault of the Wardens,1
+1494,The Violet Hold,5
+1495,Shield's Rest,5
+1496,Garrison Shipyard - Carrier - Alliance,0
+1497,Garrison Shipyard - Battleship - Horde,0
+1498,Felsoul Hold,5
+1499,oldArtifact - Warrior Fury Acquisition,1
+1500,Broken Shore,5
+1501,Black Rook Hold,1
+1502,Dalaran Underbelly,0
+1503,Deepholm,5
+1504,Black Rook Hold Arena,4
+1505,Nagrand Arena,4
+1509,Bloodtotem Cavern - Fel Phase,0
+1510,Bloodtotem Cavern - Tauren Phase,0
+1511,Tideskorn Harbor,5
+1512,Netherlight Temple,0
+1513,Hall of the Guardian,0
+1514,The Wandering Isle,0
+1515,Huln's War,0
+1516,The Arcway,1
+1517,Stormheim Prescenario Windrunner,0
+1518,Stormheim Prescenario Skyfire,0
+1519,The Fel Hammer,0
+1520,The Emerald Nightmare,2
+1522,Dreadscar Rift,5
+1523,Defense of the Fel Hammer Scenario,5
+1526,Temple of the White Tiger,5
+1527,High Mountain Scenario,0
+1528,Skywall,5
+1529,Karazhan,5
+1530,The Nighthold,2
+1532,High Mountain Mesa Scenario,0
+1533,Karazhan Catacombs,5
+1534,Moonglade,5
+1535,Moonglade,1
+1536,Ursocs Lair,5
+1537,zzOLD - Boost Experience,5
+1538,test,0
+1539,Tirisfal Glades,5
+1540,Emerald Dreamway,0
+1541,Terrace of Endless Spring,5
+1544,Assault on Violet Hold,1
+1545,Azsuna,5
+1547,Artifact - Combat - Acquisition Ship,0
+1549,Tech Test - Seamless World Transition A,0
+1550,Tech Test - Seamless World Transition B,0
+1552,Ashamane's Fall,4
+1553,Gloaming Reef,5
+1554,7.0 Boost Experience - Alliance,1
+1555,zzOLD - Transport: Boost Experience - Alliance Gunship,0
+1556,zzOLD - Transport: Boost Experience - Horde Gunship,0
+1557,7.0 Boost Experience - Horde,1
+1559,7.0 Transport: Boost Experience - Horde Gunship,0
+1560,7.0 Transport: Boost Experience - Alliance Gunship,0
+1561,Tech Test - Cosmetic Parent Performance,0
+1571,Court of Stars,1
+1572,The Maelstrom,5
+1579,Ulduar,5
+1580,The Maelstrom,5
+1582,Delete,5
+1583,Nexus Vault,5
+1584,Julien Test Land,0
+1586,Assault on Stormwind,0
+1588,Dev Map - A - Jared Coulston,0
+1589,Dev Map - B - Nathaniel Chapman,0
+1590,Dev Map - C - Julien Tremblay,0
+1591,Dev Map - D - PotT,0
+1592,Dev Map - E,0
+1593,Dev Map - F,0
+1594,The MOTHERLODE!!,1
+1599,Nordrassil,5
+1600,Throne of the Tides,5
+1602,Artifact - The Vortex Pinnacle - Shaman Order Hall,0
+1603,Throne of the Tides Scenario(DELETE),5
+1604,Artifact - Order Campaign - Portal World Niskara,0
+1605,Firelands_Artifact,0
+1607,Artifact - Acquisition - Subtlety,5
+1608,Hyjal War of the Ancients Quest,0
+1609,Temple of Storms,5
+1610,Artifact - Serenity Legion Scenario,5
+1611,Death Knight Campaign - Light's Hope Chapel,5
+1612,The Ruins of Falanaar,5
+1616,Faronaar,5
+1617,Death Knight Campaign - Undercity,5
+1618,Death Knight Campaign - Scarlet Monastery,0
+1620,Artifact - Stormwind,5
+1621,Black Temple - Legion,5
+1622,Telogrus Rift Scenario,5
+1623,Mage Campaign - The Oculus,5
+1624,Battle of Exodar,5
+1625,Trial of the Serpent,5
+1626,The Collapse - Suramar Scenario,5
+1627,Fel Hammer DH Scenario,0
+1628,Transport: Alliance Battleship,0
+1629,Netherlight Temple,5
+1630,Tol Barad,5
+1632,The Arcway - Suramar Scenario,5
+1637,Transport: Alliance Ship PhaseableMO,0
+1638,Transport: Horde Ship PhaseableMO,0
+1639,Transport: Kvaldir Ship PhaseableMO,0
+1642,Zandalar,0
+1643,Kul Tiras,0
+1644,Plunder Isle,0
+1645,Crescent Isle (Islands Prototype),5
+1646,Black Rook Hold [Scenario],5
+1647,Vol'jin's Funeral Pyre,0
+1648,Trial of Valor,2
+1649,Transport: Horde Battleship,0
+1650,Legion Command Ship Transport,0
+1651,Return to Karazhan,1
+1653,Great Dark Beyond,5
+1655,8.0 Dev Land,0
+1657,zzOldBlade's Edge Arena,0
+1658,Environment Art Land - Dev Only,0
+1661,[DEV] Demo Map,0
+1662,Suramar,5
+1663,Dungeon Blockout,1
+1666,The Assault on Broken Shore,5
+1667,Legion Ship - Vertical,5
+1668,Legion Ship - Horizontal,5
+1669,Argus,0
+1670,Broken Shore (Delete),0
+1671,Broken Shore - Prepatch 7.2 (Backup),0
+1672,Blade's Edge Arena,4
+1673,The Eye of Eternity - Scenario,5
+1675,Winter AB_old,0
+1676,Tomb of Sargeras,2
+1677,Cathedral of Eternal Night,1
+1678,AB Phase 1,0
+1679,AB Phase 2,0
+1680,AB Phase 3,0
+1681,Arathi Basin Winter,3
+1682,The Fel Hammer Terrain Phase,0
+1683,Artifact - Gnomeregan,5
+1684,Dread Scar Rift - Warlock Scenario Platform,5
+1685,AI Test Map 8,0
+1686,AI Test - Arathi Basin,3
+1687,Wailing Caverns,5
+1688,Deadmines,5
+1689,The Eye of Eternity - Mage Class Mount,5
+1690,Snake Cave,0
+1691,Cooking: Impossible,3
+1692,Pit of Saron - Death Knight Campaign,0
+1693,Stormstout Brewery - Monk Scenario,5
+1694,Gnomeregan,5
+1695,Battleship: Ruin,5
+1696,Legion - Command Center,0
+1697,Legion - Legion Spider Cave,0
+1698,Artifact - Acquisition - Tank,5
+1699,Legion - Legion Fel Cave,0
+1700,Legion - Legion Fel Firenova Area,0
+1701,Legion - Legion Barracks,0
+1702,Artifact - Highmountain - Dual Boss,5
+1703,Halls of Valor - Scenario,5
+1704,Legion Ship - Horizontal - Valsharah,5
+1705,Legion Ship - Horizontal - Azsuna,5
+1706,Legion Ship - Vertical - HighMountain,5
+1707,Legion Ship - Vertical - Stormheim,5
+1708,Stratholme - Paladin Class Mount,5
+1710,Black Rook Hold - Artifact Challenge,5
+1711,Alliance Submarine (7.1.5 Boat Holiday),0
+1712,"Antorus, the Burning Throne",2
+1714,Halls Of Valor - Warrior Class Mount,5
+1715,Battle for Blackrock Mountain,3
+1716,Broken Shore Mage Tower,0
+1717,Anim Playground,0
+1718,Nazjatar,0
+1719,Dread Scar Rift - Warlock Mount Scenario,5
+1723,Coldridge Valley,5
+1726,[TEMP] RaceTrackBG,3
+1728,Halls of Valor,5
+1729,The Eye of Eternity - Mage Class Mount (Shorter Version),5
+1730,Shrine of Aviana Defense - Scenario,5
+1731,Druid Mount Finale - Scenario,5
+1732,Felwing Ledge - Demon Hunter Class Mount,5
+1733,Azeroth's Warning Scenario,5
+1734,Throne of the Four Winds - Shaman Class Mount,5
+1735,Frozen Wastes,5
+1736,The Ruby Sanctum,5
+1737,Pocket Dimension Akazamzaraks Hat Scenario,5
+1738,The Lost Glacier,5
+1739,AI Test Map - Arathi Basin - Debug Version,5
+1740,AI Test - Warsong Gulch,3
+1741,The Vindicaar,0
+1744,Trial of Style,5
+1746,Tempest Keep: The Arcatraz,5
+1747,Animation Playground,0
+1749,Warfront Barrens,0
+1750,Azuremyst Isle,0
+1751,Alliance Battleship (7.3 Intro),0
+1752,Sunstrider Battleship (7.3 Intro),0
+1753,Seat of the Triumvirate,1
+1754,Freehold,1
+1756,The Deaths of Chromie,5
+1759,Transport: WarfrontBarrensGunship,0
+1760,Lordaeron,5
+1762,Kings' Rest,1
+1763,Atal'Dazar,1
+1764,Endless Halls,5
+1765,Warfronts Prototype,5
+1771,Tol Dagor,1
+1773,Shadow of Azeroth,0
+1774,Forge of Aeons,5
+1775,Maw of N'Zoth,0
+1776,Horde Battleship - The Banshee's Wail,0
+1778,Level Design Land,0
+1779,Invasion Points,0
+1780,Islands LD Playground,5
+1782,Seething Strand,3
+1784,8.0 Islands - Cave - Hozen [Dev/Not Used],0
+1785,8.0 Islands - Ship - Pirateship,0
+1786,8.0 Islands - Zeppelin - Goblin,0
+1787,8.0 Islands - Micro - Mogu Crypt,0
+1788,8.0 Islands - Cave - Primitve [Dev/Not Used],0
+1789,8.0 Islands - Cave - Saurok - Large [Dev/Not Used],0
+1795,Vale of Eternal Blossoms,0
+1802,8.0 BG Temp,3
+1803,Seething Shore,3
+1804,The Battle for Stromgarde,5
+1805,8.0 Islands - Event,0
+1806,Alliance Battleship -  Wind's Redemption,0
+1807,8.0 Islands - Event,0
+1809,Mechagnome Island,0
+1811,Quest Training,0
+1812,Suramar,5
+1813,Un'gol Ruins (Islands 1),5
+1814,Havenswood (Islands 2),5
+1815,Silithus Phase,0
+1817,Silithus: The Wound,0
+1818,Silvermoon City,5
+1822,Siege of Boralus,1
+1825,Hook Point,4
+1839,Karazan Chess,0
+1840,The Sunwell,5
+1841,The Underrot,1
+1844,8.0 Islands - Event,0
+1845,8.0 Islands - Event,0
+1846,8.0 Islands - Ship - 6HU Cargoship,0
+1847,Dev Map - G,0
+1849,8.0 Islands - Event,0
+1850,8.2.5 - MSEM - 1850,0
+1851,8.0 Islands - Ship - 7FK Buccaneer,0
+1852,8.0 Islands - Ship - Player Horde - Submarine [Dev/Not Used],0
+1853,8.0 Islands - Event,0
+1854,8.0 Islands - Cave - 7VS Cave Micro 03 [Dev/Not Used],0
+1855,The Vindicaar,0
+1856,Transport: Azerite BG - Alliance Airship,0
+1857,Transport: Azerite BG - Horde Gunship,0
+1860,The Vindicaar,0
+1861,Uldir,2
+1862,Waycrest Manor,1
+1863,BL - Test Map,0
+1864,Shrine of the Storm,1
+1865,Telogrus Rift,0
+1876,Warfronts Arathi - Horde,5
+1877,Temple of Sethraliss,1
+1878,zzOLD_Blackrock Depths,0
+1879,Jorundall (Islands 7),5
+1880,8.0 Islands - Titan Island - Prototype,5
+1881,8.0 Islands - Sinkhole - Prototype,5
+1882,Verdant Wilds (Islands 8),5
+1883,Whispering Reef (Islands 10),5
+1884,Siege of Orgrimmar - Mag'har Orc Unlock Scenario,5
+1885,8.0 Islands - White Mesa - Prototype,5
+1886,8.0 Islands - Swamp - Prototype,0
+1887,8.0 Islands - Swamp - Prototype,0
+1888,8.0 Islands Josh,5
+1889,8.0 Islands - Katalina - Prototype,5
+1890,8.0 Assassins Scenario - Drustvar,5
+1891,8.0 Islands - Cursed - Prototype,5
+1892,The Rotting Mire (Islands 9),5
+1893,The Dread Chain (Islands 4),5
+1895,8.0 Islands - lost World Prototype,5
+1896,8.0 Islands - Wonderland - Prototype,5
+1897,Molten Cay (Islands 6),5
+1898,Skittering Hollow (Islands 5),5
+1899,8.0 Islands - Junker Gnome Caverns - Prototype,5
+1900,This Map Was Made In The Wrong Branch - Re-use If Needed,0
+1901,This Map Was Made In The Wrong Branch - Re-use If Needed,0
+1902,Silithus Alliance Gunship,0
+1903,Silithus Horde Gunship,0
+1904,Stormwind Escape from Stockades,5
+1906,Zandalar Continent Finale,5
+1907,Snowblossom Village (Islands 3),5
+1909,[UNUSED] Transport: Kul Tiras - Bridgeport,0
+1910,Transport: Kul Tiras - Bridgeport - The Maiden's Virtue,0
+1911,Mugambala,4
+1912,8.0 Islands - Cave - 7AZ Cave 02 [Dev/Not Used],0
+1913,PhaseableMO: Nazmir - Triangulation Platform,0
+1916,PhaseableMO: Nazmir - Ship World Quest,0
+1917,Gorgrond - Mag'har Scenario,5
+1918,Kalimdor Darkshore Phase,0
+1919,8.0 Islands - Platform - KL Skywall Entrance Building 03,0
+1920,8.0 Islands - Platform - MD Flamegate E,0
+1921,8.0 Islands - Ship - Player Alliance - Kul'Tiras Medium 01 With Gangplank,0
+1922,8.0 Islands - Ship - Player Horde - Zandalari Medium 01 With Gangplank,0
+1923,8.0 Islands - Platform - Deepholm Mercury Pool 01,0
+1924,8.0 Islands - Platform - 7AZ Vashjir Small Cave A,0
+1925,Dev Map - H,0
+1926,8.1.5 Allies - Kul Tiran Flagship (JAK),0
+1927,Zandalari Flagship,0
+1929,Chamber of Heart,0
+1930,Zandalar Alliance Intro Scenario,0
+1931,Lordaeron Blight,0
+1932,Blackrock Depths - Dark Iron Scenario,5
+1934,8.0 Islands - Cave - 8KUL_CaveMicro_freehold01 [Dev/Not Used],0
+1935,8.0 Islands - Cave - 8KUL_CaveMicro01,0
+1936,8.0 Islands - Cave - 8KUL_CaveMicro02,0
+1937,8.0 Islands - Cave - 8KUL_CaveMicro03,0
+1938,8.0 Islands - Cave - 8RIV_CaveMicro_01,0
+1939,8.0 Islands - Cave - 8RIV_CaveMicro_02,0
+1940,Alliance Battleship -  Wind's Redemption Voldun,0
+1941,Transport: Nazmir Raid Elevator,0
+1942,Molten Core,0
+1943,Warfronts Arathi - Alliance,5
+1944,"Thros, The Blighted Lands",5
+1945,Arathi Highlands 2,0
+1946,Prototype - Ships,0
+1947,Transport: Proto - Alliance Ship,0
+1948,Transport: Proto - Horde Ship,0
+1949,8.0 Boost Experience - Alliance,1
+1950,8.0 Boost Experience - Horde,1
+1951,8.0 Transport: Boost Experience - Alliance Gunship,0
+1952,8.0 Transport: Boost Experience - Horde Gunship,0
+1953,8.0 Islands - Platform - demigod dome living,0
+1954,The Great Sea Alliance,0
+1955,Uncharted Island,5
+1956,8.0 Islands - Platform - Hot Old God 03,0
+1957,8.0 Islands - Platform - Old God,0
+1958,The Golden Skipper - Zandalari Transport Ship,0
+1959,Zandalari Transport Ship Large,0
+1962,Goblin Ship Final,0
+1963,Dev Map - I,1
+1964,PhaseableMO: War Campaign - Horde - Chapter 05 - Kul Tiras Flagship,0
+1965,PhaseableMO: War Campaign - Horde - Chapter 05 - Kul Tiras Ship,0
+2066,The Great Sea Horde,0
+2067,Zandalari Battleship - Gral's Call,0
+2068,[Not Used],1
+2069,Zuldazar Alliance Bombing Run,0
+2070,Battle of Dazar'alor,2
+2074,8.0 Transport: Boralus to Stormwind,0
+2075,8.0 Islands - Event,0
+2076,Firelands - Dark Iron Dwarf,5
+2077,8.0 Islands - Event,0
+2078,8.0 Islands - Event,0
+2081,Blackrock Depths - Dark Iron Dwarf Hub,0
+2082,8.0 Islands - Micro - Mogu Crypt,0
+2083,8.0 Islands - Micro - Mogu Crypt,0
+2084,8.0 Islands - Micro - Mogu Crypt,0
+2085,8.0 Islands - Micro - Mogu Crypt,0
+2086,8.0 Islands - Micro - Mogu Crypt,0
+2087,8.0 Islands - Micro - Mogu Crypt,0
+2088,8.0 Islands - Micro - Mogu Crypt,0
+2094,8.0 Transport: Boralus Canals,0
+2095,8.0 Transport: Boralus Sound,0
+2096,Crucible of Storms,2
+2097,Operation: Mechagon,1
+2101,8.0 Transport: Boralus Barge,0
+2102,8.0 Transport: Boralus Ship Small,0
+2103,Darkshore Prepatch Darnassian Ship,0
+2105,Warfronts Darkshore - Alliance,5
+2106,Warsong Gulch,3
+2107,Arathi Basin,3
+2109,8.1.0 Incursion Airship Horde,0
+2110,8.1.0 Incursion Airship Alliance,0
+2111,Warfronts Darkshore - Horde,5
+2112,9.0 Dev Land,0
+2114,Maw Prototype,0
+2115,8.1 Darkshore Scenario,5
+2116,8.0 Islands - Event,5
+2117,NZoth,0
+2118,Battle for Wintergrasp,3
+2119,Transport: Cooking: Impossible - Hot Air Balloon - Alliance,0
+2120,Transport: Cooking: Impossible - Hot Air Balloon - Horde,0
+2122,DELETE,0
+2123,Shrine of the Storm Quests,0
+2124,Crestfall (Islands 11),5
+2125,Zandalari Treasury,5
+2127,Abandoned Mines,0
+2128,Dagger Realm,0
+2129,8.1 Darkshore Horde Quests,0
+2130,Questfall,0
+2131,8.1 Darkshore Outdoor Final Phase,0
+2132,9.0 Dev Land 2,0
+2134,Tol Dagor Scenario,5
+2135,Dev Smoketest,0
+2136,Transport: Zuldazar Raid Ship,0
+2143,DO NOT USE [Deprecated],0
+2145,Transport: Night Elf Warship,0
+2146,Transport: Forsaken Warship,0
+2147,Icecrown Citadel (8.1),0
+2155,Halls of Stone Scenario,5
+2156,Visions of N'Zoth - Prototype,5
+2160,Maw Prototype - Dragonblight,0
+2161,Maw Prototype - Torment Chambers,5
+2162,"Torghast, Tower of the Damned",5
+2163,Gnomeregan Scenario,5
+2164,The Eternal Palace,2
+2165,SpawnedMO: Night Elf Warship,0
+2166,Transport: Zuldazar Raid Boralus Ship,0
+2167,The Robodrome,4
+2168,"Level Design Process, Techniques and Resources",0
+2169,Uldir Scenario,5
+2170,Tauren Heritage Scenario,5
+2174,"Scarlet Halls, Dark Ranger",5
+2175,9.0 NPE (New Player Experience) - Exile's Reach,0
+2176,SpawnedMO: Forsaken Ship Large,0
+2177,Arathi Basin Comp Stomp,3
+2178,The Prison of Ink,5
+2179,Stratholme Pet Dungeon,5
+2180,The Dreamgrove (Hearthstone Tavern),5
+2186,The Obsidian Sanctum - 8.2 Magni - Heart of Azeroth,0
+2187,Halls of Origination,5
+2193,Galakrond's Fall,5
+2194,Hearthstone Tavern,0
+2195,Hearthstone Tavern,0
+2197,Korrak's Revenge,3
+2205,9.0 Transport: Zone Transition Test,0
+2207,Neltharion's Lair - HoA Scenario,5
+2208,Eastern Kingdoms - Vermillion Redoubt - HoA Scenario,5
+2209,Emerald Dream - HoA Scenario,5
+2210,Siege of Orgrimmar - Coup Scenario,5
+2211,Gilneas - Worgen Heritage Scenario,5
+2212,Horrific Vision of Orgrimmar,5
+2213,Horrific Vision of Stormwind,5
+2214,The Maelstrom - Heart of Azeroth,5
+2215,Chamber of Heart - Repaired,0
+2217,"Ny'alotha, the Waking City",2
+2218,"Dummy Map (Dev and empty, use if you want)",0
+2222,The Shadowlands,0
+2223,The Eye of Eternity - HoA Scenario,5
+2224,Programmer Map - Continent,0
+2225,Programmer Map - Dungeon,1
+2226,Programmer Map - Battlefield,3
+2227,Programmer Map - Raid,2
+2228,Programmer Map - Scenario,5
+2230,9.0 Prototype - Seamless Teleport - A,0
+2231,9.0 Prototype - Seamless Teleport - B,0
+2232,Karazhan Catacombs - HoA Scenario,5
+2233,Temple of the Jade Serpent - HoA Scenario,1
+2234,9.0 Prototype - Seamless Teleport - Transfer Map,0
+2235,Caverns of Time - Anniversary,2
+2236,Darkmaul Citadel,1
+2237,8.2.5 Orgrimmar,0
+2240,[UNUSED] [DEV MAP] 8.3 Stormheim,0
+2241,Uldum,0
+2242,Dev Map - K,0
+2243,Dev Map - J,0
+2245,Deepwind Gorge,3
+2246,Solesa Naksu [DNT],0
+2247,Mogu'shan Scenario,5
+2249,FX Test Dungeon,2
+2250,Test Dungeon PvP,0
+2254,Cinematics Test Map (Development Map),0
+2255,Cinematics Test Map II (Development Map),0
+2257,Chamber of Heart - Scenario,5
+2258,Crapopolis - Scenario,5
+2261,9.0 Transport - NPE - Alliance Battleship,0
+2263,Crapopolis,0
+2264,Visions of N'Zoth - Orgrimmar - Engineering Test,5
+2266,Blackwing Descent Scenario,5
+2267,city,0
+2268,Mechagon City,0
+2274,Vision of the Twisting Sands,0
+2275,Vale of Eternal Twilight,0
+2276,9.0 Transport - Maldraxxus Necropolis [Transport],0
+2277,9.0 SpawnedMO - Maldraxxus Necropolis [WMO],0
+2278,Revendreth Scenario,5
+2279,Torghast Test,0
+2282,Blackrock Depths - Pet Dungeon,5
+2284,Sanguine Depths,1
+2285,Spires of Ascension,1
+2286,The Necrotic Wake,1
+2287,Halls of Atonement,1
+2288,[DEV] - Arena of Ascension,0
+2289,Plaguefall,1
+2290,Mists of Tirna Scithe,1
+2291,De Other Side,1
+2292,8.3 Epic Battleground - Warfront Arathi (PvP),3
+2293,Theater of Pain,1
+2294,[NOT USED] Realm,1
+2296,Castle Nathria,2
+2297,Icecrown Citadel (8.3),0
+2299,Vision of Ysera Scenario,5
+2300,Redridge - 9xp Bastion,5
+2301,Maldraxxus Finale Scenario,5
+2303,Ardenweald Zone Scenario,5
+2304,Ardenweald Tyrande Finale Scenario,5
+2305,Bastion Scenario,5
+2306,Julien LoD Test,0
+2308,Bastion Night Warrior Finale - Ardenweald Covenant Scenario,5
+2309,Transport: Torghast Bridge Platform01 Elevator,0
+2354,Ardenweald Covenant Chapter 2 Scenario,5
+2355,The Necrotic Wake (Transport),0
+2356,Castle Nathria Scenario,5
+2360,Sinfall Scenario,5
+2362,Maldraxxus Covenant Finale Scenario,5
+2363,9.0 - Ardenweald - Garden - Queen's Conservatory,5
+2364,The Maw,0
+2365,9.0 Maw - Torghast - 9Maw_Bridge_SmallPlatform01,0
+2366,9.0 Maw - Torghast - 9Maw_Zone_WallTurret01,0
+2367,9.0 Maw - Torghast - 9Maw_Bridge_Straight03,0
+2368,Maldraxxus Broker Islands,0
+2369,9.0 NPE - Horde - Starter Transport Ship - (STM),0
+2370,Maldraxxus Arena,0
+2371,9.0 Ardenweald Covenant Finale Drust Scenario,5
+2373,Empyrean Domain,4
+2374,Zereth Mortis,0
+2375,9.0 Bastion Arena - Path of Ascension,5
+2437,Dev Map - Internapalooza,0
+2438,SpellPerf,2
+2439,De Other Side (Ardenweald Campaign),0
+2440,UNUSED,0
+2441,"Tazavesh, the Veiled Market",1
+2450,Sanctum of Domination,2
+2452,Dev Map - Internapalooza,0
+2453,Torghast,0
+2456,The Maw,0
+2464,9.1 Battle of Ardenweald,5
+2465,9.1 Andorhal - Kyrian Chapter Scenario,5
+2469,Torghast,0
+2471,Torghast,5
+2472,Skyhold,0
+2481,Sepulcher of the First Ones,2
+2482,Font of Fealty,0
+2484,Professions Land,0
+2485,Torghast,0
+2486,Torghast,0
+2487,Torghast,0
+2488,Torghast,0
+2489,Torghast,0
+2490,Torghast,0
+2501,9.2 Progenitor Arena,0
+2502,Level Design Devland 9.2,0
+2504,Path of the Primus,5
+2509,Maldraxxus Coliseum,4
+2511,Enigma Arena,4

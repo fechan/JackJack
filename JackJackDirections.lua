@@ -2,19 +2,12 @@ local addonName, addon = ...
 
 LOADING_SCREEN_WEIGHT = 1000 --TODO: set this to something sane
 
-local function distance3d(x1, y1, z1, x2, y2, z2)
-    local xd = x1 - x2
-    local yd = y1 - y2
-    local zd = z1 - z2
-    return math.sqrt(xd * xd + yd * yd + zd * zd)
-end
-
 local function playerMeetsPortalRequirements(playerConditionId)
     if playerConditionId == 0 then
         return true
     end
     local _, _, raceId = UnitRace("player")
-    return addon.PlayerConditionExpanded[playerConditionId]["race_" .. raceId] == 1
+    return addon.JJPlayerCondition[playerConditionId]["race_" .. raceId] == 1
 end
 
 local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationContinent)
@@ -29,11 +22,11 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         local playerContinent, playerPosition = C_Map.GetWorldPosFromMapPos(playerMap, playerMapPosition)
 
         -- get all the WaypointNodes in the same continent as the player
-        for adjacentNodeId, adjacentNode in pairs(addon.WaypointNodeWithLocation) do
+        for adjacentNodeId, adjacentNode in pairs(addon.JJWaypointNode) do
             if adjacentNode["MapID"] == playerContinent then
                 table.insert(adjacentNodes, {
                     nodeId = adjacentNodeId,
-                    distance = CalculateDistance(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"]) -- can't get player Z so it has to be 2D
+                    distance = CalculateDistance(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
                 })
             end
         end
@@ -47,13 +40,12 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         return adjacentNodes
     end
 
-    local nodeX = addon.WaypointNodeWithLocation[nodeId]["Pos0"]
-    local nodeY = addon.WaypointNodeWithLocation[nodeId]["Pos1"]
-    local nodeZ = addon.WaypointNodeWithLocation[nodeId]["Pos2"]
-    local nodeMapID = addon.WaypointNodeWithLocation[nodeId]["MapID"]
+    local nodeX = addon.JJWaypointNode[nodeId]["Pos0"]
+    local nodeY = addon.JJWaypointNode[nodeId]["Pos1"]
+    local nodeMapID = addon.JJWaypointNode[nodeId]["MapID"]
 
     -- step 1: get all the edges that start at the nodeId and add the end node to the adjacentNodes
-    for edgeId, edge in pairs(addon.WaypointEdgeReduced) do
+    for edgeId, edge in pairs(addon.JJWaypointEdge) do
         if edge["Start"] == nodeId then
             if playerMeetsPortalRequirements(edge["PlayerConditionID"]) then
                 table.insert(adjacentNodes, {
@@ -64,11 +56,11 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         end
     end
     -- step 2: get all the nodes that are on the same continent as the nodeId and add them to the adjacentNodes
-    for adjacentNodeId, adjacentNode in pairs(addon.WaypointNodeWithLocation) do
+    for adjacentNodeId, adjacentNode in pairs(addon.JJWaypointNode) do
         if adjacentNode["MapID"] == nodeMapID then
             table.insert(adjacentNodes, {
                 nodeId = adjacentNodeId,
-                distance = distance3d(nodeX, nodeY, nodeZ, adjacentNode["Pos0"], adjacentNode["Pos1"], adjacentNode["Pos2"])
+                distance = CalculateDistance(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
             })
         end
     end
@@ -100,7 +92,7 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
     local dist = {}
     local prev = {}
     local Q = {}
-    for nodeId, node in pairs(addon.WaypointNodeWithLocation) do
+    for nodeId, node in pairs(addon.JJWaypointNode) do
         dist[nodeId] = math.huge
         prev[nodeId] = nil
         table.insert(Q, nodeId)
@@ -145,8 +137,8 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
         local direction = {}
         local globalCoords, uiMapId, mapPosition, name
         local shouldAddDirection = true
-        if addon.WaypointNodeWithLocation[nodeId] ~= nil then
-            local nodeInfo = addon.WaypointNodeWithLocation[nodeId]
+        if addon.JJWaypointNode[nodeId] ~= nil then
+            local nodeInfo = addon.JJWaypointNode[nodeId]
 
             -- skip directions that are a portal exit (Type=2), since the player will always be there
             -- if they went through the entrance. Also some of the names of portal exits are misleading

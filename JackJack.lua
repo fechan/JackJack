@@ -32,7 +32,7 @@ end
 -- @param poi Location to get display name for
 -- @return displayName Display name
 local function getLocationDisplayName(poi)
-    if poi["AreaName_lang"] == "" then
+    if poi["AreaName_lang"] == "" or poi["AreaName_lang"] == nil then
         return poi["Name_lang"] .. "\n(" .. poi["MapName_lang"] .. ")"
     else
         return poi["Name_lang"] .. "\n(" .. poi["AreaName_lang"] .. ", " .. poi["MapName_lang"] .. ")"
@@ -55,7 +55,7 @@ local function modifyLocationTooltip(poi, button, isDirectionsButton)
 
     else
         JJ_TOOLTIP:AddLine(getLocationDisplayName(poi))
-        if poi["Description_lang"] ~= "" then
+        if poi["Description_lang"] ~= "" and poi["Description_lang"] ~= nil then
             JJ_TOOLTIP:AddLine("Description: " .. poi["Description_lang"])
         end
         if poi["Origin"] ~= "" then
@@ -206,13 +206,39 @@ end
 local function setLocationButtons(locationName)
     -- get all POIs that (fuzzy) match the location name
     local poiMatches = {}
-    for rowNumber, poi in pairs(addon.JackJackLocations) do
+
+    for rowNumber, poi in pairs(addon.JJAreaPOI) do
+        local match = {}
         if addon.fzy.has_match(locationName, poi["Name_lang"]) then
-            -- it's faster to precompute score so table.sort doesn't constantly recompute it in comparisons
-            poi["fzyScore"] = addon.fzy.score(locationName, poi["Name_lang"])
-            table.insert(poiMatches, poi)
+            -- significantly faster to precompute score and put it in memory than
+            -- computing every time a comparison is made in the sort
+            match["fzyScore"] = addon.fzy.score(locationName, poi["Name_lang"])
+            match["Name_lang"] = poi["Name_lang"]
+            match["Pos0"] = poi["Pos0"]
+            match["Pos1"] = poi["Pos1"]
+            match["ContinentID"] = poi["ContinentID"]
+            match["AreaName_lang"] = poi["AreaName_lang"]
+            match["Description_lang"] = poi["Description_lang"]
+            match["MapName_lang"] = addon.JJMap[poi["ContinentID"]]["MapName_lang"]
+            match["Origin"] = "AreaPOI (Points of Interest table)"
+            table.insert(poiMatches, match)
         end
     end
+
+    for rowNumber, taxiNode in pairs(addon.JJTaxiNodes) do
+        local match = {}
+        if addon.fzy.has_match(locationName, taxiNode["Name_lang"]) then
+            match["fzyScore"] = addon.fzy.score(locationName, taxiNode["Name_lang"])
+            match["Name_lang"] = taxiNode["Name_lang"]
+            match["Pos0"] = taxiNode["Pos0"]
+            match["Pos1"] = taxiNode["Pos1"]
+            match["ContinentID"] = taxiNode["ContinentID"]
+            match["MapName_lang"] = addon.JJMap[taxiNode["ContinentID"]]["MapName_lang"]
+            match["Origin"] = "TaxiNodes (Flight points table)"
+            table.insert(poiMatches, match)
+        end
+    end
+
     -- sort by how close the match is to the location name
     table.sort(poiMatches, function(a, b)
         return a["fzyScore"] > b["fzyScore"]

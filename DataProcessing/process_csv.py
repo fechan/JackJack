@@ -7,35 +7,54 @@ import pandas as pd
 # Map: Continents (and instances?). We will need this for a lot of things.
 # Map.MapDescription0_lang is for the Horde, and MapDescription1_lang is for the Alliance
 # Map.ExpansionID is expansion ID (e.g. 7 is BfA)
-Map = pd.read_csv("Map.csv", usecols=["ID", "MapName_lang"])
+Map = pd.read_csv("Map.csv", usecols=["ID", "MapName_lang", "InstanceType"])
+Map.to_csv("JJMap.csv", index=False)
 
-### Process AreaPOI
+### Process AreaTable + AreaPOI --> JJAreaPOI
 
 # AreaTable: Zones (and other locations)
 AreaTable = pd.read_csv("AreaTable.csv", usecols=["ID", "AreaName_lang"])
 # AreaPOI: Points of interest
 AreaPOI = pd.read_csv("AreaPOI.csv", usecols=["Name_lang", "Description_lang", "Pos[0]", "Pos[1]", "ContinentID", "AreaID"])
 
-AreaPOI_joined = (pd.merge(AreaPOI, Map, how="left", left_on="ContinentID", right_on="ID", suffixes=["", "_Map"])
-                      .drop(labels=["ID"], axis=1))
-AreaPOI_joined = (pd.merge(AreaPOI_joined, AreaTable, how="left", left_on="AreaID", right_on="ID", suffixes=["", "_AreaTable"])
-                      .drop(labels=["ID", "AreaID"], axis=1))
-AreaPOI_joined = AreaPOI_joined[~AreaPOI_joined.Name_lang.str.startswith("[DEPRECATED]", na=False)]
-AreaPOI_joined = AreaPOI_joined[~AreaPOI_joined.Name_lang.str.startswith("[Deprecated]", na=False)]
-AreaPOI_joined["Origin"] = "AreaPOI (Points of Interest table)"
+JJAreaPOI = (AreaPOI.merge(AreaTable, how="left", left_on="AreaID", right_on="ID")
+                    .drop(labels=["ID", "AreaID"], axis=1))
+JJAreaPOI = JJAreaPOI[~JJAreaPOI.Name_lang.str.startswith("[DEPRECATED]", na=False)]
+JJAreaPOI = JJAreaPOI[~JJAreaPOI.Name_lang.str.startswith("[Deprecated]", na=False)]
+JJAreaPOI.to_csv("JJAreaPOI.csv", index=False)
 
-### Process TaxiNodes
+### Process TaxiNodes --> JJTaxiNodes
 
 # TaxiNodes: Flight points
-TaxiNodes = pd.read_csv("TaxiNodes.csv", usecols=["Name_lang", "Pos[0]", "Pos[1]", "ContinentID"])
-TaxiNodes_joined = (pd.merge(TaxiNodes, Map, how="left", left_on="ContinentID", right_on="ID", suffixes=["", "_Map"])
-                   .drop(labels=["ID"], axis=1))
-TaxiNodes_joined = TaxiNodes_joined[~TaxiNodes_joined.Name_lang.str.startswith("Quest")] # Guessing that these flight points only show up for quests
-TaxiNodes_joined = TaxiNodes_joined[~TaxiNodes_joined.Name_lang.str.startswith("[Hidden]")]
-TaxiNodes_joined = TaxiNodes_joined[~TaxiNodes_joined.Name_lang.str.startswith("[HIDDEN]")]
-TaxiNodes_joined["Origin"] = "TaxiNodes (Flight points table)"
+TaxiNodes = pd.read_csv("TaxiNodes.csv", usecols=["ID", "Name_lang", "Pos[0]", "Pos[1]", "ContinentID", "ConditionID"])
+JJTaxiNodes = TaxiNodes[~TaxiNodes.Name_lang.str.startswith("Quest")] # Guessing that these flight points only show up for quests
+JJTaxiNodes = JJTaxiNodes[~JJTaxiNodes.Name_lang.str.startswith("[Hidden]")]
+JJTaxiNodes = JJTaxiNodes[~JJTaxiNodes.Name_lang.str.startswith("[HIDDEN]")]
+JJTaxiNodes = JJTaxiNodes.set_index("ID")
 
-pd.concat([AreaPOI_joined, TaxiNodes_joined]).to_csv("JackJackLocations.csv", index=False)
+JJTaxiNodes.to_csv("JJTaxiNodes.csv", index=True)
+
+### Process TaxiPath (for directions feature)
+TaxiPath = pd.read_csv("TaxiPath.csv", usecols=["ID", "FromTaxiNode", "ToTaxiNode"])
+
+TaxiNode_merge = TaxiNodes.copy()
+TaxiNode_merge.columns = TaxiNodes.columns.map(lambda x: str(x) + '_from')
+TaxiPath_calc = (TaxiPath.merge(TaxiNode_merge, how="inner", left_on="FromTaxiNode", right_on="ID_from")
+                        .drop(columns=["ID_from", "Name_lang_from", "ContinentID_from", "ConditionID_from"]))
+
+TaxiNode_merge = TaxiNodes.copy()
+TaxiNode_merge.columns = TaxiNodes.columns.map(lambda x: str(x) + '_to')
+TaxiPath_calc = (TaxiPath_calc.merge(TaxiNode_merge, how="inner", left_on="ToTaxiNode", right_on="ID_to")
+                        .drop(columns=["ID_to", "Name_lang_to", "ContinentID_to", "ConditionID_to"]))
+
+def distance(x1, y1, x2, y2):
+    return ((x2-x1)**2 + (y2-y1)**2)**0.5
+
+TaxiPath_calc["Distance"] = distance(TaxiPath_calc["Pos[0]_from"], TaxiPath_calc["Pos[1]_from"], TaxiPath_calc["Pos[0]_to"], TaxiPath_calc["Pos[1]_to"])
+TaxiPath_calc = (TaxiPath_calc.round({"Distance": 0})
+                                .drop(columns=["ID", "Pos[0]_from", "Pos[1]_from", "Pos[0]_to", "Pos[1]_to"]))
+
+TaxiPath_calc.to_csv("JJTaxiPath.csv", index=False)
 
 ### Process portals (for directions feature)
 # To save on space, we will join WaypointEdge with WaypointNode in the addon and not here,
@@ -44,7 +63,7 @@ pd.concat([AreaPOI_joined, TaxiNodes_joined]).to_csv("JackJackLocations.csv", in
 # WaypointNode: Portal entrances and exits
 WaypointNode = pd.read_csv("WaypointNode.csv", usecols=["ID", "Name_lang", "SafeLocID", "Field_8_2_0_30080_005"])
 # WaypointSafeLocs: Locations of portals
-WaypointSafeLocs = pd.read_csv("WaypointSafeLocs.csv")
+WaypointSafeLocs = pd.read_csv("WaypointSafeLocs.csv").drop(columns="Pos[2]")
 
 WaypointNode_Loc = (pd.merge(WaypointNode, WaypointSafeLocs,
                             how="inner", # exclude portals that don't have a set location (e.g. mage portals)
@@ -53,19 +72,19 @@ WaypointNode_Loc = (pd.merge(WaypointNode, WaypointSafeLocs,
                             suffixes=["", "_WSL"])
                         .drop(columns=["ID_WSL", "SafeLocID"])
                         .rename(columns={"Field_8_2_0_30080_005": "Type"}))
-WaypointNode_Loc.to_csv("WaypointNodeWithLocation.csv", index=False)
+WaypointNode_Loc.to_csv("JJWaypointNode.csv", index=False)
 
 # WaypointEdge: Portal connections
 WaypointEdge = pd.read_csv("WaypointEdge.csv", usecols=["Start", "End", "PlayerConditionID"])
 
 # remove edges that involve start or end points not in the WaypointNode_Loc table (removes mage portal edges etc.)
 WaypointEdgeReduced = WaypointEdge[WaypointEdge.Start.isin(WaypointNode_Loc.ID) & WaypointEdge.End.isin(WaypointNode_Loc.ID)]
-WaypointEdgeReduced.to_csv("WaypointEdgeReduced.csv", index=False)
+WaypointEdgeReduced.to_csv("JJWaypointEdge.csv", index=False)
 
-# PlayerCondition: Prerequisites for using a portal connection. Keep this separate from the WaypointEdge because otherwise
+# PlayerCondition: Prerequisites for using a portal connection/taxi node/etc. Keep this separate from the WaypointEdge because otherwise
 # there would be a lot of duplicate data
 PlayerCondition = pd.read_csv("PlayerCondition.csv", usecols=["ID", "RaceMask"])
-PlayerCondition_edgeonly = PlayerCondition[PlayerCondition.ID.isin(WaypointEdge.PlayerConditionID)] # only keep the ones that are in the WaypointEdge table
+PlayerCondition_edgeonly = PlayerCondition[PlayerCondition.ID.isin(WaypointEdge.PlayerConditionID) | PlayerCondition.ID.isin(TaxiNodes.ConditionID)]
 
 ChrRaces = pd.read_csv("ChrRaces.csv", usecols=["ID", "PlayableRaceBit"])
 ChrRaces = ChrRaces[ChrRaces["PlayableRaceBit"] != -1]
@@ -85,4 +104,4 @@ def expand_racemask(PlayerCondition):
 
 (expand_racemask(PlayerCondition_edgeonly)
     .drop(columns=["RaceMask"])
-    .to_csv("PlayerConditionExpanded.csv", index=False))
+    .to_csv("JJPlayerCondition.csv", index=False))
