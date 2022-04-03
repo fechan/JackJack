@@ -1,5 +1,6 @@
 .ipynb_checkpoints/
 JackJack*.zip
+*.ipynb
 
 AreaPOI.csv
 AreaTable.csv
@@ -8,6 +9,7 @@ WaypointNode.csv
 WaypointSafeLocs.csv
 WorldSafeLocs.csv
 TaxiNodes.csv
+TaxiPath.csv
 PlayerCondition.csv
 WaypointEdge.csv
 WaypointNode.csv
