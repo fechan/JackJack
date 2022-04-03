@@ -14,6 +14,7 @@ JJTaxiNodes.lua
 JJTaxiPath.lua
 JJWaypointEdge.lua
 JJWaypointNode.lua
+JackJackUtil.lua
 JackJackDirections.lua
 JackJackUI.lua
 JackJack.lua

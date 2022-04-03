@@ -25,7 +25,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         for adjacentNodeId, adjacentNode in pairs(addon.JJWaypointNode) do
             if adjacentNode["MapID"] == playerContinent then
                 table.insert(adjacentNodes, {
-                    nodeId = adjacentNodeId,
+                    nodeId = addon.getDatasetSafeID("JJWaypointNode", adjacentNodeId),
                     distance = CalculateDistance(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
                 })
             end
@@ -40,16 +40,17 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         return adjacentNodes
     end
 
-    local nodeX = addon.JJWaypointNode[nodeId]["Pos0"]
-    local nodeY = addon.JJWaypointNode[nodeId]["Pos1"]
-    local nodeMapID = addon.JJWaypointNode[nodeId]["MapID"]
+    local nodeInfo, _ = addon.getRecordFromDatasetSafeID(nodeId)
+    local nodeX = nodeInfo["Pos0"]
+    local nodeY = nodeInfo["Pos1"]
+    local nodeMapID = nodeInfo["MapID"]
 
     -- step 1: get all the edges that start at the nodeId and add the end node to the adjacentNodes
     for edgeId, edge in pairs(addon.JJWaypointEdge) do
-        if edge["Start"] == nodeId then
+        if addon.getDatasetSafeID("JJWaypointNode", edge["Start"]) == nodeId then
             if playerMeetsPortalRequirements(edge["PlayerConditionID"]) then
                 table.insert(adjacentNodes, {
-                    nodeId = edge["End"],
+                    nodeId = addon.getDatasetSafeID("JJWaypointNode", edge["End"]),
                     distance = LOADING_SCREEN_WEIGHT
                 })
             end
@@ -59,7 +60,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
     for adjacentNodeId, adjacentNode in pairs(addon.JJWaypointNode) do
         if adjacentNode["MapID"] == nodeMapID then
             table.insert(adjacentNodes, {
-                nodeId = adjacentNodeId,
+                nodeId = addon.getDatasetSafeID("JJWaypointNode", adjacentNodeId),
                 distance = CalculateDistance(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
             })
         end
@@ -88,21 +89,22 @@ local function getNodeWithMinDist(Q, dist)
     return minNodeIndex, minNode
 end
 
+local function addNodeToDijkstraGraph(nodeId, distTable, dist, prevTable, prev, Q)
+    distTable[nodeId] = dist
+    prevTable[nodeId] = prev
+    table.insert(Q, nodeId)
+end
+
 addon.getDirections = function(destinationX, destinationY, destinationContinent, destinationName)
     local dist = {}
     local prev = {}
     local Q = {}
-    for nodeId, node in pairs(addon.JJWaypointNode) do
-        dist[nodeId] = math.huge
-        prev[nodeId] = nil
-        table.insert(Q, nodeId)
+    for waypointNodeId, node in pairs(addon.JJWaypointNode) do
+        local nodeId = addon.getDatasetSafeID("JJWaypointNode", waypointNodeId)
+        addNodeToDijkstraGraph(nodeId, dist, math.huge, prev, nil, Q)
     end
-    dist["destination"] = math.huge
-    prev["destination"] = nil
-    table.insert(Q, "destination")
-    dist["player"] = 0
-    prev["player"] = "player"
-    table.insert(Q, "player")
+    addNodeToDijkstraGraph("destination", dist, math.huge, prev, nil, Q)
+    addNodeToDijkstraGraph("player", dist, 0, prev, "player", Q)
 
     while #Q > 0 do
         local uIndex, u = getNodeWithMinDist(Q, dist)
@@ -137,8 +139,8 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
         local direction = {}
         local globalCoords, uiMapId, mapPosition, name
         local shouldAddDirection = true
-        if addon.JJWaypointNode[nodeId] ~= nil then
-            local nodeInfo = addon.JJWaypointNode[nodeId]
+        if nodeId ~= "destination" and nodeId ~= "player" and addon.getRecordFromDatasetSafeID(nodeId) ~= nil then
+            local nodeInfo = addon.getRecordFromDatasetSafeID(nodeId)
 
             -- skip directions that are a portal exit (Type=2), since the player will always be there
             -- if they went through the entrance. Also some of the names of portal exits are misleading
