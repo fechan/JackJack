@@ -16,3 +16,16 @@ addon.getRecordFromDatasetSafeID = function(datasetSafeID)
     local datasetName, recordId = string.match(datasetSafeID, "(.+):(.+)")
     return addon[datasetName][tonumber(recordId)], datasetName
 end
+
+addon.playerMeetsPortalRequirements = function(playerConditionId)
+    if playerConditionId == 0 then
+        return true
+    end
+    local _, _, raceId = UnitRace("player")
+    return addon.JJPlayerCondition[playerConditionId]["race_" .. raceId] == 1
+end
+
+addon.playerCanUseTaxiNode = function(taxiNode)
+    local faction, _ = UnitFactionGroup("player")
+    return (faction == "Alliance" and taxiNode["A"] == 1) or (faction == "Horde" and taxiNode["H"] == 1)
+end

@@ -1,857 +1,857 @@
-ID,Name_lang,Pos[0],Pos[1],ContinentID,ConditionID
-1,Northshire Abbey,-8888.98,-0.54,0,0
-2,"Stormwind, Elwynn",-8841.06,489.656,0,0
-3,Programmer Isle,16391.81,16341.21,0,0
-4,"Sentinel Hill, Westfall",-10551.9,1034.39,0,0
-5,"Lakeshire, Redridge",-9429.1,-2231.4,0,20068
-6,"Ironforge, Dun Morogh",-4821.78,-1155.44,0,0
-7,"Menethil Harbor, Wetlands",-3787.81,-777.696,0,0
-8,"Thelsamar, Loch Modan",-5421.91,-2930.01,0,0
-9,"Booty Bay, Stranglethorn",-14271.8,299.87,0,0
-10,"The Sepulcher, Silverpine Forest",478.86,1536.59,0,0
-11,"Undercity, Tirisfal",1568.62,267.97,0,62731
-12,"Darkshire, Duskwood",-10515.5,-1261.65,0,0
-13,"Tarren Mill, Hillsbrad",-17.7066,-874.203,0,0
-14,"Southshore, Hillsbrad",-711.48,-515.48,0,5793
-15,Eastern Plaguelands,2253.4,-5344.9,0,0
-16,"Refuge Pointe, Arathi",-1240.53,-2515.11,0,0
-17,"Hammerfall, Arathi",-916.29,-3496.89,0,0
-18,"Booty Bay, Stranglethorn",-14444.3,509.62,0,0
-19,"Booty Bay, Stranglethorn",-14473.0,464.15,0,0
-20,"Grom'gol, Stranglethorn",-12414.2,146.29,0,0
-21,"New Kargath, Badlands",-6676.87,-2433.37,0,0
-22,"Thunder Bluff, Mulgore",-1197.21,29.71,1,0
-23,"Orgrimmar, Durotar",1798.27,-4363.27,1,0
-24,"Generic, World Target 002",-6666.0,-2222.3,0,0
-25,"The Crossroads, Northern Barrens",-441.8,-2596.08,1,0
-26,"Lor'danel, Darkshore",7459.9,-326.56,1,0
-27,"Rut'theran Village, Teldrassil",8383.75,980.964,1,0
-28,"Astranaar, Ashenvale",2827.34,-289.24,1,0
-29,"Sun Rock Retreat, Stonetalon Mountains",966.57,1040.32,1,0
-30,"Westreach Summit, Thousand Needles",-4310.61,-927.064,1,0
-31,"Shadebough, Feralas",-4996.88,73.9427,1,0
-32,"Theramore, Dustwallow Marsh",-3825.37,-4516.58,1,19444
-33,"Thal'darah Overlook, Stonetalon Mountains",2147.25,1537.87,1,0
-34,"Transport, Booty Bay",-1965.17,-5824.29,1,0
-35,"Transport, Orgrimmar",1320.07,-4649.2,1,0
-36,"Generic, World Target 001",-8644.62,433.28,0,0
-37,"Nijel's Point, Desolace",139.24,1325.82,1,0
-38,"Shadowprey Village, Desolace",-1767.64,3263.89,1,0
-39,"Gadgetzan, Tanaris",-7185.97,-3768.24,1,0
-40,"Gadgetzan, Tanaris",-7094.03,-3813.69,1,0
-41,"Feathermoon, Feralas",-4467.04,2188.64,1,0
-42,"Camp Mojache, Feralas",-4419.86,199.31,1,0
-43,"Aerie Peak, The Hinterlands",283.74,-2002.76,0,0
-44,"Bilgewater Harbor, Azshara",3547.2,-6294.66,1,0
-45,"Nethergarde Keep, Blasted Lands",-11112.3,-3435.74,0,46758
-46,"Transport, Southshore",-986.43,-547.86,0,0
-47,"Transport, Grom'gol",-12418.77,235.43,0,0
-48,"Bloodvenom Post, Felwood [DISABLED in 4.x]",5123.51,-321.181,1,5793
-49,Moonglade,7458.45,-2487.21,1,0
-50,"Transport, Menethil Harbor",0.0,0.0,0,0
-51,"Transport, Auberdine",0.0,0.0,0,0
-52,"Everlook, Winterspring",6796.8,-4742.39,1,0
-53,"Everlook, Winterspring",6813.06,-4611.12,1,0
-54,"Transport, Feathermoon",-4203.87,3284.0,1,0
-55,"Brackenwall Village, Dustwallow Marsh",-3147.39,-2842.18,1,0
-56,"Stonard, Swamp of Sorrows",-10457.0,-3279.25,0,0
-57,"Fishing Village, Teldrassil",8701.51,991.37,1,0
-58,"Zoram'gar Outpost, Ashenvale",3351.82,1052.3,1,0
-59,"Dun Baldar, Alterac Valley",574.21,-46.65,30,0
-60,"Frostwolf Keep, Alterac Valley",-1335.44,-319.69,30,0
-61,"Splintertree Post, Ashenvale",2302.39,-2524.55,1,0
-62,"Nighthaven, Moonglade",7793.61,-2403.47,1,62814
-63,"Nighthaven, Moonglade",7787.72,-2404.1,1,0
-64,"Talrendis Point, Azshara (NEVER in 4.x)",2721.99,-3880.64,1,5793
-65,"Talonbranch Glade, Felwood",6214.32,-1874.28,1,0
-66,"Chillwind Camp, Western Plaguelands",931.32,-1430.11,0,0
-67,"Light's Hope Chapel, Eastern Plaguelands",2271.09,-5340.8,0,924
-68,"Light's Hope Chapel, Eastern Plaguelands",2270.2,-5343.11,0,923
-69,Moonglade,7470.39,-2123.38,1,0
-70,"Flame Crest, Burning Steppes",-7504.03,-2187.54,0,0
-71,"Morgan's Vigil, Burning Steppes",-8364.61,-2738.35,0,0
-72,"Cenarion Hold, Silithus",-6811.39,836.74,1,53948
-73,"Cenarion Hold, Silithus",-6761.83,772.03,1,53948
-74,"Thorium Point, Searing Gorge",-6552.59,-1168.27,0,0
-75,"Thorium Point, Searing Gorge",-6554.93,-1100.05,0,0
-76,"Revantusk Village, The Hinterlands",-635.26,-4720.5,0,0
-77,"Vendetta Point, Southern Barrens",-2152.35,-1724.34,1,0
-78,Naxxramas,3133.31,-3399.93,0,0
-79,"Marshal's Stand, Un'Goro Crater",-7548.05,-1541.13,1,0
-80,"Ratchet, Northern Barrens",-894.59,-3773.01,1,0
-81,Filming,0.0,0.0,530,0
-82,Silvermoon City,9375.24,-7165.89,530,0
-83,"Tranquillien, Ghostlands",7594.47,-6784.29,530,0
-84,"Plaguewood Tower, Eastern Plaguelands",2965.55,-3033.61,0,0
-85,"Northpass Tower, Eastern Plaguelands",3134.26,-4354.78,0,0
-86,"Eastwall Tower, Eastern Plaguelands",2524.44,-4769.56,0,0
-87,"Crown Guard Tower, Eastern Plaguelands",1876.4,-3693.32,0,0
-88,"Transport, Exodar",-4284.01,-11194.74,530,0
-89,"Transport, Theramore",0.0,0.0,0,0
-90,"Transport, Undercity",0.0,0.0,1,0
-93,"Blood Watch, Bloodmyst Isle",-1933.27,-11954.6,530,0
-94,The Exodar,-3867.56,-11641.1,530,0
-95,Zangarmarsh - Quest - As the Crow Flies,-146.29,5532.56,530,0
-96,Zangarmarsh - Quest - As the Crow Flies - End,-145.23,5533.03,530,0
-99,"Thrallmar, Hellfire Peninsula",228.5,2633.57,530,0
-100,"Honor Hold, Hellfire Peninsula",-673.42,2717.27,530,0
-101,"Temple of Telhamat, Hellfire Peninsula",199.16,4241.56,530,0
-102,"Falcon Watch, Hellfire Peninsula",-587.41,4101.01,530,0
-103,Nagrand - PvP - Attack Run Start 1 ,-1810.16,8032.11,530,0
-104,Nagrand - PvP - Attack Run End 1,-1824.18,8049.29,530,0
-105,Nagrand - PvP - Attack Run Start 2,-1513.4,8140.93,530,0
-106,Nagrand - PvP - Attack Run End 2,-1511.26,8149.71,530,0
-107,Nagrand - PvP - Attack Run Start 3,-1387.07,7782.41,530,0
-108,Nagrand - PvP - Attack Run End 3,-1376.72,7771.17,530,0
-109,Nagrand - PvP - Attack Run Start 4,-1656.6,7724.91,530,0
-110,Nagrand - PvP - Attack Run End 4,-1658.9,7724.71,530,0
-111,Eversong - Duskwither Teleport,9335.83,-7883.07,530,0
-112,Eversong - Duskwither Teleport End,9335.67,-7809.71,530,0
-117,"Telredor, Zangarmarsh",213.75,6063.75,530,0
-118,"Zabra'jin, Zangarmarsh",219.45,7816.0,530,0
-119,"Telaar, Nagrand",-2729.0,7305.3,530,0
-120,"Garadar, Nagrand",-1261.09,7133.39,530,0
-121,"Allerian Stronghold, Terokkar Forest",-2987.24,3872.78,530,0
-122,"Area 52, Netherstorm",3082.31,3596.11,530,0
-123,"Shadowmoon Village, Shadowmoon Valley",-3018.62,2557.09,530,0
-124,"Wildhammer Stronghold, Shadowmoon Valley",-3982.07,2156.47,530,0
-125,"Sylvanaar, Blade's Edge Mountains",2183.65,6794.46,530,0
-126,"Thunderlord Stronghold, Blade's Edge Mountains",2446.37,6020.93,530,0
-127,"Stonebreaker Hold, Terokkar Forest",-2567.33,4423.83,530,0
-128,"Shattrath, Terokkar Forest",-1837.23,5301.9,530,0
-129,"Hellfire Peninsula, The Dark Portal",-327.35,1020.49,530,0
-130,"Hellfire Peninsula, The Dark Portal",-178.09,1026.72,530,0
-139,"The Stormspire, Netherstorm",4157.58,2959.69,530,0
-140,"Altar of Sha'tar, Shadowmoon Valley",-3065.6,749.42,530,6211
-141,"Spinebreaker Ridge, Hellfire Peninsula",-1316.84,2358.62,530,0
-142,Hellfire Peninsula - Reaver's Fall,-29.16,2125.72,530,0
-147,Hellfire Peninsula - Force Camp Beach Head,509.17,1988.69,530,0
-148,"Shatter Point, Hellfire Peninsula (Beach Assault)",298.46,1501.18,530,0
-149,"Shatter Point, Hellfire Peninsula",276.2,1486.91,530,0
-150,"Cosmowrench, Netherstorm",2974.95,1848.24,530,0
-151,"Swamprat Post, Zangarmarsh",91.67,5214.92,530,0
-156,"Toshley's Station, Blade's Edge Mountains",1857.35,5531.87,530,0
-159,"Sanctum of the Stars, Shadowmoon Valley",-4073.17,1123.61,530,6212
-160,"Evergrove, Blade's Edge Mountains",2976.01,5501.13,530,0
-163,"Mok'Nathal Village, Blade's Edge Mountains",2028.79,4705.27,530,0
-164,"Orebor Harborage, Zangarmarsh",966.67,7399.16,530,0
-165,"Transport, Northrend 2",0.0,0.0,571,0
-166,"Emerald Sanctuary, Felwood",3972.84,-1324.51,1,0
-167,"Forest Song, Ashenvale",3000.25,-3202.41,1,0
-168,Filming,-9441.18,65.05,0,0
-171,Skettis,-3364.68,3650.18,530,0
-172,Ogri'La,2531.1,7322.09,530,0
-175,"Transport, Howling Fjord",784.89,-5066.18,571,0
-178,"Transport, Borean Tundra",0.0,0.0,571,0
-179,"Mudsprocket, Dustwallow Marsh",-4566.23,-3226.05,1,0
-183,"Valgarde Port, Howling Fjord",567.41,-5010.97,571,0
-184,"Fort Wildervar, Howling Fjord",2468.77,-5029.82,571,0
-185,"Westguard Keep, Howling Fjord",1342.84,-3287.9,571,0
-190,"New Agamand, Howling Fjord",401.12,-4544.3,571,0
-191,"Vengeance Landing, Howling Fjord",1918.6,-6175.89,571,0
-192,"Camp Winterhoof, Howling Fjord",2652.89,-4392.71,571,0
-195,"Rebel Camp, Stranglethorn Vale",-11344.0,-216.83,0,0
-196,Test - SP,9283.1,-9749.81,451,0
-197,Test SP2,-9148.62,243.04,0,0
-198,Test SP1,9405.83,-9882.69,451,0
-201,Development Land - Kyle Radue Start,15992.44,-16371.94,451,0
-202,Development Land - Kyle Radue End,15991.68,-16371.95,451,0
-205,"Zul'Aman, Ghostlands",6789.79,-7747.58,530,0
-206,"Transport, Feathermoon (NE Ship)",-4348.01,2427.29,1,0
-213,Shattered Sun Staging Area,13012.7,-6908.37,530,5953
-218,"Transport, Howling Fjord (Gondola, Top)",690.99,-3819.6,571,0
-219,"Transport, Howling Fjord (Gondola, Bottom)",607.96,-2906.17,571,0
-221,"Amber Ledge, Borean (To Beryl)",3465.66,5901.76,571,0
-222,"Beryl Point, Borean",3213.74,6084.72,571,0
-224,"Borean Tundra, Naglevar",0.0,0.0,0,0
-225,"Amber Ledge, Borean (to Coldarra)",3574.06,5971.04,571,0
-226,"Transitus Shield, Coldarra",3575.44,6661.64,571,0
-227,"Transport, PattyMacDevTest",16625.63,16862.9,451,0
-228,Development Land - Pat Test Start,0.0,0.0,0,0
-229,Development Land - Pat Test End,0.0,0.0,0,0
-230,"Transport, Tuskarr 01",2690.26,889.81,571,0
-231,"Transport, Tuskarr 02",2690.33,897.63,571,0
-232,Borean Tundra - Warsong Hold Wolf Start,2774.69,6258.14,571,0
-233,Borean Tundra - Warsong Hold Wolf End,3443.52,4103.95,571,0
-234,"Coldarra Ledge, Coldarra",4130.62,7372.31,571,0
-235,"Transitus Shield, Coldarra (NOT USED)",3575.56,6651.84,571,0
-236,"Coldarra, Keristrasza to Malygos",4026.95,7085.54,571,0
-237,"Coldarra, Keristrasza Landing",3929.4,6590.74,571,0
-239,Borean Tundra - Quest - Dusk Start,3109.0,3819.54,571,0
-240,Borean Tundra - Quest - Dusk - End,3614.3,3670.12,571,0
-241,"Transport, Valiance Keep",0.0,0.0,0,0
-244,"Wintergarde Keep, Dragonblight",3712.43,-694.86,571,0
-245,"Valiance Keep, Borean Tundra",2269.54,5173.69,571,0
-246,"Fizzcrank Airstrip, Borean Tundra",4127.23,5313.07,571,0
-247,"Stars' Rest, Dragonblight",3504.13,1992.03,571,0
-248,"Apothecary Camp, Howling Fjord",2108.11,-2970.62,571,0
-249,"Camp Oneqwah, Grizzly Hills",3876.34,-4520.08,571,0
-250,"Conquest Hold, Grizzly Hills",3258.9,-2263.09,571,0
-251,"Fordragon Hold, Dragonblight",4612.21,1406.6,571,0
-252,"Wyrmrest Temple, Dragonblight",3653.21,247.58,571,0
-253,"Amberpine Lodge, Grizzly Hills",3446.35,-2754.1,571,0
-254,"Venomspite, Dragonblight",3242.96,-666.16,571,0
-255,"Westfall Brigade, Grizzly Hills",4584.98,-4254.69,571,0
-256,"Agmar's Hammer, Dragonblight",3865.87,1525.63,571,0
-257,"Warsong Hold, Borean Tundra",2920.29,6242.85,571,0
-258,"Taunka'le Village, Borean Tundra",3449.51,4089.52,571,0
-259,"Bor'gorok Outpost, Borean Tundra",4474.79,5712.13,571,0
-260,"Kor'kron Vanguard, Dragonblight",4946.67,1165.94,571,0
-262,"Grizzly Hills, Alliance Log Ride Start 01",4267.39,-3050.93,571,0
-263,"Grizzly Hills, Alliance Log Ride End 01",2663.67,-2181.45,571,0
-264,"Transport, Auberdine (NEW)",0.0,0.0,0,0
-265,"Transport, Theramore (NEW)",0.0,0.0,0,0
-266,"Transport, Menethil (NEW)",0.0,0.0,0,0
-267,"Grizzly Hills, Alliance Log Ride Start",4272.09,-3248.26,571,0
-268,"Grizzly Hills, Alliance Log Ride End",2664.22,-2344.63,571,0
-271,"Grizzly Hills, Horde Log Ride Start",4311.25,-2956.61,571,0
-272,"Grizzly Hills, Horde Log Ride End",2883.75,-1673.71,571,0
-273,"Wyrmrest Temple - bottom to top, Dragonblight - Begin",3547.22,381.49,571,0
-274,"Wyrmrest Temple - bottom to top, Dragonblight - End",3590.38,277.54,571,0
-275,"Wyrmrest Temple - top to bottom, Dragonblight - Begin",3587.65,279.21,571,0
-276,"Wyrmrest Temple - top to bottom, Dragonblight - End",3511.48,373.93,571,0
-277,"Wyrmrest Temple - top to middle, Dragonblight - Begin",3587.55,279.14,571,0
-278,"Wyrmrest Temple - top to middle, Dragonblight - End",3543.24,307.04,571,0
-279,"Wyrmrest Temple - middle to top, Dragonblight - End",3587.04,277.14,571,0
-280,"Wyrmrest Temple - middle to top, Dragonblight - Begin",3545.62,273.6,571,0
-281,"Wyrmrest Temple - middle to bottom, Dragonblight - End",3512.22,373.57,571,0
-282,"Wyrmrest Temple - middle to bottom, Dragonblight - Begin",3545.61,273.6,571,0
-283,"Wyrmrest Temple - bottom to middle, Dragonblight - End",3543.37,307.06,571,0
-284,"Wyrmrest Temple - bottom to middle, Dragonblight - Begin",3548.15,381.01,571,0
-289,"Amber Ledge, Borean Tundra",3587.84,5973.3,571,0
-290,"Argent Stand, Zul'Drak",5450.3,-2606.27,571,0
-291,"Ruined City Post 01, Zul'Drak",5028.69,-3020.38,571,0
-292,Flavor - Stormwind Harbor  - Start,-8338.36,1107.01,0,0
-293,Flavor - Stormwind Harbor - Stop,-8341.09,1101.85,0,0
-294,"Moa'ki, Dragonblight",2792.45,908.96,571,0
-295,"Kamagua, Howling Fjord",785.27,-2887.71,571,0
-296,"Unu'pe, Borean Tundra",2919.19,4046.09,571,0
-297,Sholazar Basin - Quest - Reconnaisance - Start,5557.57,5802.05,571,0
-298,Sholazar Basin - Quest - Reconnaisance - End,5505.35,4747.79,571,0
-299,Transport: Menethil <-> Valgarde,0.0,0.0,0,0
-300,"Transport, Stormwind",0.0,0.0,0,0
-303,"Valiance Landing Camp, Wintergrasp",5100.81,2185.65,571,0
-304,"The Argent Stand, Zul'Drak",5521.63,-2672.25,571,0
-305,"Ebon Watch, Zul'Drak",5218.9,-1302.22,571,0
-306,"Light's Breach, Zul'Drak",5190.11,-2206.46,571,0
-307,"Zim'Torga, Zul'Drak",5777.4,-3594.94,571,0
-308,"River's Heart, Sholazar Basin",5506.23,4748.1,571,0
-309,"Nesingwary Base Camp, Sholazar Basin",5596.1,5824.37,571,7376
-310,Dalaran,5813.89,449.13,571,0
-311,"Camp Onequah, Grizzly Hills (Quest)",3877.91,-4519.59,571,0
-312,"Light's Breach, Zul'Drak (Quest)",5189.67,-2206.85,571,0
-313,"Westfall Brigade, Grizzly Hills (Quest)",4584.01,-4250.38,571,0
-314,"Zim'Torga, Zul'Drak (Quest)",5779.13,-3596.42,571,0
-315,Acherus: The Ebon Hold,2352.37,-5666.91,0,7305
-316,Ebon Hold - Acherus -> Death's Breach Start,0.0,0.0,0,0
-317,Ebon Hold - Acherus -> Death's Breach End,2431.0,-5730.21,609,0
-318,Ebon Hold - Death's Breach -> Acherus Start,0.0,0.0,0,0
-319,Ebon Hold - Death's Breach -> Acherus End,2356.51,-5664.18,609,0
-320,"K3, The Storm Peaks",6186.75,-1052.91,571,0
-321,"Frosthold, The Storm Peaks",6667.04,-258.7,571,0
-322,"Dun Niffelem, The Storm Peaks",7308.04,-2607.6,571,0
-323,"Grom'arsh Crash-Site, The Storm Peaks",7857.3,-735.02,571,0
-324,"Camp Tunka'lo, The Storm Peaks",7793.85,-2810.09,571,0
-325,"Death's Rise, Icecrown",7427.32,4224.16,571,0
-326,"Ulduar, The Storm Peaks",8864.74,-1324.33,571,0
-327,"Bouldercrag's Refuge, The Storm Peaks",8472.46,-335.95,571,0
-328,"Transport, Icecrown Airship (A)",7501.65,1140.28,571,0
-329,"Transport, Icecrown Airship (H)",7561.81,1724.59,571,0
-330,"Transport, Icecrown (Target)",7489.64,1477.72,571,0
-331,"Gundrak, Zul'Drak",6897.65,-4118.23,571,0
-332,"Warsong Camp, Wintergrasp",5024.99,3685.55,571,0
-333,"The Shadow Vault, Icecrown",8408.09,2702.66,571,0
-334,"The Argent Vanguard, Icecrown",6164.49,-61.31,571,0
-335,"Crusaders' Pinnacle, Icecrown",6402.06,467.86,571,0
-336,"Windrunner's Overlook, Crystalsong Forest",5035.65,-519.96,571,0
-337,"Sunreaver's Command, Crystalsong Forest",5590.49,-693.23,571,0
-338,"Blackfathom Camp, Ashenvale",3880.51,654.16,1,0
-339,"Grove of the Ancients, Darkshore",4970.5,147.65,1,0
-340,"Argent Tournament Grounds, Icecrown",8475.79,891.2,571,0
-341,Ulduar Raid - Interior - Insertion Point,-749.2,-99.99,603,0
-342,Ulduar Raid - Iron Concourse,119.96,-71.62,603,0
-343,"Splintertree, Ashenvale",2309.23,-2523.21,1,0
-346,"Ashenvale 4.x, Azshara to Mor'shan Ramparts",2873.53,-3740.51,1,0
-347,"Ashenvale 4.x, Mor'shan Landing",1225.78,-2250.9,1,0
-348,Transport: Thunder Bluff <-> Org (Zep),0.0,0.0,0,0
-349,"Andruk, Zoram'gar",3350.21,1054.12,1,0
-350,"Hellscream's Watch, Ashenvale",3049.08,-498.95,1,0
-351,"Stardust Spire, Ashenvale",1905.11,-321.99,1,0
-352,Isle of Conquest - Gunships,0.0,0.0,0,0
-354,"The Mor'Shan Ramparts, Ashenvale",1206.05,-2209.15,1,0
-356,"Silverwind Refuge, Ashenvale",2159.62,-1144.05,1,0
-360,"Cliffwalker Post, Stonetalon Mountains",2188.0,1241.89,1,0
-361,"Windshear Hold, Stonetalon Mountains",1268.51,432.87,1,0
-362,"Krom'gar Fortress, Stonetalon Mountains",932.12,-21.25,1,0
-363,"Malaka'jin, Stonetalon Mountains",-111.94,-260.41,1,0
-364,"Northwatch Expedition Base Camp, Stonetalon Mountains",237.88,-281.35,1,0
-365,"Farwatcher's Glen, Stonetalon Mountains",973.94,2013.13,1,0
-366,"Furien's Post, Desolace",-439.15,2242.62,1,0
-367,"Thargad's Camp, Desolace",-1694.53,2577.57,1,0
-368,"Karnum's Glade, Desolace",-1038.43,1637.99,1,0
-369,"Thunk's Abode, Desolace",-534.04,1056.68,1,0
-370,"Ethel Rethor, Desolace",-356.47,2478.9,1,0
-371,Vashj'ir - Alliance Start,0.0,0.0,0,0
-372,Vashj'ir - Alliance End,0.0,0.0,0,0
-373,Mulgore - Red Cloud Mesa: To Bloodhoof,-2936.14,-1.52,1,0
-374,Mulgore - Red Cloud Mesa: To Bloodhoof (End),-2333.39,-388.45,1,0
-375,"Transport, Gadgetzan",0.0,0.0,0,0
-376,Icecrown Raid - Airship Battle Taxi Paths,0.0,0.0,0,0
-377,Icecrown Dungeon - Gunships,0.0,0.0,0,0
-379,Icecrown Raid - Saurfang's Ship (End),-200.59,1437.53,631,0
-380,Icecrown Raid - Saurfang's Ship (Start),0.0,0.0,0,0
-383,"Thondroril River, Eastern Plaguelands",1935.97,-2694.48,0,0
-384,"The Bulwark, Tirisfal",1726.62,-740.981,0,0
-386,"Mossy Pile, Un'Goro Crater",-6958.44,-1095.24,1,0
-387,"Honor's Stand, Southern Barrens",-335.2,-1532.44,1,0
-388,"Northwatch Hold, Southern Barrens",-2124.21,-3561.79,1,0
-389,"Fort Triumph, Southern Barrens",-3150.25,-2286.27,1,0
-390,"Hunter's Hill, Southern Barrens",-798.72,-1590.87,1,0
-391,"Desolation Hold, Southern Barrens",-3288.85,-1697.99,1,0
-392,CC Prologue - GT - Quest - Vent Horizon - Start,-5448.5,-665.08,0,0
-393,CC Prologue - GT - Quest - Vent Horizon - End,-5447.85,-665.59,0,0
-394,CC Prologue - GT - Battle Flight - Start,-5451.48,-667.73,0,0
-395,CC Prologue - GT - Battle Flight - End,-5434.71,523.09,0,0
-402,"Bloodhoof Village, Mulgore",-2299.54,-379.069,1,0
-404,Durotar - ET - CC Prologue Spy Frog Start,-839.64,-4985.35,1,0
-405,Durotar - ET - CC Prologue Spy Frog End,-838.01,-4986.28,1,0
-438,Durotar - ET - CC Prologue Troll Taxi Bat Start,-838.85,-4985.99,1,0
-439,Durotar - ET - CC Prologue Troll Recruit End,284.38,-4762.36,1,0
-440,Durotar - ET - CC Prologue - Troll Battle End,-848.2,-5339.46,1,0
-456,"Dolanaar, Teldrassil",9873.1,977.698,1,0
-457,"Darnassus, Teldrassil",9968.8,2622.09,1,0
-458,"Nozzlepot's Outpost, Northern Barrens",1152.6,-3381.74,1,0
-460,"Brill, Tirisfal Glades",2272.68,372.064,0,62731
-513,"Fizzle & Pozzik's Speedbarge, Thousand Needles",-6075.37,-3913.44,1,0
-521,"Smuggler's Scar, Vashj'ir",-4588.05,3481.12,0,0
-522,"Silver Tide Hollow, Vashj'ir",-6105.61,4285.08,0,0
-523,"Tranquil Wash, Vashj'ir",-6616.4,4308.28,0,0
-524,"Darkbreak Cove, Vashj'ir",-6902.25,5943.82,0,0
-525,"Legion's Rest, Vashj'ir",-6805.63,4199.85,0,0
-526,"Tenebrous Cavern, Vashj'ir",-6507.99,6075.25,0,0
-531,"Dawnrise Expedition, Tanaris",-9487.89,-2467.13,1,0
-532,"Gunstan's Dig, Tanaris",-9493.71,-2953.99,1,0
-536,"Sen'jin Village, Durotar",-780.267,-4890.28,1,0
-537,"Razor Hill, Durotar",269.917,-4766.76,1,0
-538,test - JZB - Orgrim's Hammer,4.65694,-2.34398,622,0
-539,"Bootlegger Outpost, Tanaris",-8683.09,-4088.1,1,0
-540,"The Sludgewerks, Stonetalon Mountains",1825.94,727.208,1,0
-541,"Mirkfallon Post, Stonetalon Mountains",1379.42,1034.86,1,0
-551,"Whelgar's Retreat, Wetlands",-3222.93,-1989.49,0,0
-552,"Greenwarden's Grove, Wetlands",-3306.65,-2718.69,0,0
-553,"Dun Modr, Wetlands",-2656.54,-2464.28,0,0
-554,"Slabchisel's Survey, Wetlands",-4113.6,-2741.21,0,0
-555,"Farstrider Lodge, Loch Modan",-5668.31,-4253.44,0,924
-557,"Shrine of Aviana, Hyjal",4987.87,-2676.19,1,0
-558,"Grove of Aessina, Hyjal",5163.51,-1760.58,1,0
-559,"Nordrassil, Hyjal",5584.06,-3569.84,1,0
-565,"Dreamer's Rest, Feralas",-3136.62,1951.67,1,0
-567,"Tower of Estulan, Feralas",-4863.64,1478.16,1,0
-568,"Camp Ataya, Feralas",-3081.7,2560.1,1,0
-569,"Stonemaul Hold, Feralas",-4606.52,1898.19,1,0
-582,"Goldshire, Elwynn",-9433.99,85.1493,0,0
-583,"Moonbrook, Westfall",-10876.9,1542.88,0,0
-584,"Furlbrow's Pumpkin Farm, Westfall",-9838.51,1273.93,0,0
-586,Justin Test Node 1,2186.69,1241.3,1,0
-587,Justin Test Node 2,2186.69,1241.3,1,0
-589,"Eastvale Logging Camp, Elwynn",-9475.71,-1306.74,0,0
-590,"Fort Livingston, Stranglethorn",-12828.8,-413.71,0,0
-591,"Explorers' League Digsite, Stranglethorn",-13600.9,-85.5486,0,0
-592,"Hardwrench Hideaway, Stranglethorn",-13288.3,722.028,0,0
-593,"Bambala, Stranglethorn",-12092.2,-814.099,0,0
-594,"Whisperwind Grove, Felwood",6078.51,-844.998,1,0
-595,"Wildheart Point, Felwood",4734.16,-883.806,1,0
-596,"Shalewind Canyon, Redridge",-9641.67,-3479.37,0,0
-597,"Irontree Clearing, Felwood",6892.69,-1620.41,1,0
-598,"Marshtide Watch, Swamp of Sorrows",-10176.6,-3836.54,0,0
-599,"Bogpaddle, Swamp of Sorrows",-9737.08,-3890.72,0,0
-600,"The Harborage, Swamp of Sorrows",-10118.6,-2852.48,0,0
-601,"Galen's Fall, Arathi",-952.377,-1585.74,0,64389
-602,"Surwich, Blasted Lands",-12761.9,-2919.04,0,46758
-603,"Sunveil Excursion, Blasted Lands",-12357.6,-3058.23,0,46791
-604,"Dreadmaul Hold, Blasted Lands",-10933.3,-2790.98,0,46791
-605,"Voldrin's Hold, Vashj'ir",-7209.71,3925.85,0,0
-606,"Sandy Beach, Vashj'ir",-5310.85,3914.42,0,0
-607,"Sandy Beach, Vashj'ir",-5267.35,3900.27,0,0
-608,"Sandy Beach, Vashj'ir",-5671.02,3720.07,0,0
-609,"Sandy Beach, Vashj'ir",-5669.19,3711.81,0,0
-610,"Stygian Bounty, Vashj'ir",-6878.52,4244.71,0,0
-611,"Voldrin's Hold, Vashj'ir",-7198.97,3912.36,0,0
-612,"Stygian Bounty, Vashj'ir",-6880.17,4278.06,0,0
-613,"Southern Rocketway, Azshara",2647.79,-6214.4,1,0
-614,"Northern Rocketway, Azshara",4611.38,-7041.8,1,0
-615,"Camp Everstill, Redridge",-9446.64,-2836.99,0,0
-616,"Gates of Sothann, Hyjal",4059.4,-3966.75,1,0
-617,"Hiri'watha Research Station, The Hinterlands",-25.776,-2821.78,0,0
-618,"Stormfeather Outpost, The Hinterlands",312.326,-4105.36,0,0
-619,"Kharanos, Dun Morogh",-5660.8,-494.851,0,0
-620,"Gol'Bolar Quarry, Dun Morogh",-5714.14,-1578.64,0,0
-622,"Raven Hill, Duskwood",-10737.6,267.043,0,0
-624,"Azure Watch, Azuremyst Isle",-4130.08,-12520.5,530,924
-625,"Fairbreeze Village, Eversong Woods",8745.78,-6654.12,530,0
-630,"Light's Shield Tower, Eastern Plaguelands",2262.1,-4411.52,0,0
-631,"Falconwing Square, Eversong Woods",9501.93,-6767.09,530,0
-632,"Bloodwatcher Point, Badlands",-6898.25,-3513.99,0,0
-633,"Dustwind Dig, Badlands",-6594.09,-3401.18,0,0
-634,"Dragon's Mouth, Badlands",-7034.53,-2570.79,0,0
-635,"Fuselight, Badlands",-6574.94,-3875.13,0,0
-645,"Forsaken High Command, Silverpine Forest",1421.02,1018.23,0,0
-646,"Forsaken Forward Command, Gilneas",-910.221,1638.6,0,10723
-649,"Andorhal, Western Plaguelands",1511.8,-1586.95,0,0
-650,"Andorhal, Western Plaguelands",1374.23,-1281.94,0,10988
-651,"The Menders' Stead, Western Plaguelands",1864.32,-1755.82,0,0
-652,"Ramkahen, Uldum",-9415.02,-1042.97,1,0
-653,"Oasis of Vir'sar, Uldum",-8375.47,791.259,1,0
-654,"The Forsaken Front, Silverpine Forest",-114.142,1312.32,0,0
-656,"Crushblow, Twilight Highlands",-4831.76,-4848.93,0,0
-657,"The Gullet, Twilight Highlands",-3494.63,-4379.48,0,0
-658,"Vermillion Redoubt, Twilight Highlands",-3032.76,-3940.97,0,10950
-659,"Bloodgulch, Twilight Highlands",-3637.56,-5288.19,0,0
-660,"The Krazzworks, Twilight Highlands",-2780.18,-6409.28,0,0
-661,"Dragonmaw Port, Twilight Highlands",-4012.45,-6329.25,0,0
-662,"Highbank, Twilight Highlands",-4863.1,-6740.61,0,0
-663,"Victor's Point, Twilight Highlands",-4170.55,-4748.93,0,0
-664,"Firebeard's Patrol, Twilight Highlands",-4183.9,-5620.15,0,0
-665,"Thundermar, Twilight Highlands",-3146.92,-4994.28,0,0
-666,"Kirthaven, Twilight Highlands",-2689.43,-5427.53,0,0
-667,"Ruins of Southshore, Hillsbrad",-661.837,-536.493,0,0
-668,"Southpoint Gate, Hillsbrad",-605.184,435.465,0,0
-669,"Eastpoint Tower, Hillsbrad",-566.889,-1051.2,0,0
-670,"Strahnbrad, Alterac Mountains",622.851,-979.578,0,0
-672,"Hearthglen, Western Plaguelands",2839.78,-1500.51,0,0
-673,"Iron Summit, Searing Gorge",-7123.06,-1236.63,0,0
-674,"Schnottz's Landing, Uldum",-10711.9,1059.62,1,0
-675,"Flamestar Post, Burning Steppes",-8092.26,-1025.79,0,0
-676,"Chiselgrip, Burning Steppes",-7865.93,-1919.53,0,0
-681,"Forsaken Rear Guard, Silverpine Forest",1056.06,1518.9,0,0
-683,"Valormok, Azshara",2988.13,-4161.36,1,0
-781,"Sanctuary of Malorne, Hyjal",4397.79,-2107.53,1,0
-894,"Grookin Hill, Jade Forest",1418.57,-487.703,870,17197
-895,"Dawn's Blossom, Jade Forest",1503.71,-1832.13,870,0
-906,Dragon Soul Raid - Wyrmrest Temple Base,-1786.57,-2393.29,967,0
-907,Dragon Soul Raid - East Sarlac,-1768.58,-3034.75,967,0
-966,"Paw'Don Village, Jade Forest",-307.2,-1762.77,870,0
-967,"The Arboretum, Jade Forest",1600.66,-2530.27,870,0
-968,"Jade Temple Grounds, Jade Forest",773.247,-2358.96,870,0
-969,"Sri-La Village, Jade Forest",2550.76,-2418.32,870,0
-970,"Emperor's Omen, Jade Forest",2400.75,-2099.43,870,0
-971,"Tian Monastery, Jade Forest",2505.9,-1590.89,870,0
-972,"Pearlfin Village, Jade Forest",-186.097,-2594.61,870,0
-973,"Honeydew Village, Jade Forest",2927.16,-509.184,870,0
-984,"Pang's Stead, Valley of the Four Winds",543.915,-637.814,870,0
-985,"Halfhill, Valley of the Four Winds",-221.326,464.559,870,0
-986,"Zhu's Watch, Krasarang Wilds",-375.684,-647.965,870,0
-987,"Thunder Cleft, Krasarang Wilds",-878.276,171.403,870,0
-988,"The Incursion, Krasarang Wilds",-1125.31,-227.747,870,0
-989,"Stoneplow, Valley of the Four Winds",-436.54,1886.7,870,0
-990,"Dawnchaser Retreat, Krasarang Wilds",-1685.68,1590.34,870,0
-991,"Sentinel Basecamp, Krasarang Wilds",-1156.61,1770.38,870,0
-992,"Cradle of Chi-Ji, Krasarang Wilds",-2082.3,1483.63,870,0
-993,"Marista, Krasarang Wilds",-2504.09,491.583,870,0
-1017,"Binan Village, Kun-Lai Summit",1690.11,303.958,870,0
-1018,"Temple of the White Tiger, Kun-Lai Summit",3504.04,690.677,870,0
-1019,"Eastwind Rest, Kun-Lai Summit",2250.59,931.569,870,0
-1020,"Westwind Rest, Kun-Lai Summit",2103.35,1463.83,870,0
-1021,"Zouchin Village, Kun-Lai Summit",4362.96,932.118,870,0
-1022,"One Keg, Kun-Lai Summit",3124.52,1224.28,870,0
-1023,"Kota Basecamp, Kun-Lai Summit",2716.43,2163.31,870,0
-1024,"Shado-Pan Fallback, Kun-Lai Summit",1880.59,2088.58,870,0
-1025,"Winter's Blossom, Kun-Lai Summit",3151.85,2677.76,870,0
-1029,"Tavern in the Mists, The Veiled Stair",784.899,-203.67,870,0
-1046,Jade Forest - Cliff path 04 Start,3377.12,-473.212,870,0
-1047,Jade Forest - Cliff path 04 End,3279.92,-502.613,870,0
-1052,"Grassy Cline, Valley of the Four Winds",460.54,-100.467,870,0
-1053,"Longying Outpost, Townlong Steppes",2363.23,2994.39,870,0
-1054,"Gao-Ran Battlefront, Townlong Steppes",1440.72,2804.49,870,0
-1055,"Rensai's Watchpost, Townlong Steppes",1531.73,3963.7,870,0
-1056,"Shado-Pan Garrison, Townlong Steppes",1803.32,4204.23,870,0
-1057,"Shrine of Seven Stars, Vale of Eternal Blossoms",896.453,334.351,870,0
-1058,"Shrine of Two Moons, Vale of Eternal Blossoms",1580.16,894.167,870,0
-1070,"Klaxxi'vess, Dread Wastes",172.663,3152.25,870,0
-1071,"Soggy's Gamble, Dread Wastes",-1086.21,3136.19,870,0
-1072,"The Sunset Brewgarden, Dread Wastes",982.677,3451.86,870,0
-1073,"Serpent's Spine, Vale of Eternal Blossoms",611.365,2125.03,870,0
-1080,"Serpent's Overlook, Jade Forest",465.856,-1558.56,870,0
-1090,"The Briny Muck, Dread Wastes",-570.405,3859.79,870,0
-1104,Test - Spy Quest H01a - PRK,4777.05,-5133.4,1,0
-1105,Test - Spy Quest H01b - PRK,1567.38,-11797.3,1,0
-1115,"The Lion's Redoubt, Dread Wastes",234.406,2198.03,870,0
-1117,"Serpent's Spine, Kun-Lai Summit",2123.15,2584.93,870,0
-1190,"Lion's Landing, Krasarang Wilds",-1193.56,-1193.7,870,19486
-1195,"Domination Point, Krasarang Wilds",-1752.19,2492.02,870,0
-1221,"Beeble's Wreck, Isle Of Giants",5753.76,1255.55,870,0
-1222,"Bozzle's Wreck, Isle Of Giants",5799.64,1080.57,870,0
-1293,"Tushui Landing, Timeless Isle",-901.37,-4639.12,870,0
-1294,"Huojin Landing, Timeless Isle",-404.95,-4608.56,870,0
-1350,Shadowmoon Valley 6.0 - Observatory (JP3),966.918,-1029.65,1116,0
-1351,Shadowmoon Valley 6.0 - Ironhorde POI (JP3),966.918,-1029.65,1116,0
-1381,"Embaari Village, Shadowmoon Valley",918.264,-792.361,1116,0
-1382,"Twilight Glade, Shadowmoon Valley",195.236,-459.2,1116,0
-1383,"Path of the Light, Shadowmoon Valley",602.698,-1710.45,1116,0
-1384,"Exile's Rise, Shadowmoon Valley",1526.38,-788.891,1116,0
-1386,"Wor'gol, Frostfire Ridge",5988.68,6180.86,1116,0
-1387,"Bladespire Citadel, Frostfire Ridge",6754.56,6012.54,1116,0
-1388,"Throm'Var, Frostfire Ridge",7879.57,5560.17,1116,0
-1389,"Bloodmaul Slag Mines, Frostfire Ridge",7399.45,4358.41,1116,0
-1390,"Stonefang Outpost, Frostfire Ridge",6157.56,5052.44,1116,0
-1395,"Thunder Pass, Frostfire Ridge",5789.57,2394.89,1116,0
-1396,"Darkspear's Edge, Frostfire Ridge",6600.0,4342.55,1116,0
-1408,"Warspear, Ashran",5356.23,-3942.24,1116,0
-1420,"Stormshield (Alliance), Ashran",3685.15,-3840.47,1116,0
-1421,Shadowmoon Valley 6.0:Jp3 - Darktide Roost - Bottom Of Hill,0.0,0.0,0,0
-1422,Shadowmoon Valley 6.0:JP3 - Darktide Roost - Top of Hill,0.0,0.0,0,0
-1432,"Frostwall Garrison, Frostfire Ridge",5578.94,4564.84,1116,0
-1440,"Zangarra, Talador",3418.78,1040.15,1116,0
-1441,"Frostwolf Overlook, Talador",4008.86,2166.87,1116,0
-1442,"Beastwatch, Gorgrond",5815.51,1304.34,1116,0
-1443,"Vol'jin's Pride, Talador",3258.83,1609.27,1116,0
-1445,"Durotan's Grasp, Talador",2808.79,2525.74,1116,0
-1447,"Fort Wrynn (Alliance), Talador",3576.81,1669.4,1116,0
-1448,"Redemption Rise, Talador",3407.73,2062.0,1116,0
-1450,"Shattrath City, Talador",2727.16,2777.0,1116,0
-1451,"Anchorite's Sojourn, Talador",2171.82,1059.22,1116,0
-1452,"Retribution Point, Talador",1378.4,3318.52,1116,0
-1453,"Exarch's Refuge, Talador",1696.5,2561.35,1116,0
-1454,"Exarch's Refuge, Talador",1731.09,2581.53,1116,0
-1462,"Terokkar Refuge, Talador",2158.65,1634.47,1116,0
-1467,"The Draakorium, Shadowmoon Valley",128.569,-1555.75,1116,0
-1468,"Elodor (Alliance), Shadowmoon Valley",1240.2,-1666.43,1116,0
-1475,"Socrethar's Rise, Shadowmoon Valley",-799.674,-671.424,1116,0
-1476,"Lunarfall (Alliance), Shadowmoon Valley",1866.56,219.467,1116,0
-1487,"Axefall, Spires of Arak",-368.201,2285.55,1116,0
-1493,"Southport, Spires of Arak",-1117.45,2316.97,1116,0
-1502,"The Ring of Trials, Nagrand",3040.78,4783.08,1116,0
-1503,"Throne of the Elements, Nagrand",3918.79,5131.45,1116,0
-1504,"Wor'var, Nagrand",3235.73,4584.55,1116,0
-1505,"Riverside Post, Nagrand",3102.81,6500.38,1116,0
-1506,"Telaari Station, Nagrand",2594.25,5700.63,1116,0
-1507,"Yrel's Watch, Nagrand",3384.17,5755.58,1116,0
-1508,"Veil Terokk, Spires of Arak",-398.988,1880.12,1116,0
-1509,"Talon Watch, Spires of Arak",-335.451,926.622,1116,0
-1510,"Pinchwhistle Gearworks, Spires of Arak",-1579.14,993.09,1116,0
-1511,"Bastion Rise, Gorgrond",4552.27,1274.56,1116,0
-1512,"Bastion Rise, Gorgrond",4641.62,1188.07,1116,0
-1513,"Apexis Excavation, Spires of Arak",387.542,2442.73,1116,0
-1514,"Evermorn Springs, Gorgrond",4837.63,1687.55,1116,0
-1515,"Crow's Crook, Spires of Arak",128.615,1544.63,1116,0
-1518,"Wildwood Wash, Gorgrond",6456.1,-174.755,1116,0
-1519,"Highpass, Gorgrond",6352.58,746.234,1116,0
-1520,"Breaker's Crown, Gorgrond",6593.43,1316.04,1116,29229
-1523,"Deeproot, Gorgrond",5412.85,1271.05,1116,0
-1524,"Iron Docks, Gorgrond",8486.15,1544.24,1116,0
-1528,"Iron Siegeworks, Frostfire Ridge",5724.26,2163.64,1116,0
-1529,"Darktide Roost, Shadowmoon Valley",-974.125,-1739.3,1116,0
-1537,"Shattered Landing, Blasted Lands",-11771.2,-3867.32,1190,28231
-1538,"Shattered Beachhead, Blasted Lands",-11254.0,-3666.57,1190,28232
-1539,"Skysea Ridge, Gorgrond",7596.2,1829.05,1116,0
-1556,"Tranquil Court, Shadowmoon Valley",407.042,-2449.73,1116,0
-1559,"Wolf's Stand, Frostfire Ridge",5830.86,3004.09,1116,0
-1567,"Temple of Karabor, Shadowmoon Valley",405.788,-2448.75,1116,0
-1568,"Everbloom Wilds, Gorgrond",7093.6,404.74,1116,0
-1569,"Akeeta's Hovel, Shadowmoon Valley",676.424,701.439,1116,0
-1572,"Rilzit's Holdfast, Nagrand",3761.26,6430.15,1116,0
-1573,"Nivek's Overlook, Nagrand",2053.66,6507.39,1116,0
-1574,"Joz's Rylaks, Nagrand",3676.04,5776.19,1116,0
-1580,"Everbloom Overlook, Gorgrond",8018.09,-560.49,1116,0
-1613,"Azurewing Repose, Azsuna",576.405,6644.03,1220,0
-1615,"Challiane's Terrace, Azsuna",1406.08,7140.7,1220,0
-1620,"Lion's Watch, Tanaan Jungle",3875.22,-1311.72,1116,33173
-1621,"Vol'mar, Tanaan Jungle",4307.91,-1465.31,1116,33174
-1622,"Illidari Stand, Azsuna",-117.835,6891.19,1220,0
-1633,"Shackle's Den, Azsuna",-784.174,6130.04,1220,0
-1643,"Aktar's Post, Tanaan Jungle",4569.44,335.054,1116,0
-1644,"The Iron Front, Tanaan Jungle",3979.3,1216.62,1116,923
-1645,"The Iron Front, Tanaan Jungle",4074.97,1183.75,1116,924
-1646,"Vault of the Earth, Tanaan Jungle",3475.28,-762.552,1116,0
-1647,"Malo's Lookout, Tanaan Jungle",4457.54,-574.693,1116,0
-1648,"Sha'naari Refuge, Tanaan Jungle",3728.38,157.931,1116,0
-1660,Bret Test 3-3s,15589.5,-16185.4,451,0
-1661,Bret Test 3-3e,15574.2,-16164.2,451,0
-1662,Carl Test a,15574.2,-16164.2,451,0
-1673,"Lorlathil, Val'sharah",2299.88,6577.66,1220,0
-1713,"Bradensbrook, Val'sharah",2814.29,7275.82,1220,0
-1719,"Thunder Totem, Highmountain",4156.51,4374.45,1220,0
-1731,Alliance Shipyard Taxi,2138.8,380.132,1473,0
-1738,"Cullen's Post, Stormheim",2885.65,2422.61,1220,0
-1739,"Dreadwake's Landing, Stormheim",2355.72,1870.09,1220,0
-1741,"Forsaken Foothold, Stormheim",3987.54,2914.29,1220,0
-1742,"Valdisdall, Stormheim",3205.59,1515.58,1220,0
-1744,"Greywatch, Stormheim",2863.93,849.175,1220,0
-1745,"Lorna's Watch, Stormheim",2704.49,2860.23,1220,0
-1747,"Skyfire Triage Camp, Stormheim",3217.6,3079.92,1220,0
-1753,"Skyhorn, Highmountain",4833.93,3967.37,1220,0
-1754,"The Witchwood, Highmountain",5116.11,4982.16,1220,0
-1755,"Felbane Camp, Highmountain",5108.33,5570.61,1220,0
-1756,"Shipwreck Cove, Highmountain",6466.84,4727.99,1220,0
-1758,"Obsidian Overlook, Highmountain",2971.69,4343.46,1220,0
-1759,"Ironhorn Enclave, Highmountain",3005.72,3668.47,1220,0
-1760,"Trueshot Lodge, Highmountain",4634.29,5339.42,1220,38053
-1761,"Prepfoot, Highmountain",5613.4,3585.03,1220,0
-1764,"Starsong Refuge, Val'sharah",3094.06,5807.21,1220,0
-1766,"Garden of the Moon, Val'sharah",2841.79,6482.29,1220,0
-1767,"Nesingwary, Highmountain",4483.46,4843.29,1220,0
-1774,Dalaran,-860.828,4295.95,1220,0
-1777,"Sylvan Falls, Highmountain",3853.55,5150.59,1220,0
-1778,"Stonehoof Watch, Highmountain",3891.95,3500.18,1220,0
-1815,"The Dreamgrove, Val'sharah (Druids Only)",4074.32,7225.45,1220,44322
-1837,"Wardens' Redoubt, Azsuna",-1403.63,6656.86,1220,0
-1838,Thorim's Peak,2113.4,2823.46,1220,43356
-1839,Nastrondir,3793.25,2368.84,1220,43356
-1840,Eastern Suramar,815.491,2760.98,1220,43356
-1841,Western Suramar,379.929,4364.24,1220,43356
-1842,Carl Test b,15574.2,-16164.2,451,0
-1843,Carl Test c,15574.2,-16164.2,451,0
-1844,Carl Test d,15574.2,-16164.2,451,0
-1845,Isle of the Watchers,-1704.44,6472.99,1220,43356
-1846,Faronaar,-88.4323,8214.32,1220,43356
-1847,The Dreamgrove,4411.15,7164.21,1220,43356
-1848,Trueshot Lodge,4632.03,5320.96,1220,43356
-1849,Dalaran,-813.533,4274.87,1220,43356
-1850,Eastern Highmountain,3769.18,3682.9,1220,43356
-1855,"Shield's Rest, Stormheim",4764.52,-186.997,1220,0
-1856,"Vengeance Point, Broken Shore",-545.191,3001.78,1220,0
-1857,"Stormtorn Foothills, Stormheim",3835.61,2016.12,1220,0
-1858,"Meredil, Suramar",1615.52,4757.86,1220,0
-1859,"Felblaze Ingress, Azsuna",554.042,5628.88,1220,0
-1860,"Watchers' Aerie, Azsuna",-1804.72,6417.63,1220,0
-1861,"Illidari Perch, Azsuna",-228.438,7733.7,1220,0
-1862,Acherus: The Ebon Hold,-1437.43,1162.24,1220,42576
-1863,"Hafr Fjall, Stormheim",1797.35,1816.7,1220,0
-1865,Boost 2.0 - Alliance - Leave Point,41.7157,-0.426141,1560,0
-1870,"Eye of Azshara, Azsuna",-3362.32,4823.01,1220,0
-1879,"Crimson Thicket, Suramar",1893.3,3092.55,1220,0
-1880,"Irongrove Retreat, Suramar",2268.8,5241.59,1220,0
-1885,"Gloaming Reef, Val'sharah",2523.94,8174.86,1220,0
-1906,"The Fel Hammer, Broken Shore",1659.15,1416.68,1519,46253
-1928,"Krokul Hovel, Krokuun",985.819,1711.89,1669,52694
-1934,"TEMPAREA1, Argus",1008.45,1727.83,1669,0
-1935,"TEMPAREA2, Argus",1637.16,2054.71,1669,0
-1941,"Deliverance Point, Broken Shore",-1647.68,3178.64,1220,0
-1942,"Aalgen Point, Broken Shore",-1225.51,2195.23,1220,0
-1944,"Vindicaar, Krokuun",501.3,1470.3,1669,51635
-1953,"Zul'jan, Nazmir",793.236,1400.74,1642,0
-1954,"Zo'bal Ruins, Nazmir",2025.87,1336.53,1642,0
-1955,"Gloom Hollow, Nazmir",2007.54,-79.6424,1642,0
-1956,"Forlorn Ruins, Nazmir",2596.88,-848.688,1642,64582
-1957,"Port of Zandalar, Zuldazar",-1950.78,744.28,1642,0
-1959,The Great Seal,-1035.98,756.6,1642,0
-1965,"Nesingwary's Gameland, Zuldazar",382.024,104.043,1642,0
-1966,"Warbeast Kraal, Zuldazar",-1046.32,19.1736,1642,0
-1967,"Shattered Fields, Krokuun",1081.13,2275.75,1669,52714
-1974,"Xibala, Zuldazar",-2692.84,1915.12,1642,0
-1975,"Zeb'ahari, Zuldazar",512.45,-835.219,1642,0
-1976,"Destiny Point, Krokuun",1437.48,1444.27,1669,52715
-1977,"Vindicaar, Eredath",4728.6,9862.46,1669,51636
-1978,"Conservatory of the Arcane, Eredath",5764.89,9493.78,1669,52720
-1981,"Shadowguard Incursion, Eredath",5546.06,10563.0,1669,52719
-1982,"Triumvirate's End, Eredath",4983.3,9823.47,1669,52718
-1988,"Hope's Landing, Antoran Wastes",-2934.8,8798.43,1669,52721
-1991,"Prophet's Reflection, Eredath",6307.33,10116.5,1669,52717
-1992,"Light's Purchase, Antoran Wastes",-3516.09,8809.34,1669,52722
-1993,"The Veiled Den, Antoran Wastes",-2367.06,8878.93,1669,52723
-1994,"Vindicaar, Antoran Wastes",-2636.08,8699.91,1669,51637
-2003,"City Center, Eredath",5417.01,10013.3,1669,52716
-2009,"Warport Rastari, Zuldazar",-2022.55,1629.16,1642,0
-2012,"Xibala, Zuldazar",-2652.84,2272.02,1642,0
-2023,"Freehold, Tiragarde Sound",-1786.51,-729.382,1643,0
-2027,"Temple of the Prophet, Zuldazar",-1132.62,1499.7,1642,0
-2033,"Fallhaven, Drustvar",-66.316,2141.24,1643,0
-2034,"Hangman's Point, Drustvar",-296.983,1227.53,1643,0
-2035,"Fletcher's Hollow, Drustvar",-1045.73,1277.66,1643,0
-2037,"Barbthorn Ridge, Drustvar",350.885,1710.33,1643,0
-2042,"Vigil Hill, Tiragarde Sound",-730.976,706.566,1643,0
-2043,"xxOLD - Zuldazar, Nazmir Outskirts",174.297,1414.25,1642,0
-2045,"Garden of the Loa, Zuldazar",-104.023,1502.48,1642,0
-2046,"Atal'Dazar, Zuldazar",-639.649,1806.09,1642,0
-2052,"Anglepoint Wharf, Tiragarde Sound",790.837,1861.54,1643,62086
-2053,"Old Drust Road, Tiragarde Sound",-318.505,980.137,1643,62086
-2054,"Firebreaker Expedition, Tiragarde Sound",801.135,252.167,1643,62086
-2055,"Southwind Station, Tiragarde Sound",-145.057,41.0417,1643,62086
-2056,"Fallhaven, Drustvar",-135.637,1764.27,1643,62086
-2057,"Fletcher's Hollow, Drustvar",-928.123,1325.54,1643,62086
-2058,"Staghelm Point, Silithus",-6420.62,178.769,1817,55365
-2059,"Southwind Village, Silithus",-7250.48,330.583,1817,55365
-2060,"Hatherford, Tiragarde Sound",1167.57,24.0694,1643,0
-2061,"The Sliver, Zuldazar",-624.588,715.305,1642,0
-2062,"Wolf's Den, Tiragarde Sound",1641.34,385.852,1643,0
-2065,"Harbor, Zuldazar",-1035.98,756.6,1642,0
-2066,"Atal'Gral, Zuldazar",-961.767,-1064.69,1642,0
-2067,"Timberfell Outpost, Tiragarde Sound",-254.582,-362.444,1643,0
-2071,"Dreadpearl, Zuldazar",-961.767,-1064.69,1642,0
-2073,"Throne Room, Zuldazar",-1078.12,846.026,1642,0
-2074,"Bridgeport, Tiragarde Sound",-93.7378,-633.323,1643,0
-2075,"Seeker's Outpost, Zuldazar",-2303.23,-252.868,1642,0
-2076,"Atal'Gral, Zuldazar",-959.608,-1058.67,1642,0
-2077,"Castaway Point, Tiragarde Sound",-1688.04,-1420.53,1643,0
-2078,"Fort Victory, Nazmir",2079.33,176.215,1642,0
-2079,"Kennings Lodge, Tiragarde Sound",-921.962,-696.552,1643,0
-2080,"Grimwatt's Crash, Nazmir",1310.31,1647.5,1642,0
-2083,"Tradewinds Market, Tiragarde Sound",1153.03,-470.301,1643,0
-2084,"Norwington Estate, Tiragarde Sound",889.002,1064.59,1643,0
-2085,"Tidecross, Stormsong Valley",3346.84,-376.002,1643,0
-2086,"Brennadam, Stormsong Valley",2495.52,-44.3681,1643,0
-2087,"Outrigger Post, Tiragarde Sound",1080.95,2347.85,1643,0
-2088,"Mildenhall Meadery, Stormsong Valley",2700.28,-547.566,1643,0
-2089,"Seekers Vista, Stormsong Valley",3752.62,1068.6,1643,0
-2090,"Hillcrest Pasture, Stormsong Valley",2126.5,349.991,1643,0
-2091,"Stonetusk Watch, Stormsong Valley",2636.49,1138.15,1643,0
-2092,"Diretusk Hollow, Stormsong Valley",3298.98,262.875,1643,0
-2093,"Ironmaul Overlook, Stormsong Valley",2737.39,-966.679,1643,0
-2094,"Warfang Hold, Stormsong Valley",3889.08,423.149,1643,0
-2095,"Shrine of the Storm, Stormsong Valley",4252.02,-1080.82,1643,0
-2096,"Tol Dagor, Tiragarde Sound",-80.0451,-2648.35,1643,0
-2097,"Deadwash, Stormsong Valley",2991.09,914.745,1643,0
-2101,"The Amber Waves, Stormsong Valley",2508.09,458.84,1643,0
-2102,"Roughneck Camp, Tiragarde Sound",1174.62,1838.38,1643,0
-2103,"Eastpoint Station, Tiragarde Sound",125.776,-548.875,1643,0
-2104,"Eastpoint Station, Tiragarde Sound",124.189,-498.453,1643,62086
-2105,"Tradewinds Market, Tiragarde Sound",1038.64,-586.502,1643,62086
-2106,"Arom's Stand, Drustvar",-742.609,3115.29,1643,0
-2107,"Watchman's Rise, Drustvar",100.128,3478.34,1643,0
-2108,"Falconhurst, Drustvar",-1501.97,3755.73,1643,0
-2109,"Whitegrove Chapel, Drustvar",631.979,3829.44,1643,0
-2110,"Shatterstone Harbor, Vol'dun",2778.29,4186.96,1642,0
-2111,"Vorrik's Sanctum, Vol'dun",2740.18,3469.9,1642,0
-2112,"Vulture's Nest, Vol'dun",2623.35,3038.17,1642,0
-2114,"Deadwood Cove, Vol'dun",528.712,3983.06,1642,0
-2117,"Vulpera Hideaway, Vol'dun",2095.05,2808.83,1642,0
-2118,"Temple of Akunda, Vol'dun",284.264,3029.71,1642,0
-2119,"Sanctuary of the Devoted, Vol'dun",2048.03,4806.86,1642,0
-2120,"Tortaka Refuge, Vol'dun",3353.13,2476.13,1642,0
-2126,"Scaletrader Post, Zuldazar",-290.766,-281.038,1642,0
-2127,"Anyport, Drustvar",-392.095,4203.89,1643,0
-2133,"Shrine of the Storm, Stormsong Valley",4073.13,-1087.64,1643,0
-2135,"Krazzlefrazz Outpost, Drustvar",340.832,3160.44,1643,0
-2137,"Millstone Hamlet, Stormsong Valley",2644.84,1594.28,1643,0
-2138,"Fort Daelin, Stormsong Valley",3372.16,1397.36,1643,0
-2139,"Windfall Cavern, Stormsong Valley",4133.57,-110.042,1643,0
-2140,"Plunder Harbor, Tiragarde Sound",-191.641,-1487.97,1643,0
-2143,"Scorched Sands Outpost, Vol'dun",884.998,3698.93,1642,0
-2144,"Goldtusk Inn, Vol'dun",1559.94,3777.53,1642,0
-2145,"Verdant Hollow, Zuldazar",-19.9375,999.859,1642,0
-2147,"Castaway Encampment, Zuldazar",-1697.42,-862.752,1642,0
-2148,"Mugamba Overlook, Zuldazar",-150.212,1911.95,1642,0
-2153,"Mistvine Ledge, Zuldazar",-1293.62,259.448,1642,0
-2157,"Veiled Grotto, Zuldazar",-696.906,1942.74,1642,0
-2161,"Redfield's Watch, Nazmir",2799.25,774.201,1642,0
-2162,"Devoted Sanctuary, Vol'dun",2048.03,4806.86,1642,0
-2164,"Isle of Fangs, Zuldazar",-3529.85,1103.29,1642,0
-2165,"Tusk Isle, Zuldazar",-3018.72,686.42,1642,0
-2172,Disable Taxi Paths - Source - RRB,0.0,0.0,0,0
-2173,Disable Taxi Paths - Destination - RRB,0.0,0.0,0,0
-2273,"Waning Glacier, Tiragarde Sound",1397.26,2043.43,1643,0
-2274,"Swiftwind Post, Drustvar",-1001.07,1493.88,1643,0
-2275,"Mudfisher Cove, Drustvar",618.911,1740.37,1643,0
-2276,"Tol Dagor, Tiragarde Sound",139.658,-2541.45,1643,0
-2277,"Proudmoore Keep, Tiragarde Sound",552.168,-126.118,1643,0
-2278,"Mariner's Row, Tiragarde Sound",465.688,-642.651,1643,0
-2279,"Stonefist Watch, Tiragarde Sound",-809.113,1041.01,1643,0
-2381,"The Mugambala, Zuldazar",-1849.67,1195.7,1642,0
-2393,"TEMP, 9.0, Oribos, Bastion",-1834.23,1191.52,2222,0
-2394,"TEMP, 9.0, Oribos, Maldraxxus",-1768.76,1217.39,2222,0
-2395,Oribos,-1902.44,1214.76,2222,0
-2396,"TEMP, 9.0, Oribos, Ardenweald",-1926.49,1282.9,2222,0
-2397,"9.0, Zone, Bastion",-4251.68,-3886.17,2222,0
-2398,"Bleak Redoubt, Maldraxxus",1974.74,-2691.75,2222,87386
-2399,"TEMP, 9.0, Zone, Revendreth",-3499.05,5435.46,2222,0
-2400,"TEMP, 9.0, Zone, Ardenweald",-5196.73,-573.354,2222,0
-2401,"Alliance Outpost, Exile's Reach Outpost",209.142,-2295.63,2175,0
-2402,"Ogre Citadel, Exile's Reach Island",1023.72,-1307.59,2175,0
-2403,"Kelya's Grave, Nazjatar",2077.95,-1566.26,1718,0
-2404,"Newhome, Nazjatar",988.806,-425.997,1718,0
-2405,"Zin'Azshari, Nazjatar",1707.18,-1794.62,1718,70076
-2406,"Orise's Vigil, Nazjatar",1652.43,-1560.8,1718,0
-2407,"Utama's Stand, Nazjatar",1747.16,-1035.34,1718,70076
-2408,"Mezzamere, Nazjatar",1251.15,-101.861,1718,0
-2409,"Wreck of the Old Blanchy, Nazjatar",359.45,-299.948,1718,70076
-2410,"Ashen Strand, Nazjatar",1708.2,237.068,1718,70076
-2411,"Ashen Strand, Nazjatar",1721.81,128.681,1718,70076
-2412,"Wreck of the Hungry Riverbeast, Nazjatar",449.538,54.1163,1718,70076
-2437,"Ekka's Hideaway, Nazjatar",1316.75,-1130.32,1718,70076
-2441,"Prospectus Bay, Mechagon",3282.02,4900.46,1643,0
-2442,"Overspark Expedition Camp, Mechagon",3044.41,4800.76,1643,0
-2467,test node,-492.297,-596.786,2224,0
-2471,test node,-492.297,-596.786,2224,0
-2472,test node,-492.297,-596.786,2224,0
-2473,test node,-492.297,-596.786,2224,0
-2474,adams test node,-244.535,-692.634,2228,0
-2475,adams second test node,-216.095,-586.773,2228,0
-2482,"The Tidal Conflux, Nazjatar",2113.03,-584.934,1718,71256
-2483,"The Tidal Conflux, Nazjatar",2112.79,-525.212,1718,71257
-2488,"Darkhaven, Revendreth",-2623.98,6010.49,2222,0
-2511,"Sanctuary of the Mad, Revendreth",-2172.12,7696.52,2222,0
-2512,"Halls of Atonement, Revendreth",-1848.27,5393.16,2222,0
-2513,"Old Gate, Revendreth",-1798.88,5975.69,2222,0
-2514,"Pridefall Hamlet, Revendreth",-3387.7,5461.46,2222,0
-2515,"Dominance Keep, Revendreth",-1424.75,7952.01,2222,0
-2517,"Menagerie of the Master, Revendreth",-1304.69,6367.65,2222,0
-2518,"Wanecrypt Hill, Revendreth",-2952.6,6721.13,2222,0
-2519,"Aspirant's Rest, Bastion",-4160.75,-4629.77,2222,0
-2520,"Sagehaven, Bastion",-2305.08,-4361.41,2222,0
-2528,"Elysian Hold, Bastion",-1636.67,-5815.99,2222,0
-2529,"Hero's Rest, Bastion",-2944.08,-4853.71,2222,0
-2537,"Charred Ramparts, Revendreth",-2191.1,7223.68,2222,0
-2544,"Mistfall Village, Vale of Eternal Blossoms",685.71,1492.81,1795,0
-2548,"Sinfall, Revendreth",-1852.38,7585.42,2222,84603
-2555,The Maw,501.3,1470.3,1669,51635
-2556,Progenitor Console,4464.53,6831.63,2222,5703
-2558,"The Spearhead, Maldraxxus",2489.25,-1839.1,2222,0
-2559,"Spider's Watch, Maldraxxus",3587.01,-1746.56,2222,0
-2560,"Keres' Rest, Maldraxxus",3531.68,-2766.64,2222,0
-2561,"Renounced Bastille, Maldraxxus",2891.32,-3648.03,2222,0
-2564,"Theater of Pain, Maldraxxus",2580.47,-2520.76,2222,0
-2569,"Plague Watch, Maldraxxus",1778.32,-3039.29,2222,0
-2584,"Glitterfall Basin, Ardenweald",-5993.72,650.755,2222,0
-2585,"Tirna Vaal, Ardenweald",-6143.78,-207.128,2222,0
-2586,"Hibernal Hollow, Ardenweald",-6903.63,15.2222,2222,0
-2587,"Heart of the Forest, Ardenweald",-6788.58,1006.91,2222,87905
-2588,"Root-Home, Ardenweald",-6821.23,1804.9,2222,0
-2589,"Claw's Edge, Ardenweald",-7747.4,657.875,2222,0
-2590,"Refugee Camp, Ardenweald",-6828.48,798.733,2222,87906
-2591,Crucible of Souls,4410.79,7746.82,2222,0
-2594,9.0 Maw - Oribos - Teleport In,-1815.69,1302.41,2222,0
-2625,"Elysian Hold, Bastion",-1714.82,-5786.21,2222,81993
-2626,"Hero's Rest, Bastion",-2943.63,-4871.95,2222,81993
-2630,"Aspirant's Rest, Bastion",-4101.2,-4643.76,2222,81993
-2631,"Xandria's Vigil, Bastion",-3316.85,-4135.94,2222,81993
-2632,"Sagehaven, Bastion",-2330.71,-4365.93,2222,81994
-2633,"Temple of Purity, Bastion",-4290.81,-5383.72,2222,81994
-2634,"Seat of Eternal Hymns, Bastion",-2239.55,-5313.1,2222,81994
-2635,"Temple of Humility, Bastion",-2986.03,-5855.19,2222,81996
-2636,"Terrace of the Collectors, Bastion",-1837.66,-3781.42,2222,81996
-2637,"Summoned Steward, Bastion",-2971.01,-4955.59,2222,81996
-2643,"Theater of Pain North, Maldraxxus",3008.02,-2525.33,2222,0
-2680,"Terrace of the Collectors, Bastion",-1803.76,-3804.84,2222,0
-2682,"Elysian Beacon, Bastion",-1919.25,-5533.36,2222,0
-2698,Keeper's Respite,3270.73,5739.16,2222,90243
-2699,Tazavesh Outdoor,-6084.95,4824.28,2222,0
-2700,Ve'nari's Refuge,4535.13,6706.66,2222,90243
-2703,"Tazavesh, the Veiled Market",-5895.64,4810.74,2222,92289
-2712,Immortal Hearth,-3830.2,-2399.02,2481,0
-2713,Genesis Cradle Alpha,-3372.1,-2789.45,2481,0
-2714,Genesis Cradle Beta,-2831.81,-3323.87,2481,0
-2715,Ephemeral Plains Alpha,-4227.95,-2862.12,2481,0
-2716,Ephemeral Plains Omega,-4395.12,-3877.6,2481,0
-2724,"Haven, Zereth Mortis",-4212.99,684.648,2374,0
-2725,"Faith's Repose, Zereth Mortis",-3540.51,679.705,2374,0
-2728,"Pilgrim's Grace, Zereth Mortis",-3730.98,-595.01,2374,0
-2729,Gravid Repose Locus,-3214.42,-13.0747,2374,94907
-2730,Interior Locus,-3204.4,52.5903,2374,94906
-2731,Domination's Grasp,-3824.99,-2609.52,2481,0
-2733,"Zovaal's Grasp, Zereth Mortis",-2813.67,174.406,2374,0
-2734,"Antecedent Isle, Zereth Mortis",-2489.43,99.7326,2374,0
-2736,"Sepulcher Overlook, Zereth Mortis",-3834.8,-751.033,2374,94751
-2737,"Sepulcher Of The First Ones, Zereth Mortis",-3829.58,-1170.97,2374,0
-2738,Ultimus Locus,-3101.15,26.1719,2374,94912
-2742,Quintus Locus,-3145.45,-63.9444,2374,94909
-2743,Quartus Locus,-3048.1,45.5521,2374,94908
-2744,Tertius Locus,-2965.27,-123.465,2374,94911
-2745,Secundus Locus,-2992.47,82.2465,2374,94910
-2746,Primus Locus,-2939.63,44.5174,2374,94886
-2747,Camber Alcove,-3311.01,36.1181,2374,94914
-2748,Repertory Alcove,-3286.36,80.8455,2374,94915
-2749,Rondure Alcove,-3380.94,318.845,2374,94916
-2750,Dormant Alcove,-3299.96,250.344,2374,94917
-2751,Fulgor Alcove,-3374.48,112.953,2374,94918
-2754,Arcae Locus,-3195.03,71.7205,2374,94919
-2757,Genesis Cradle Omega,-2231.86,-3876.5,2481,0
+ID,Name_lang,Pos[0],Pos[1],ContinentID,H,A
+1,Northshire Abbey,-8888.98,-0.54,0,1,0
+2,"Stormwind, Elwynn",-8841.06,489.656,0,0,1
+3,Programmer Isle,16391.81,16341.21,0,1,0
+4,"Sentinel Hill, Westfall",-10551.9,1034.39,0,0,1
+5,"Lakeshire, Redridge",-9429.1,-2231.4,0,0,1
+6,"Ironforge, Dun Morogh",-4821.78,-1155.44,0,0,1
+7,"Menethil Harbor, Wetlands",-3787.81,-777.696,0,0,1
+8,"Thelsamar, Loch Modan",-5421.91,-2930.01,0,0,1
+9,"Booty Bay, Stranglethorn",-14271.8,299.87,0,0,1
+10,"The Sepulcher, Silverpine Forest",478.86,1536.59,0,1,0
+11,"Undercity, Tirisfal",1568.62,267.97,0,1,0
+12,"Darkshire, Duskwood",-10515.5,-1261.65,0,0,1
+13,"Tarren Mill, Hillsbrad",-17.7066,-874.203,0,1,0
+14,"Southshore, Hillsbrad",-711.48,-515.48,0,0,1
+15,Eastern Plaguelands,2253.4,-5344.9,0,0,1
+16,"Refuge Pointe, Arathi",-1240.53,-2515.11,0,0,1
+17,"Hammerfall, Arathi",-916.29,-3496.89,0,1,0
+18,"Booty Bay, Stranglethorn",-14444.3,509.62,0,1,0
+19,"Booty Bay, Stranglethorn",-14473.0,464.15,0,0,1
+20,"Grom'gol, Stranglethorn",-12414.2,146.29,0,1,0
+21,"New Kargath, Badlands",-6676.87,-2433.37,0,1,0
+22,"Thunder Bluff, Mulgore",-1197.21,29.71,1,1,0
+23,"Orgrimmar, Durotar",1798.27,-4363.27,1,1,0
+24,"Generic, World Target 002",-6666.0,-2222.3,0,0,0
+25,"The Crossroads, Northern Barrens",-441.8,-2596.08,1,1,0
+26,"Lor'danel, Darkshore",7459.9,-326.56,1,0,1
+27,"Rut'theran Village, Teldrassil",8383.75,980.964,1,0,1
+28,"Astranaar, Ashenvale",2827.34,-289.24,1,0,1
+29,"Sun Rock Retreat, Stonetalon Mountains",966.57,1040.32,1,1,0
+30,"Westreach Summit, Thousand Needles",-4310.61,-927.064,1,1,0
+31,"Shadebough, Feralas",-4996.88,73.9427,1,0,1
+32,"Theramore, Dustwallow Marsh",-3825.37,-4516.58,1,0,1
+33,"Thal'darah Overlook, Stonetalon Mountains",2147.25,1537.87,1,0,1
+34,"Transport, Booty Bay",-1965.17,-5824.29,1,0,0
+35,"Transport, Orgrimmar",1320.07,-4649.2,1,0,0
+36,"Generic, World Target 001",-8644.62,433.28,0,1,0
+37,"Nijel's Point, Desolace",139.24,1325.82,1,0,1
+38,"Shadowprey Village, Desolace",-1767.64,3263.89,1,1,0
+39,"Gadgetzan, Tanaris",-7185.97,-3768.24,1,0,1
+40,"Gadgetzan, Tanaris",-7094.03,-3813.69,1,1,0
+41,"Feathermoon, Feralas",-4467.04,2188.64,1,0,1
+42,"Camp Mojache, Feralas",-4419.86,199.31,1,1,0
+43,"Aerie Peak, The Hinterlands",283.74,-2002.76,0,0,1
+44,"Bilgewater Harbor, Azshara",3547.2,-6294.66,1,1,0
+45,"Nethergarde Keep, Blasted Lands",-11112.3,-3435.74,0,0,1
+46,"Transport, Southshore",-986.43,-547.86,0,0,0
+47,"Transport, Grom'gol",-12418.77,235.43,0,0,0
+48,"Bloodvenom Post, Felwood [DISABLED in 4.x]",5123.51,-321.181,1,1,0
+49,Moonglade,7458.45,-2487.21,1,0,1
+50,"Transport, Menethil Harbor",0.0,0.0,0,0,0
+51,"Transport, Auberdine",0.0,0.0,0,0,0
+52,"Everlook, Winterspring",6796.8,-4742.39,1,0,1
+53,"Everlook, Winterspring",6813.06,-4611.12,1,1,0
+54,"Transport, Feathermoon",-4203.87,3284.0,1,0,0
+55,"Brackenwall Village, Dustwallow Marsh",-3147.39,-2842.18,1,1,0
+56,"Stonard, Swamp of Sorrows",-10457.0,-3279.25,0,1,0
+57,"Fishing Village, Teldrassil",8701.51,991.37,1,0,1
+58,"Zoram'gar Outpost, Ashenvale",3351.82,1052.3,1,1,0
+59,"Dun Baldar, Alterac Valley",574.21,-46.65,30,0,1
+60,"Frostwolf Keep, Alterac Valley",-1335.44,-319.69,30,1,0
+61,"Splintertree Post, Ashenvale",2302.39,-2524.55,1,1,0
+62,"Nighthaven, Moonglade",7793.61,-2403.47,1,0,1
+63,"Nighthaven, Moonglade",7787.72,-2404.1,1,1,0
+64,"Talrendis Point, Azshara (NEVER in 4.x)",2721.99,-3880.64,1,0,1
+65,"Talonbranch Glade, Felwood",6214.32,-1874.28,1,0,1
+66,"Chillwind Camp, Western Plaguelands",931.32,-1430.11,0,0,1
+67,"Light's Hope Chapel, Eastern Plaguelands",2271.09,-5340.8,0,0,1
+68,"Light's Hope Chapel, Eastern Plaguelands",2270.2,-5343.11,0,1,0
+69,Moonglade,7470.39,-2123.38,1,1,0
+70,"Flame Crest, Burning Steppes",-7504.03,-2187.54,0,1,0
+71,"Morgan's Vigil, Burning Steppes",-8364.61,-2738.35,0,0,1
+72,"Cenarion Hold, Silithus",-6811.39,836.74,1,1,0
+73,"Cenarion Hold, Silithus",-6761.83,772.03,1,0,1
+74,"Thorium Point, Searing Gorge",-6552.59,-1168.27,0,0,1
+75,"Thorium Point, Searing Gorge",-6554.93,-1100.05,0,1,0
+76,"Revantusk Village, The Hinterlands",-635.26,-4720.5,0,1,0
+77,"Vendetta Point, Southern Barrens",-2152.35,-1724.34,1,1,0
+78,Naxxramas,3133.31,-3399.93,0,0,0
+79,"Marshal's Stand, Un'Goro Crater",-7548.05,-1541.13,1,1,1
+80,"Ratchet, Northern Barrens",-894.59,-3773.01,1,1,1
+81,Filming,0.0,0.0,530,0,0
+82,Silvermoon City,9375.24,-7165.89,530,1,0
+83,"Tranquillien, Ghostlands",7594.47,-6784.29,530,1,0
+84,"Plaguewood Tower, Eastern Plaguelands",2965.55,-3033.61,0,1,1
+85,"Northpass Tower, Eastern Plaguelands",3134.26,-4354.78,0,1,1
+86,"Eastwall Tower, Eastern Plaguelands",2524.44,-4769.56,0,1,1
+87,"Crown Guard Tower, Eastern Plaguelands",1876.4,-3693.32,0,1,1
+88,"Transport, Exodar",-4284.01,-11194.74,530,0,0
+89,"Transport, Theramore",0.0,0.0,0,0,0
+90,"Transport, Undercity",0.0,0.0,1,0,0
+93,"Blood Watch, Bloodmyst Isle",-1933.27,-11954.6,530,0,1
+94,The Exodar,-3867.56,-11641.1,530,0,1
+95,Zangarmarsh - Quest - As the Crow Flies,-146.29,5532.56,530,1,0
+96,Zangarmarsh - Quest - As the Crow Flies - End,-145.23,5533.03,530,0,0
+99,"Thrallmar, Hellfire Peninsula",228.5,2633.57,530,1,0
+100,"Honor Hold, Hellfire Peninsula",-673.42,2717.27,530,0,1
+101,"Temple of Telhamat, Hellfire Peninsula",199.16,4241.56,530,0,1
+102,"Falcon Watch, Hellfire Peninsula",-587.41,4101.01,530,1,0
+103,Nagrand - PvP - Attack Run Start 1 ,-1810.16,8032.11,530,1,1
+104,Nagrand - PvP - Attack Run End 1,-1824.18,8049.29,530,1,1
+105,Nagrand - PvP - Attack Run Start 2,-1513.4,8140.93,530,1,1
+106,Nagrand - PvP - Attack Run End 2,-1511.26,8149.71,530,0,1
+107,Nagrand - PvP - Attack Run Start 3,-1387.07,7782.41,530,1,1
+108,Nagrand - PvP - Attack Run End 3,-1376.72,7771.17,530,0,1
+109,Nagrand - PvP - Attack Run Start 4,-1656.6,7724.91,530,1,1
+110,Nagrand - PvP - Attack Run End 4,-1658.9,7724.71,530,0,1
+111,Eversong - Duskwither Teleport,9335.83,-7883.07,530,1,1
+112,Eversong - Duskwither Teleport End,9335.67,-7809.71,530,1,1
+117,"Telredor, Zangarmarsh",213.75,6063.75,530,0,1
+118,"Zabra'jin, Zangarmarsh",219.45,7816.0,530,1,0
+119,"Telaar, Nagrand",-2729.0,7305.3,530,0,1
+120,"Garadar, Nagrand",-1261.09,7133.39,530,1,0
+121,"Allerian Stronghold, Terokkar Forest",-2987.24,3872.78,530,0,1
+122,"Area 52, Netherstorm",3082.31,3596.11,530,1,1
+123,"Shadowmoon Village, Shadowmoon Valley",-3018.62,2557.09,530,1,0
+124,"Wildhammer Stronghold, Shadowmoon Valley",-3982.07,2156.47,530,0,1
+125,"Sylvanaar, Blade's Edge Mountains",2183.65,6794.46,530,0,1
+126,"Thunderlord Stronghold, Blade's Edge Mountains",2446.37,6020.93,530,1,0
+127,"Stonebreaker Hold, Terokkar Forest",-2567.33,4423.83,530,1,0
+128,"Shattrath, Terokkar Forest",-1837.23,5301.9,530,1,1
+129,"Hellfire Peninsula, The Dark Portal",-327.35,1020.49,530,0,1
+130,"Hellfire Peninsula, The Dark Portal",-178.09,1026.72,530,1,0
+139,"The Stormspire, Netherstorm",4157.58,2959.69,530,1,1
+140,"Altar of Sha'tar, Shadowmoon Valley",-3065.6,749.42,530,1,1
+141,"Spinebreaker Ridge, Hellfire Peninsula",-1316.84,2358.62,530,1,0
+142,Hellfire Peninsula - Reaver's Fall,-29.16,2125.72,530,1,0
+147,Hellfire Peninsula - Force Camp Beach Head,509.17,1988.69,530,0,1
+148,"Shatter Point, Hellfire Peninsula (Beach Assault)",298.46,1501.18,530,0,1
+149,"Shatter Point, Hellfire Peninsula",276.2,1486.91,530,0,1
+150,"Cosmowrench, Netherstorm",2974.95,1848.24,530,1,1
+151,"Swamprat Post, Zangarmarsh",91.67,5214.92,530,1,0
+156,"Toshley's Station, Blade's Edge Mountains",1857.35,5531.87,530,0,1
+159,"Sanctum of the Stars, Shadowmoon Valley",-4073.17,1123.61,530,1,1
+160,"Evergrove, Blade's Edge Mountains",2976.01,5501.13,530,1,1
+163,"Mok'Nathal Village, Blade's Edge Mountains",2028.79,4705.27,530,1,0
+164,"Orebor Harborage, Zangarmarsh",966.67,7399.16,530,0,1
+165,"Transport, Northrend 2",0.0,0.0,571,0,0
+166,"Emerald Sanctuary, Felwood",3972.84,-1324.51,1,1,1
+167,"Forest Song, Ashenvale",3000.25,-3202.41,1,0,1
+168,Filming,-9441.18,65.05,0,0,1
+171,Skettis,-3364.68,3650.18,530,1,1
+172,Ogri'La,2531.1,7322.09,530,1,1
+175,"Transport, Howling Fjord",784.89,-5066.18,571,0,0
+178,"Transport, Borean Tundra",0.0,0.0,571,0,0
+179,"Mudsprocket, Dustwallow Marsh",-4566.23,-3226.05,1,1,1
+183,"Valgarde Port, Howling Fjord",567.41,-5010.97,571,0,1
+184,"Fort Wildervar, Howling Fjord",2468.77,-5029.82,571,0,1
+185,"Westguard Keep, Howling Fjord",1342.84,-3287.9,571,0,1
+190,"New Agamand, Howling Fjord",401.12,-4544.3,571,1,0
+191,"Vengeance Landing, Howling Fjord",1918.6,-6175.89,571,1,0
+192,"Camp Winterhoof, Howling Fjord",2652.89,-4392.71,571,1,0
+195,"Rebel Camp, Stranglethorn Vale",-11344.0,-216.83,0,0,1
+196,Test - SP,9283.1,-9749.81,451,1,1
+197,Test SP2,-9148.62,243.04,0,0,0
+198,Test SP1,9405.83,-9882.69,451,1,1
+201,Development Land - Kyle Radue Start,15992.44,-16371.94,451,1,1
+202,Development Land - Kyle Radue End,15991.68,-16371.95,451,0,0
+205,"Zul'Aman, Ghostlands",6789.79,-7747.58,530,1,1
+206,"Transport, Feathermoon (NE Ship)",-4348.01,2427.29,1,0,0
+213,Shattered Sun Staging Area,13012.7,-6908.37,530,1,1
+218,"Transport, Howling Fjord (Gondola, Top)",690.99,-3819.6,571,0,0
+219,"Transport, Howling Fjord (Gondola, Bottom)",607.96,-2906.17,571,0,0
+221,"Amber Ledge, Borean (To Beryl)",3465.66,5901.76,571,1,0
+222,"Beryl Point, Borean",3213.74,6084.72,571,1,0
+224,"Borean Tundra, Naglevar",0.0,0.0,0,0,0
+225,"Amber Ledge, Borean (to Coldarra)",3574.06,5971.04,571,1,0
+226,"Transitus Shield, Coldarra",3575.44,6661.64,571,1,1
+227,"Transport, PattyMacDevTest",16625.63,16862.9,451,1,1
+228,Development Land - Pat Test Start,0.0,0.0,0,0,0
+229,Development Land - Pat Test End,0.0,0.0,0,0,0
+230,"Transport, Tuskarr 01",2690.26,889.81,571,0,0
+231,"Transport, Tuskarr 02",2690.33,897.63,571,0,0
+232,Borean Tundra - Warsong Hold Wolf Start,2774.69,6258.14,571,1,0
+233,Borean Tundra - Warsong Hold Wolf End,3443.52,4103.95,571,0,0
+234,"Coldarra Ledge, Coldarra",4130.62,7372.31,571,1,0
+235,"Transitus Shield, Coldarra (NOT USED)",3575.56,6651.84,571,1,0
+236,"Coldarra, Keristrasza to Malygos",4026.95,7085.54,571,1,0
+237,"Coldarra, Keristrasza Landing",3929.4,6590.74,571,0,0
+239,Borean Tundra - Quest - Dusk Start,3109.0,3819.54,571,1,0
+240,Borean Tundra - Quest - Dusk - End,3614.3,3670.12,571,1,0
+241,"Transport, Valiance Keep",0.0,0.0,0,0,0
+244,"Wintergarde Keep, Dragonblight",3712.43,-694.86,571,0,1
+245,"Valiance Keep, Borean Tundra",2269.54,5173.69,571,0,1
+246,"Fizzcrank Airstrip, Borean Tundra",4127.23,5313.07,571,0,1
+247,"Stars' Rest, Dragonblight",3504.13,1992.03,571,0,1
+248,"Apothecary Camp, Howling Fjord",2108.11,-2970.62,571,1,0
+249,"Camp Oneqwah, Grizzly Hills",3876.34,-4520.08,571,1,0
+250,"Conquest Hold, Grizzly Hills",3258.9,-2263.09,571,1,0
+251,"Fordragon Hold, Dragonblight",4612.21,1406.6,571,0,1
+252,"Wyrmrest Temple, Dragonblight",3653.21,247.58,571,1,1
+253,"Amberpine Lodge, Grizzly Hills",3446.35,-2754.1,571,0,1
+254,"Venomspite, Dragonblight",3242.96,-666.16,571,1,0
+255,"Westfall Brigade, Grizzly Hills",4584.98,-4254.69,571,0,1
+256,"Agmar's Hammer, Dragonblight",3865.87,1525.63,571,1,0
+257,"Warsong Hold, Borean Tundra",2920.29,6242.85,571,1,0
+258,"Taunka'le Village, Borean Tundra",3449.51,4089.52,571,1,0
+259,"Bor'gorok Outpost, Borean Tundra",4474.79,5712.13,571,1,0
+260,"Kor'kron Vanguard, Dragonblight",4946.67,1165.94,571,1,0
+262,"Grizzly Hills, Alliance Log Ride Start 01",4267.39,-3050.93,571,1,0
+263,"Grizzly Hills, Alliance Log Ride End 01",2663.67,-2181.45,571,0,0
+264,"Transport, Auberdine (NEW)",0.0,0.0,0,0,0
+265,"Transport, Theramore (NEW)",0.0,0.0,0,0,0
+266,"Transport, Menethil (NEW)",0.0,0.0,0,0,0
+267,"Grizzly Hills, Alliance Log Ride Start",4272.09,-3248.26,571,1,0
+268,"Grizzly Hills, Alliance Log Ride End",2664.22,-2344.63,571,0,0
+271,"Grizzly Hills, Horde Log Ride Start",4311.25,-2956.61,571,1,0
+272,"Grizzly Hills, Horde Log Ride End",2883.75,-1673.71,571,0,0
+273,"Wyrmrest Temple - bottom to top, Dragonblight - Begin",3547.22,381.49,571,1,1
+274,"Wyrmrest Temple - bottom to top, Dragonblight - End",3590.38,277.54,571,0,0
+275,"Wyrmrest Temple - top to bottom, Dragonblight - Begin",3587.65,279.21,571,1,1
+276,"Wyrmrest Temple - top to bottom, Dragonblight - End",3511.48,373.93,571,0,0
+277,"Wyrmrest Temple - top to middle, Dragonblight - Begin",3587.55,279.14,571,1,1
+278,"Wyrmrest Temple - top to middle, Dragonblight - End",3543.24,307.04,571,0,0
+279,"Wyrmrest Temple - middle to top, Dragonblight - End",3587.04,277.14,571,0,0
+280,"Wyrmrest Temple - middle to top, Dragonblight - Begin",3545.62,273.6,571,1,1
+281,"Wyrmrest Temple - middle to bottom, Dragonblight - End",3512.22,373.57,571,0,0
+282,"Wyrmrest Temple - middle to bottom, Dragonblight - Begin",3545.61,273.6,571,1,1
+283,"Wyrmrest Temple - bottom to middle, Dragonblight - End",3543.37,307.06,571,0,0
+284,"Wyrmrest Temple - bottom to middle, Dragonblight - Begin",3548.15,381.01,571,1,1
+289,"Amber Ledge, Borean Tundra",3587.84,5973.3,571,1,1
+290,"Argent Stand, Zul'Drak",5450.3,-2606.27,571,1,0
+291,"Ruined City Post 01, Zul'Drak",5028.69,-3020.38,571,0,0
+292,Flavor - Stormwind Harbor  - Start,-8338.36,1107.01,0,0,1
+293,Flavor - Stormwind Harbor - Stop,-8341.09,1101.85,0,0,0
+294,"Moa'ki, Dragonblight",2792.45,908.96,571,1,1
+295,"Kamagua, Howling Fjord",785.27,-2887.71,571,1,1
+296,"Unu'pe, Borean Tundra",2919.19,4046.09,571,1,1
+297,Sholazar Basin - Quest - Reconnaisance - Start,5557.57,5802.05,571,0,0
+298,Sholazar Basin - Quest - Reconnaisance - End,5505.35,4747.79,571,0,0
+299,Transport: Menethil <-> Valgarde,0.0,0.0,0,0,0
+300,"Transport, Stormwind",0.0,0.0,0,0,0
+303,"Valiance Landing Camp, Wintergrasp",5100.81,2185.65,571,0,1
+304,"The Argent Stand, Zul'Drak",5521.63,-2672.25,571,1,1
+305,"Ebon Watch, Zul'Drak",5218.9,-1302.22,571,1,1
+306,"Light's Breach, Zul'Drak",5190.11,-2206.46,571,1,1
+307,"Zim'Torga, Zul'Drak",5777.4,-3594.94,571,1,1
+308,"River's Heart, Sholazar Basin",5506.23,4748.1,571,1,1
+309,"Nesingwary Base Camp, Sholazar Basin",5596.1,5824.37,571,1,1
+310,Dalaran,5813.89,449.13,571,1,1
+311,"Camp Onequah, Grizzly Hills (Quest)",3877.91,-4519.59,571,1,0
+312,"Light's Breach, Zul'Drak (Quest)",5189.67,-2206.85,571,0,0
+313,"Westfall Brigade, Grizzly Hills (Quest)",4584.01,-4250.38,571,0,1
+314,"Zim'Torga, Zul'Drak (Quest)",5779.13,-3596.42,571,1,0
+315,Acherus: The Ebon Hold,2352.37,-5666.91,0,1,1
+316,Ebon Hold - Acherus -> Death's Breach Start,0.0,0.0,0,1,1
+317,Ebon Hold - Acherus -> Death's Breach End,2431.0,-5730.21,609,0,0
+318,Ebon Hold - Death's Breach -> Acherus Start,0.0,0.0,0,1,1
+319,Ebon Hold - Death's Breach -> Acherus End,2356.51,-5664.18,609,0,0
+320,"K3, The Storm Peaks",6186.75,-1052.91,571,1,1
+321,"Frosthold, The Storm Peaks",6667.04,-258.7,571,0,1
+322,"Dun Niffelem, The Storm Peaks",7308.04,-2607.6,571,1,1
+323,"Grom'arsh Crash-Site, The Storm Peaks",7857.3,-735.02,571,1,0
+324,"Camp Tunka'lo, The Storm Peaks",7793.85,-2810.09,571,1,0
+325,"Death's Rise, Icecrown",7427.32,4224.16,571,1,1
+326,"Ulduar, The Storm Peaks",8864.74,-1324.33,571,1,1
+327,"Bouldercrag's Refuge, The Storm Peaks",8472.46,-335.95,571,1,1
+328,"Transport, Icecrown Airship (A)",7501.65,1140.28,571,0,0
+329,"Transport, Icecrown Airship (H)",7561.81,1724.59,571,0,0
+330,"Transport, Icecrown (Target)",7489.64,1477.72,571,0,0
+331,"Gundrak, Zul'Drak",6897.65,-4118.23,571,1,1
+332,"Warsong Camp, Wintergrasp",5024.99,3685.55,571,1,0
+333,"The Shadow Vault, Icecrown",8408.09,2702.66,571,1,1
+334,"The Argent Vanguard, Icecrown",6164.49,-61.31,571,1,1
+335,"Crusaders' Pinnacle, Icecrown",6402.06,467.86,571,1,1
+336,"Windrunner's Overlook, Crystalsong Forest",5035.65,-519.96,571,0,1
+337,"Sunreaver's Command, Crystalsong Forest",5590.49,-693.23,571,1,0
+338,"Blackfathom Camp, Ashenvale",3880.51,654.16,1,0,1
+339,"Grove of the Ancients, Darkshore",4970.5,147.65,1,0,1
+340,"Argent Tournament Grounds, Icecrown",8475.79,891.2,571,1,1
+341,Ulduar Raid - Interior - Insertion Point,-749.2,-99.99,603,1,1
+342,Ulduar Raid - Iron Concourse,119.96,-71.62,603,1,1
+343,"Splintertree, Ashenvale",2309.23,-2523.21,1,1,0
+346,"Ashenvale 4.x, Azshara to Mor'shan Ramparts",2873.53,-3740.51,1,1,0
+347,"Ashenvale 4.x, Mor'shan Landing",1225.78,-2250.9,1,0,0
+348,Transport: Thunder Bluff <-> Org (Zep),0.0,0.0,0,0,0
+349,"Andruk, Zoram'gar",3350.21,1054.12,1,1,0
+350,"Hellscream's Watch, Ashenvale",3049.08,-498.95,1,1,0
+351,"Stardust Spire, Ashenvale",1905.11,-321.99,1,0,1
+352,Isle of Conquest - Gunships,0.0,0.0,0,0,0
+354,"The Mor'Shan Ramparts, Ashenvale",1206.05,-2209.15,1,1,0
+356,"Silverwind Refuge, Ashenvale",2159.62,-1144.05,1,1,0
+360,"Cliffwalker Post, Stonetalon Mountains",2188.0,1241.89,1,1,0
+361,"Windshear Hold, Stonetalon Mountains",1268.51,432.87,1,0,1
+362,"Krom'gar Fortress, Stonetalon Mountains",932.12,-21.25,1,1,0
+363,"Malaka'jin, Stonetalon Mountains",-111.94,-260.41,1,1,0
+364,"Northwatch Expedition Base Camp, Stonetalon Mountains",237.88,-281.35,1,0,1
+365,"Farwatcher's Glen, Stonetalon Mountains",973.94,2013.13,1,0,1
+366,"Furien's Post, Desolace",-439.15,2242.62,1,1,0
+367,"Thargad's Camp, Desolace",-1694.53,2577.57,1,0,1
+368,"Karnum's Glade, Desolace",-1038.43,1637.99,1,1,1
+369,"Thunk's Abode, Desolace",-534.04,1056.68,1,1,1
+370,"Ethel Rethor, Desolace",-356.47,2478.9,1,1,1
+371,Vashj'ir - Alliance Start,0.0,0.0,0,0,0
+372,Vashj'ir - Alliance End,0.0,0.0,0,0,0
+373,Mulgore - Red Cloud Mesa: To Bloodhoof,-2936.14,-1.52,1,0,0
+374,Mulgore - Red Cloud Mesa: To Bloodhoof (End),-2333.39,-388.45,1,0,0
+375,"Transport, Gadgetzan",0.0,0.0,0,0,0
+376,Icecrown Raid - Airship Battle Taxi Paths,0.0,0.0,0,0,0
+377,Icecrown Dungeon - Gunships,0.0,0.0,0,0,0
+379,Icecrown Raid - Saurfang's Ship (End),-200.59,1437.53,631,0,0
+380,Icecrown Raid - Saurfang's Ship (Start),0.0,0.0,0,0,0
+383,"Thondroril River, Eastern Plaguelands",1935.97,-2694.48,0,1,1
+384,"The Bulwark, Tirisfal",1726.62,-740.981,0,1,0
+386,"Mossy Pile, Un'Goro Crater",-6958.44,-1095.24,1,1,1
+387,"Honor's Stand, Southern Barrens",-335.2,-1532.44,1,0,1
+388,"Northwatch Hold, Southern Barrens",-2124.21,-3561.79,1,0,1
+389,"Fort Triumph, Southern Barrens",-3150.25,-2286.27,1,0,1
+390,"Hunter's Hill, Southern Barrens",-798.72,-1590.87,1,1,0
+391,"Desolation Hold, Southern Barrens",-3288.85,-1697.99,1,1,0
+392,CC Prologue - GT - Quest - Vent Horizon - Start,-5448.5,-665.08,0,1,1
+393,CC Prologue - GT - Quest - Vent Horizon - End,-5447.85,-665.59,0,1,1
+394,CC Prologue - GT - Battle Flight - Start,-5451.48,-667.73,0,1,1
+395,CC Prologue - GT - Battle Flight - End,-5434.71,523.09,0,0,0
+402,"Bloodhoof Village, Mulgore",-2299.54,-379.069,1,1,0
+404,Durotar - ET - CC Prologue Spy Frog Start,-839.64,-4985.35,1,1,0
+405,Durotar - ET - CC Prologue Spy Frog End,-838.01,-4986.28,1,1,0
+438,Durotar - ET - CC Prologue Troll Taxi Bat Start,-838.85,-4985.99,1,1,0
+439,Durotar - ET - CC Prologue Troll Recruit End,284.38,-4762.36,1,1,0
+440,Durotar - ET - CC Prologue - Troll Battle End,-848.2,-5339.46,1,0,0
+456,"Dolanaar, Teldrassil",9873.1,977.698,1,0,1
+457,"Darnassus, Teldrassil",9968.8,2622.09,1,0,1
+458,"Nozzlepot's Outpost, Northern Barrens",1152.6,-3381.74,1,1,0
+460,"Brill, Tirisfal Glades",2272.68,372.064,0,1,0
+513,"Fizzle & Pozzik's Speedbarge, Thousand Needles",-6075.37,-3913.44,1,1,1
+521,"Smuggler's Scar, Vashj'ir",-4588.05,3481.12,0,1,1
+522,"Silver Tide Hollow, Vashj'ir",-6105.61,4285.08,0,1,1
+523,"Tranquil Wash, Vashj'ir",-6616.4,4308.28,0,0,1
+524,"Darkbreak Cove, Vashj'ir",-6902.25,5943.82,0,0,1
+525,"Legion's Rest, Vashj'ir",-6805.63,4199.85,0,1,0
+526,"Tenebrous Cavern, Vashj'ir",-6507.99,6075.25,0,1,0
+531,"Dawnrise Expedition, Tanaris",-9487.89,-2467.13,1,1,0
+532,"Gunstan's Dig, Tanaris",-9493.71,-2953.99,1,0,1
+536,"Sen'jin Village, Durotar",-780.267,-4890.28,1,1,0
+537,"Razor Hill, Durotar",269.917,-4766.76,1,1,0
+538,test - JZB - Orgrim's Hammer,4.65694,-2.34398,622,0,0
+539,"Bootlegger Outpost, Tanaris",-8683.09,-4088.1,1,1,1
+540,"The Sludgewerks, Stonetalon Mountains",1825.94,727.208,1,1,0
+541,"Mirkfallon Post, Stonetalon Mountains",1379.42,1034.86,1,0,1
+551,"Whelgar's Retreat, Wetlands",-3222.93,-1989.49,0,0,1
+552,"Greenwarden's Grove, Wetlands",-3306.65,-2718.69,0,0,1
+553,"Dun Modr, Wetlands",-2656.54,-2464.28,0,0,1
+554,"Slabchisel's Survey, Wetlands",-4113.6,-2741.21,0,0,1
+555,"Farstrider Lodge, Loch Modan",-5668.31,-4253.44,0,0,1
+557,"Shrine of Aviana, Hyjal",4987.87,-2676.19,1,1,1
+558,"Grove of Aessina, Hyjal",5163.51,-1760.58,1,1,1
+559,"Nordrassil, Hyjal",5584.06,-3569.84,1,1,1
+565,"Dreamer's Rest, Feralas",-3136.62,1951.67,1,0,1
+567,"Tower of Estulan, Feralas",-4863.64,1478.16,1,0,1
+568,"Camp Ataya, Feralas",-3081.7,2560.1,1,1,0
+569,"Stonemaul Hold, Feralas",-4606.52,1898.19,1,1,0
+582,"Goldshire, Elwynn",-9433.99,85.1493,0,0,1
+583,"Moonbrook, Westfall",-10876.9,1542.88,0,0,1
+584,"Furlbrow's Pumpkin Farm, Westfall",-9838.51,1273.93,0,0,1
+586,Justin Test Node 1,2186.69,1241.3,1,1,1
+587,Justin Test Node 2,2186.69,1241.3,1,1,1
+589,"Eastvale Logging Camp, Elwynn",-9475.71,-1306.74,0,0,1
+590,"Fort Livingston, Stranglethorn",-12828.8,-413.71,0,0,1
+591,"Explorers' League Digsite, Stranglethorn",-13600.9,-85.5486,0,0,1
+592,"Hardwrench Hideaway, Stranglethorn",-13288.3,722.028,0,1,0
+593,"Bambala, Stranglethorn",-12092.2,-814.099,0,1,0
+594,"Whisperwind Grove, Felwood",6078.51,-844.998,1,1,1
+595,"Wildheart Point, Felwood",4734.16,-883.806,1,1,1
+596,"Shalewind Canyon, Redridge",-9641.67,-3479.37,0,0,1
+597,"Irontree Clearing, Felwood",6892.69,-1620.41,1,1,0
+598,"Marshtide Watch, Swamp of Sorrows",-10176.6,-3836.54,0,0,1
+599,"Bogpaddle, Swamp of Sorrows",-9737.08,-3890.72,0,1,1
+600,"The Harborage, Swamp of Sorrows",-10118.6,-2852.48,0,0,1
+601,"Galen's Fall, Arathi",-952.377,-1585.74,0,1,0
+602,"Surwich, Blasted Lands",-12761.9,-2919.04,0,0,1
+603,"Sunveil Excursion, Blasted Lands",-12357.6,-3058.23,0,1,0
+604,"Dreadmaul Hold, Blasted Lands",-10933.3,-2790.98,0,1,0
+605,"Voldrin's Hold, Vashj'ir",-7209.71,3925.85,0,0,1
+606,"Sandy Beach, Vashj'ir",-5310.85,3914.42,0,0,1
+607,"Sandy Beach, Vashj'ir",-5267.35,3900.27,0,0,1
+608,"Sandy Beach, Vashj'ir",-5671.02,3720.07,0,1,0
+609,"Sandy Beach, Vashj'ir",-5669.19,3711.81,0,1,0
+610,"Stygian Bounty, Vashj'ir",-6878.52,4244.71,0,1,0
+611,"Voldrin's Hold, Vashj'ir",-7198.97,3912.36,0,0,1
+612,"Stygian Bounty, Vashj'ir",-6880.17,4278.06,0,1,0
+613,"Southern Rocketway, Azshara",2647.79,-6214.4,1,1,0
+614,"Northern Rocketway, Azshara",4611.38,-7041.8,1,1,0
+615,"Camp Everstill, Redridge",-9446.64,-2836.99,0,0,1
+616,"Gates of Sothann, Hyjal",4059.4,-3966.75,1,1,1
+617,"Hiri'watha Research Station, The Hinterlands",-25.776,-2821.78,0,1,0
+618,"Stormfeather Outpost, The Hinterlands",312.326,-4105.36,0,0,1
+619,"Kharanos, Dun Morogh",-5660.8,-494.851,0,0,1
+620,"Gol'Bolar Quarry, Dun Morogh",-5714.14,-1578.64,0,0,1
+622,"Raven Hill, Duskwood",-10737.6,267.043,0,0,1
+624,"Azure Watch, Azuremyst Isle",-4130.08,-12520.5,530,0,1
+625,"Fairbreeze Village, Eversong Woods",8745.78,-6654.12,530,1,0
+630,"Light's Shield Tower, Eastern Plaguelands",2262.1,-4411.52,0,1,1
+631,"Falconwing Square, Eversong Woods",9501.93,-6767.09,530,1,0
+632,"Bloodwatcher Point, Badlands",-6898.25,-3513.99,0,1,0
+633,"Dustwind Dig, Badlands",-6594.09,-3401.18,0,0,1
+634,"Dragon's Mouth, Badlands",-7034.53,-2570.79,0,0,1
+635,"Fuselight, Badlands",-6574.94,-3875.13,0,1,1
+645,"Forsaken High Command, Silverpine Forest",1421.02,1018.23,0,1,0
+646,"Forsaken Forward Command, Gilneas",-910.221,1638.6,0,1,0
+649,"Andorhal, Western Plaguelands",1511.8,-1586.95,0,1,0
+650,"Andorhal, Western Plaguelands",1374.23,-1281.94,0,0,1
+651,"The Menders' Stead, Western Plaguelands",1864.32,-1755.82,0,1,1
+652,"Ramkahen, Uldum",-9415.02,-1042.97,1,1,1
+653,"Oasis of Vir'sar, Uldum",-8375.47,791.259,1,1,1
+654,"The Forsaken Front, Silverpine Forest",-114.142,1312.32,0,1,0
+656,"Crushblow, Twilight Highlands",-4831.76,-4848.93,0,1,0
+657,"The Gullet, Twilight Highlands",-3494.63,-4379.48,0,1,0
+658,"Vermillion Redoubt, Twilight Highlands",-3032.76,-3940.97,0,1,1
+659,"Bloodgulch, Twilight Highlands",-3637.56,-5288.19,0,1,0
+660,"The Krazzworks, Twilight Highlands",-2780.18,-6409.28,0,1,0
+661,"Dragonmaw Port, Twilight Highlands",-4012.45,-6329.25,0,1,0
+662,"Highbank, Twilight Highlands",-4863.1,-6740.61,0,0,1
+663,"Victor's Point, Twilight Highlands",-4170.55,-4748.93,0,0,1
+664,"Firebeard's Patrol, Twilight Highlands",-4183.9,-5620.15,0,0,1
+665,"Thundermar, Twilight Highlands",-3146.92,-4994.28,0,0,1
+666,"Kirthaven, Twilight Highlands",-2689.43,-5427.53,0,0,1
+667,"Ruins of Southshore, Hillsbrad",-661.837,-536.493,0,1,0
+668,"Southpoint Gate, Hillsbrad",-605.184,435.465,0,1,0
+669,"Eastpoint Tower, Hillsbrad",-566.889,-1051.2,0,1,0
+670,"Strahnbrad, Alterac Mountains",622.851,-979.578,0,1,0
+672,"Hearthglen, Western Plaguelands",2839.78,-1500.51,0,1,1
+673,"Iron Summit, Searing Gorge",-7123.06,-1236.63,0,1,1
+674,"Schnottz's Landing, Uldum",-10711.9,1059.62,1,1,1
+675,"Flamestar Post, Burning Steppes",-8092.26,-1025.79,0,1,1
+676,"Chiselgrip, Burning Steppes",-7865.93,-1919.53,0,1,1
+681,"Forsaken Rear Guard, Silverpine Forest",1056.06,1518.9,0,1,0
+683,"Valormok, Azshara",2988.13,-4161.36,1,1,0
+781,"Sanctuary of Malorne, Hyjal",4397.79,-2107.53,1,1,1
+894,"Grookin Hill, Jade Forest",1418.57,-487.703,870,1,0
+895,"Dawn's Blossom, Jade Forest",1503.71,-1832.13,870,1,1
+906,Dragon Soul Raid - Wyrmrest Temple Base,-1786.57,-2393.29,967,1,1
+907,Dragon Soul Raid - East Sarlac,-1768.58,-3034.75,967,1,1
+966,"Paw'Don Village, Jade Forest",-307.2,-1762.77,870,0,1
+967,"The Arboretum, Jade Forest",1600.66,-2530.27,870,1,1
+968,"Jade Temple Grounds, Jade Forest",773.247,-2358.96,870,1,1
+969,"Sri-La Village, Jade Forest",2550.76,-2418.32,870,1,1
+970,"Emperor's Omen, Jade Forest",2400.75,-2099.43,870,1,1
+971,"Tian Monastery, Jade Forest",2505.9,-1590.89,870,1,1
+972,"Pearlfin Village, Jade Forest",-186.097,-2594.61,870,0,1
+973,"Honeydew Village, Jade Forest",2927.16,-509.184,870,1,0
+984,"Pang's Stead, Valley of the Four Winds",543.915,-637.814,870,1,1
+985,"Halfhill, Valley of the Four Winds",-221.326,464.559,870,1,1
+986,"Zhu's Watch, Krasarang Wilds",-375.684,-647.965,870,1,1
+987,"Thunder Cleft, Krasarang Wilds",-878.276,171.403,870,1,0
+988,"The Incursion, Krasarang Wilds",-1125.31,-227.747,870,0,1
+989,"Stoneplow, Valley of the Four Winds",-436.54,1886.7,870,1,1
+990,"Dawnchaser Retreat, Krasarang Wilds",-1685.68,1590.34,870,1,0
+991,"Sentinel Basecamp, Krasarang Wilds",-1156.61,1770.38,870,0,1
+992,"Cradle of Chi-Ji, Krasarang Wilds",-2082.3,1483.63,870,1,1
+993,"Marista, Krasarang Wilds",-2504.09,491.583,870,1,1
+1017,"Binan Village, Kun-Lai Summit",1690.11,303.958,870,1,1
+1018,"Temple of the White Tiger, Kun-Lai Summit",3504.04,690.677,870,1,1
+1019,"Eastwind Rest, Kun-Lai Summit",2250.59,931.569,870,1,0
+1020,"Westwind Rest, Kun-Lai Summit",2103.35,1463.83,870,0,1
+1021,"Zouchin Village, Kun-Lai Summit",4362.96,932.118,870,1,1
+1022,"One Keg, Kun-Lai Summit",3124.52,1224.28,870,1,1
+1023,"Kota Basecamp, Kun-Lai Summit",2716.43,2163.31,870,1,1
+1024,"Shado-Pan Fallback, Kun-Lai Summit",1880.59,2088.58,870,1,1
+1025,"Winter's Blossom, Kun-Lai Summit",3151.85,2677.76,870,1,1
+1029,"Tavern in the Mists, The Veiled Stair",784.899,-203.67,870,1,1
+1046,Jade Forest - Cliff path 04 Start,3377.12,-473.212,870,1,1
+1047,Jade Forest - Cliff path 04 End,3279.92,-502.613,870,1,1
+1052,"Grassy Cline, Valley of the Four Winds",460.54,-100.467,870,1,1
+1053,"Longying Outpost, Townlong Steppes",2363.23,2994.39,870,1,1
+1054,"Gao-Ran Battlefront, Townlong Steppes",1440.72,2804.49,870,1,1
+1055,"Rensai's Watchpost, Townlong Steppes",1531.73,3963.7,870,1,1
+1056,"Shado-Pan Garrison, Townlong Steppes",1803.32,4204.23,870,1,1
+1057,"Shrine of Seven Stars, Vale of Eternal Blossoms",896.453,334.351,870,0,1
+1058,"Shrine of Two Moons, Vale of Eternal Blossoms",1580.16,894.167,870,1,0
+1070,"Klaxxi'vess, Dread Wastes",172.663,3152.25,870,1,1
+1071,"Soggy's Gamble, Dread Wastes",-1086.21,3136.19,870,1,1
+1072,"The Sunset Brewgarden, Dread Wastes",982.677,3451.86,870,1,1
+1073,"Serpent's Spine, Vale of Eternal Blossoms",611.365,2125.03,870,1,1
+1080,"Serpent's Overlook, Jade Forest",465.856,-1558.56,870,1,1
+1090,"The Briny Muck, Dread Wastes",-570.405,3859.79,870,1,1
+1104,Test - Spy Quest H01a - PRK,4777.05,-5133.4,1,0,0
+1105,Test - Spy Quest H01b - PRK,1567.38,-11797.3,1,0,0
+1115,"The Lion's Redoubt, Dread Wastes",234.406,2198.03,870,0,1
+1117,"Serpent's Spine, Kun-Lai Summit",2123.15,2584.93,870,1,0
+1190,"Lion's Landing, Krasarang Wilds",-1193.56,-1193.7,870,0,1
+1195,"Domination Point, Krasarang Wilds",-1752.19,2492.02,870,1,0
+1221,"Beeble's Wreck, Isle Of Giants",5753.76,1255.55,870,0,1
+1222,"Bozzle's Wreck, Isle Of Giants",5799.64,1080.57,870,1,0
+1293,"Tushui Landing, Timeless Isle",-901.37,-4639.12,870,0,1
+1294,"Huojin Landing, Timeless Isle",-404.95,-4608.56,870,1,0
+1350,Shadowmoon Valley 6.0 - Observatory (JP3),966.918,-1029.65,1116,0,0
+1351,Shadowmoon Valley 6.0 - Ironhorde POI (JP3),966.918,-1029.65,1116,0,0
+1381,"Embaari Village, Shadowmoon Valley",918.264,-792.361,1116,0,1
+1382,"Twilight Glade, Shadowmoon Valley",195.236,-459.2,1116,0,1
+1383,"Path of the Light, Shadowmoon Valley",602.698,-1710.45,1116,0,1
+1384,"Exile's Rise, Shadowmoon Valley",1526.38,-788.891,1116,1,1
+1386,"Wor'gol, Frostfire Ridge",5988.68,6180.86,1116,1,0
+1387,"Bladespire Citadel, Frostfire Ridge",6754.56,6012.54,1116,1,0
+1388,"Throm'Var, Frostfire Ridge",7879.57,5560.17,1116,1,0
+1389,"Bloodmaul Slag Mines, Frostfire Ridge",7399.45,4358.41,1116,1,1
+1390,"Stonefang Outpost, Frostfire Ridge",6157.56,5052.44,1116,1,0
+1395,"Thunder Pass, Frostfire Ridge",5789.57,2394.89,1116,1,0
+1396,"Darkspear's Edge, Frostfire Ridge",6600.0,4342.55,1116,1,0
+1408,"Warspear, Ashran",5356.23,-3942.24,1116,1,0
+1420,"Stormshield (Alliance), Ashran",3685.15,-3840.47,1116,0,1
+1421,Shadowmoon Valley 6.0:Jp3 - Darktide Roost - Bottom Of Hill,0.0,0.0,0,0,0
+1422,Shadowmoon Valley 6.0:JP3 - Darktide Roost - Top of Hill,0.0,0.0,0,0,0
+1432,"Frostwall Garrison, Frostfire Ridge",5578.94,4564.84,1116,1,0
+1440,"Zangarra, Talador",3418.78,1040.15,1116,1,1
+1441,"Frostwolf Overlook, Talador",4008.86,2166.87,1116,1,0
+1442,"Beastwatch, Gorgrond",5815.51,1304.34,1116,1,0
+1443,"Vol'jin's Pride, Talador",3258.83,1609.27,1116,1,0
+1445,"Durotan's Grasp, Talador",2808.79,2525.74,1116,1,0
+1447,"Fort Wrynn (Alliance), Talador",3576.81,1669.4,1116,0,1
+1448,"Redemption Rise, Talador",3407.73,2062.0,1116,0,1
+1450,"Shattrath City, Talador",2727.16,2777.0,1116,1,1
+1451,"Anchorite's Sojourn, Talador",2171.82,1059.22,1116,0,1
+1452,"Retribution Point, Talador",1378.4,3318.52,1116,1,1
+1453,"Exarch's Refuge, Talador",1696.5,2561.35,1116,0,1
+1454,"Exarch's Refuge, Talador",1731.09,2581.53,1116,1,0
+1462,"Terokkar Refuge, Talador",2158.65,1634.47,1116,1,1
+1467,"The Draakorium, Shadowmoon Valley",128.569,-1555.75,1116,0,1
+1468,"Elodor (Alliance), Shadowmoon Valley",1240.2,-1666.43,1116,0,1
+1475,"Socrethar's Rise, Shadowmoon Valley",-799.674,-671.424,1116,1,1
+1476,"Lunarfall (Alliance), Shadowmoon Valley",1866.56,219.467,1116,0,1
+1487,"Axefall, Spires of Arak",-368.201,2285.55,1116,1,0
+1493,"Southport, Spires of Arak",-1117.45,2316.97,1116,0,1
+1502,"The Ring of Trials, Nagrand",3040.78,4783.08,1116,1,1
+1503,"Throne of the Elements, Nagrand",3918.79,5131.45,1116,1,1
+1504,"Wor'var, Nagrand",3235.73,4584.55,1116,1,0
+1505,"Riverside Post, Nagrand",3102.81,6500.38,1116,1,0
+1506,"Telaari Station, Nagrand",2594.25,5700.63,1116,0,1
+1507,"Yrel's Watch, Nagrand",3384.17,5755.58,1116,0,1
+1508,"Veil Terokk, Spires of Arak",-398.988,1880.12,1116,1,1
+1509,"Talon Watch, Spires of Arak",-335.451,926.622,1116,1,1
+1510,"Pinchwhistle Gearworks, Spires of Arak",-1579.14,993.09,1116,1,1
+1511,"Bastion Rise, Gorgrond",4552.27,1274.56,1116,0,1
+1512,"Bastion Rise, Gorgrond",4641.62,1188.07,1116,1,0
+1513,"Apexis Excavation, Spires of Arak",387.542,2442.73,1116,1,1
+1514,"Evermorn Springs, Gorgrond",4837.63,1687.55,1116,1,0
+1515,"Crow's Crook, Spires of Arak",128.615,1544.63,1116,1,1
+1518,"Wildwood Wash, Gorgrond",6456.1,-174.755,1116,0,1
+1519,"Highpass, Gorgrond",6352.58,746.234,1116,0,1
+1520,"Breaker's Crown, Gorgrond",6593.43,1316.04,1116,1,1
+1523,"Deeproot, Gorgrond",5412.85,1271.05,1116,0,1
+1524,"Iron Docks, Gorgrond",8486.15,1544.24,1116,1,1
+1528,"Iron Siegeworks, Frostfire Ridge",5724.26,2163.64,1116,0,1
+1529,"Darktide Roost, Shadowmoon Valley",-974.125,-1739.3,1116,1,1
+1537,"Shattered Landing, Blasted Lands",-11771.2,-3867.32,1190,1,0
+1538,"Shattered Beachhead, Blasted Lands",-11254.0,-3666.57,1190,0,1
+1539,"Skysea Ridge, Gorgrond",7596.2,1829.05,1116,1,1
+1556,"Tranquil Court, Shadowmoon Valley",407.042,-2449.73,1116,0,1
+1559,"Wolf's Stand, Frostfire Ridge",5830.86,3004.09,1116,1,0
+1567,"Temple of Karabor, Shadowmoon Valley",405.788,-2448.75,1116,0,1
+1568,"Everbloom Wilds, Gorgrond",7093.6,404.74,1116,1,1
+1569,"Akeeta's Hovel, Shadowmoon Valley",676.424,701.439,1116,1,1
+1572,"Rilzit's Holdfast, Nagrand",3761.26,6430.15,1116,1,1
+1573,"Nivek's Overlook, Nagrand",2053.66,6507.39,1116,1,1
+1574,"Joz's Rylaks, Nagrand",3676.04,5776.19,1116,1,1
+1580,"Everbloom Overlook, Gorgrond",8018.09,-560.49,1116,1,1
+1613,"Azurewing Repose, Azsuna",576.405,6644.03,1220,1,1
+1615,"Challiane's Terrace, Azsuna",1406.08,7140.7,1220,1,1
+1620,"Lion's Watch, Tanaan Jungle",3875.22,-1311.72,1116,0,1
+1621,"Vol'mar, Tanaan Jungle",4307.91,-1465.31,1116,1,0
+1622,"Illidari Stand, Azsuna",-117.835,6891.19,1220,1,1
+1633,"Shackle's Den, Azsuna",-784.174,6130.04,1220,1,1
+1643,"Aktar's Post, Tanaan Jungle",4569.44,335.054,1116,1,1
+1644,"The Iron Front, Tanaan Jungle",3979.3,1216.62,1116,1,0
+1645,"The Iron Front, Tanaan Jungle",4074.97,1183.75,1116,0,1
+1646,"Vault of the Earth, Tanaan Jungle",3475.28,-762.552,1116,1,1
+1647,"Malo's Lookout, Tanaan Jungle",4457.54,-574.693,1116,1,1
+1648,"Sha'naari Refuge, Tanaan Jungle",3728.38,157.931,1116,1,1
+1660,Bret Test 3-3s,15589.5,-16185.4,451,1,1
+1661,Bret Test 3-3e,15574.2,-16164.2,451,1,1
+1662,Carl Test a,15574.2,-16164.2,451,1,1
+1673,"Lorlathil, Val'sharah",2299.88,6577.66,1220,1,1
+1713,"Bradensbrook, Val'sharah",2814.29,7275.82,1220,1,1
+1719,"Thunder Totem, Highmountain",4156.51,4374.45,1220,1,1
+1731,Alliance Shipyard Taxi,2138.8,380.132,1473,0,0
+1738,"Cullen's Post, Stormheim",2885.65,2422.61,1220,1,0
+1739,"Dreadwake's Landing, Stormheim",2355.72,1870.09,1220,1,0
+1741,"Forsaken Foothold, Stormheim",3987.54,2914.29,1220,1,0
+1742,"Valdisdall, Stormheim",3205.59,1515.58,1220,1,1
+1744,"Greywatch, Stormheim",2863.93,849.175,1220,0,1
+1745,"Lorna's Watch, Stormheim",2704.49,2860.23,1220,0,1
+1747,"Skyfire Triage Camp, Stormheim",3217.6,3079.92,1220,0,1
+1753,"Skyhorn, Highmountain",4833.93,3967.37,1220,1,1
+1754,"The Witchwood, Highmountain",5116.11,4982.16,1220,1,1
+1755,"Felbane Camp, Highmountain",5108.33,5570.61,1220,1,1
+1756,"Shipwreck Cove, Highmountain",6466.84,4727.99,1220,1,1
+1758,"Obsidian Overlook, Highmountain",2971.69,4343.46,1220,1,1
+1759,"Ironhorn Enclave, Highmountain",3005.72,3668.47,1220,1,1
+1760,"Trueshot Lodge, Highmountain",4634.29,5339.42,1220,1,1
+1761,"Prepfoot, Highmountain",5613.4,3585.03,1220,1,1
+1764,"Starsong Refuge, Val'sharah",3094.06,5807.21,1220,1,1
+1766,"Garden of the Moon, Val'sharah",2841.79,6482.29,1220,1,1
+1767,"Nesingwary, Highmountain",4483.46,4843.29,1220,1,1
+1774,Dalaran,-860.828,4295.95,1220,1,1
+1777,"Sylvan Falls, Highmountain",3853.55,5150.59,1220,1,1
+1778,"Stonehoof Watch, Highmountain",3891.95,3500.18,1220,1,1
+1815,"The Dreamgrove, Val'sharah (Druids Only)",4074.32,7225.45,1220,1,1
+1837,"Wardens' Redoubt, Azsuna",-1403.63,6656.86,1220,1,1
+1838,Thorim's Peak,2113.4,2823.46,1220,1,1
+1839,Nastrondir,3793.25,2368.84,1220,1,1
+1840,Eastern Suramar,815.491,2760.98,1220,1,1
+1841,Western Suramar,379.929,4364.24,1220,1,1
+1842,Carl Test b,15574.2,-16164.2,451,1,1
+1843,Carl Test c,15574.2,-16164.2,451,1,1
+1844,Carl Test d,15574.2,-16164.2,451,1,1
+1845,Isle of the Watchers,-1704.44,6472.99,1220,1,1
+1846,Faronaar,-88.4323,8214.32,1220,1,1
+1847,The Dreamgrove,4411.15,7164.21,1220,1,1
+1848,Trueshot Lodge,4632.03,5320.96,1220,1,1
+1849,Dalaran,-813.533,4274.87,1220,0,0
+1850,Eastern Highmountain,3769.18,3682.9,1220,1,1
+1855,"Shield's Rest, Stormheim",4764.52,-186.997,1220,1,1
+1856,"Vengeance Point, Broken Shore",-545.191,3001.78,1220,1,1
+1857,"Stormtorn Foothills, Stormheim",3835.61,2016.12,1220,1,1
+1858,"Meredil, Suramar",1615.52,4757.86,1220,1,1
+1859,"Felblaze Ingress, Azsuna",554.042,5628.88,1220,1,1
+1860,"Watchers' Aerie, Azsuna",-1804.72,6417.63,1220,1,1
+1861,"Illidari Perch, Azsuna",-228.438,7733.7,1220,1,1
+1862,Acherus: The Ebon Hold,-1437.43,1162.24,1220,1,1
+1863,"Hafr Fjall, Stormheim",1797.35,1816.7,1220,1,1
+1865,Boost 2.0 - Alliance - Leave Point,41.7157,-0.426141,1560,0,1
+1870,"Eye of Azshara, Azsuna",-3362.32,4823.01,1220,1,1
+1879,"Crimson Thicket, Suramar",1893.3,3092.55,1220,1,1
+1880,"Irongrove Retreat, Suramar",2268.8,5241.59,1220,1,1
+1885,"Gloaming Reef, Val'sharah",2523.94,8174.86,1220,1,1
+1906,"The Fel Hammer, Broken Shore",1659.15,1416.68,1519,1,1
+1928,"Krokul Hovel, Krokuun",985.819,1711.89,1669,0,0
+1934,"TEMPAREA1, Argus",1008.45,1727.83,1669,0,0
+1935,"TEMPAREA2, Argus",1637.16,2054.71,1669,0,0
+1941,"Deliverance Point, Broken Shore",-1647.68,3178.64,1220,1,1
+1942,"Aalgen Point, Broken Shore",-1225.51,2195.23,1220,1,1
+1944,"Vindicaar, Krokuun",501.3,1470.3,1669,0,0
+1953,"Zul'jan, Nazmir",793.236,1400.74,1642,1,0
+1954,"Zo'bal Ruins, Nazmir",2025.87,1336.53,1642,1,0
+1955,"Gloom Hollow, Nazmir",2007.54,-79.6424,1642,1,0
+1956,"Forlorn Ruins, Nazmir",2596.88,-848.688,1642,1,0
+1957,"Port of Zandalar, Zuldazar",-1950.78,744.28,1642,1,0
+1959,The Great Seal,-1035.98,756.6,1642,1,0
+1965,"Nesingwary's Gameland, Zuldazar",382.024,104.043,1642,1,1
+1966,"Warbeast Kraal, Zuldazar",-1046.32,19.1736,1642,1,0
+1967,"Shattered Fields, Krokuun",1081.13,2275.75,1669,0,0
+1974,"Xibala, Zuldazar",-2692.84,1915.12,1642,1,0
+1975,"Zeb'ahari, Zuldazar",512.45,-835.219,1642,1,0
+1976,"Destiny Point, Krokuun",1437.48,1444.27,1669,0,0
+1977,"Vindicaar, Eredath",4728.6,9862.46,1669,0,0
+1978,"Conservatory of the Arcane, Eredath",5764.89,9493.78,1669,0,0
+1981,"Shadowguard Incursion, Eredath",5546.06,10563.0,1669,0,0
+1982,"Triumvirate's End, Eredath",4983.3,9823.47,1669,0,0
+1988,"Hope's Landing, Antoran Wastes",-2934.8,8798.43,1669,0,0
+1991,"Prophet's Reflection, Eredath",6307.33,10116.5,1669,0,0
+1992,"Light's Purchase, Antoran Wastes",-3516.09,8809.34,1669,0,0
+1993,"The Veiled Den, Antoran Wastes",-2367.06,8878.93,1669,0,0
+1994,"Vindicaar, Antoran Wastes",-2636.08,8699.91,1669,0,0
+2003,"City Center, Eredath",5417.01,10013.3,1669,0,0
+2009,"Warport Rastari, Zuldazar",-2022.55,1629.16,1642,1,0
+2012,"Xibala, Zuldazar",-2652.84,2272.02,1642,0,1
+2023,"Freehold, Tiragarde Sound",-1786.51,-729.382,1643,1,1
+2027,"Temple of the Prophet, Zuldazar",-1132.62,1499.7,1642,1,0
+2033,"Fallhaven, Drustvar",-66.316,2141.24,1643,0,1
+2034,"Hangman's Point, Drustvar",-296.983,1227.53,1643,0,1
+2035,"Fletcher's Hollow, Drustvar",-1045.73,1277.66,1643,0,1
+2037,"Barbthorn Ridge, Drustvar",350.885,1710.33,1643,0,1
+2042,"Vigil Hill, Tiragarde Sound",-730.976,706.566,1643,0,1
+2043,"xxOLD - Zuldazar, Nazmir Outskirts",174.297,1414.25,1642,1,0
+2045,"Garden of the Loa, Zuldazar",-104.023,1502.48,1642,1,0
+2046,"Atal'Dazar, Zuldazar",-639.649,1806.09,1642,1,0
+2052,"Anglepoint Wharf, Tiragarde Sound",790.837,1861.54,1643,0,1
+2053,"Old Drust Road, Tiragarde Sound",-318.505,980.137,1643,0,1
+2054,"Firebreaker Expedition, Tiragarde Sound",801.135,252.167,1643,0,1
+2055,"Southwind Station, Tiragarde Sound",-145.057,41.0417,1643,0,1
+2056,"Fallhaven, Drustvar",-135.637,1764.27,1643,0,1
+2057,"Fletcher's Hollow, Drustvar",-928.123,1325.54,1643,0,1
+2058,"Staghelm Point, Silithus",-6420.62,178.769,1817,0,1
+2059,"Southwind Village, Silithus",-7250.48,330.583,1817,1,0
+2060,"Hatherford, Tiragarde Sound",1167.57,24.0694,1643,0,1
+2061,"The Sliver, Zuldazar",-624.588,715.305,1642,1,0
+2062,"Wolf's Den, Tiragarde Sound",1641.34,385.852,1643,1,0
+2065,"Harbor, Zuldazar",-1035.98,756.6,1642,1,0
+2066,"Atal'Gral, Zuldazar",-961.767,-1064.69,1642,1,1
+2067,"Timberfell Outpost, Tiragarde Sound",-254.582,-362.444,1643,1,0
+2071,"Dreadpearl, Zuldazar",-961.767,-1064.69,1642,1,1
+2073,"Throne Room, Zuldazar",-1078.12,846.026,1642,1,0
+2074,"Bridgeport, Tiragarde Sound",-93.7378,-633.323,1643,0,1
+2075,"Seeker's Outpost, Zuldazar",-2303.23,-252.868,1642,1,1
+2076,"Atal'Gral, Zuldazar",-959.608,-1058.67,1642,1,1
+2077,"Castaway Point, Tiragarde Sound",-1688.04,-1420.53,1643,1,1
+2078,"Fort Victory, Nazmir",2079.33,176.215,1642,0,1
+2079,"Kennings Lodge, Tiragarde Sound",-921.962,-696.552,1643,0,1
+2080,"Grimwatt's Crash, Nazmir",1310.31,1647.5,1642,0,1
+2083,"Tradewinds Market, Tiragarde Sound",1153.03,-470.301,1643,0,1
+2084,"Norwington Estate, Tiragarde Sound",889.002,1064.59,1643,0,1
+2085,"Tidecross, Stormsong Valley",3346.84,-376.002,1643,0,1
+2086,"Brennadam, Stormsong Valley",2495.52,-44.3681,1643,0,1
+2087,"Outrigger Post, Tiragarde Sound",1080.95,2347.85,1643,0,1
+2088,"Mildenhall Meadery, Stormsong Valley",2700.28,-547.566,1643,0,1
+2089,"Seekers Vista, Stormsong Valley",3752.62,1068.6,1643,1,1
+2090,"Hillcrest Pasture, Stormsong Valley",2126.5,349.991,1643,1,0
+2091,"Stonetusk Watch, Stormsong Valley",2636.49,1138.15,1643,1,0
+2092,"Diretusk Hollow, Stormsong Valley",3298.98,262.875,1643,1,0
+2093,"Ironmaul Overlook, Stormsong Valley",2737.39,-966.679,1643,1,0
+2094,"Warfang Hold, Stormsong Valley",3889.08,423.149,1643,1,0
+2095,"Shrine of the Storm, Stormsong Valley",4252.02,-1080.82,1643,1,0
+2096,"Tol Dagor, Tiragarde Sound",-80.0451,-2648.35,1643,0,1
+2097,"Deadwash, Stormsong Valley",2991.09,914.745,1643,0,1
+2101,"The Amber Waves, Stormsong Valley",2508.09,458.84,1643,0,1
+2102,"Roughneck Camp, Tiragarde Sound",1174.62,1838.38,1643,0,1
+2103,"Eastpoint Station, Tiragarde Sound",125.776,-548.875,1643,0,1
+2104,"Eastpoint Station, Tiragarde Sound",124.189,-498.453,1643,0,1
+2105,"Tradewinds Market, Tiragarde Sound",1038.64,-586.502,1643,0,1
+2106,"Arom's Stand, Drustvar",-742.609,3115.29,1643,0,1
+2107,"Watchman's Rise, Drustvar",100.128,3478.34,1643,0,1
+2108,"Falconhurst, Drustvar",-1501.97,3755.73,1643,0,1
+2109,"Whitegrove Chapel, Drustvar",631.979,3829.44,1643,1,1
+2110,"Shatterstone Harbor, Vol'dun",2778.29,4186.96,1642,0,1
+2111,"Vorrik's Sanctum, Vol'dun",2740.18,3469.9,1642,1,0
+2112,"Vulture's Nest, Vol'dun",2623.35,3038.17,1642,0,1
+2114,"Deadwood Cove, Vol'dun",528.712,3983.06,1642,0,1
+2117,"Vulpera Hideaway, Vol'dun",2095.05,2808.83,1642,1,0
+2118,"Temple of Akunda, Vol'dun",284.264,3029.71,1642,1,0
+2119,"Sanctuary of the Devoted, Vol'dun",2048.03,4806.86,1642,1,1
+2120,"Tortaka Refuge, Vol'dun",3353.13,2476.13,1642,1,1
+2126,"Scaletrader Post, Zuldazar",-290.766,-281.038,1642,1,1
+2127,"Anyport, Drustvar",-392.095,4203.89,1643,1,1
+2133,"Shrine of the Storm, Stormsong Valley",4073.13,-1087.64,1643,0,1
+2135,"Krazzlefrazz Outpost, Drustvar",340.832,3160.44,1643,1,0
+2137,"Millstone Hamlet, Stormsong Valley",2644.84,1594.28,1643,0,1
+2138,"Fort Daelin, Stormsong Valley",3372.16,1397.36,1643,0,1
+2139,"Windfall Cavern, Stormsong Valley",4133.57,-110.042,1643,1,0
+2140,"Plunder Harbor, Tiragarde Sound",-191.641,-1487.97,1643,1,0
+2143,"Scorched Sands Outpost, Vol'dun",884.998,3698.93,1642,1,0
+2144,"Goldtusk Inn, Vol'dun",1559.94,3777.53,1642,1,0
+2145,"Verdant Hollow, Zuldazar",-19.9375,999.859,1642,0,1
+2147,"Castaway Encampment, Zuldazar",-1697.42,-862.752,1642,0,1
+2148,"Mugamba Overlook, Zuldazar",-150.212,1911.95,1642,0,1
+2153,"Mistvine Ledge, Zuldazar",-1293.62,259.448,1642,0,1
+2157,"Veiled Grotto, Zuldazar",-696.906,1942.74,1642,0,1
+2161,"Redfield's Watch, Nazmir",2799.25,774.201,1642,0,1
+2162,"Devoted Sanctuary, Vol'dun",2048.03,4806.86,1642,1,1
+2164,"Isle of Fangs, Zuldazar",-3529.85,1103.29,1642,1,0
+2165,"Tusk Isle, Zuldazar",-3018.72,686.42,1642,1,0
+2172,Disable Taxi Paths - Source - RRB,0.0,0.0,0,0,0
+2173,Disable Taxi Paths - Destination - RRB,0.0,0.0,0,0,0
+2273,"Waning Glacier, Tiragarde Sound",1397.26,2043.43,1643,1,0
+2274,"Swiftwind Post, Drustvar",-1001.07,1493.88,1643,1,0
+2275,"Mudfisher Cove, Drustvar",618.911,1740.37,1643,1,0
+2276,"Tol Dagor, Tiragarde Sound",139.658,-2541.45,1643,1,0
+2277,"Proudmoore Keep, Tiragarde Sound",552.168,-126.118,1643,0,1
+2278,"Mariner's Row, Tiragarde Sound",465.688,-642.651,1643,0,1
+2279,"Stonefist Watch, Tiragarde Sound",-809.113,1041.01,1643,1,0
+2381,"The Mugambala, Zuldazar",-1849.67,1195.7,1642,1,0
+2393,"TEMP, 9.0, Oribos, Bastion",-1834.23,1191.52,2222,1,1
+2394,"TEMP, 9.0, Oribos, Maldraxxus",-1768.76,1217.39,2222,1,1
+2395,Oribos,-1902.44,1214.76,2222,1,1
+2396,"TEMP, 9.0, Oribos, Ardenweald",-1926.49,1282.9,2222,1,1
+2397,"9.0, Zone, Bastion",-4251.68,-3886.17,2222,0,0
+2398,"Bleak Redoubt, Maldraxxus",1974.74,-2691.75,2222,1,1
+2399,"TEMP, 9.0, Zone, Revendreth",-3499.05,5435.46,2222,0,0
+2400,"TEMP, 9.0, Zone, Ardenweald",-5196.73,-573.354,2222,0,0
+2401,"Alliance Outpost, Exile's Reach Outpost",209.142,-2295.63,2175,0,1
+2402,"Ogre Citadel, Exile's Reach Island",1023.72,-1307.59,2175,0,1
+2403,"Kelya's Grave, Nazjatar",2077.95,-1566.26,1718,1,1
+2404,"Newhome, Nazjatar",988.806,-425.997,1718,1,0
+2405,"Zin'Azshari, Nazjatar",1707.18,-1794.62,1718,1,0
+2406,"Orise's Vigil, Nazjatar",1652.43,-1560.8,1718,0,1
+2407,"Utama's Stand, Nazjatar",1747.16,-1035.34,1718,0,1
+2408,"Mezzamere, Nazjatar",1251.15,-101.861,1718,0,1
+2409,"Wreck of the Old Blanchy, Nazjatar",359.45,-299.948,1718,0,1
+2410,"Ashen Strand, Nazjatar",1708.2,237.068,1718,0,1
+2411,"Ashen Strand, Nazjatar",1721.81,128.681,1718,1,0
+2412,"Wreck of the Hungry Riverbeast, Nazjatar",449.538,54.1163,1718,1,0
+2437,"Ekka's Hideaway, Nazjatar",1316.75,-1130.32,1718,1,0
+2441,"Prospectus Bay, Mechagon",3282.02,4900.46,1643,1,0
+2442,"Overspark Expedition Camp, Mechagon",3044.41,4800.76,1643,0,1
+2467,test node,-492.297,-596.786,2224,1,1
+2471,test node,-492.297,-596.786,2224,1,1
+2472,test node,-492.297,-596.786,2224,1,1
+2473,test node,-492.297,-596.786,2224,1,1
+2474,adams test node,-244.535,-692.634,2228,1,1
+2475,adams second test node,-216.095,-586.773,2228,1,1
+2482,"The Tidal Conflux, Nazjatar",2113.03,-584.934,1718,1,0
+2483,"The Tidal Conflux, Nazjatar",2112.79,-525.212,1718,0,1
+2488,"Darkhaven, Revendreth",-2623.98,6010.49,2222,1,1
+2511,"Sanctuary of the Mad, Revendreth",-2172.12,7696.52,2222,1,1
+2512,"Halls of Atonement, Revendreth",-1848.27,5393.16,2222,1,1
+2513,"Old Gate, Revendreth",-1798.88,5975.69,2222,1,1
+2514,"Pridefall Hamlet, Revendreth",-3387.7,5461.46,2222,1,1
+2515,"Dominance Keep, Revendreth",-1424.75,7952.01,2222,1,1
+2517,"Menagerie of the Master, Revendreth",-1304.69,6367.65,2222,1,1
+2518,"Wanecrypt Hill, Revendreth",-2952.6,6721.13,2222,1,1
+2519,"Aspirant's Rest, Bastion",-4160.75,-4629.77,2222,1,1
+2520,"Sagehaven, Bastion",-2305.08,-4361.41,2222,1,1
+2528,"Elysian Hold, Bastion",-1636.67,-5815.99,2222,1,1
+2529,"Hero's Rest, Bastion",-2944.08,-4853.71,2222,1,1
+2537,"Charred Ramparts, Revendreth",-2191.1,7223.68,2222,1,1
+2544,"Mistfall Village, Vale of Eternal Blossoms",685.71,1492.81,1795,1,1
+2548,"Sinfall, Revendreth",-1852.38,7585.42,2222,1,1
+2555,The Maw,501.3,1470.3,1669,0,0
+2556,Progenitor Console,4464.53,6831.63,2222,1,1
+2558,"The Spearhead, Maldraxxus",2489.25,-1839.1,2222,1,1
+2559,"Spider's Watch, Maldraxxus",3587.01,-1746.56,2222,1,1
+2560,"Keres' Rest, Maldraxxus",3531.68,-2766.64,2222,1,1
+2561,"Renounced Bastille, Maldraxxus",2891.32,-3648.03,2222,1,1
+2564,"Theater of Pain, Maldraxxus",2580.47,-2520.76,2222,1,1
+2569,"Plague Watch, Maldraxxus",1778.32,-3039.29,2222,1,1
+2584,"Glitterfall Basin, Ardenweald",-5993.72,650.755,2222,1,1
+2585,"Tirna Vaal, Ardenweald",-6143.78,-207.128,2222,1,1
+2586,"Hibernal Hollow, Ardenweald",-6903.63,15.2222,2222,1,1
+2587,"Heart of the Forest, Ardenweald",-6788.58,1006.91,2222,1,1
+2588,"Root-Home, Ardenweald",-6821.23,1804.9,2222,1,1
+2589,"Claw's Edge, Ardenweald",-7747.4,657.875,2222,1,1
+2590,"Refugee Camp, Ardenweald",-6828.48,798.733,2222,1,1
+2591,Crucible of Souls,4410.79,7746.82,2222,0,0
+2594,9.0 Maw - Oribos - Teleport In,-1815.69,1302.41,2222,0,0
+2625,"Elysian Hold, Bastion",-1714.82,-5786.21,2222,0,0
+2626,"Hero's Rest, Bastion",-2943.63,-4871.95,2222,0,0
+2630,"Aspirant's Rest, Bastion",-4101.2,-4643.76,2222,0,0
+2631,"Xandria's Vigil, Bastion",-3316.85,-4135.94,2222,0,0
+2632,"Sagehaven, Bastion",-2330.71,-4365.93,2222,0,0
+2633,"Temple of Purity, Bastion",-4290.81,-5383.72,2222,0,0
+2634,"Seat of Eternal Hymns, Bastion",-2239.55,-5313.1,2222,0,0
+2635,"Temple of Humility, Bastion",-2986.03,-5855.19,2222,0,0
+2636,"Terrace of the Collectors, Bastion",-1837.66,-3781.42,2222,0,0
+2637,"Summoned Steward, Bastion",-2971.01,-4955.59,2222,0,0
+2643,"Theater of Pain North, Maldraxxus",3008.02,-2525.33,2222,0,0
+2680,"Terrace of the Collectors, Bastion",-1803.76,-3804.84,2222,1,1
+2682,"Elysian Beacon, Bastion",-1919.25,-5533.36,2222,0,0
+2698,Keeper's Respite,3270.73,5739.16,2222,1,1
+2699,Tazavesh Outdoor,-6084.95,4824.28,2222,0,0
+2700,Ve'nari's Refuge,4535.13,6706.66,2222,1,1
+2703,"Tazavesh, the Veiled Market",-5895.64,4810.74,2222,1,1
+2712,Immortal Hearth,-3830.2,-2399.02,2481,1,1
+2713,Genesis Cradle Alpha,-3372.1,-2789.45,2481,1,1
+2714,Genesis Cradle Beta,-2831.81,-3323.87,2481,1,1
+2715,Ephemeral Plains Alpha,-4227.95,-2862.12,2481,1,1
+2716,Ephemeral Plains Omega,-4395.12,-3877.6,2481,1,1
+2724,"Haven, Zereth Mortis",-4212.99,684.648,2374,1,1
+2725,"Faith's Repose, Zereth Mortis",-3540.51,679.705,2374,1,1
+2728,"Pilgrim's Grace, Zereth Mortis",-3730.98,-595.01,2374,1,1
+2729,Gravid Repose Locus,-3214.42,-13.0747,2374,0,0
+2730,Interior Locus,-3204.4,52.5903,2374,0,0
+2731,Domination's Grasp,-3824.99,-2609.52,2481,1,1
+2733,"Zovaal's Grasp, Zereth Mortis",-2813.67,174.406,2374,1,1
+2734,"Antecedent Isle, Zereth Mortis",-2489.43,99.7326,2374,1,1
+2736,"Sepulcher Overlook, Zereth Mortis",-3834.8,-751.033,2374,1,1
+2737,"Sepulcher Of The First Ones, Zereth Mortis",-3829.58,-1170.97,2374,1,1
+2738,Ultimus Locus,-3101.15,26.1719,2374,0,0
+2742,Quintus Locus,-3145.45,-63.9444,2374,0,0
+2743,Quartus Locus,-3048.1,45.5521,2374,0,0
+2744,Tertius Locus,-2965.27,-123.465,2374,0,0
+2745,Secundus Locus,-2992.47,82.2465,2374,0,0
+2746,Primus Locus,-2939.63,44.5174,2374,0,0
+2747,Camber Alcove,-3311.01,36.1181,2374,0,0
+2748,Repertory Alcove,-3286.36,80.8455,2374,0,0
+2749,Rondure Alcove,-3380.94,318.845,2374,0,0
+2750,Dormant Alcove,-3299.96,250.344,2374,0,0
+2751,Fulgor Alcove,-3374.48,112.953,2374,0,0
+2754,Arcae Locus,-3195.03,71.7205,2374,0,0
+2757,Genesis Cradle Omega,-2231.86,-3876.5,2481,1,1

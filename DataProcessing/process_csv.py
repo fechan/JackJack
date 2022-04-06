@@ -26,26 +26,30 @@ JJAreaPOI.to_csv("JJAreaPOI.csv", index=False)
 ### Process TaxiNodes --> JJTaxiNodes
 
 # TaxiNodes: Flight points
-TaxiNodes = pd.read_csv("TaxiNodes.csv", usecols=["ID", "Name_lang", "Pos[0]", "Pos[1]", "ContinentID", "ConditionID"])
+TaxiNodes = pd.read_csv("TaxiNodes.csv", usecols=["ID", "Name_lang", "Pos[0]", "Pos[1]", "ContinentID", "MountCreatureID[0]", "MountCreatureID[1]"])
 JJTaxiNodes = TaxiNodes[~TaxiNodes.Name_lang.str.startswith("Quest")] # Guessing that these flight points only show up for quests
 JJTaxiNodes = JJTaxiNodes[~JJTaxiNodes.Name_lang.str.startswith("[Hidden]")]
 JJTaxiNodes = JJTaxiNodes[~JJTaxiNodes.Name_lang.str.startswith("[HIDDEN]")]
 JJTaxiNodes = JJTaxiNodes.set_index("ID")
+# MountCreatureID[0] is >0 if allowed for alliance, MountCreateID[1] for horde
+JJTaxiNodes["MountCreatureID[0]"] = (JJTaxiNodes["MountCreatureID[0]"] > 0).astype(int)
+JJTaxiNodes["MountCreatureID[1]"] = (JJTaxiNodes["MountCreatureID[1]"] > 0).astype(int)
+JJTaxiNodes = JJTaxiNodes.rename(columns={"MountCreatureID[0]": "H", "MountCreatureID[1]": "A"})
 
 JJTaxiNodes.to_csv("JJTaxiNodes.csv", index=True)
 
 ### Process TaxiPath (for directions feature)
 TaxiPath = pd.read_csv("TaxiPath.csv", usecols=["ID", "FromTaxiNode", "ToTaxiNode"])
 
-TaxiNode_merge = TaxiNodes.copy()
-TaxiNode_merge.columns = TaxiNodes.columns.map(lambda x: str(x) + '_from')
-TaxiPath_calc = (TaxiPath.merge(TaxiNode_merge, how="inner", left_on="FromTaxiNode", right_on="ID_from")
-                        .drop(columns=["ID_from", "Name_lang_from", "ContinentID_from", "ConditionID_from"]))
+TaxiNode_merge = JJTaxiNodes.copy()
+TaxiNode_merge.columns = JJTaxiNodes.columns.map(lambda x: str(x) + '_from')
+TaxiPath_calc = (TaxiPath.merge(TaxiNode_merge, how="inner", left_on="FromTaxiNode", right_index=True)
+                        .drop(columns=["Name_lang_from", "ContinentID_from", "A_from", "H_from"]))
 
-TaxiNode_merge = TaxiNodes.copy()
-TaxiNode_merge.columns = TaxiNodes.columns.map(lambda x: str(x) + '_to')
-TaxiPath_calc = (TaxiPath_calc.merge(TaxiNode_merge, how="inner", left_on="ToTaxiNode", right_on="ID_to")
-                        .drop(columns=["ID_to", "Name_lang_to", "ContinentID_to", "ConditionID_to"]))
+TaxiNode_merge = JJTaxiNodes.copy()
+TaxiNode_merge.columns = JJTaxiNodes.columns.map(lambda x: str(x) + '_to')
+TaxiPath_calc = (TaxiPath_calc.merge(TaxiNode_merge, how="inner", left_on="ToTaxiNode", right_index=True)
+                        .drop(columns=["Name_lang_to", "ContinentID_to", "A_to", "H_to"]))
 
 def distance(x1, y1, x2, y2):
     return ((x2-x1)**2 + (y2-y1)**2)**0.5
@@ -84,7 +88,7 @@ WaypointEdgeReduced.to_csv("JJWaypointEdge.csv", index=False)
 # PlayerCondition: Prerequisites for using a portal connection/taxi node/etc. Keep this separate from the WaypointEdge because otherwise
 # there would be a lot of duplicate data
 PlayerCondition = pd.read_csv("PlayerCondition.csv", usecols=["ID", "RaceMask"])
-PlayerCondition_edgeonly = PlayerCondition[PlayerCondition.ID.isin(WaypointEdge.PlayerConditionID) | PlayerCondition.ID.isin(TaxiNodes.ConditionID)]
+PlayerCondition_edgeonly = PlayerCondition[PlayerCondition.ID.isin(WaypointEdge.PlayerConditionID)]
 
 ChrRaces = pd.read_csv("ChrRaces.csv", usecols=["ID", "PlayableRaceBit"])
 ChrRaces = ChrRaces[ChrRaces["PlayableRaceBit"] != -1]

@@ -1,14 +1,7 @@
 local addonName, addon = ...
 
 LOADING_SCREEN_WEIGHT = 1000 --TODO: set this to something sane
-
-local function playerMeetsPortalRequirements(playerConditionId)
-    if playerConditionId == 0 then
-        return true
-    end
-    local _, _, raceId = UnitRace("player")
-    return addon.JJPlayerCondition[playerConditionId]["race_" .. raceId] == 1
-end
+TAXI_SCALING = 0.5 -- this sets the weight of taxi edges to the actual distance times this TODO: set this to something sane
 
 local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationContinent)
     if nodeId == "destination" or nodeId == nil then
@@ -30,6 +23,15 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
                 })
             end
         end
+        -- get all the TaxiNodes in the same continent as the player
+        for adjacentNodeId, adjacentNode in pairs(addon.JJTaxiNodes) do
+            if adjacentNode["ContinentID"] == playerContinent and addon.playerCanUseTaxiNode(adjacentNode) then
+                table.insert(adjacentNodes, {
+                    nodeId = addon.getDatasetSafeID("JJTaxiNodes", adjacentNodeId),
+                    distance = CalculateDistance(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
+                })
+            end
+        end
         -- if the destination is in the same continent, add it to the list
         if destinationContinent == playerContinent then
             table.insert(adjacentNodes, {
@@ -40,23 +42,37 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         return adjacentNodes
     end
 
-    local nodeInfo, _ = addon.getRecordFromDatasetSafeID(nodeId)
+    local nodeInfo, nodeDataset = addon.getRecordFromDatasetSafeID(nodeId)
     local nodeX = nodeInfo["Pos0"]
     local nodeY = nodeInfo["Pos1"]
-    local nodeMapID = nodeInfo["MapID"]
+    local nodeMapID = nodeInfo["MapID"] or nodeInfo["ContinentID"]
 
     -- step 1: get all the edges that start at the nodeId and add the end node to the adjacentNodes
-    for edgeId, edge in pairs(addon.JJWaypointEdge) do
-        if addon.getDatasetSafeID("JJWaypointNode", edge["Start"]) == nodeId then
-            if playerMeetsPortalRequirements(edge["PlayerConditionID"]) then
-                table.insert(adjacentNodes, {
-                    nodeId = addon.getDatasetSafeID("JJWaypointNode", edge["End"]),
-                    distance = LOADING_SCREEN_WEIGHT
-                })
+    if nodeDataset == "JJWaypointNode" then
+        for edgeId, edge in pairs(addon.JJWaypointEdge) do
+            if addon.getDatasetSafeID("JJWaypointNode", edge["Start"]) == nodeId then
+                if addon.playerMeetsPortalRequirements(edge["PlayerConditionID"]) then
+                    table.insert(adjacentNodes, {
+                        nodeId = addon.getDatasetSafeID("JJWaypointNode", edge["End"]),
+                        distance = LOADING_SCREEN_WEIGHT
+                    })
+                end
+            end
+        end
+    elseif nodeDataset == "JJTaxiNodes" then
+        for edgeId, edge in pairs(addon.JJTaxiPath) do
+            if addon.getDatasetSafeID("JJTaxiNodes", edge["FromTaxiNode"]) == nodeId then
+                local toTaxiNodeId = edge["ToTaxiNode"]
+                if addon.playerCanUseTaxiNode(addon.JJTaxiNodes[toTaxiNodeId]) then
+                    table.insert(adjacentNodes, {
+                        nodeId = addon.getDatasetSafeID("JJTaxiNodes", toTaxiNodeId),
+                        distance = edge["Distance"] * TAXI_SCALING
+                    })
+                end
             end
         end
     end
-    -- step 2: get all the nodes that are on the same continent as the nodeId and add them to the adjacentNodes
+    -- step 2: get all the portals that are on the same continent as the nodeId and add them to the adjacentNodes
     for adjacentNodeId, adjacentNode in pairs(addon.JJWaypointNode) do
         if adjacentNode["MapID"] == nodeMapID then
             table.insert(adjacentNodes, {
@@ -65,7 +81,17 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
             })
         end
     end
-    -- step 3: if the destination is on the same continent as the nodeId, add it to the list
+    -- step 3: get all the taxi points that are on the same continent as the nodeId and add them to the adjacentNodes
+    for adjacentNodeId, adjacentNode in pairs(addon.JJTaxiNodes) do
+        if adjacentNode["ContinentID"] == nodeMapID and addon.playerCanUseTaxiNode(adjacentNode) then
+            table.insert(adjacentNodes, {
+                nodeId = addon.getDatasetSafeID("JJTaxiNodes", adjacentNodeId),
+                distance = CalculateDistance(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
+            })
+        end
+    end
+
+    -- step 4: if the destination is on the same continent as the nodeId, add it to the list
     if destinationContinent == nodeMapID then
         table.insert(adjacentNodes, {
             nodeId = "destination",
@@ -101,6 +127,10 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
     local Q = {}
     for waypointNodeId, node in pairs(addon.JJWaypointNode) do
         local nodeId = addon.getDatasetSafeID("JJWaypointNode", waypointNodeId)
+        addNodeToDijkstraGraph(nodeId, dist, math.huge, prev, nil, Q)
+    end
+    for taxiNodeId, node in pairs(addon.JJTaxiNodes) do
+        local nodeId = addon.getDatasetSafeID("JJTaxiNodes", taxiNodeId)
         addNodeToDijkstraGraph(nodeId, dist, math.huge, prev, nil, Q)
     end
     addNodeToDijkstraGraph("destination", dist, math.huge, prev, nil, Q)
@@ -139,18 +169,25 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
         local direction = {}
         local globalCoords, uiMapId, mapPosition, name
         local shouldAddDirection = true
-        if nodeId ~= "destination" and nodeId ~= "player" and addon.getRecordFromDatasetSafeID(nodeId) ~= nil then
-            local nodeInfo = addon.getRecordFromDatasetSafeID(nodeId)
-
-            -- skip directions that are a portal exit (Type=2), since the player will always be there
-            -- if they went through the entrance. Also some of the names of portal exits are misleading
-            if nodeInfo["Type"] ~= 2 then
+        if nodeId ~= "destination" and nodeId ~= "player" then
+            local nodeInfo, datasetName = addon.getRecordFromDatasetSafeID(nodeId)
+            
+            if datasetName == "JJWaypointNode" then
+                -- skip directions that are a portal exit (Type=2), since the player will always be there
+                -- if they went through the entrance. Also some of the names of portal exits are misleading
+                if nodeInfo["Type"] ~= 2 then
+                    globalCoords = CreateVector2D(nodeInfo["Pos0"], nodeInfo["Pos1"])
+                    uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["MapID"], globalCoords)
+                    name = nodeInfo["Name_lang"]
+                    shouldAddDirection = true
+                else
+                    shouldAddDirection = false
+                end
+            elseif datasetName == "JJTaxiNodes" then
                 globalCoords = CreateVector2D(nodeInfo["Pos0"], nodeInfo["Pos1"])
-                uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["MapID"], globalCoords)
-                name = nodeInfo["Name_lang"]
+                uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["ContinentID"], globalCoords)
+                name = "Flight point " .. nodeInfo["Name_lang"]
                 shouldAddDirection = true
-            else
-                shouldAddDirection = false
             end
         else
             globalCoords = CreateVector2D(destinationX, destinationY)
