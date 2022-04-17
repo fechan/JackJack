@@ -7,5 +7,7 @@ zip -r "JackJack/JackJack.zip"\
     "JackJack/WaypointEdgeReduced.lua"\
     "JackJack/PlayerConditionExpanded.lua"\
     "JackJack/JackJackDirections.lua"\
+    "JackJack/JackJackUI.lua"\
     "JackJack/JackJack.lua"\
+    "JackJack/directions.blp"\
     "JackJack/JackJack.toc"
