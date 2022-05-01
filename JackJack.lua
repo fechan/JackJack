@@ -74,11 +74,16 @@ local function getHigherZoomMapPosition(uiMapId, mapPosition)
     local x = mapPosition.x
     local y = mapPosition.y
     local childMapInfo = C_Map.GetMapInfoAtPosition(uiMapId, mapPosition.x, mapPosition.y)
-    if childMapInfo then
+    local highestZoomReached = (childMapInfo == nil) or (childMapInfo.mapID == uiMapId)
+    while not highestZoomReached do
         local left, right, top, bottom = C_Map.GetMapRectOnMap(childMapInfo.mapID, uiMapId)
         x = (mapPosition.x - left) / (right - left)
         y = (mapPosition.y - top) / (bottom - top)
         uiMapId = childMapInfo.mapID
+
+        local nextChildMapInfo = C_Map.GetMapInfoAtPosition(uiMapId, mapPosition.x, mapPosition.y)
+        highestZoomReached = (nextChildMapInfo == nil) or (nextChildMapInfo.mapID == uiMapId)
+        childMapInfo = nextChildMapInfo
     end
     return uiMapId, x, y
 end
@@ -138,7 +143,8 @@ local function modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
             -- directions will arrive inverted, which is good since we want to the first direction to
             -- show up as the crazy arrow by adding it last
             for i, direction in ipairs(directions) do
-                local uid = TomTom:AddWaypoint(direction["uiMapId"], direction["x"], direction["y"], {
+                local uiMapId, x, y = getHigherZoomMapPosition(direction["uiMapId"], direction)
+                local uid = TomTom:AddWaypoint(uiMapId, x, y, {
                     title = #directions - i + 1 .. " " .. direction["Name_lang"],
                     source = "JackJack (directions)",
                     persistent = true,
