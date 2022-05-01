@@ -136,6 +136,7 @@ local function modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
     directionsButton:SetScript("OnClick", function()
         for _, directionWaypoint in ipairs(JJ_DIRECTIONS_WAYPOINTS) do
             TomTom:RemoveWaypoint(directionWaypoint)
+            JJ_DIRECTIONS_WAYPOINTS = {}
         end
 
         local directions = addon.getDirections(poi["Pos0"], poi["Pos1"], poi["ContinentID"], poi["Name_lang"])
@@ -143,6 +144,15 @@ local function modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
             -- directions will arrive inverted, which is good since we want to the first direction to
             -- show up as the crazy arrow by adding it last
             for i, direction in ipairs(directions) do
+                -- make it so when we get to the waypoint clear distance, it tries to show the next waypoint
+                -- since we're adding more behavior to the default behavior, we have to copy the default callback and run it
+                local waypointCallbacks = TomTom:DefaultCallbacks()
+                waypointCallbacks["distance"][TomTom.profile.persistence.cleardistance] = function (event, uid, range, distance, lastdistance)
+                    local defaultCB = TomTom:DefaultCallbacks()["distance"][TomTom.profile.persistence.cleardistance]
+                    defaultCB(event, uid, range, distance, lastdistance)
+                    TomTom:SetClosestWaypoint()
+                end
+
                 local uiMapId, x, y = getHigherZoomMapPosition(direction["uiMapId"], direction)
                 local uid = TomTom:AddWaypoint(uiMapId, x, y, {
                     title = #directions - i + 1 .. " " .. direction["Name_lang"],
@@ -151,6 +161,7 @@ local function modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
                     minimap = true,
                     world = true,
                     crazy = true,
+                    callbacks = waypointCallbacks
                 })
                 table.insert(JJ_DIRECTIONS_WAYPOINTS, uid)
             end
@@ -295,6 +306,15 @@ JJ_TITLE, JJ_LOCATION_BUTTON_CONTAINER, JJ_SEARCH_BOX, JJ_SEARCH_RESULTS_TXT = s
 JJ_LOCATION_BUTTON_GROUPS = {} -- contains {["location"]=Button, ["directions"]=Button} for each button group
 JJ_TOOLTIP = setUpLocationTooltip()
 JJ_DIRECTIONS_WAYPOINTS = {}
+
+JJ_EVENT_FRAME = CreateFrame("Frame")
+JJ_EVENT_FRAME:RegisterEvent("PLAYER_ENTERING_WORLD")
+JJ_EVENT_FRAME:SetScript("OnEvent", function (self, event, ...)
+    -- show the next directions waypoint when you load into a new zone
+    if event == "PLAYER_ENTERING_WORLD" and #JJ_DIRECTIONS_WAYPOINTS > 0 then
+        TomTom:SetClosestWaypoint()
+    end
+end)
 
 SlashCmdList["JACKJACK"] = function(msg, editBox)
     local locationName = msg
