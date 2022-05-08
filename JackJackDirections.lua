@@ -33,11 +33,11 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         -- get all the WaypointNodes in the same continent as the player
         local sameContinentNodes = continentWiseWaypointNodes[playerContinent]
         if sameContinentNodes ~= nil then
-            for adjacentNodeId, adjacentNode in pairs(sameContinentNodes) do
-                table.insert(adjacentNodes, {
+            for adjacentNodeId, adjacentNode in pairs(sameContinentNodes) do 
+                adjacentNodes[#adjacentNodes+1] = {
                     nodeId = addon.getDatasetSafeID("JJWaypointNode", adjacentNodeId),
                     distance = CalculateDistance(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
-                })
+                }
             end
         end
         -- get all the TaxiNodes in the same continent as the player
@@ -45,19 +45,19 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         if sameContinentNodes ~= nil then
             for adjacentNodeId, adjacentNode in pairs(sameContinentNodes) do
                 if addon.playerCanUseTaxiNode(adjacentNode) then
-                    table.insert(adjacentNodes, {
+                    adjacentNodes[#adjacentNodes+1] = {
                         nodeId = addon.getDatasetSafeID("JJTaxiNodes", adjacentNodeId),
                         distance = CalculateDistance(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
-                    })
+                    }
                 end
             end
         end
         -- if the destination is in the same continent, add it to the list
         if destinationContinent == playerContinent then
-            table.insert(adjacentNodes, {
+            adjacentNodes[#adjacentNodes+1] = {
                 nodeId = "destination",
                 distance = CalculateDistance(playerPosition.x, playerPosition.y, destinationX, destinationY)
-            })
+            }
         end
         return adjacentNodes
     end
@@ -72,10 +72,10 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         for edgeId, edge in pairs(addon.JJWaypointEdge) do
             if addon.getDatasetSafeID("JJWaypointNode", edge["Start"]) == nodeId then
                 if addon.playerMeetsPortalRequirements(edge["PlayerConditionID"]) then
-                    table.insert(adjacentNodes, {
+                    adjacentNodes[#adjacentNodes+1] = {
                         nodeId = addon.getDatasetSafeID("JJWaypointNode", edge["End"]),
                         distance = LOADING_SCREEN_WEIGHT
-                    })
+                    }
                 end
             end
         end
@@ -84,10 +84,10 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
             if addon.getDatasetSafeID("JJTaxiNodes", edge["FromTaxiNode"]) == nodeId then
                 local toTaxiNodeId = edge["ToTaxiNode"]
                 if addon.playerCanUseTaxiNode(addon.JJTaxiNodes[toTaxiNodeId]) then
-                    table.insert(adjacentNodes, {
+                    adjacentNodes[#adjacentNodes+1] = {
                         nodeId = addon.getDatasetSafeID("JJTaxiNodes", toTaxiNodeId),
                         distance = edge["Distance"] * TAXI_SCALING
-                    })
+                    }
                 end
             end
         end
@@ -96,10 +96,10 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
     local sameContinentNodes = continentWiseWaypointNodes[nodeMapID]
     if sameContinentNodes ~= nil then
         for adjacentNodeId, adjacentNode in pairs(sameContinentNodes) do
-            table.insert(adjacentNodes, {
+            adjacentNodes[#adjacentNodes+1] = {
                 nodeId = addon.getDatasetSafeID("JJWaypointNode", adjacentNodeId),
                 distance = CalculateDistance(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
-            })
+            }
         end
     end
     -- step 3: get all the taxi points that are on the same continent as the nodeId and add them to the adjacentNodes
@@ -107,20 +107,20 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
     if sameContinentNodes ~= nil then
         for adjacentNodeId, adjacentNode in pairs(sameContinentNodes) do
             if addon.playerCanUseTaxiNode(adjacentNode) then
-                table.insert(adjacentNodes, {
+                adjacentNodes[#adjacentNodes+1] = {
                     nodeId = addon.getDatasetSafeID("JJTaxiNodes", adjacentNodeId),
                     distance = CalculateDistance(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
-                })
+                }
             end
         end
     end
 
     -- step 4: if the destination is on the same continent as the nodeId, add it to the list
     if destinationContinent == nodeMapID then
-        table.insert(adjacentNodes, {
+        adjacentNodes[#adjacentNodes+1] = {
             nodeId = "destination",
             distance = CalculateDistance(nodeX, nodeY, destinationX, destinationY)
-        })
+        }
     end
     return adjacentNodes
 end
