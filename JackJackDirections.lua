@@ -139,7 +139,7 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
 
     local calculating = false
 
-    local throttleFrame = CreateFrame("Frame")
+    local throttleFrame = CreateFrame("Frame") -- TODO: we probably want to reuse this whenever getDirections is called
     throttleFrame:SetScript("OnUpdate", function(self, elapsed)
         if not calculating and Q:size() > 0 then -- this used to be the while loop declaration
             calculating = true
