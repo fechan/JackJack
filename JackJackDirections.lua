@@ -3,6 +3,22 @@ local addonName, addon = ...
 LOADING_SCREEN_WEIGHT = 1000 --TODO: set this to something sane
 TAXI_SCALING = 0.5 -- this sets the weight of taxi edges to the actual distance times this TODO: set this to something sane
 
+
+local function makeContinentWiseNodeTable(nodeList, continentColumnName)
+    local continentWiseNodes = {}
+    for nodeId, node in pairs(nodeList) do
+        local continentId = node[continentColumnName]
+        if not continentWiseNodes[continentId] then
+            continentWiseNodes[continentId] = {}
+        end
+        continentWiseNodes[continentId][nodeId] = node
+    end
+    return continentWiseNodes
+end
+
+local continentWiseTaxiNodes = makeContinentWiseNodeTable(addon.JJTaxiNodes, "ContinentID")
+local continentWiseWaypointNodes = makeContinentWiseNodeTable(addon.JJWaypointNode, "MapID")
+
 local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationContinent)
     if nodeId == "destination" or nodeId == nil then
         return {}
@@ -15,8 +31,9 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         local playerContinent, playerPosition = C_Map.GetWorldPosFromMapPos(playerMap, playerMapPosition)
 
         -- get all the WaypointNodes in the same continent as the player
-        for adjacentNodeId, adjacentNode in pairs(addon.JJWaypointNode) do
-            if adjacentNode["MapID"] == playerContinent then
+        local sameContinentNodes = continentWiseWaypointNodes[playerContinent]
+        if sameContinentNodes ~= nil then
+            for adjacentNodeId, adjacentNode in pairs(sameContinentNodes) do
                 table.insert(adjacentNodes, {
                     nodeId = addon.getDatasetSafeID("JJWaypointNode", adjacentNodeId),
                     distance = CalculateDistance(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
@@ -24,12 +41,15 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
             end
         end
         -- get all the TaxiNodes in the same continent as the player
-        for adjacentNodeId, adjacentNode in pairs(addon.JJTaxiNodes) do
-            if adjacentNode["ContinentID"] == playerContinent and addon.playerCanUseTaxiNode(adjacentNode) then
-                table.insert(adjacentNodes, {
-                    nodeId = addon.getDatasetSafeID("JJTaxiNodes", adjacentNodeId),
-                    distance = CalculateDistance(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
-                })
+        local sameContinentNodes = continentWiseTaxiNodes[playerContinent]
+        if sameContinentNodes ~= nil then
+            for adjacentNodeId, adjacentNode in pairs(sameContinentNodes) do
+                if addon.playerCanUseTaxiNode(adjacentNode) then
+                    table.insert(adjacentNodes, {
+                        nodeId = addon.getDatasetSafeID("JJTaxiNodes", adjacentNodeId),
+                        distance = CalculateDistance(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
+                    })
+                end
             end
         end
         -- if the destination is in the same continent, add it to the list
@@ -73,8 +93,9 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         end
     end
     -- step 2: get all the portals that are on the same continent as the nodeId and add them to the adjacentNodes
-    for adjacentNodeId, adjacentNode in pairs(addon.JJWaypointNode) do
-        if adjacentNode["MapID"] == nodeMapID then
+    local sameContinentNodes = continentWiseWaypointNodes[nodeMapID]
+    if sameContinentNodes ~= nil then
+        for adjacentNodeId, adjacentNode in pairs(sameContinentNodes) do
             table.insert(adjacentNodes, {
                 nodeId = addon.getDatasetSafeID("JJWaypointNode", adjacentNodeId),
                 distance = CalculateDistance(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
@@ -82,12 +103,15 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         end
     end
     -- step 3: get all the taxi points that are on the same continent as the nodeId and add them to the adjacentNodes
-    for adjacentNodeId, adjacentNode in pairs(addon.JJTaxiNodes) do
-        if adjacentNode["ContinentID"] == nodeMapID and addon.playerCanUseTaxiNode(adjacentNode) then
-            table.insert(adjacentNodes, {
-                nodeId = addon.getDatasetSafeID("JJTaxiNodes", adjacentNodeId),
-                distance = CalculateDistance(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
-            })
+    local sameContinentNodes = continentWiseTaxiNodes[nodeMapID]
+    if sameContinentNodes ~= nil then
+        for adjacentNodeId, adjacentNode in pairs(sameContinentNodes) do
+            if addon.playerCanUseTaxiNode(adjacentNode) then
+                table.insert(adjacentNodes, {
+                    nodeId = addon.getDatasetSafeID("JJTaxiNodes", adjacentNodeId),
+                    distance = CalculateDistance(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
+                })
+            end
         end
     end
 
@@ -137,17 +161,22 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
     addNodeToDijkstraGraph("destination", dist, math.huge, prev, nil, Q)
     addNodeToDijkstraGraph("player", dist, 0, prev, "player", Q)
 
-    local calculating = false
+    local iterations = 0
+    local totalTime = 0
 
     local throttleFrame = CreateFrame("Frame") -- TODO: we probably want to reuse this whenever getDirections is called
     throttleFrame:SetScript("OnUpdate", function(self, elapsed)
-        if not calculating and Q:size() > 0 then -- this used to be the while loop declaration
-            calculating = true
+        if Q:size() > 0 then -- this used to be the while loop declaration
             -- local uIndex, u = getNodeWithMinDist(Q, dist)
             -- table.remove(Q, uIndex)
             local u, _ = Q:pop()
             if u ~= "destination" then
+                local start = GetTimePreciseSec()
                 local adjacentNodes = getAdjacentNodes(u, destinationX, destinationY, destinationContinent)
+                iterations = iterations + 1
+                local timetaken = GetTimePreciseSec() - start
+                totalTime = totalTime + timetaken
+                print("Iteration " .. (iterations) .. "It took " .. (timetaken) .. " seconds to get adjacent nodes for " .. u)
                 
                 for _, adjacentNode in pairs(adjacentNodes) do
                     local v = adjacentNode["nodeId"]
@@ -158,8 +187,10 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
                         Q:update(v, alt)
                     end
                 end
-                calculating = false
             else
+                print("total time " .. totalTime)
+                print("iterations " .. iterations)
+                print("average time " .. (totalTime / iterations))
                 -- reconstruct the path
                 local path = {}
                 local nodeId = "destination"
