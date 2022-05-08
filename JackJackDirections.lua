@@ -119,13 +119,13 @@ local function addNodeToDijkstraGraph(nodeId, distTable, dist, prevTable, prev, 
     distTable[nodeId] = dist
     prevTable[nodeId] = prev
     -- table.insert(Q, nodeId)
-    Q:insert(nodeId)
+    Q:insert(dist, nodeId)
 end
 
 addon.getDirections = function(destinationX, destinationY, destinationContinent, destinationName)
     local dist = {}
     local prev = {}
-    local Q = addon.binaryheap.minHeap(function (a, b) return dist[a] < dist[b] end) -- need to provide less-than comparison function so the heap knows to sort by dist
+    local Q = addon.binaryheap.minUnique()
     for waypointNodeId, node in pairs(addon.JJWaypointNode) do
         local nodeId = addon.getDatasetSafeID("JJWaypointNode", waypointNodeId)
         addNodeToDijkstraGraph(nodeId, dist, math.huge, prev, nil, Q)
@@ -137,10 +137,10 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
     addNodeToDijkstraGraph("destination", dist, math.huge, prev, nil, Q)
     addNodeToDijkstraGraph("player", dist, 0, prev, "player", Q)
 
-    while #Q > 0 do
+    while Q:size() > 0 do
         -- local uIndex, u = getNodeWithMinDist(Q, dist)
         -- table.remove(Q, uIndex)
-        local u = Q:pop()
+        local u, _ = Q:pop()
         if u == "destination" then
             break
         end
@@ -151,6 +151,7 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
             if alt < dist[v] then
                 dist[v] = alt
                 prev[v] = u
+                Q:update(v, alt)
             end
         end
     end
