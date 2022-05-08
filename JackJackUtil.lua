@@ -13,7 +13,7 @@ end
 -- @return  Record from the dataset
 -- @return  Dataset name
 addon.getRecordFromDatasetSafeID = function(datasetSafeID)
-    local datasetName, recordId = string.match(datasetSafeID, "(.+):(.+)")
+    local datasetName, recordId = strsplit(":", datasetSafeID, 2) -- string.find(datasetSafeID, "(.+):(.+)")
     return addon[datasetName][tonumber(recordId)], datasetName
 end
 
