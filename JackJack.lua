@@ -133,30 +133,34 @@ local function modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
             TomTom:RemoveWaypoint(directionWaypoint)
         end
 
-        local directions = addon.getDirections(poi["Pos0"], poi["Pos1"], poi["ContinentID"], poi["Name_lang"])
-        if directions ~= nil then
-            -- directions will arrive inverted, which is good since we want to the first direction to
-            -- show up as the crazy arrow by adding it last
-            for i, direction in ipairs(directions) do
-                local uid = TomTom:AddWaypoint(direction["uiMapId"], direction["x"], direction["y"], {
-                    title = #directions - i + 1 .. " " .. direction["Name_lang"],
-                    source = "JackJack (directions)",
-                    persistent = true,
-                    minimap = true,
-                    world = true,
-                    crazy = true,
-                })
-                table.insert(JJ_DIRECTIONS_WAYPOINTS, uid)
+        local function showDirections(directions) -- TODO: move this out
+            if directions ~= nil then
+                -- directions will arrive inverted, which is good since we want to the first direction to
+                -- show up as the crazy arrow by adding it last
+                for i, direction in ipairs(directions) do
+                    local uid = TomTom:AddWaypoint(direction["uiMapId"], direction["x"], direction["y"], {
+                        title = #directions - i + 1 .. " " .. direction["Name_lang"],
+                        source = "JackJack (directions)",
+                        persistent = true,
+                        minimap = true,
+                        world = true,
+                        crazy = true,
+                    })
+                    table.insert(JJ_DIRECTIONS_WAYPOINTS, uid)
+                end
+                print("===")
+                print("Added direction waypoints to " .. poi["Name_lang"])
+                -- when we print directions, we want to read them in normal order, so we reverse the output
+                for i = #directions, 1, -1 do
+                    print(#directions - i + 1, directions[i]["Name_lang"])
+                end
+            else
+                print("No path found to " .. poi["Name_lang"] .. " from your current location! (It might be in an instance, like a dungeon or raid.)")
             end
-            print("===")
-            print("Added direction waypoints to " .. poi["Name_lang"])
-            -- when we print directions, we want to read them in normal order, so we reverse the output
-            for i = #directions, 1, -1 do
-                print(#directions - i + 1, directions[i]["Name_lang"])
-            end
-        else
-            print("No path found to " .. poi["Name_lang"] .. " from your current location! (It might be in an instance, like a dungeon or raid.)")
         end
+
+        print("Getting directions to " .. poi["Name_lang"] .. "...")
+        local directions = addon.getDirections(poi["Pos0"], poi["Pos1"], poi["ContinentID"], poi["Name_lang"], showDirections)
     end)
 
     directionsButton:SetScript("OnEnter", function()
