@@ -101,30 +101,31 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
     return adjacentNodes
 end
 
-local function getNodeWithMinDist(Q, dist)
-    local minDist = math.huge
-    local minNode = nil
-    local minNodeIndex = nil
-    for i = 1, #Q do
-        if dist[Q[i]] < minDist then
-            minDist = dist[Q[i]]
-            minNode = Q[i]
-            minNodeIndex = i
-        end
-    end
-    return minNodeIndex, minNode
-end
+-- local function getNodeWithMinDist(Q, dist)
+--     local minDist = math.huge
+--     local minNode = nil
+--     local minNodeIndex = nil
+--     for i = 1, #Q do
+--         if dist[Q[i]] < minDist then
+--             minDist = dist[Q[i]]
+--             minNode = Q[i]
+--             minNodeIndex = i
+--         end
+--     end
+--     return minNodeIndex, minNode
+-- end
 
 local function addNodeToDijkstraGraph(nodeId, distTable, dist, prevTable, prev, Q)
     distTable[nodeId] = dist
     prevTable[nodeId] = prev
-    table.insert(Q, nodeId)
+    -- table.insert(Q, nodeId)
+    Q:insert(nodeId)
 end
 
 addon.getDirections = function(destinationX, destinationY, destinationContinent, destinationName)
     local dist = {}
     local prev = {}
-    local Q = {}
+    local Q = addon.binaryheap.minHeap(function (a, b) return dist[a] < dist[b] end) -- need to provide less-than comparison function so the heap knows to sort by dist
     for waypointNodeId, node in pairs(addon.JJWaypointNode) do
         local nodeId = addon.getDatasetSafeID("JJWaypointNode", waypointNodeId)
         addNodeToDijkstraGraph(nodeId, dist, math.huge, prev, nil, Q)
@@ -137,8 +138,9 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
     addNodeToDijkstraGraph("player", dist, 0, prev, "player", Q)
 
     while #Q > 0 do
-        local uIndex, u = getNodeWithMinDist(Q, dist)
-        table.remove(Q, uIndex)
+        -- local uIndex, u = getNodeWithMinDist(Q, dist)
+        -- table.remove(Q, uIndex)
+        local u = Q:pop()
         if u == "destination" then
             break
         end
