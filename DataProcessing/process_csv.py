@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """ Process a bunch of CSVs from WoW.tools with location data and output them as a CSV
 that can be converted to a Lua table for the addon.
 """
