@@ -1,4 +1,4 @@
-## Interface: 90200
+## Interface: 90207
 ## Version: jj1.7-retail9.2.0.42979
 ## Title: JackJack
 ## Author: artifexsev/fechan
