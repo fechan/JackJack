@@ -161,95 +161,78 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
     addNodeToDijkstraGraph("destination", dist, math.huge, prev, nil, Q)
     addNodeToDijkstraGraph("player", dist, 0, prev, "player", Q)
 
-    local iterations = 0
-    local totalTime = 0
+    local directions = {}
 
-    local throttleFrame = CreateFrame("Frame") -- TODO: we probably want to reuse this whenever getDirections is called
-    throttleFrame:SetScript("OnUpdate", function(self, elapsed)
-        if Q:size() > 0 then -- this used to be the while loop declaration
-            -- local uIndex, u = getNodeWithMinDist(Q, dist)
-            -- table.remove(Q, uIndex)
-            local u, _ = Q:pop()
-            if u ~= "destination" then
-                local start = GetTimePreciseSec()
-                local adjacentNodes = getAdjacentNodes(u, destinationX, destinationY, destinationContinent)
-                iterations = iterations + 1
-                local timetaken = GetTimePreciseSec() - start
-                totalTime = totalTime + timetaken
-                print("Iteration " .. (iterations) .. "It took " .. (timetaken) .. " seconds to get adjacent nodes for " .. u)
-                
-                for _, adjacentNode in pairs(adjacentNodes) do
-                    local v = adjacentNode["nodeId"]
-                    local alt = dist[u] + adjacentNode["distance"]
-                    if alt < dist[v] then
-                        dist[v] = alt
-                        prev[v] = u
-                        Q:update(v, alt)
-                    end
+    while Q:size() > 0 do
+        -- local uIndex, u = getNodeWithMinDist(Q, dist)
+        -- table.remove(Q, uIndex)
+        local u, _ = Q:pop()
+        if u ~= "destination" then
+            local adjacentNodes = getAdjacentNodes(u, destinationX, destinationY, destinationContinent)
+            
+            for _, adjacentNode in pairs(adjacentNodes) do
+                local v = adjacentNode["nodeId"]
+                local alt = dist[u] + adjacentNode["distance"]
+                if alt < dist[v] then
+                    dist[v] = alt
+                    prev[v] = u
+                    Q:update(v, alt)
                 end
-            else
-                print("total time " .. totalTime)
-                print("iterations " .. iterations)
-                print("average time " .. (totalTime / iterations))
-                -- reconstruct the path
-                local path = {}
-                local nodeId = "destination"
-                while nodeId ~= "player" do
-                    table.insert(path, nodeId)
-                    nodeId = prev[nodeId]
-                    if nodeId == nil then
-                        return nil
-                    end
+            end
+        else
+            -- reconstruct the path
+            local path = {}
+            local nodeId = "destination"
+            while nodeId ~= "player" do
+                table.insert(path, nodeId)
+                nodeId = prev[nodeId]
+                if nodeId == nil then
+                    return nil
                 end
-        
-                local directions = {}
-                for _, nodeId in ipairs(path) do
-                    local direction = {}
-                    local globalCoords, uiMapId, mapPosition, name
-                    local shouldAddDirection = true
-                    if nodeId ~= "destination" and nodeId ~= "player" then
-                        local nodeInfo, datasetName = addon.getRecordFromDatasetSafeID(nodeId)
-                        
-                        if datasetName == "JJWaypointNode" then
-                            -- skip directions that are a portal exit (Type=2), since the player will always be there
-                            -- if they went through the entrance. Also some of the names of portal exits are misleading
-                            if nodeInfo["Type"] ~= 2 then
-                                globalCoords = CreateVector2D(nodeInfo["Pos0"], nodeInfo["Pos1"])
-                                uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["MapID"], globalCoords)
-                                name = nodeInfo["Name_lang"]
-                                shouldAddDirection = true
-                            else
-                                shouldAddDirection = false
-                            end
-                        elseif datasetName == "JJTaxiNodes" then
+            end
+    
+            for _, nodeId in ipairs(path) do
+                local direction = {}
+                local globalCoords, uiMapId, mapPosition, name
+                local shouldAddDirection = true
+                if nodeId ~= "destination" and nodeId ~= "player" then
+                    local nodeInfo, datasetName = addon.getRecordFromDatasetSafeID(nodeId)
+                    
+                    if datasetName == "JJWaypointNode" then
+                        -- skip directions that are a portal exit (Type=2), since the player will always be there
+                        -- if they went through the entrance. Also some of the names of portal exits are misleading
+                        if nodeInfo["Type"] ~= 2 then
                             globalCoords = CreateVector2D(nodeInfo["Pos0"], nodeInfo["Pos1"])
-                            uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["ContinentID"], globalCoords)
-                            name = "Flight point " .. nodeInfo["Name_lang"]
+                            uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["MapID"], globalCoords)
+                            name = nodeInfo["Name_lang"]
                             shouldAddDirection = true
+                        else
+                            shouldAddDirection = false
                         end
-                    else
-                        globalCoords = CreateVector2D(destinationX, destinationY)
-                        uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(destinationContinent, globalCoords)
-                        name = "Fly/walk to arrive at " .. destinationName
+                    elseif datasetName == "JJTaxiNodes" then
+                        globalCoords = CreateVector2D(nodeInfo["Pos0"], nodeInfo["Pos1"])
+                        uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["ContinentID"], globalCoords)
+                        name = "Flight point " .. nodeInfo["Name_lang"]
                         shouldAddDirection = true
                     end
-        
-                    if shouldAddDirection then
-                        direction["Name_lang"] = name
-                        direction["uiMapId"] = uiMapId
-                        direction["x"] = mapPosition.x
-                        direction["y"] = mapPosition.y
-                        
-                        table.insert(directions, direction)
-                    end
+                else
+                    globalCoords = CreateVector2D(destinationX, destinationY)
+                    uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(destinationContinent, globalCoords)
+                    name = "Fly/walk to arrive at " .. destinationName
+                    shouldAddDirection = true
                 end
-        
-                completedCallback(directions)
-                throttleFrame:Hide()
-                throttleFrame:SetScript("OnUpdate", nil)
-
+    
+                if shouldAddDirection then
+                    direction["Name_lang"] = name
+                    direction["uiMapId"] = uiMapId
+                    direction["x"] = mapPosition.x
+                    direction["y"] = mapPosition.y
+                    
+                    table.insert(directions, direction)
+                end
             end
+            break
         end
-    end)
-    throttleFrame:Show()
+    end
+    completedCallback(directions)
 end

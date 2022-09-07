@@ -134,7 +134,7 @@ local function modifyLocationButton(buttonGroup, poi, uiMapId, mapPosition)
         end
 
         local function showDirections(directions) -- TODO: move this out
-            if directions ~= nil then
+            if #directions ~= 0 then
                 -- directions will arrive inverted, which is good since we want to the first direction to
                 -- show up as the crazy arrow by adding it last
                 for i, direction in ipairs(directions) do
