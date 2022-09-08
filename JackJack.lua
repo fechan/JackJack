@@ -45,7 +45,7 @@ function addon:locationsMatching(locationName, limit)
 end
 
 Ace:RegisterChatCommand("jjsearch", function (query)
-    for idx, location in ipairs(addon:locationsMatching(query), 20) do
+    for idx, location in ipairs(addon:locationsMatching(query, 20)) do
         Ace:Print(location["Name_lang"])
     end
 end)
