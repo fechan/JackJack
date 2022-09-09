@@ -9,6 +9,15 @@ local AceGUI = LibStub("AceGUI-3.0")
 local locationList, locationListContainer
 local resultsText
 
+-- This is needed because locationListContainer doesn't fill
+-- available height unless it's inside a container with the
+-- "Fill" layout, even though SetFullHeight is set.
+-- This also allows us to call ReleaseChildren on it to
+-- delete the locationListContainer + locationList, since
+-- we can't Release it directly without it breaking ReleaseChildren
+-- for any parent elements.
+local locationListContainerContainer
+
 --- Get the text that displays the number of search results accordingly
 -- @param numResults    The number of search results
 -- @param queryIsBlank  Whether the searqh query is blank
@@ -23,15 +32,6 @@ local function getSearchResultsText(numResults, queryIsBlank)
         return "Showing first 20 of " .. numResults .. " possible matches"
     end
 end
-
--- This is needed because locationListContainer doesn't fill
--- available height unless it's inside a container with the
--- "Fill" layout, even though SetFullHeight is set.
--- This also allows us to call ReleaseChildren on it to
--- delete the locationListContainer + locationList, since
--- we can't Release it directly without it breaking ReleaseChildren
--- for any parent elements.
-local locationListContainerContainer
 
 local function populateLocationList(searchBox, callbackName, query)
     -- delete and create new location list
