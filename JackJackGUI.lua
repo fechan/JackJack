@@ -26,6 +26,7 @@ function addon:initGUI()
     mainFrame:SetWidth(MAIN_FRAME_STYLE.WIDTH)
     mainFrame:SetLayout("Flow")
     
+    -- tabs
     local tabs = AceGUI:Create("TabGroup")
     tabs:SetTabs({
         {value = "locations", text = "Locations"},

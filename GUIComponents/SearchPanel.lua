@@ -6,8 +6,20 @@ local addonName, addon = ...
 
 local AceGUI = LibStub("AceGUI-3.0")
 
-local searchPanel
 local locationList, locationListContainer
+local resultsText
+
+--- Get the text that displays the number of search results accordingly
+-- @param numResults The number of search results
+local function getSearchResultsText(numResults)
+    if numResults == 0 then
+        return "No possible matching locations found!"
+    elseif numResults < 20 then
+        return numResults .. " possible matches"
+    else
+        return "Showing first 20 of " .. numResults .. " possible matches"
+    end
+end
 
 -- This is needed because locationListContainer doesn't fill
 -- available height unless it's inside a container with the
@@ -24,16 +36,19 @@ local function populateLocationList(searchBox, callbackName, query)
     locationList, locationListContainer = addon.ScrollingList()
 
     -- put buttons in the location list
-    for idx, location in ipairs(addon:locationsMatching(query, 20)) do
+    local locations = addon:locationsMatching(query, 20)
+    for idx, location in ipairs(locations) do
         local button = addon:LocationButton(location)
         locationList:AddChild(button)
     end
+
+    resultsText:SetText(getSearchResultsText(#locations))
 
     locationListContainerContainer:AddChild(locationListContainer)
 end
 
 function addon:SearchPanel()
-    searchPanel = AceGUI:Create("SimpleGroup")
+    local searchPanel = AceGUI:Create("SimpleGroup")
     searchPanel:SetFullHeight(true)
     searchPanel:SetFullWidth(true)
     searchPanel:SetLayout("Flow")
@@ -45,12 +60,20 @@ function addon:SearchPanel()
     searchBox:DisableButton(true)
     searchPanel:AddChild(searchBox)
 
-    -- continer for the locationListContainer (see comment at variable declaration)
+    -- search result meta text
+    resultsText = AceGUI:Create("Label")
+    resultsText:SetFullWidth(true)
+    searchPanel:AddChild(resultsText)
+
+    -- container for the locationListContainer (see comment at variable declaration)
     locationListContainerContainer = AceGUI:Create("SimpleGroup")
     locationListContainerContainer:SetFullHeight(true)
     locationListContainerContainer:SetFullWidth(true)
     locationListContainerContainer:SetLayout("Fill")
     searchPanel:AddChild(locationListContainerContainer)
+
+    -- pre-populate the location list
+    populateLocationList(searchBox, nil, "")
 
     return searchPanel
 end
