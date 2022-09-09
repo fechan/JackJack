@@ -10,12 +10,12 @@ local STYLE = {
 -- @param   location    Location to get display name for
 -- @return  displayName Display name
 local function getLocationDisplayName(location)
-    if location["AreaName_lang"] == "" or location["AreaName_lang"] == nil then
-        return location["Name_lang"] .. "\n(" .. location["MapName_lang"] .. ")"
-    elseif location["AreaName_lang"] == location["MapName_lang"] then
-        return location["Name_lang"] .. "\n(" .. location["MapName_lang"] .. ")"
+    if location.AreaName_lang == "" or location.AreaName_lang == nil then
+        return location.Name_lang .. "\n(" .. location.MapName_lang .. ")"
+    elseif location.AreaName_lang == location.MapName_lang then
+        return location.Name_lang .. "\n(" .. location.MapName_lang .. ")"
     else
-        return location["Name_lang"] .. "\n(" .. location["AreaName_lang"] .. ", " .. location["MapName_lang"] .. ")"
+        return location.Name_lang .. "\n(" .. location.AreaName_lang .. ", " .. location.MapName_lang .. ")"
     end
 end
 

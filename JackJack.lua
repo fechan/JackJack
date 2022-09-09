@@ -13,20 +13,21 @@ function addon:locationsMatching(locationName, limit)
     limit = limit or math.huge
 
     for rowNumber, poi in pairs(addon.JJAreaPOI) do
-        local match = {}
-        if addon.fzy.has_match(locationName, poi["Name_lang"])
+        if addon.fzy.has_match(locationName, poi.Name_lang)
                 and matches < limit then
             -- significantly faster to precompute score and put it in memory than
             -- computing every time a comparison is made in the sort
-            match["fzyScore"] = addon.fzy.score(locationName, poi["Name_lang"])
-            match["Name_lang"] = poi["Name_lang"]
-            match["Pos0"] = poi["Pos0"]
-            match["Pos1"] = poi["Pos1"]
-            match["ContinentID"] = poi["ContinentID"]
-            match["AreaName_lang"] = poi["AreaName_lang"]
-            match["Description_lang"] = poi["Description_lang"]
-            match["MapName_lang"] = addon.JJMap[poi["ContinentID"]]["MapName_lang"]
-            match["Origin"] = "AreaPOI (Points of Interest table)"
+            local match = {
+                ["fzyScore"] = addon.fzy.score(locationName, poi["Name_lang"]),
+                ["Name_lang"] = poi["Name_lang"],
+                ["Pos0"] = poi["Pos0"],
+                ["Pos1"] = poi["Pos1"],
+                ["ContinentID"] = poi["ContinentID"],
+                ["AreaName_lang"] = poi["AreaName_lang"],
+                ["Description_lang"] = poi["Description_lang"],
+                ["MapName_lang"] = addon.JJMap[poi["ContinentID"]]["MapName_lang"],
+                ["Origin"] = "AreaPOI (Points of Interest table)"
+            }
             table.insert(matchingLocations, match)
             matches = matches + 1
         end
@@ -83,6 +84,6 @@ end
 
 Ace:RegisterChatCommand("jjsearch", function (query)
     for idx, location in ipairs(addon:locationsMatching(query, 20)) do
-        Ace:Print(location["Name_lang"])
+        Ace:Print(location.Name_lang)
     end
 end)
