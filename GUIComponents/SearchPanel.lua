@@ -10,9 +10,12 @@ local locationList, locationListContainer
 local resultsText
 
 --- Get the text that displays the number of search results accordingly
--- @param numResults The number of search results
-local function getSearchResultsText(numResults)
-    if numResults == 0 then
+-- @param numResults    The number of search results
+-- @param queryIsBlank  Whether the searqh query is blank
+local function getSearchResultsText(numResults, queryIsBlank)
+    if queryIsBlank then
+        return "Find locations by name in the search box above"
+    elseif numResults == 0 then
         return "No possible matching locations found!"
     elseif numResults < 20 then
         return numResults .. " possible matches"
@@ -42,7 +45,7 @@ local function populateLocationList(searchBox, callbackName, query)
         locationList:AddChild(button)
     end
 
-    resultsText:SetText(getSearchResultsText(#locations))
+    resultsText:SetText(getSearchResultsText(#locations, query == ""))
 
     locationListContainerContainer:AddChild(locationListContainer)
 end
