@@ -22,6 +22,8 @@ end
 function addon:LocationButton(location)
     local button = AceGUI:Create("Button")
 
+    button:SetCallback("OnClick", function() addon:createWaypointFor(location) end)
+
     button:SetText(getLocationDisplayName(location))
     button:SetFullWidth(true)
     button:SetHeight(STYLE.HEIGHT)

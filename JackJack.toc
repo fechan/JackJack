@@ -27,5 +27,6 @@ GUIComponents\SearchPanel.lua
 GUIComponents\DirectionsPanel.lua
 
 # JackJack CORE FILES
+JackJackWaypoints.lua
 JackJackGUI.lua
 JackJack.lua

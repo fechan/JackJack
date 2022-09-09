@@ -4,10 +4,6 @@ local addonName, addon = ...
 -- set up Ace addon object
 local Ace = LibStub("AceAddon-3.0"):NewAddon("JackJack", "AceConsole-3.0")
 
-function Ace:OnInitialize ()
-    addon:initGUI()
-end
-
 --- Get all locations that (fuzzy) match the location name
 -- @param locationName  Location name to match
 -- @param limit         (optional) Limit to this number of locations
@@ -42,6 +38,47 @@ function addon:locationsMatching(locationName, limit)
     end)
 
     return matchingLocations
+end
+
+--- Try to find the location of the waypoint at a higher zoom level than the given map
+-- @param uiMapId       Map ID of the (possibly) lower zoom level map
+-- @param initialx      X position of the waypoint on the lower zoom level map
+-- @param initialy      Y Position of the waypoint on the lower zoom level map
+-- @return uiMapId      Map ID of the higher zoom level map if available, otherwise same as input
+-- @return x            X coordinate of the waypoint on the higher zoom level map if available, otherwise same as initialx
+-- @return y            Y coordinate of the waypoint on the higher zoom level map if available, otherwise same as initialy
+local function getHigherZoomMapPosition(uiMapId, initialx, initialy)
+    local x = initialx
+    local y = initialy
+    print(uiMapId, initialx, initialy)
+    local childMapInfo = C_Map.GetMapInfoAtPosition(uiMapId, initialx, initialy)
+    if childMapInfo then
+        local left, right, top, bottom = C_Map.GetMapRectOnMap(childMapInfo.mapID, uiMapId)
+        x = (initialx - left) / (right - left)
+        y = (initialy - top) / (bottom - top)
+        uiMapId = childMapInfo.mapID
+    end
+    return uiMapId, x, y
+end
+
+--- Try to find the location of the waypoint at the highest possible level of map zoom
+-- @param location      Game location to get a waypoint location for
+--      @param location.ContinentID Continent ID
+--      @param location.Pos0        x coordinate
+--      @param location.Pos1        y coordinate
+-- @return uiMapId      Map ID of the highest zoom level mapID
+-- @return x            X coordinate of the waypoint
+-- @return y            Y coordinate of the waypoint
+function addon:getBestZoomMapPositionFor(location)
+    -- TODO: make this recursive
+    local globalCoords = CreateVector2D(location.Pos0, location.Pos1)
+    local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(location.ContinentID, globalCoords)
+    local uiMapId, x, y = getHigherZoomMapPosition(uiMapId, mapPosition.x, mapPosition.y)
+    return uiMapId, x, y
+end
+
+function Ace:OnInitialize ()
+    addon:initGUI()
 end
 
 Ace:RegisterChatCommand("jjsearch", function (query)
