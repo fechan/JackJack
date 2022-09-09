@@ -22,6 +22,8 @@ Data\JJMap.lua
 
 # JackJack GUI COMPONENTS
 GUIComponents\LocationButton.lua
+GUIComponents\ScrollingList.lua
+GUIComponents\SearchPanel.lua
 
 # JackJack CORE FILES
 JackJackGUI.lua
