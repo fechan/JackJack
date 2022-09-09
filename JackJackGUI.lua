@@ -9,10 +9,11 @@ local MAIN_FRAME_STYLE = {
 
 local function selectTab(tabs, callbackName, tabName)
     tabs:ReleaseChildren()
+
     if tabName == "locations" then
         tabs:AddChild(addon:SearchPanel())
     elseif tabName == "directions" then
-        -- TODO: implement me
+        tabs:AddChild(addon:DirectionsPanel())
     end
 end
 

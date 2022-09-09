@@ -11,14 +11,16 @@ local locationList, locationListContainer
 
 -- This is needed because locationListContainer doesn't fill
 -- available height unless it's inside a container with the
--- "Fill" layout, even though SetFullHeight is set
+-- "Fill" layout, even though SetFullHeight is set.
+-- This also allows us to call ReleaseChildren on it to
+-- delete the locationListContainer + locationList, since
+-- we can't Release it directly without it breaking ReleaseChildren
+-- for any parent elements.
 local locationListContainerContainer
 
 local function populateLocationList(searchBox, callbackName, query)
-    -- delete the old location list if exists
-    if locationListContainer then locationListContainer:Release() end
-
-    -- create the location list
+    -- delete and create new location list
+    locationListContainerContainer:ReleaseChildren()
     locationList, locationListContainer = addon.ScrollingList()
 
     -- put buttons in the location list
