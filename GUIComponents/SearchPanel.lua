@@ -6,7 +6,6 @@ local addonName, addon = ...
 
 local AceGUI = LibStub("AceGUI-3.0")
 
-local locationList, locationListContainer
 local resultsText
 
 -- This is needed because locationListContainer doesn't fill
@@ -36,7 +35,7 @@ end
 local function populateLocationList(searchBox, callbackName, query)
     -- delete and create new location list
     locationListContainerContainer:ReleaseChildren()
-    locationList, locationListContainer = addon.ScrollingList()
+    local locationList, locationListContainer = addon.ScrollingList()
 
     -- put buttons in the location list
     local locations = addon:locationsMatching(query, 20)
