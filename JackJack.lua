@@ -51,7 +51,6 @@ end
 local function getHigherZoomMapPosition(uiMapId, initialx, initialy)
     local x = initialx
     local y = initialy
-    print(uiMapId, initialx, initialy)
     local childMapInfo = C_Map.GetMapInfoAtPosition(uiMapId, initialx, initialy)
     if childMapInfo then
         local left, right, top, bottom = C_Map.GetMapRectOnMap(childMapInfo.mapID, uiMapId)
