@@ -24,6 +24,15 @@ function addon:LocationButton(location)
 
     button:SetCallback("OnClick", function() addon:createWaypointFor(location) end)
 
+    button:SetCallback("OnEnter", function(button)
+        local destroyTempWaypoint = addon:createAndFocusTempWaypointFor(location)
+        button:SetUserData("destroyTempWaypoint", destroyTempWaypoint)
+    end)
+
+    button:SetCallback("OnLeave", function(button)
+        button:GetUserData("destroyTempWaypoint")()
+    end)
+
     button:SetText(getLocationDisplayName(location))
     button:SetFullWidth(true)
     button:SetHeight(STYLE.HEIGHT)
