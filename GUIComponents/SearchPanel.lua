@@ -17,6 +17,10 @@ local function getSearchResultsText(numResults, queryIsBlank)
     end
 end
 
+--- Ace callback handler that populates the location list when text is typed into the search box
+-- @param searchBox     Searchbox widget
+-- @param callbackName  Name of the callback event (should always be "OnTextChanged")
+-- @param querying      Search query
 local function populateLocationList(searchBox, callbackName, query)
     -- delete and create new location list
     local locationListContainerContainer = searchBox:GetUserData("locationListContainerContainer")
