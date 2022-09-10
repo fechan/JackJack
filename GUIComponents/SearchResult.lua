@@ -4,7 +4,8 @@ local AceGUI = LibStub("AceGUI-3.0")
 
 STYLE = {
     ["LOCATIONBTN"] = {
-        ["RELATIVE_WIDTH"] = .85
+        ["RELATIVE_WIDTH"] = .85,
+        ["FULLWIDTH"] = false
     },
     ["DIRECTIONSBTN"] = {
         ["RELATIVE_WIDTH"] = .15

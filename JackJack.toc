@@ -22,6 +22,7 @@ Data\JJMap.lua
 
 # JackJack GUI COMPONENTS
 GUIComponents\AceGUIWidget-IconButton.lua
+GUIComponents\Tooltip.lua
 GUIComponents\LocationButton.lua
 GUIComponents\DirectionsButton.lua
 GUIComponents\SearchResult.lua

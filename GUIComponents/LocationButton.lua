@@ -31,16 +31,27 @@ function addon:LocationButton(location, style)
     button:SetCallback("OnEnter", function(button)
         local destroyTempWaypoint = addon:createAndFocusTempWaypointFor(location)
         button:SetUserData("destroyTempWaypoint", destroyTempWaypoint)
-    end)
 
+        local tooltip = addon:getGlobalTooltip()
+        button:SetUserData("tooltip", tooltip)
+        tooltip:ClearLines()
+        tooltip:SetOwner(button.frame, "ANCHOR_RIGHT", 0, -style.HEIGHT)
+        tooltip:AddLine(location.Name_lang)
+        tooltip:Show()
+    end)
+    
     button:SetCallback("OnLeave", function(button)
         button:GetUserData("destroyTempWaypoint")()
+        button:GetUserData("tooltip"):Release()
     end)
 
     button:SetText(getLocationDisplayName(location))
-    button:SetRelativeWidth(style.RELATIVE_WIDTH)
-    button:SetFullWidth(style.FULLWIDTH)
     button:SetHeight(style.HEIGHT)
+    if style.FULLWIDTH then
+        button:SetFullWidth(style.FULLWIDTH)
+    else
+        button:SetRelativeWidth(style.RELATIVE_WIDTH)
+    end
 
     return button
 end

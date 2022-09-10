@@ -45,13 +45,6 @@ local methods = {
 
 	-- ["OnRelease"] = nil,
 
-	-- ["SetText"] = function(self, text)
-	-- 	self.text:SetText(text)
-	-- 	if self.autoWidth then
-	-- 		self:SetWidth(self.text:GetStringWidth() + 30)
-	-- 	end
-	-- end,
-
 	["SetImage"] = function(self, path, ...)
 		local image = self.image
 		image:SetTexture(path)
