@@ -125,20 +125,6 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
     return adjacentNodes
 end
 
--- local function getNodeWithMinDist(Q, dist)
---     local minDist = math.huge
---     local minNode = nil
---     local minNodeIndex = nil
---     for i = 1, #Q do
---         if dist[Q[i]] < minDist then
---             minDist = dist[Q[i]]
---             minNode = Q[i]
---             minNodeIndex = i
---         end
---     end
---     return minNodeIndex, minNode
--- end
-
 local function addNodeToDijkstraGraph(nodeId, distTable, dist, prevTable, prev, Q)
     distTable[nodeId] = dist
     prevTable[nodeId] = prev
@@ -146,7 +132,7 @@ local function addNodeToDijkstraGraph(nodeId, distTable, dist, prevTable, prev, 
     Q:insert(dist, nodeId)
 end
 
-addon.getDirections = function(destinationX, destinationY, destinationContinent, destinationName, completedCallback)
+function addon:getDirections(destinationX, destinationY, destinationContinent, destinationName, completedCallback)
     local dist = {}
     local prev = {}
     local Q = addon.binaryheap.minUnique()
@@ -191,9 +177,8 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
                 end
             end
     
-            for _, nodeId in ipairs(path) do
-                local direction = {}
-                local globalCoords, uiMapId, mapPosition, name
+            for _, nodeId in ipairs(path) do -- TODO: pretty sure we can simplify the two if statements into one
+                local continentId, pos0, pos1, name
                 local shouldAddDirection = true
                 if nodeId ~= "destination" and nodeId ~= "player" then
                     local nodeInfo, datasetName = addon.getRecordFromDatasetSafeID(nodeId)
@@ -202,37 +187,46 @@ addon.getDirections = function(destinationX, destinationY, destinationContinent,
                         -- skip directions that are a portal exit (Type=2), since the player will always be there
                         -- if they went through the entrance. Also some of the names of portal exits are misleading
                         if nodeInfo["Type"] ~= 2 then
-                            globalCoords = CreateVector2D(nodeInfo["Pos0"], nodeInfo["Pos1"])
-                            uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["MapID"], globalCoords)
-                            name = nodeInfo["Name_lang"]
+                            continentId = nodeInfo.MapID
+                            pos0 = nodeInfo.Pos0
+                            pos1 = nodeInfo.Pos1
+                            name = nodeInfo.Name_lang
                             shouldAddDirection = true
                         else
                             shouldAddDirection = false
                         end
                     elseif datasetName == "JJTaxiNodes" then
-                        globalCoords = CreateVector2D(nodeInfo["Pos0"], nodeInfo["Pos1"])
-                        uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(nodeInfo["ContinentID"], globalCoords)
+                        continentId = nodeInfo.ContinentID
+                        pos0 = nodeInfo.Pos0
+                        pos1 = nodeInfo.Pos1
+                        name = nodeInfo.Name_lang
                         name = "Flight point " .. nodeInfo["Name_lang"]
                         shouldAddDirection = true
                     end
                 else
-                    globalCoords = CreateVector2D(destinationX, destinationY)
-                    uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(destinationContinent, globalCoords)
+                    continentId = destinationContinent
+                    pos0 = destinationX
+                    pos1 = destinationY
                     name = "Fly/walk to arrive at " .. destinationName
                     shouldAddDirection = true
                 end
     
                 if shouldAddDirection then
-                    direction["Name_lang"] = name
-                    direction["uiMapId"] = uiMapId
-                    direction["x"] = mapPosition.x
-                    direction["y"] = mapPosition.y
-                    
+                    local direction = {
+                        ["Name_lang"] =     name,
+                        ["ContinentID"] =   continentId,
+                        ["Pos0"] =          pos0,
+                        ["Pos1"] =          pos1
+                    }
                     table.insert(directions, direction)
                 end
             end
             break
         end
     end
-    completedCallback(directions)
+
+    if completedCallback then
+        completedCallback(directions)
+    end
+    return directions
 end

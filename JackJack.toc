@@ -13,8 +13,9 @@ Libs\AceAddon-3.0\AceAddon-3.0.xml
 Libs\AceConsole-3.0\AceConsole-3.0.xml
 Libs\AceGUI-3.0\AceGUI-3.0.xml
 
-# LIBRARY: FUZZY MATCHING
-fzy_lua.lua
+# MISC LIBRARIES
+Libs\fzy_lua.lua
+Libs\binaryheap.lua
 
 # JackJack DATASETS
 Data\JJAreaPOI.lua
