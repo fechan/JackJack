@@ -19,6 +19,11 @@ fzy_lua.lua
 # JackJack DATASETS
 Data\JJAreaPOI.lua
 Data\JJMap.lua
+Data\JJPlayerCondition.lua
+Data\JJTaxiNodes.lua
+Data\JJTaxiPath.lua
+Data\JJWaypointEdge.lua
+Data\JJWaypointNode.lua
 
 # JackJack GUI COMPONENTS
 GUIComponents\AceGUIWidget-IconButton.lua
@@ -31,6 +36,8 @@ GUIComponents\SearchPanel.lua
 GUIComponents\DirectionsPanel.lua
 
 # JackJack CORE FILES
+JackJackUtil.lua
+JackJackDirections.lua
 JackJackWaypoints.lua
 JackJackGUI.lua
 JackJack.lua
