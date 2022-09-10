@@ -20,6 +20,25 @@ local function getLocationDisplayName(location)
     end
 end
 
+local function addTooltip(button, location, style)
+    -- create tooltip
+    local tooltip = addon:getGlobalTooltip()
+    button:SetUserData("tooltip", tooltip)
+    tooltip:ClearLines()
+    tooltip:SetOwner(button.frame, "ANCHOR_RIGHT", 0, -style.HEIGHT)
+
+    -- set text content
+    tooltip:AddLine(getLocationDisplayName(location))
+    if location.Description_lang ~= "" and location.Description_lang ~= nil then
+        tooltip:AddLine("Description: " .. location.Description_lang)
+    end
+    if location.Origin ~= "" then
+        tooltip:AddLine("Dataset: " .. location.Origin)
+    end
+
+    tooltip:Show()
+end
+
 function addon:LocationButton(location, style)
     style = style or {}
     setmetatable(style, {__index = DEFAULT_STYLE})
@@ -31,13 +50,7 @@ function addon:LocationButton(location, style)
     button:SetCallback("OnEnter", function(button)
         local destroyTempWaypoint = addon:createAndFocusTempWaypointFor(location)
         button:SetUserData("destroyTempWaypoint", destroyTempWaypoint)
-
-        local tooltip = addon:getGlobalTooltip()
-        button:SetUserData("tooltip", tooltip)
-        tooltip:ClearLines()
-        tooltip:SetOwner(button.frame, "ANCHOR_RIGHT", 0, -style.HEIGHT)
-        tooltip:AddLine(location.Name_lang)
-        tooltip:Show()
+        addTooltip(button, location, style)
     end)
     
     button:SetCallback("OnLeave", function(button)
