@@ -21,7 +21,10 @@ Data\JJAreaPOI.lua
 Data\JJMap.lua
 
 # JackJack GUI COMPONENTS
+GUIComponents\AceGUIWidget-IconButton.lua
 GUIComponents\LocationButton.lua
+GUIComponents\DirectionsButton.lua
+GUIComponents\SearchResult.lua
 GUIComponents\ScrollingList.lua
 GUIComponents\SearchPanel.lua
 GUIComponents\DirectionsPanel.lua

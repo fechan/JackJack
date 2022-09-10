@@ -77,6 +77,8 @@ function addon:getBestZoomMapPositionFor(location)
     return uiMapId, x, y
 end
 
+---=== INITIALIZE ADDON GUI AND COMMANDS ===---
+
 function Ace:OnInitialize ()
     addon:initGUI()
 end

@@ -30,8 +30,10 @@ local function populateLocationList(searchBox, callbackName, query)
     -- put buttons in the location list
     local locations = addon:locationsMatching(query, 20)
     for idx, location in ipairs(locations) do
-        local button = addon:LocationButton(location)
-        locationList:AddChild(button)
+        -- local button = addon:LocationButton(location)
+        -- locationList:AddChild(button)
+        local searchResult = addon:SearchResult(location)
+        locationList:AddChild(searchResult)        
     end
 
     local resultsText = searchBox:GetUserData("resultsText")

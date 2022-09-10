@@ -2,8 +2,9 @@ local addonName, addon = ...
 
 local AceGUI = LibStub("AceGUI-3.0")
 
-local STYLE = {
-    ["HEIGHT"] = 45
+local DEFAULT_STYLE = {
+    ["HEIGHT"] = 45,
+    ["FULLWIDTH"] = true
 }
 
 --- Get the display name for a location
@@ -19,7 +20,10 @@ local function getLocationDisplayName(location)
     end
 end
 
-function addon:LocationButton(location)
+function addon:LocationButton(location, style)
+    style = style or {}
+    setmetatable(style, {__index = DEFAULT_STYLE})
+
     local button = AceGUI:Create("Button")
 
     button:SetCallback("OnClick", function() addon:createWaypointFor(location) end)
@@ -34,8 +38,9 @@ function addon:LocationButton(location)
     end)
 
     button:SetText(getLocationDisplayName(location))
-    button:SetFullWidth(true)
-    button:SetHeight(STYLE.HEIGHT)
+    button:SetRelativeWidth(style.RELATIVE_WIDTH)
+    button:SetFullWidth(style.FULLWIDTH)
+    button:SetHeight(style.HEIGHT)
 
     return button
 end
