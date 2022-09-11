@@ -211,7 +211,7 @@ function addon:getDirections(location, completedCallback)
                 ["Pos1"] =          nodeInfo.Pos1,
                 ["Origin"] =        datasetName,
                 ["MapName_lang"] =  "placeholder", -- TODO: find this somehow
-                ["ContinentID"] =   nodeInfo.ContinentID or nodeInfo.MapID, -- depends
+                ["ContinentID"] =   nodeInfo.ContinentID or nodeInfo.MapID,
                 ["Transport"] =     nil, -- depends
             }
 
