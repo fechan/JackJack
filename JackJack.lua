@@ -22,8 +22,7 @@ function addon:locationsMatching(locationName, limit)
     local matches = 0
     limit = limit or math.huge
 
-    -- TODO: #1 add taxi node data set
-    -- TODO: #2 use metatables for lua data sets for Origin (and maybe even ContinentID)
+    -- TODO: use metatables for lua data sets for Origin (and maybe even ContinentID)
 
     local datasetOrigins = {
         "AreaPOI (Points of Interest table)",
