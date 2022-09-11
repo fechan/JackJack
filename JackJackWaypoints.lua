@@ -1,5 +1,40 @@
 local addonName, addon = ...
 
+local AUTO_REMOVE_WAYPOINTS = false -- TODO: make this a configuration option
+
+if AUTO_REMOVE_WAYPOINTS then
+    local waypointUpdateFrame = CreateFrame("FRAME", "JJWaypointUpdateFrame");
+    waypointUpdateFrame:SetScript("OnUpdate", function ()
+        local waypoints = addon.AddonState.directionWaypoints
+        local playerMap, x, y = TomTom:GetCurrentPlayerPosition()
+
+        for i=#waypoints, 1, -1 do -- i points to the most advanced direction in the list
+            if waypoints[i] == nil then break end
+            
+            local uid, map = unpack(waypoints[i])
+            if map == playerMap then
+                -- if a waypoint is supposed to be on the same map as the player but we can't find the
+                -- distance, the waypoint UID is invalid (e.g. removed by player)
+                if TomTom:GetDistanceToWaypoint(uid) == nil then
+                    waypoints[i] = nil
+                    break
+                end
+
+                for j=i, 1, -1 do -- start checking if the less advanced directions are farther away
+                    if waypoints[j] == nil then break end
+                    local uid2, map2 = unpack(waypoints[j])
+
+                    if TomTom:GetDistanceToWaypoint(uid2) == nil then waypoints[j] = nil -- remove waypoint if it's invalid
+                    elseif TomTom:GetDistanceToWaypoint(uid2) > TomTom:GetDistanceToWaypoint(uid) then
+                        TomTom:RemoveWaypoint(uid2)
+                        waypoints[j] = nil
+                    end
+                end
+            end        
+        end
+    end);
+end
+
 --- Create a permanent TomTom waypoint for a location
 -- @param location  Location to make a waypoint for
 function addon:createWaypointFor(location)
@@ -38,13 +73,15 @@ function addon:createDirectionWaypointFor(direction)
         world = true,
         crazy = true
     })
-    table.insert(addon.AddonState.directionWaypoints, uid)
+    addon.AddonState.directionWaypoints[direction.DirectionNbr] = {uid, uiMapId}
 end
 
 function addon:clearDirectionWaypoints()
-    for idx, directionWaypoint in ipairs(addon.AddonState.directionWaypoints) do
-        TomTom:RemoveWaypoint(directionWaypoint)
+    for directionNbr, directionWaypoint in pairs(addon.AddonState.directionWaypoints) do
+        local uid, waypointMap = unpack(directionWaypoint)
+        TomTom:RemoveWaypoint(uid)
     end
+    addon.AddonState.directionWaypoints = {}
 end
 
 --- Create a temporary TomTom waypoint for a location and focus on it on the map
