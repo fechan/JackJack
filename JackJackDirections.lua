@@ -193,9 +193,7 @@ function addon:getDirections(location, completedCallback)
         end
     end
 
-    for _, nodeId in ipairs(path) do -- TODO: pretty sure we can simplify the two if statements into one
-        local continentId, pos0, pos1, name, origin, transport
-        local shouldAddDirection = true
+    for _, nodeId in ipairs(path) do
         if nodeId ~= "player" then
             local nodeInfo, datasetName
             if nodeId == "destination" then
