@@ -29,19 +29,26 @@ local function ExplanationText()
     return explanationText
 end
 
-local function populateDirectionsList(directions, locationListContainerContainer)
-    -- for i = #directions, 1, -1 do
-    --     print(#directions - i + 1, directions[i]["Name_lang"])
-    -- end
-
+local function processDirectionsList(directions, locationListContainerContainer)
     -- delete and create new location list
     locationListContainerContainer:ReleaseChildren()
     local locationList, locationListContainer = addon.ScrollingList()
 
-    -- put buttons in the location list
+    -- remove all direction waypoints
+    addon:clearDirectionWaypoints()
+
+    -- do stuff with the directions themselves
     for i = #directions, 1, -1 do
-        local locationButton = addon:LocationButton(directions[i])
+        local direction = directions[i]
+        -- create and add location button
+        local locationButton = addon:LocationButton(direction)
         locationList:AddChild(locationButton)
+
+        -- create the direction waypoint
+        addon:createDirectionWaypointFor(direction, #directions - i + 1)
+
+        -- print out the direction to chat
+        print(#directions - i + 1, direction.Name_lang)
     end
 
     locationListContainerContainer:AddChild(locationListContainer)
@@ -57,7 +64,13 @@ function addon:DirectionsPanel(directions)
     
     -- header that says "Directions to [location]"
     local header = AceGUI:Create("Label")
-    header:SetText("Directions to " .. directions[1].Name_lang .. "\n")
+    if #directions == 0 then
+        header:SetText("Couldn't find a path to " .. directions[1].Name_lang .. " from your location!" ..
+                        "\n\n" ..
+                        "It might be inside a dungeon or raid you're not currently in!")
+    else
+        header:SetText("Directions to " .. directions[1].Name_lang .. "\n")
+    end
     applyFont(STYLE.EXPLANATION_FONT, header)
     header:SetFullWidth(true)
     directionsPanel:AddChild(header)
@@ -76,7 +89,7 @@ function addon:DirectionsPanel(directions)
     locationListContainerContainer:SetLayout("Fill")
     directionsPanel:AddChild(locationListContainerContainer)
 
-    populateDirectionsList(directions, locationListContainerContainer)
+    processDirectionsList(directions, locationListContainerContainer)
 
     return directionsPanel
 end

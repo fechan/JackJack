@@ -8,7 +8,8 @@ local Ace = LibStub("AceAddon-3.0"):NewAddon("JackJack", "AceConsole-3.0")
 -- You should declare any state vars that are global to the addon
 -- here even if they start out as nil, so we have a quick reference to them
 addon.AddonState = {
-    ["directions"] = nil -- current set of directions currently active
+    ["directions"] = nil, -- current set of directions currently active
+    ["directionWaypoints"] = {},
 }
 
 ---=== DATA FUNCTIONS ===---
@@ -20,6 +21,9 @@ function addon:locationsMatching(locationName, limit)
     local matchingLocations = {}
     local matches = 0
     limit = limit or math.huge
+
+    -- TODO: #1 add taxi node data set
+    -- TODO: #2 use metatables for lua data sets for Origin (and maybe even ContinentID)
 
     for rowNumber, poi in pairs(addon.JJAreaPOI) do
         if addon.fzy.has_match(locationName, poi.Name_lang)

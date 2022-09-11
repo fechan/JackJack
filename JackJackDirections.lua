@@ -139,12 +139,6 @@ end
 -- @param location          Destination to get directions to
 -- @param completedCallback Callback function after function completes
 function addon:getDirections(location, completedCallback)
-    -- set a bunch of variables which used to be params to this function
-    local destinationX = location.Pos0
-    local destinationY = location.Pos1
-    local destinationContinent = location.ContinentID
-    local destinationName = location.Name_lang
-
     local dist = {}
     local prev = {}
     local Q = addon.binaryheap.minUnique()
@@ -162,13 +156,11 @@ function addon:getDirections(location, completedCallback)
     local directions = {}
 
     while Q:size() > 0 do
-        -- local uIndex, u = getNodeWithMinDist(Q, dist)
-        -- table.remove(Q, uIndex)
         local u, _ = Q:pop()
         if u == "destination" then
             break
         else
-            local adjacentNodes = getAdjacentNodes(u, destinationX, destinationY, destinationContinent)
+            local adjacentNodes = getAdjacentNodes(u, location.Pos0, location.Pos1, location.ContinentID)
             
             for _, adjacentNode in pairs(adjacentNodes) do
                 local v = adjacentNode["nodeId"]
