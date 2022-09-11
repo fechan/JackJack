@@ -132,7 +132,13 @@ local function addNodeToDijkstraGraph(nodeId, distTable, dist, prevTable, prev, 
     Q:insert(dist, nodeId)
 end
 
-function addon:getDirections(destinationX, destinationY, destinationContinent, destinationName, completedCallback)
+function addon:getDirections(location, completedCallback)
+    -- set a bunch of variables which used to be params to this function
+    local destinationX = location.Pos0
+    local destinationY = location.Pos1
+    local destinationContinent = location.ContinentID
+    local destinationName = location.Name_lang
+
     local dist = {}
     local prev = {}
     local Q = addon.binaryheap.minUnique()
@@ -180,53 +186,37 @@ function addon:getDirections(destinationX, destinationY, destinationContinent, d
             for _, nodeId in ipairs(path) do -- TODO: pretty sure we can simplify the two if statements into one
                 local continentId, pos0, pos1, name, origin, transport
                 local shouldAddDirection = true
-                if nodeId ~= "destination" and nodeId ~= "player" then
-                    local nodeInfo, datasetName = addon.getRecordFromDatasetSafeID(nodeId)
+                if nodeId ~= "player" then
+                    local nodeInfo, datasetName
+                    if nodeId == "destination" then
+                        nodeInfo = location
+                        datasetName = location.Origin
+                    else 
+                        nodeInfo, datasetName = addon.getRecordFromDatasetSafeID(nodeId)
+                    end
                     
+                    local direction = {
+                        ["Name_lang"] =     nodeInfo.Name_lang,
+                        ["Pos0"] =          nodeInfo.Pos0,
+                        ["Pos1"] =          nodeInfo.Pos1,
+                        ["Origin"] =        datasetName,
+                        ["MapName_lang"] =  "placeholder", -- TODO: find this somehow
+                        ["ContinentID"] =   nodeInfo.ContinentID or nodeInfo.MapID, -- depends
+                        ["Transport"] =     nil, -- depends
+                    }
+
                     if datasetName == "JJWaypointNode" then
-                        -- skip directions that are a portal exit (Type=2), since the player will always be there
-                        -- if they went through the entrance. Also some of the names of portal exits are misleading
-                        if nodeInfo["Type"] ~= 2 then
-                            continentId = nodeInfo.MapID
-                            pos0 = nodeInfo.Pos0
-                            pos1 = nodeInfo.Pos1
-                            name = nodeInfo.Name_lang
-                            origin = datasetName
-                            transport = "portal"
-                            shouldAddDirection = true
-                        else
-                            shouldAddDirection = false
+                        if nodeInfo.Type ~= 2 then
+                            direction.Transport = "portal"
+                            table.insert(directions, direction)
                         end
                     elseif datasetName == "JJTaxiNodes" then
-                        continentId = nodeInfo.ContinentID
-                        pos0 = nodeInfo.Pos0
-                        pos1 = nodeInfo.Pos1
-                        name = nodeInfo.Name_lang
-                        origin = datasetName
-                        transport = "taxinode"
-                        shouldAddDirection = true
+                        direction.Transport = "taxinode"
+                        table.insert(directions, direction)
+                    else
+                        direction.Transport = "destination"
+                        table.insert(directions, direction)
                     end
-                else
-                    continentId = destinationContinent
-                    pos0 = destinationX
-                    pos1 = destinationY
-                    name = destinationName
-                    origin = "placeholder"
-                    transport = "destination"
-                    shouldAddDirection = true
-                end
-    
-                if shouldAddDirection then
-                    local direction = {
-                        ["Name_lang"] =     name,
-                        ["ContinentID"] =   continentId,
-                        ["Pos0"] =          pos0,
-                        ["Pos1"] =          pos1,
-                        ["MapName_lang"] =  "placeholder",
-                        ["Origin"] =        origin,
-                        ["Transport"] =     transport,
-                    }
-                    table.insert(directions, direction)
                 end
             end
             break
