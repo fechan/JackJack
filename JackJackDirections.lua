@@ -132,6 +132,26 @@ local function addNodeToDijkstraGraph(nodeId, distTable, dist, prevTable, prev, 
     Q:insert(dist, nodeId)
 end
 
+--- Calculate taxi on/off/continue points and set the transport type IN PLACE
+--  e.g. if the direction is to get on a taxi, the transport type is "taxinode-geton"
+--       if the direction is to keep riding, the transport type is unchanged
+-- @param directions List of directions
+local function calculateTaxiTransportType(directions)
+    for idx, direction in ipairs(directions) do
+        if direction.Transport == "taxinode" then
+            local prev = directions[idx - 1]
+            local next = directions[idx + 1]
+            if prev == nil then
+                direction.Transport = "taxinode-geton"
+            elseif prev.Transport ~= "taxinode" and prev.Transport ~= "taxinode-geton" then
+                direction.Transport = "taxinode-geton"
+            elseif next == nil or next.Transport ~= "taxinode" then
+                direction.Transport = "taxinode-getoff"
+            end
+        end
+    end
+end
+
 --- Get directions to a given location
 --  You can have it run a callback on completion with the return value.
 --  It is meant for non-blocking Dijkstra calculation which runs a single iteration
@@ -229,20 +249,7 @@ function addon:getDirections(location, completedCallback)
         end
     end
 
-    -- calculate taxi on/off/continue points
-    for idx, direction in ipairs(directions) do
-        if direction.Transport == "taxinode" then
-            local prev = directions[idx - 1]
-            local next = directions[idx + 1]
-            if prev == nil then
-                direction.Transport = "taxinode-geton"
-            elseif prev.Transport ~= "taxinode" and prev.Transport ~= "taxinode-geton" then
-                direction.Transport = "taxinode-geton"
-            elseif next == nil or next.Transport ~= "taxinode" then
-                direction.Transport = "taxinode-getoff"
-            end
-        end
-    end
+    calculateTaxiTransportType(directions)
 
     if completedCallback then
         completedCallback(directions)
