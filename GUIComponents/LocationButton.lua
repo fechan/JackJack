@@ -11,12 +11,22 @@ local DEFAULT_STYLE = {
 -- @param   location    Location to get display name for
 -- @return  displayName Display name
 local function getLocationDisplayName(location)
-    if location.AreaName_lang == "" or location.AreaName_lang == nil then
-        return location.Name_lang .. "\n(" .. location.MapName_lang .. ")"
-    elseif location.AreaName_lang == location.MapName_lang then
-        return location.Name_lang .. "\n(" .. location.MapName_lang .. ")"
+    if location.Transport ~= nil then
+        if location.Transport == "taxinode" then
+            return "Take the flight master from " .. location.Name_lang
+        elseif location.Transport == "destination" then
+            return "Walk/fly to arrive at ".. location.Name_lang
+        else
+            return location.Name_lang
+        end
     else
-        return location.Name_lang .. "\n(" .. location.AreaName_lang .. ", " .. location.MapName_lang .. ")"
+        if location.AreaName_lang == "" or location.AreaName_lang == nil then
+            return location.Name_lang .. "\n(" .. location.MapName_lang .. ")"
+        elseif location.AreaName_lang == location.MapName_lang then
+            return location.Name_lang .. "\n(" .. location.MapName_lang .. ")"
+        else
+            return location.Name_lang .. "\n(" .. location.AreaName_lang .. ", " .. location.MapName_lang .. ")"
+        end
     end
 end
 

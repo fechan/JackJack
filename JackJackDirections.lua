@@ -178,7 +178,7 @@ function addon:getDirections(destinationX, destinationY, destinationContinent, d
             end
     
             for _, nodeId in ipairs(path) do -- TODO: pretty sure we can simplify the two if statements into one
-                local continentId, pos0, pos1, name
+                local continentId, pos0, pos1, name, origin, transport
                 local shouldAddDirection = true
                 if nodeId ~= "destination" and nodeId ~= "player" then
                     local nodeInfo, datasetName = addon.getRecordFromDatasetSafeID(nodeId)
@@ -191,6 +191,8 @@ function addon:getDirections(destinationX, destinationY, destinationContinent, d
                             pos0 = nodeInfo.Pos0
                             pos1 = nodeInfo.Pos1
                             name = nodeInfo.Name_lang
+                            origin = datasetName
+                            transport = "portal"
                             shouldAddDirection = true
                         else
                             shouldAddDirection = false
@@ -200,14 +202,17 @@ function addon:getDirections(destinationX, destinationY, destinationContinent, d
                         pos0 = nodeInfo.Pos0
                         pos1 = nodeInfo.Pos1
                         name = nodeInfo.Name_lang
-                        name = "Flight point " .. nodeInfo["Name_lang"]
+                        origin = datasetName
+                        transport = "taxinode"
                         shouldAddDirection = true
                     end
                 else
                     continentId = destinationContinent
                     pos0 = destinationX
                     pos1 = destinationY
-                    name = "Fly/walk to arrive at " .. destinationName
+                    name = destinationName
+                    origin = "placeholder"
+                    transport = "destination"
                     shouldAddDirection = true
                 end
     
@@ -218,7 +223,8 @@ function addon:getDirections(destinationX, destinationY, destinationContinent, d
                         ["Pos0"] =          pos0,
                         ["Pos1"] =          pos1,
                         ["MapName_lang"] =  "placeholder",
-                        ["Origin"] =  "placeholder",
+                        ["Origin"] =        origin,
+                        ["Transport"] =     transport,
                     }
                     table.insert(directions, direction)
                 end
