@@ -185,7 +185,12 @@ function addon:getDirections(location, completedCallback)
         end
     end
 
-    for _, nodeId in ipairs(path) do
+    -- path reconstruction is in backwards order, so we iterate
+    -- backwards as we process each mode to make it forwards again
+    local directionNbr = 1
+    for i = #path, 1, -1 do
+        local nodeId = path[i]
+
         if nodeId ~= "player" then
             local nodeInfo, datasetName
             if nodeId == "destination" then
@@ -202,19 +207,23 @@ function addon:getDirections(location, completedCallback)
                 ["Origin"] =        datasetName,
                 ["MapName_lang"] =  "placeholder", -- TODO: find this somehow
                 ["ContinentID"] =   nodeInfo.ContinentID or nodeInfo.MapID,
+                ["DirectionNbr"] =  directionNbr,
                 ["Transport"] =     nil, -- depends
             }
 
             if datasetName == "JJWaypointNode" then
                 if nodeInfo.Type ~= 2 then
                     direction.Transport = "portal"
+                    directionNbr = directionNbr + 1
                     table.insert(directions, direction)
                 end
             elseif datasetName == "JJTaxiNodes" then
                 direction.Transport = "taxinode"
+                directionNbr = directionNbr + 1
                 table.insert(directions, direction)
             else
                 direction.Transport = "destination"
+                directionNbr = directionNbr + 1
                 table.insert(directions, direction)
             end
         end

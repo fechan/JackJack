@@ -30,26 +30,21 @@ local function ExplanationText()
 end
 
 local function processDirectionsList(directions, locationListContainerContainer)
-    -- delete and create new location list
     locationListContainerContainer:ReleaseChildren()
     local locationList, locationListContainer = addon.ScrollingList()
 
-    -- remove all direction waypoints
     addon:clearDirectionWaypoints()
 
-    -- do stuff with the directions themselves
-    for i = #directions, 1, -1 do
+    for i, direction in ipairs(directions) do
         local direction = directions[i]
-        -- create and add location button
         local locationButton = addon:LocationButton(direction)
         locationList:AddChild(locationButton)
 
-        -- create the direction waypoint
-        addon:createDirectionWaypointFor(direction, #directions - i + 1)
+        addon:createDirectionWaypointFor(direction)
 
-        -- print out the direction to chat
-        print(#directions - i + 1, direction.Name_lang)
+        -- print(direction.directionNbr, direction.Name_lang)
     end
+    TomTom:SetClosestWaypoint()
 
     locationListContainerContainer:AddChild(locationListContainer)
 end

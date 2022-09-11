@@ -13,11 +13,11 @@ local DEFAULT_STYLE = {
 local function getLocationDisplayName(location)
     if location.Transport ~= nil then
         if location.Transport == "taxinode" then
-            return "Take the flight master from " .. location.Name_lang
+            return location.DirectionNbr .. ". Take the flight master from " .. location.Name_lang
         elseif location.Transport == "destination" then
-            return "Walk/fly to arrive at ".. location.Name_lang
+            return location.DirectionNbr .. ". Walk/fly to arrive at ".. location.Name_lang
         else
-            return location.Name_lang
+            return location.DirectionNbr .. ". " .. location.Name_lang
         end
     else
         if location.AreaName_lang == "" or location.AreaName_lang == nil then

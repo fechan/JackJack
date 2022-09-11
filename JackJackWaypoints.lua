@@ -24,10 +24,10 @@ local function getDirectionDisplayName(direction)
     end
 end
 
-function addon:createDirectionWaypointFor(direction, directionNumber)
+function addon:createDirectionWaypointFor(direction)
     local uiMapId, x, y = addon:getBestZoomMapPositionFor(direction)
     local uid = TomTom:AddWaypoint(uiMapId, x, y, {
-        title = directionNumber .. ". " .. getDirectionDisplayName(direction),
+        title = direction.DirectionNbr .. ". " .. getDirectionDisplayName(direction),
         source = "JackJack (directions)",
         persistent = true,
         minimap = true,
