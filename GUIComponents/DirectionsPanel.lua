@@ -36,7 +36,6 @@ local function processDirectionsList(directions, locationListContainerContainer)
     addon:clearDirectionWaypoints()
 
     for i, direction in ipairs(directions) do
-        local direction = directions[i]
         local locationButton = addon:LocationButton(direction)
         locationList:AddChild(locationButton)
 
@@ -64,7 +63,7 @@ function addon:DirectionsPanel(directions)
                         "\n\n" ..
                         "It might be inside a dungeon or raid you're not currently in!")
     else
-        header:SetText("Directions to " .. directions[1].Name_lang .. "\n")
+        header:SetText("Directions to " .. directions[#directions].Name_lang .. "\n")
     end
     applyFont(STYLE.EXPLANATION_FONT, header)
     header:SetFullWidth(true)
