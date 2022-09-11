@@ -165,7 +165,9 @@ function addon:getDirections(location, completedCallback)
         -- local uIndex, u = getNodeWithMinDist(Q, dist)
         -- table.remove(Q, uIndex)
         local u, _ = Q:pop()
-        if u ~= "destination" then
+        if u == "destination" then
+            break
+        else
             local adjacentNodes = getAdjacentNodes(u, destinationX, destinationY, destinationContinent)
             
             for _, adjacentNode in pairs(adjacentNodes) do
@@ -177,55 +179,54 @@ function addon:getDirections(location, completedCallback)
                     Q:update(v, alt)
                 end
             end
-        else
-            -- reconstruct the path
-            local path = {}
-            local nodeId = "destination"
-            while nodeId ~= "player" do
-                table.insert(path, nodeId)
-                nodeId = prev[nodeId]
-                if nodeId == nil then
-                    return {}
-                end
-            end
-    
-            for _, nodeId in ipairs(path) do -- TODO: pretty sure we can simplify the two if statements into one
-                local continentId, pos0, pos1, name, origin, transport
-                local shouldAddDirection = true
-                if nodeId ~= "player" then
-                    local nodeInfo, datasetName
-                    if nodeId == "destination" then
-                        nodeInfo = location
-                        datasetName = location.Origin
-                    else 
-                        nodeInfo, datasetName = addon.getRecordFromDatasetSafeID(nodeId)
-                    end
-                    
-                    local direction = {
-                        ["Name_lang"] =     nodeInfo.Name_lang,
-                        ["Pos0"] =          nodeInfo.Pos0,
-                        ["Pos1"] =          nodeInfo.Pos1,
-                        ["Origin"] =        datasetName,
-                        ["MapName_lang"] =  "placeholder", -- TODO: find this somehow
-                        ["ContinentID"] =   nodeInfo.ContinentID or nodeInfo.MapID, -- depends
-                        ["Transport"] =     nil, -- depends
-                    }
+        end
+    end
 
-                    if datasetName == "JJWaypointNode" then
-                        if nodeInfo.Type ~= 2 then
-                            direction.Transport = "portal"
-                            table.insert(directions, direction)
-                        end
-                    elseif datasetName == "JJTaxiNodes" then
-                        direction.Transport = "taxinode"
-                        table.insert(directions, direction)
-                    else
-                        direction.Transport = "destination"
-                        table.insert(directions, direction)
-                    end
-                end
+    -- reconstruct the path
+    local path = {}
+    local nodeId = "destination"
+    while nodeId ~= "player" do
+        table.insert(path, nodeId)
+        nodeId = prev[nodeId]
+        if nodeId == nil then
+            return {}
+        end
+    end
+
+    for _, nodeId in ipairs(path) do -- TODO: pretty sure we can simplify the two if statements into one
+        local continentId, pos0, pos1, name, origin, transport
+        local shouldAddDirection = true
+        if nodeId ~= "player" then
+            local nodeInfo, datasetName
+            if nodeId == "destination" then
+                nodeInfo = location
+                datasetName = location.Origin
+            else 
+                nodeInfo, datasetName = addon.getRecordFromDatasetSafeID(nodeId)
             end
-            break
+            
+            local direction = {
+                ["Name_lang"] =     nodeInfo.Name_lang,
+                ["Pos0"] =          nodeInfo.Pos0,
+                ["Pos1"] =          nodeInfo.Pos1,
+                ["Origin"] =        datasetName,
+                ["MapName_lang"] =  "placeholder", -- TODO: find this somehow
+                ["ContinentID"] =   nodeInfo.ContinentID or nodeInfo.MapID, -- depends
+                ["Transport"] =     nil, -- depends
+            }
+
+            if datasetName == "JJWaypointNode" then
+                if nodeInfo.Type ~= 2 then
+                    direction.Transport = "portal"
+                    table.insert(directions, direction)
+                end
+            elseif datasetName == "JJTaxiNodes" then
+                direction.Transport = "taxinode"
+                table.insert(directions, direction)
+            else
+                direction.Transport = "destination"
+                table.insert(directions, direction)
+            end
         end
     end
 
