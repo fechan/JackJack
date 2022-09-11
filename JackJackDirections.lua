@@ -132,6 +132,12 @@ local function addNodeToDijkstraGraph(nodeId, distTable, dist, prevTable, prev, 
     Q:insert(dist, nodeId)
 end
 
+--- Get directions to a given location
+--  You can have it run a callback on completion with the return value.
+--  It is meant for non-blocking Dijkstra calculation which runs a single iteration
+--  of Dijkstra's every time OnUpdate is called. (TODO: implement this)
+-- @param location          Destination to get directions to
+-- @param completedCallback Callback function after function completes
 function addon:getDirections(location, completedCallback)
     -- set a bunch of variables which used to be params to this function
     local destinationX = location.Pos0
@@ -179,7 +185,7 @@ function addon:getDirections(location, completedCallback)
                 table.insert(path, nodeId)
                 nodeId = prev[nodeId]
                 if nodeId == nil then
-                    return nil
+                    return {}
                 end
             end
     
