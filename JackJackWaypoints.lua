@@ -1,6 +1,6 @@
 local addonName, addon = ...
 
-local AUTO_REMOVE_WAYPOINTS = false -- TODO: make this a configuration option
+local AUTO_REMOVE_WAYPOINTS = true -- TODO: make this a configuration option
 
 if AUTO_REMOVE_WAYPOINTS then
     local waypointUpdateFrame = CreateFrame("FRAME", "JJWaypointUpdateFrame");
