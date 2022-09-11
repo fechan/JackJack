@@ -12,8 +12,12 @@ local DEFAULT_STYLE = {
 -- @return  displayName Display name
 local function getLocationDisplayName(location)
     if location.Transport ~= nil then
-        if location.Transport == "taxinode" then
+        if location.Transport == "taxinode-geton" then
             return location.DirectionNbr .. ". Take the flight master from " .. location.Name_lang
+        elseif location.Transport == "taxinode" then
+            return location.DirectionNbr .. ". Keep riding through " .. location.Name_lang
+        elseif location.Transport == "taxinode-getoff" then
+            return location.DirectionNbr .. ". Get off the flight master at " .. location.Name_lang
         elseif location.Transport == "destination" then
             return location.DirectionNbr .. ". Walk/fly to arrive at ".. location.Name_lang
         else

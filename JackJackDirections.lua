@@ -229,6 +229,21 @@ function addon:getDirections(location, completedCallback)
         end
     end
 
+    -- calculate taxi on/off/continue points
+    for idx, direction in ipairs(directions) do
+        if direction.Transport == "taxinode" then
+            local prev = directions[idx - 1]
+            local next = directions[idx + 1]
+            if prev == nil then
+                direction.Transport = "taxinode-geton"
+            elseif prev.Transport ~= "taxinode" and prev.Transport ~= "taxinode-geton" then
+                direction.Transport = "taxinode-geton"
+            elseif next == nil or next.Transport ~= "taxinode" then
+                direction.Transport = "taxinode-getoff"
+            end
+        end
+    end
+
     if completedCallback then
         completedCallback(directions)
     end

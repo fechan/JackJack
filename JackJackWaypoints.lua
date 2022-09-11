@@ -15,8 +15,12 @@ function addon:createWaypointFor(location)
 end
 
 local function getDirectionDisplayName(direction)
-    if direction.Transport == "taxinode" then
+    if direction.Transport == "taxinode-geton" then
         return "Take the flight master from " .. direction.Name_lang
+    elseif direction.Transport == "taxinode" then
+        return "Keep riding through " .. direction.Name_lang
+    elseif direction.Transport == "taxinode-getoff" then
+        return "Get off the flight master at " .. direction.Name_lang
     elseif direction.Transport == "destination" then
         return "Walk/fly to arrive at ".. direction.Name_lang
     else
