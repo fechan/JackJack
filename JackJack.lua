@@ -25,24 +25,30 @@ function addon:locationsMatching(locationName, limit)
     -- TODO: #1 add taxi node data set
     -- TODO: #2 use metatables for lua data sets for Origin (and maybe even ContinentID)
 
-    for rowNumber, poi in pairs(addon.JJAreaPOI) do
-        if addon.fzy.has_match(locationName, poi.Name_lang)
-                and matches < limit then
-            -- significantly faster to precompute score and put it in memory than
-            -- computing every time a comparison is made in the sort
-            local match = {
-                ["fzyScore"] = addon.fzy.score(locationName, poi["Name_lang"]),
-                ["Name_lang"] = poi["Name_lang"],
-                ["Pos0"] = poi["Pos0"],
-                ["Pos1"] = poi["Pos1"],
-                ["ContinentID"] = poi["ContinentID"],
-                ["AreaName_lang"] = poi["AreaName_lang"],
-                ["Description_lang"] = poi["Description_lang"],
-                ["MapName_lang"] = addon.JJMap[poi["ContinentID"]]["MapName_lang"],
-                ["Origin"] = "AreaPOI (Points of Interest table)"
-            }
-            table.insert(matchingLocations, match)
-            matches = matches + 1
+    local datasetOrigins = {
+        "AreaPOI (Points of Interest table)",
+        "TaxiNodes (Flight points table)",
+    }
+    for datasetNbr, dataset in pairs({addon.JJAreaPOI, addon.JJTaxiNodes}) do
+        for rowNumber, poi in pairs(dataset) do
+            if addon.fzy.has_match(locationName, poi.Name_lang) then
+                -- significantly faster to precompute score and put it in memory than
+                -- computing every time a comparison is made in the sort
+                local match = {
+                    ["fzyScore"] = addon.fzy.score(locationName, poi["Name_lang"]),
+                    ["Name_lang"] = poi["Name_lang"],
+                    ["Pos0"] = poi["Pos0"],
+                    ["Pos1"] = poi["Pos1"],
+                    ["ContinentID"] = poi["ContinentID"],
+                    ["AreaName_lang"] = poi["AreaName_lang"],
+                    ["Description_lang"] = poi["Description_lang"],
+                    ["MapName_lang"] = addon.JJMap[poi["ContinentID"]]["MapName_lang"],
+                    ["Origin"] = datasetOrigins[datasetNbr]
+                }                   
+
+                table.insert(matchingLocations, match)
+                matches = matches + 1
+            end
         end
     end
 
@@ -50,6 +56,8 @@ function addon:locationsMatching(locationName, limit)
     table.sort(matchingLocations, function(a, b)
         return a["fzyScore"] > b["fzyScore"]
     end)
+
+    matchingLocations = table.slice(matchingLocations, 1, limit)
 
     return matchingLocations
 end
