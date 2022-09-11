@@ -216,7 +216,9 @@ function addon:getDirections(destinationX, destinationY, destinationContinent, d
                         ["Name_lang"] =     name,
                         ["ContinentID"] =   continentId,
                         ["Pos0"] =          pos0,
-                        ["Pos1"] =          pos1
+                        ["Pos1"] =          pos1,
+                        ["MapName_lang"] =  "placeholder",
+                        ["Origin"] =  "placeholder",
                     }
                     table.insert(directions, direction)
                 end

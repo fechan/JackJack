@@ -4,6 +4,15 @@ local addonName, addon = ...
 -- set up Ace addon object
 local Ace = LibStub("AceAddon-3.0"):NewAddon("JackJack", "AceConsole-3.0")
 
+---=== ADDON STATE ===---
+-- You should declare any state vars that are global to the addon
+-- here even if they start out as nil, so we have a quick reference to them
+addon.AddonState = {
+    ["directions"] = nil -- current set of directions currently active
+}
+
+---=== DATA FUNCTIONS ===---
+
 --- Get all locations that (fuzzy) match the location name
 -- @param locationName  Location name to match
 -- @param limit         (optional) Limit to this number of locations

@@ -7,15 +7,20 @@ local MAIN_FRAME_STYLE = {
     ["WIDTH"] = 350
 }
 
-local function selectTab(tabs, callbackName, tabName)
+local tabs
+
+function addon:showDirections() tabs:SelectTab("directions") end
+
+local function afterSelectTab(tabs, callbackName, tabName)
     tabs:ReleaseChildren()
 
     if tabName == "locations" then
         tabs:AddChild(addon:SearchPanel())
     elseif tabName == "directions" then
-        tabs:AddChild(addon:DirectionsPanel())
+        tabs:AddChild(addon:DirectionsPanel(addon.AddonState.directions))
     end
 end
+
 
 function addon:initGUI()
     local mainFrame = AceGUI:Create("Window")
@@ -27,12 +32,12 @@ function addon:initGUI()
     mainFrame:SetLayout("Flow")
     
     -- tabs
-    local tabs = AceGUI:Create("TabGroup")
+    tabs = AceGUI:Create("TabGroup")
     tabs:SetTabs({
         {value = "locations", text = "Locations"},
         {value = "directions", text = "Directions"}
     })
-    tabs:SetCallback("OnGroupSelected", selectTab)
+    tabs:SetCallback("OnGroupSelected", afterSelectTab)
     tabs:SelectTab("locations")
     tabs:SetFullHeight(true)
     tabs:SetFullWidth(true)
