@@ -57,7 +57,7 @@ function addon:SearchPanel()
     searchPanel:AddChild(searchBox)
 
     -- search result meta text
-    resultsText = AceGUI:Create("Label")
+    local resultsText = AceGUI:Create("Label")
     resultsText:SetFullWidth(true)
     searchPanel:AddChild(resultsText)
     searchBox:SetUserData("resultsText", resultsText)
