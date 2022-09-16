@@ -41,7 +41,7 @@ local function processDirectionsList(directions, locationListContainerContainer)
 
         addon:createDirectionWaypointFor(direction)
 
-        -- print(direction.directionNbr, direction.Name_lang)
+        -- print(direction.DirectionNbr, direction.Name_lang)
     end
     TomTom:SetClosestWaypoint()
 
@@ -58,8 +58,8 @@ function addon:DirectionsPanel(directions)
     
     -- header that says "Directions to [location]"
     local header = AceGUI:Create("Label")
-    if #directions == 0 then
-        header:SetText("Couldn't find a path to " .. directions[1].Name_lang .. " from your location!" ..
+    if directions["ErrorGettingTo"] then
+        header:SetText("Couldn't find a path to " .. directions["ErrorGettingTo"].Name_lang .. " from your location!" ..
                         "\n\n" ..
                         "It might be inside a dungeon or raid you're not currently in!")
     else
@@ -69,21 +69,23 @@ function addon:DirectionsPanel(directions)
     header:SetFullWidth(true)
     directionsPanel:AddChild(header)
 
-    -- container for the locationListContainer
-    -- This is needed because locationListContainer doesn't fill
-    -- available height unless it's inside a container with the
-    -- "Fill" layout, even though SetFullHeight is set.
-    -- This also allows us to call ReleaseChildren on it to
-    -- delete the locationListContainer + locationList, since
-    -- we can't Release it directly without it breaking ReleaseChildren
-    -- for any parent elements.
-    local locationListContainerContainer = AceGUI:Create("SimpleGroup")
-    locationListContainerContainer:SetFullHeight(true)
-    locationListContainerContainer:SetFullWidth(true)
-    locationListContainerContainer:SetLayout("Fill")
-    directionsPanel:AddChild(locationListContainerContainer)
+    if directions["ErrorGettingTo"] == nil then
+        -- container for the locationListContainer
+        -- This is needed because locationListContainer doesn't fill
+        -- available height unless it's inside a container with the
+        -- "Fill" layout, even though SetFullHeight is set.
+        -- This also allows us to call ReleaseChildren on it to
+        -- delete the locationListContainer + locationList, since
+        -- we can't Release it directly without it breaking ReleaseChildren
+        -- for any parent elements.
+        local locationListContainerContainer = AceGUI:Create("SimpleGroup")
+        locationListContainerContainer:SetFullHeight(true)
+        locationListContainerContainer:SetFullWidth(true)
+        locationListContainerContainer:SetLayout("Fill")
+        directionsPanel:AddChild(locationListContainerContainer)
 
-    processDirectionsList(directions, locationListContainerContainer)
+        processDirectionsList(directions, locationListContainerContainer)
+    end
 
     return directionsPanel
 end

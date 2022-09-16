@@ -201,7 +201,7 @@ function addon:getDirections(location, completedCallback)
         table.insert(path, nodeId)
         nodeId = prev[nodeId]
         if nodeId == nil then
-            return {}
+            return {["ErrorGettingTo"] = location}
         end
     end
 
