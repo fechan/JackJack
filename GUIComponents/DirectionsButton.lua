@@ -7,6 +7,20 @@ local DEFAULT_STYLE = {
     ["ICON_SIZE"] = 45 / 2
 }
 
+local function addTooltip(button, location, style)
+    -- create tooltip
+    local tooltip = addon:getGlobalTooltip()
+    button:SetUserData("tooltip", tooltip)
+    tooltip:ClearLines()
+    tooltip:SetOwner(button.frame, "ANCHOR_RIGHT", 0, -style.BUTTON_SIZE)
+
+    -- set text content
+    tooltip:AddLine("Get directions to " .. location.Name_lang)
+    tooltip:AddLine("Warning: this is occasionally wrong.")
+
+    tooltip:Show()
+end
+
 function addon:DirectionsButton(location, style)
     style = style or {}
     setmetatable(style, {__index = DEFAULT_STYLE})
@@ -17,6 +31,9 @@ function addon:DirectionsButton(location, style)
         addon.AddonState.directions = addon:getDirections(location)
         addon:showDirections()
     end)
+
+    button:SetCallback("OnEnter", function(button) addTooltip(button, location, style) end)
+    button:SetCallback("OnLeave", function(button) button:GetUserData("tooltip"):Release() end)
 
     button:SetImage("Interface\\AddOns\\JackJack\\directions")
     button:SetImageSize(style.ICON_SIZE, style.ICON_SIZE)
