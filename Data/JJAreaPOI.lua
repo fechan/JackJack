@@ -2640,6 +2640,6 @@ addon.JJAreaPOI = {
 	[2637]={["Name_lang"]="Domination's Grasp",["Description_lang"]="",["Pos0"]=-5448.2603,["Pos1"]=-3876.304,["ContinentID"]=2481,["AreaName_lang"]=""},
 	[2638]={["Name_lang"]="Heart of Eternity",["Description_lang"]="",["Pos0"]=-6180.36,["Pos1"]=-4098.96,["ContinentID"]=2481,["AreaName_lang"]=""},
 	[2639]={["Name_lang"]="The Grand Design",["Description_lang"]="",["Pos0"]=-6215.8228,["Pos1"]=-4120.363,["ContinentID"]=2481,["AreaName_lang"]=""},
-	[2640]={["Name_lang"]="Great Vault",["Description_lang"]="Defeat bosses in the Sepulcher of the First Ones, complete Mythic Keystone dungeons, and earn Honor in Rated PvP to unlock rewards in the Great Vault.",["Pos0"]=-1726.14,["Pos1"]=1175.9,["ContinentID"]=2222,["AreaName_lang"]=""},
+	[2640]={["Name_lang"]="Great Vault",["Description_lang"]="Defeat bosses in Fated Shadowlands raids, complete Mythic Keystone dungeons, and earn Honor in Rated PvP to unlock rewards in the Great Vault.",["Pos0"]=-1726.14,["Pos1"]=1175.9,["ContinentID"]=2222,["AreaName_lang"]=""},
 	[2641]={["Name_lang"]="Between A Rock & A Rock",["Description_lang"]="Available quest",["Pos0"]=-2935.92,["Pos1"]=47.3058,["ContinentID"]=2374,["AreaName_lang"]=""}
 }

@@ -1108,5 +1108,8 @@ addon.JJMap = {
 	[2502]={["MapName_lang"]="Level Design Devland 9.2",["InstanceType"]=0},
 	[2504]={["MapName_lang"]="Path of the Primus",["InstanceType"]=5},
 	[2509]={["MapName_lang"]="Maldraxxus Coliseum",["InstanceType"]=4},
-	[2511]={["MapName_lang"]="Enigma Arena",["InstanceType"]=4}
+	[2511]={["MapName_lang"]="Enigma Arena",["InstanceType"]=4},
+	[2532]={["MapName_lang"]="Tirisfal Glades",["InstanceType"]=0},
+	[2547]={["MapName_lang"]="Enigma Crucible",["InstanceType"]=4},
+	[2559]={["MapName_lang"]="Shadowlands",["InstanceType"]=2}
 }

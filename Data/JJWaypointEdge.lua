@@ -175,5 +175,8 @@ addon.JJWaypointEdge = {
 	[172]={["Start"]=295,["End"]=296,["PlayerConditionID"]=90925},
 	[173]={["Start"]=297,["End"]=298,["PlayerConditionID"]=0},
 	[174]={["Start"]=299,["End"]=300,["PlayerConditionID"]=0},
-	[175]={["Start"]=301,["End"]=298,["PlayerConditionID"]=0}
+	[175]={["Start"]=301,["End"]=298,["PlayerConditionID"]=0},
+	[176]={["Start"]=304,["End"]=216,["PlayerConditionID"]=923},
+	[177]={["Start"]=302,["End"]=101,["PlayerConditionID"]=923},
+	[178]={["Start"]=303,["End"]=217,["PlayerConditionID"]=923}
 }

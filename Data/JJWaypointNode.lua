@@ -266,5 +266,8 @@ addon.JJWaypointNode = {
 	[300]={["Name_lang"]="Take the Waystone in Geometric Cavern to Oribos",["Type"]=2,["Pos0"]=-1723.01,["Pos1"]=1282.88,["MapID"]=2222},
 	[298]={["Name_lang"]="Take the portal to Zereth Mortis within the Ring of Transference",["Type"]=2,["Pos0"]=-4357.68,["Pos1"]=800.4,["MapID"]=2374},
 	[299]={["Name_lang"]="Take the Waystone in Geometric Cavern to Oribos",["Type"]=1,["Pos0"]=-4357.68,["Pos1"]=800.4,["MapID"]=2374},
-	[301]={["Name_lang"]="Speak to Tal-Inara within Oribos to travel to Zereth Mortis",["Type"]=1,["Pos0"]=-1941.27,["Pos1"]=1390.69,["MapID"]=2222}
+	[301]={["Name_lang"]="Speak to Tal-Inara within Oribos to travel to Zereth Mortis",["Type"]=1,["Pos0"]=-1941.27,["Pos1"]=1390.69,["MapID"]=2222},
+	[302]={["Name_lang"]="Take the portal from Ruins of Lordaeron to Orgrimmar",["Type"]=1,["Pos0"]=1820.73,["Pos1"]=344.564,["MapID"]=0},
+	[303]={["Name_lang"]="Take the portal from Ruins of Lordaeron to Stranglethorn Vale",["Type"]=1,["Pos0"]=1790.59,["Pos1"]=344.559,["MapID"]=0},
+	[304]={["Name_lang"]="Take the portal from Ruins of Lordaeron to Howling Fjord",["Type"]=1,["Pos0"]=1821.2,["Pos1"]=317.399,["MapID"]=0}
 }
