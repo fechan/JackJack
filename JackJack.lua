@@ -10,16 +10,24 @@ local Ace = LibStub("AceAddon-3.0"):NewAddon("JackJack", "AceConsole-3.0")
 addon.AddonState = {
     ["directions"] = nil, -- current set of directions currently active
     ["directionWaypoints"] = {},
+    ["settings"] = nil,
 }
 
 ---=== DATA FUNCTIONS ===---
+
+local function getPlayerInstance()
+    local _, _, _, _, _, _, _, instanceId = GetInstanceInfo()
+    return instanceId
+end
 
 --- Get all locations that (fuzzy) match the location name
 -- @param locationName  Location name to match
 -- @param limit         (optional) Limit to this number of locations
 -- @param sameInstance  (optional) Only include non-instanced locations and locations in the same instance as the player
 function addon:locationsMatching(locationName, limit, sameInstance)
-    sameInstance = sameInstance or true
+    if sameInstance == nil then
+        sameInstance = true
+    end
 
     local matchingLocations = {}
     local matches = 0
@@ -62,7 +70,7 @@ function addon:locationsMatching(locationName, limit, sameInstance)
 
     matchingLocations = table.slice(matchingLocations, 1, limit)
 
-    return matchingLocations
+    return matchingLocations, matches
 end
 
 --- Try to find the location of the waypoint at a higher zoom level than the given map
@@ -104,6 +112,11 @@ end
 ---=== INITIALIZE ADDON GUI AND COMMANDS ===---
 
 function Ace:OnInitialize ()
+    addon.Settings = LibStub("AceDB-3.0"):New("JackJackSettings", {
+        profile = {
+            showInstances = true
+        }
+    })
     addon:initGUI()
 end
 

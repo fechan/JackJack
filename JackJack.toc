@@ -4,6 +4,7 @@
 ## Author: artifexsev/fechan
 ## Notes: Lets you search for known points of interest from WoW.tools and put them on the map as TomTom waypoints
 ## Dependencies: TomTom
+## SavedVariables: JackJackSettings
 ## X-WoWI-ID: 26250
 
 # LIBRARY: ACE3

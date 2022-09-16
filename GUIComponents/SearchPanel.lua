@@ -19,7 +19,7 @@ end
 
 --- Ace callback handler that populates the location list when text is typed into the search box
 -- @param searchBox     Searchbox widget
--- @param callbackName  Name of the callback event (should always be "OnTextChanged")
+-- @param callbackName  Name of the callback event (should always be "OnTextChanged" if being run as an event callback)
 -- @param querying      Search query
 local function populateLocationList(searchBox, callbackName, query)
     -- delete and create new location list
@@ -28,7 +28,7 @@ local function populateLocationList(searchBox, callbackName, query)
     local locationList, locationListContainer = addon.ScrollingList()
 
     -- put buttons in the location list
-    local locations = addon:locationsMatching(query, 20)
+    local locations, matches = addon:locationsMatching(query, 20, not addon.Settings.profile.showInstances)
     for idx, location in ipairs(locations) do
         -- local button = addon:LocationButton(location)
         -- locationList:AddChild(button)
@@ -37,7 +37,7 @@ local function populateLocationList(searchBox, callbackName, query)
     end
 
     local resultsText = searchBox:GetUserData("resultsText")
-    resultsText:SetText(getSearchResultsText(#locations, query == ""))
+    resultsText:SetText(getSearchResultsText(matches, query == ""))
 
     locationListContainerContainer:AddChild(locationListContainer)
 end
@@ -55,6 +55,16 @@ function addon:SearchPanel()
     searchBox:SetFullWidth(true)
     searchBox:DisableButton(true)
     searchPanel:AddChild(searchBox)
+
+    -- checkbox for showing instanced locations in search
+    local showInstancesCheckbox = AceGUI:Create("CheckBox")
+    showInstancesCheckbox:SetLabel("Show instances")
+    showInstancesCheckbox:SetCallback("OnValueChanged", function (checkbox, callbackName, value)
+        addon.Settings.profile.showInstances = value
+        populateLocationList(searchBox, nil, searchBox:GetText())
+    end)
+    showInstancesCheckbox:SetValue(addon.Settings.profile.showInstances)
+    searchPanel:AddChild(showInstancesCheckbox)
 
     -- search result meta text
     local resultsText = AceGUI:Create("Label")
