@@ -17,7 +17,10 @@ addon.AddonState = {
 --- Get all locations that (fuzzy) match the location name
 -- @param locationName  Location name to match
 -- @param limit         (optional) Limit to this number of locations
-function addon:locationsMatching(locationName, limit)
+-- @param sameInstance  (optional) Only include non-instanced locations and locations in the same instance as the player
+function addon:locationsMatching(locationName, limit, sameInstance)
+    sameInstance = sameInstance or true
+
     local matchingLocations = {}
     local matches = 0
     limit = limit or math.huge
@@ -30,7 +33,8 @@ function addon:locationsMatching(locationName, limit)
     }
     for datasetNbr, dataset in pairs({addon.JJAreaPOI, addon.JJTaxiNodes}) do
         for rowNumber, poi in pairs(dataset) do
-            if addon.fzy.has_match(locationName, poi.Name_lang) then
+            if ((not sameInstance) or (addon.JJMap[poi.ContinentID].InstanceType == 0) or (getPlayerInstance() == poi.ContinentID)) and
+                    addon.fzy.has_match(locationName, poi.Name_lang) then
                 -- significantly faster to precompute score and put it in memory than
                 -- computing every time a comparison is made in the sort
                 local match = {
