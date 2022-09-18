@@ -23,12 +23,13 @@ end
 
 
 function addon:initGUI()
-    local mainFrame = AceGUI:Create("Window")
+    local mainFrame = AceGUI:Create("JJWindow")
     mainFrame.frame:SetParent("WorldMapFrame")
-    mainFrame.closebutton:Hide() -- HACK: hide Ace3 close button
+    -- mainFrame.closebutton:Hide() -- HACK: hide Ace3 close button
     mainFrame:SetTitle("JackJack")
     mainFrame:SetPoint("TOPLEFT", "WorldMapFrame", "TOPRIGHT")
     mainFrame:SetWidth(MAIN_FRAME_STYLE.WIDTH)
+    mainFrame:SetHeight(165)
     mainFrame:SetLayout("Flow")
     
     -- tabs
