@@ -181,7 +181,7 @@ do
 	end
 
 	local function Constructor()
-		local frame = CreateFrame("Frame",nil,UIParent)
+		local frame = CreateFrame("Frame", "JJWindow", UIParent)
 		local self = {}
 		self.type = "Window"
 
