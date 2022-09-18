@@ -31,13 +31,14 @@ do
 		this.obj:Fire("OnClose")
 	end
 
-	local function hideOnClick(this)
+	local function minimizeOnClick(this)
 		PlaySound(799) -- SOUNDKIT.GS_TITLE_OPTION_EXIT
 
 		local status = this.obj.status or this.obj.localstatus
 		if status.minimized == nil then status.minimized = true end
 		
-		this:GetParent():StartSizing("BOTTOM")
+		local frame = this:GetParent()
+		frame:StartSizing("BOTTOM")
 		if status.minimized then
 			this.obj:SetHeight(500)
 			status.minimized = false
@@ -45,6 +46,7 @@ do
 			this.obj:SetHeight(165)
 			status.minimized = true
 		end
+		this.obj:Fire("OnMinimizeClicked", status.minimized)
 		frame:StopMovingOrSizing()
 	end
 
@@ -280,11 +282,11 @@ do
 		right:SetPoint("BOTTOMRIGHT", bottomright, "TOPRIGHT")
 		right:SetTexCoord(0.1171875, 0.2421875, 0, 1)
 
-		local hide = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
-		hide:SetPoint("TOPRIGHT", 2, 1)
-		hide:SetScript("OnClick", hideOnClick)
-		self.hidebutton = hide
-		hide.obj = self
+		local minimize = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
+		minimize:SetPoint("TOPRIGHT", 2, 1)
+		minimize:SetScript("OnClick", minimizeOnClick)
+		self.hidebutton = minimize
+		minimize.obj = self
 
 		local titletext = frame:CreateFontString(nil, "ARTWORK")
 		titletext:SetFontObject(GameFontNormal)

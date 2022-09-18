@@ -42,6 +42,14 @@ local function populateLocationList(searchBox, callbackName, query)
     locationListContainerContainer:AddChild(locationListContainer)
 end
 
+local function minimizeLocationList(minimize, searchBox)
+    if minimize then
+        searchBox:GetUserData("locationListContainerContainer"):ReleaseChildren()
+    else
+        populateLocationList(searchBox, nil, searchBox:GetText())
+    end
+end
+
 --- Factory method returning the panel for the location list with the search box above it
 function addon:SearchPanel()
     local searchPanel = AceGUI:Create("SimpleGroup")
@@ -90,5 +98,7 @@ function addon:SearchPanel()
     -- pre-populate the location list
     populateLocationList(searchBox, nil, "")
 
-    return searchPanel
+    local minimizeCallback = function(minimized) minimizeLocationList(minimized, searchBox) end
+
+    return searchPanel, minimizeCallback
 end
