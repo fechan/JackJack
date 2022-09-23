@@ -30,6 +30,10 @@ addon.playerCanUseTaxiNode = function(taxiNode)
     return (faction == "Alliance" and taxiNode["A"] == 1) or (faction == "Horde" and taxiNode["H"] == 1)
 end
 
+addon.getInstanceTypeName = function(instanceType)
+    return ({[0] = "Not instanced", "Party dungeon", "Raid dungeon", "PvP battlefield", "Arena battlefield", "Scenario"})[tonumber(instanceType)]
+end
+
 function table.slice(tbl, first, last, step)
     local sliced = {}
     for i = first or 1, last or #tbl, step or 1 do

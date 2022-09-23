@@ -53,6 +53,7 @@ function addon:locationsMatching(locationName, limit, sameInstance)
                     ["AreaName_lang"] = poi["AreaName_lang"],
                     ["Description_lang"] = poi["Description_lang"],
                     ["MapName_lang"] = addon.JJMap[poi["ContinentID"]]["MapName_lang"],
+                    ["InstanceType"] = addon.JJMap[poi["ContinentID"]]["InstanceType"],
                     ["Origin"] = datasetOrigins[datasetNbr]
                 }                   
 
