@@ -31,6 +31,10 @@ do
 		this.obj:Fire("OnClose")
 	end
 
+	--- Perform the actual minimizing/maximizing
+	-- @param frame		Frame to modify
+	-- @param minimize	True when minimize, False when maximize
+	-- @param dragging	Whether the minimize state is being set due to dragging a resizer
 	local function setMinimizeState(frame, minimize, dragging)
 		if dragging == nil then dragging = false end
 
@@ -183,16 +187,20 @@ do
 		self.sizer_e[func](self.sizer_e)
 	end
 
+	--- Set the height the window should be when maximized
+	-- @param height Maximized height
 	local function SetMaximizedHeight(self, height)
 		local status = self.frame.obj.status or self.frame.obj.localstatus
 		status.maximizedHeight = height
 	end
 
+	-- Set the minimized state of the window
+	-- @param minimize True when minimized, False when maximized
 	local function Minimize(self, minimize)
 		setMinimizeState(self.frame, minimize)
 	end
 
-	-- Get whether the window is minimized
+	--- Get whether the window is minimized
 	local function GetMinimized(self)
 		local status = self.frame.obj.status or self.frame.obj.localstatus
 		return status.minimized
