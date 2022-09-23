@@ -16,6 +16,8 @@ local function addTooltip(button, location, style)
 
     -- set text content
     tooltip:AddLine("Get directions to " .. location.Name_lang)
+    tooltip:AddLine("This may take several seconds.")
+    tooltip:AddLine(" ")
     tooltip:AddLine("Warning: this is occasionally wrong.")
 
     tooltip:Show()
