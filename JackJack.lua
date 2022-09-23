@@ -32,8 +32,6 @@ function addon:locationsMatching(locationName, limit, sameInstance)
     local matches = 0
     limit = limit or math.huge
 
-    -- TODO: use metatables for lua data sets for Origin (and maybe even ContinentID)
-
     local datasetOrigins = {
         "AreaPOI (Points of Interest table)",
         "TaxiNodes (Flight points table)",
