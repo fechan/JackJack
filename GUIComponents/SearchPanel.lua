@@ -26,19 +26,17 @@ local function populateLocationList(searchBox, query)
     locationListContainerContainer:ReleaseChildren()
     local locationList, locationListContainer = addon.ScrollingList()
 
+    locationListContainerContainer:AddChild(locationListContainer)
+
     -- put buttons in the location list
     local locations, matches = addon:locationsMatching(query, 20, not addon.Settings.profile.showInstances)
     for idx, location in ipairs(locations) do
-        -- local button = addon:LocationButton(location)
-        -- locationList:AddChild(button)
         local searchResult = addon:SearchResult(location)
-        locationList:AddChild(searchResult)        
+        locationList:AddChild(searchResult)
     end
 
     local resultsText = searchBox:GetUserData("resultsText")
     resultsText:SetText(getSearchResultsText(matches, query == ""))
-
-    locationListContainerContainer:AddChild(locationListContainer)
 end
 
 local function minimizeLocationList(minimize, searchBox)
