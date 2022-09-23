@@ -14,4 +14,4 @@ with open("JackJack.toc") as tocfile:
 
 with ZipFile(os.path.join("Releases", version + ".zip"), "w", ZIP_DEFLATED) as jjzip:
     for file in toc:
-        jjzip.write(file)
+        jjzip.write(file, arcname=os.path.join("JackJack", file))
