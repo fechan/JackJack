@@ -192,6 +192,12 @@ do
 		setMinimizeState(self.frame, minimize)
 	end
 
+	-- Get whether the window is minimized
+	local function GetMinimized(self)
+		local status = self.frame.obj.status or self.frame.obj.localstatus
+		return status.minimized
+	end
+
 	local function Constructor()
 		local frame = CreateFrame("Frame", "JJWindow", UIParent)
 		local self = {}
@@ -211,6 +217,7 @@ do
 
 		self.SetMaximizedHeight = SetMaximizedHeight
 		self.Minimize = Minimize
+		self.GetMinimized = GetMinimized
 
 		self.localstatus = {}
 

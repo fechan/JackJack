@@ -7,7 +7,7 @@ local MAIN_FRAME_STYLE = {
     ["WIDTH"] = 350
 }
 
-local tabs, minimizeFunc
+local mainFrame, tabs, minimizeFunc
 
 function addon:showDirections() tabs:SelectTab("directions") end
 
@@ -22,10 +22,20 @@ local function afterSelectTab(tabs, callbackName, tabName)
     elseif tabName == "directions" then
         tabs:AddChild(addon:DirectionsPanel(addon.AddonState.directions))
     end
+
+    minimizeFunc(mainFrame:GetMinimized())
 end
 
 
 function addon:initGUI()
+    -- main JJWindow
+    mainFrame = AceGUI:Create("JJWindow")
+    mainFrame.frame:SetParent("WorldMapFrame")
+    mainFrame:SetTitle("JackJack")
+    mainFrame:SetPoint("TOPLEFT", "WorldMapFrame", "TOPRIGHT")
+    mainFrame:SetWidth(MAIN_FRAME_STYLE.WIDTH)
+    mainFrame:SetLayout("Flow")
+
     -- tabs
     tabs = AceGUI:Create("TabGroup")
     tabs:SetTabs({
@@ -38,13 +48,10 @@ function addon:initGUI()
     tabs:SetFullWidth(true)
     tabs:SetLayout("Flow")
 
-    -- main JJWindow
-    local mainFrame = AceGUI:Create("JJWindow")
-    mainFrame.frame:SetParent("WorldMapFrame")
-    mainFrame:SetTitle("JackJack")
-    mainFrame:SetPoint("TOPLEFT", "WorldMapFrame", "TOPRIGHT")
-    mainFrame:SetWidth(MAIN_FRAME_STYLE.WIDTH)
-    mainFrame:SetLayout("Flow")
+    -- add all the elements
+    mainFrame:AddChild(tabs)
+
+    -- set minimize behavior
     mainFrame:SetCallback("OnMinimizeStateChanged", function(_, _, minimize, maximizedHeight)
         addon.Settings.profile.gui.maximizedHeight = maximizedHeight
         addon.Settings.profile.gui.minimized = minimize
@@ -55,7 +62,4 @@ function addon:initGUI()
     mainFrame:SetMaximizedHeight(addon.Settings.profile.gui.maximizedHeight)
     mainFrame:Minimize(addon.Settings.profile.gui.minimized)
     minimizeFunc(addon.Settings.profile.gui.minimized)
-
-    -- add all the elements
-    mainFrame:AddChild(tabs)
 end
