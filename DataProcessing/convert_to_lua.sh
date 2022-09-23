@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 cd processed-csv-data
 
 # if keeping IDs is important, then luaDict
