@@ -28,11 +28,12 @@ Then select one of the locations to add it as a TomTom waypoint.
 ![JackJack GIF demo](https://user-images.githubusercontent.com/56131910/158125400-dd507318-5fa8-4fd2-af0a-ea8a9a09f8d5.gif)
 
 ### Get directions to a location (experimental)
-You can get directions from your player to a location by typing a location into the search box, then clicking the directions icon button to the right of the location. This will add each step of the directions as a TomTom waypoint and print out the directions in chat.
+You can get directions from your player to a location by typing a location into the search box, then clicking the directions icon button to the right of the location. This will add each step of the directions as a TomTom waypoint and show a list of directions in the main window.
 
 This is an experimental feature, meaning it might be wrong. For example, it might lead you to portals you haven't unlocked yet, or which are temporary during a quest. This will probably change as I update the addon.
 
-![Directions printout](https://user-images.githubusercontent.com/56131910/159830732-391fbc97-42bc-4cc1-8873-370f7eb260d5.png)
+![Directions list](https://user-images.githubusercontent.com/56131910/191909189-17fe210e-9f45-4de1-bfc8-cc579c88960c.png)
+
 
 ## Current datasets used
 * AreaPOI - Points of Interest
