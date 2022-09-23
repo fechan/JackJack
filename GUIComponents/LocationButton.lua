@@ -47,7 +47,9 @@ local function addTooltip(button, location, style)
         tooltip:AddLine("Description: " .. location.Description_lang)
     end
 
-    tooltip:AddLine("Instance type: " .. addon.getInstanceTypeName(location.InstanceType))
+    if location.InstanceType then
+        tooltip:AddLine("Instance type: " .. addon.getInstanceTypeName(location.InstanceType))
+    end
 
     if location.Origin ~= "" then
         tooltip:AddLine("Dataset: " .. location.Origin)
