@@ -19,9 +19,7 @@ This addon uses TomTom to add waypoints to the map. https://www.curseforge.com/w
 
 ## Features
 ### Set a waypoint at a location
-You can either:
-* Open the map to show JackJack and type a location (like "orgrimmar") into the search box
-* Type `/jackjack orgrimmar` or `/jj orgrimmar` into the chat
+Open the map to show JackJack and type a location (like "orgrimmar") into the search box
 
 Then select one of the locations to add it as a TomTom waypoint.
 
