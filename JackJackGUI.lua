@@ -11,12 +11,14 @@ local mainFrame, tabs, minimizeFunc
 
 function addon:showDirections() tabs:SelectTab("directions") end
 
+local function maximizeWindow() mainFrame:Minimize(false) end
+
 local function afterSelectTab(tabs, callbackName, tabName)
     tabs:ReleaseChildren()
 
     minimizeFunc = function (minimized) end -- dummy function that does nothing in case tab panel doesn't minimize
     if tabName == "locations" then
-        local searchPanel, minimizeSearchPanel = addon:SearchPanel()
+        local searchPanel, minimizeSearchPanel = addon:SearchPanel(maximizeWindow)
         tabs:AddChild(searchPanel)
         minimizeFunc = minimizeSearchPanel
     elseif tabName == "directions" then

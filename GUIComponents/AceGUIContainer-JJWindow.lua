@@ -40,6 +40,9 @@ do
 
 		local frameObj = frame.obj
 		local status = frameObj.status or frameObj.localstatus
+
+		if minimize == status.minimized then return end
+
 		if minimize then
 			status.maximizedHeight = frame:GetHeight()
 			frame:SetHeight(165)

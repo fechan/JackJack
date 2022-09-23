@@ -19,9 +19,8 @@ end
 
 --- Ace callback handler that populates the location list when text is typed into the search box
 -- @param searchBox     Searchbox widget
--- @param callbackName  Name of the callback event (should always be "OnTextChanged" if being run as an event callback)
--- @param querying      Search query
-local function populateLocationList(searchBox, callbackName, query)
+-- @param query         Search query
+local function populateLocationList(searchBox, query)
     -- delete and create new location list
     local locationListContainerContainer = searchBox:GetUserData("locationListContainerContainer")
     locationListContainerContainer:ReleaseChildren()
@@ -46,12 +45,13 @@ local function minimizeLocationList(minimize, searchBox)
     if minimize then
         searchBox:GetUserData("locationListContainerContainer"):ReleaseChildren()
     else
-        populateLocationList(searchBox, nil, searchBox:GetText())
+        populateLocationList(searchBox, searchBox:GetText())
     end
 end
 
 --- Factory method returning the panel for the location list with the search box above it
-function addon:SearchPanel()
+-- @param maximizeCallback Function to call when the search panel wants to maximize the parent window
+function addon:SearchPanel(maximizeCallback)
     local searchPanel = AceGUI:Create("SimpleGroup")
     searchPanel:SetFullHeight(true)
     searchPanel:SetFullWidth(true)
@@ -59,7 +59,10 @@ function addon:SearchPanel()
 
     -- search box
     local searchBox = AceGUI:Create("EditBox")
-    searchBox:SetCallback("OnTextChanged", populateLocationList)
+    searchBox:SetCallback("OnTextChanged", function (searchBox, eventName, query)
+        maximizeCallback()
+        populateLocationList(searchBox, query)
+    end)
     searchBox:SetFullWidth(true)
     searchBox:DisableButton(true)
     searchPanel:AddChild(searchBox)
@@ -69,7 +72,7 @@ function addon:SearchPanel()
     showInstancesCheckbox:SetLabel("Show instances")
     showInstancesCheckbox:SetCallback("OnValueChanged", function (checkbox, callbackName, value)
         addon.Settings.profile.showInstances = value
-        populateLocationList(searchBox, nil, searchBox:GetText())
+        populateLocationList(searchBox, searchBox:GetText())
     end)
     showInstancesCheckbox:SetValue(addon.Settings.profile.showInstances)
     searchPanel:AddChild(showInstancesCheckbox)
@@ -96,7 +99,7 @@ function addon:SearchPanel()
     searchBox:SetUserData("locationListContainerContainer", locationListContainerContainer)
 
     -- pre-populate the location list
-    populateLocationList(searchBox, nil, "")
+    populateLocationList(searchBox, "")
 
     local minimizeCallback = function(minimized) minimizeLocationList(minimized, searchBox) end
 
