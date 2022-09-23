@@ -3,7 +3,7 @@ Adds TomTom waypoints based on location name. Locations and their coordinates ar
 
 Don't know where Kalimgrimmardrassil is? Now you don't have to waste time searching on Google where everything is and just add a waypoint directly there!
 
-![Partial JackJack screenshot](https://user-images.githubusercontent.com/56131910/159831814-c477782b-80cb-41b9-98ee-322b1eaa5536.png)
+![Partial JackJack screenshot](https://user-images.githubusercontent.com/56131910/191909018-2b00b953-d34d-4a43-8aa9-48dee3f9ce19.png)
 
 ## Download and install
 ### With Wowup
@@ -19,20 +19,19 @@ This addon uses TomTom to add waypoints to the map. https://www.curseforge.com/w
 
 ## Features
 ### Set a waypoint at a location
-You can either:
-* Open the map to show JackJack and type a location (like "orgrimmar") into the search box
-* Type `/jackjack orgrimmar` or `/jj orgrimmar` into the chat
+Open the map to show JackJack and type a location (like "orgrimmar") into the search box
 
 Then select one of the locations to add it as a TomTom waypoint.
 
 ![JackJack GIF demo](https://user-images.githubusercontent.com/56131910/158125400-dd507318-5fa8-4fd2-af0a-ea8a9a09f8d5.gif)
 
 ### Get directions to a location (experimental)
-You can get directions from your player to a location by typing a location into the search box, then clicking the directions icon button to the right of the location. This will add each step of the directions as a TomTom waypoint and print out the directions in chat.
+You can get directions from your player to a location by typing a location into the search box, then clicking the directions icon button to the right of the location. This will add each step of the directions as a TomTom waypoint and show a list of directions in the main window.
 
 This is an experimental feature, meaning it might be wrong. For example, it might lead you to portals you haven't unlocked yet, or which are temporary during a quest. This will probably change as I update the addon.
 
-![Directions printout](https://user-images.githubusercontent.com/56131910/159830732-391fbc97-42bc-4cc1-8873-370f7eb260d5.png)
+![Directions list](https://user-images.githubusercontent.com/56131910/191909189-17fe210e-9f45-4de1-bfc8-cc579c88960c.png)
+
 
 ## Current datasets used
 * AreaPOI - Points of Interest
