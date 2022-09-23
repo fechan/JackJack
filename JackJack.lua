@@ -10,7 +10,6 @@ local Ace = LibStub("AceAddon-3.0"):NewAddon("JackJack", "AceConsole-3.0")
 addon.AddonState = {
     ["directions"] = nil, -- current set of directions currently active
     ["directionWaypoints"] = {},
-    ["settings"] = nil,
 }
 
 ---=== DATA FUNCTIONS ===---
@@ -114,7 +113,11 @@ end
 function Ace:OnInitialize ()
     addon.Settings = LibStub("AceDB-3.0"):New("JackJackSettings", {
         profile = {
-            showInstances = true
+            showInstances = true,
+            gui = {
+                maximizedHeight = 500,
+                minimized = false
+            }
         }
     })
     addon:initGUI()

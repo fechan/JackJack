@@ -2,9 +2,18 @@ local addonName, addon = ...
 
 local AUTO_REMOVE_WAYPOINTS = true -- TODO: make this a configuration option
 
+local waypointEventListener = CreateFrame("FRAME", "waypointEventListener");
+waypointEventListener:RegisterEvent("PLAYER_ENTERING_WORLD")
+
+waypointEventListener:SetScript("OnEvent", function (self, event, ...)
+    -- show the next directions waypoint when you load into a new zone
+    if event == "PLAYER_ENTERING_WORLD" and #addon.AddonState.directionWaypoints > 0 then
+        TomTom:SetClosestWaypoint()
+    end
+end)
+
 if AUTO_REMOVE_WAYPOINTS then
-    local waypointUpdateFrame = CreateFrame("FRAME", "JJWaypointUpdateFrame");
-    waypointUpdateFrame:SetScript("OnUpdate", function ()
+    waypointEventListener:SetScript("OnUpdate", function ()
         local waypoints = addon.AddonState.directionWaypoints
         local playerMap, x, y = TomTom:GetCurrentPlayerPosition()
 

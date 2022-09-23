@@ -31,22 +31,29 @@ do
 		this.obj:Fire("OnClose")
 	end
 
+	local function setMinimizeState(frame, minimize, dragging)
+		if dragging == nil then dragging = false end
+
+		local frameObj = frame.obj
+		local status = frameObj.status or frameObj.localstatus
+		if minimize then
+			status.maximizedHeight = frame:GetHeight()
+			frame:SetHeight(165)
+		elseif not dragging then
+			frame:SetHeight(status.maximizedHeight or 500)
+		end
+		status.minimized = minimize
+		frameObj:Fire("OnMinimizeStateChanged", minimize, status.maximizedHeight)
+	end
+
 	local function minimizeOnClick(this)
 		PlaySound(799) -- SOUNDKIT.GS_TITLE_OPTION_EXIT
 
 		local status = this.obj.status or this.obj.localstatus
-		if status.minimized == nil then status.minimized = true end
 		
 		local frame = this:GetParent()
 		frame:StartSizing("BOTTOM")
-		if status.minimized then
-			this.obj:SetHeight(500)
-			status.minimized = false
-		else
-			this.obj:SetHeight(165)
-			status.minimized = true
-		end
-		this.obj:Fire("OnMinimizeClicked", status.minimized)
+		setMinimizeState(frame, not status.minimized)
 		frame:StopMovingOrSizing()
 	end
 
@@ -74,31 +81,27 @@ do
 		local frame = this:GetParent()
 		frame:StartSizing("BOTTOMRIGHT")
 		AceGUI:ClearFocus()
-		local self = frame.obj
-		local status = self.status or self.localstatus
-		status.minimized = false
+		setMinimizeState(frame, false)
 	end
 
 	local function sizersOnMouseDown(this)
 		local frame = this:GetParent()
 		frame:StartSizing("BOTTOM")
 		AceGUI:ClearFocus()
-		local self = frame.obj
-		local status = self.status or self.localstatus
-		status.minimized = false
+		setMinimizeState(frame, false)
 	end
 
 	local function sizereOnMouseDown(this)
 		local frame = this:GetParent()
 		frame:StartSizing("RIGHT")
 		AceGUI:ClearFocus()
-		local self = frame.obj
-		local status = self.status or self.localstatus
-		status.minimized = false
 	end
 
 	local function sizerOnMouseUp(this)
-		this:GetParent():StopMovingOrSizing()
+		local frame = this:GetParent()
+		frame:StopMovingOrSizing()
+		local status = frame.obj.status or frame.obj.localstatus
+		status.maximizedHeight = frame:GetHeight()
 	end
 
 	local function SetTitle(self,title)
@@ -180,6 +183,15 @@ do
 		self.sizer_e[func](self.sizer_e)
 	end
 
+	local function SetMaximizedHeight(self, height)
+		local status = self.frame.obj.status or self.frame.obj.localstatus
+		status.maximizedHeight = height
+	end
+
+	local function Minimize(self, minimize)
+		setMinimizeState(self.frame, minimize)
+	end
+
 	local function Constructor()
 		local frame = CreateFrame("Frame", "JJWindow", UIParent)
 		local self = {}
@@ -196,6 +208,9 @@ do
 		self.OnWidthSet = OnWidthSet
 		self.OnHeightSet = OnHeightSet
 		self.EnableResize = EnableResize
+
+		self.SetMaximizedHeight = SetMaximizedHeight
+		self.Minimize = Minimize
 
 		self.localstatus = {}
 

@@ -26,15 +26,6 @@ end
 
 
 function addon:initGUI()
-    local mainFrame = AceGUI:Create("JJWindow")
-    mainFrame.frame:SetParent("WorldMapFrame")
-    mainFrame:SetTitle("JackJack")
-    mainFrame:SetPoint("TOPLEFT", "WorldMapFrame", "TOPRIGHT")
-    mainFrame:SetWidth(MAIN_FRAME_STYLE.WIDTH)
-    mainFrame:SetHeight(165)
-    mainFrame:SetLayout("Flow")
-    mainFrame:SetCallback("OnMinimizeClicked", function(_, _, minimize) minimizeFunc(minimize) end)
-    
     -- tabs
     tabs = AceGUI:Create("TabGroup")
     tabs:SetTabs({
@@ -46,7 +37,25 @@ function addon:initGUI()
     tabs:SetFullHeight(true)
     tabs:SetFullWidth(true)
     tabs:SetLayout("Flow")
+
+    -- main JJWindow
+    local mainFrame = AceGUI:Create("JJWindow")
+    mainFrame.frame:SetParent("WorldMapFrame")
+    mainFrame:SetTitle("JackJack")
+    mainFrame:SetPoint("TOPLEFT", "WorldMapFrame", "TOPRIGHT")
+    mainFrame:SetWidth(MAIN_FRAME_STYLE.WIDTH)
+    mainFrame:SetLayout("Flow")
+    mainFrame:SetCallback("OnMinimizeStateChanged", function(_, _, minimize, maximizedHeight)
+        addon.Settings.profile.gui.maximizedHeight = maximizedHeight
+        addon.Settings.profile.gui.minimized = minimize
+        minimizeFunc(minimize)
+    end)
     
+    -- restore gui state from saved variables
+    mainFrame:SetMaximizedHeight(addon.Settings.profile.gui.maximizedHeight)
+    mainFrame:Minimize(addon.Settings.profile.gui.minimized)
+    minimizeFunc(addon.Settings.profile.gui.minimized)
+
     -- add all the elements
     mainFrame:AddChild(tabs)
 end

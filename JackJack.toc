@@ -29,6 +29,7 @@ Data\JJWaypointNode.lua
 
 # JackJack GUI COMPONENTS
 GUIComponents\AceGUIWidget-IconButton.lua
+GUIComponents\AceGUIContainer-JJWindow.lua
 GUIComponents\Tooltip.lua
 GUIComponents\LocationButton.lua
 GUIComponents\DirectionsButton.lua
