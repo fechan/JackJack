@@ -70,6 +70,7 @@ function addon:SearchPanel(maximizeCallback)
     showInstancesCheckbox:SetLabel("Show instances")
     showInstancesCheckbox:SetCallback("OnValueChanged", function (checkbox, callbackName, value)
         addon.Settings.profile.showInstances = value
+        maximizeCallback()
         populateLocationList(searchBox, searchBox:GetText())
     end)
     showInstancesCheckbox:SetValue(addon.Settings.profile.showInstances)
