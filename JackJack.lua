@@ -121,7 +121,8 @@ function Ace:OnInitialize ()
                 autoRemove = true
             },
             directions = {
-                includeTaxi = true
+                includeTaxi = true,
+                loadingScreenSeconds = 10
             }
         }
     })
@@ -142,6 +143,18 @@ function Ace:OnInitialize ()
                         width = "full",
                         set = function(info, val) addon.Settings.profile.directions.includeTaxi = val end,
                         get = function(info) return addon.Settings.profile.directions.includeTaxi end
+                    },
+                    loadingScreenSeconds = {
+                        name = "Average loading screen time (seconds)",
+                        desc = "JackJack takes loading screens into account when calculating directions. \n" ..
+                        "It will try to avoid loading screens if it would make your journey longer.",
+                        type = "range",
+                        min = 0,
+                        softMax = 180,
+                        bigStep = 1,
+                        width = "full",
+                        set = function(info, val) addon.Settings.profile.directions.loadingScreenSeconds = tonumber(val) end,
+                        get = function(info) return addon.Settings.profile.directions.loadingScreenSeconds end
                     }
                 }
             },

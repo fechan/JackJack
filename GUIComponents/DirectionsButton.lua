@@ -29,8 +29,9 @@ function addon:DirectionsButton(location, style)
 
     local button = AceGUI:Create("IconButton")
 
+    local settings = addon.Settings.profile.directions
     button:SetCallback("OnClick", function() 
-        addon.AddonState.directions = addon:getDirections(location, addon.Settings.profile.directions.includeTaxi)
+        addon.AddonState.directions = addon:getDirections(location, settings.includeTaxi, settings.loadingScreenSeconds)
         addon:showDirections()
     end)
 

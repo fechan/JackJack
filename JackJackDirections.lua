@@ -1,7 +1,4 @@
 local addonName, addon = ...
-
-LOADING_SCREEN_SECONDS = 10 --TODO: make this configurable
-
 -- Taxis are 437% faster than base, but I add 1.5 scaling to make the algorithm
 -- prefer Taxis a little more (because of otherwise inaccessible areas like
 -- Oribos -> Revendreth and Silvermoon -> Quel'Danas)
@@ -39,7 +36,7 @@ local function getTravelTimeTo(x1, y1, x2, y2, speedOverride)
     return getTravelTime(CalculateDistance(x1, y1, x2, y2), speedOverride)
 end
 
-local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationContinent, includeTaxi)
+local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationContinent, includeTaxi, loadingScreenSeconds)
     if nodeId == "destination" or nodeId == nil then
         return {}
     end
@@ -98,7 +95,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
                 if addon.playerMeetsPortalRequirements(edge["PlayerConditionID"]) then
                     adjacentNodes[#adjacentNodes+1] = {
                         nodeId = addon.getDatasetSafeID("JJWaypointNode", edge["End"]),
-                        distance = LOADING_SCREEN_SECONDS
+                        distance = loadingScreenSeconds
                     }
                 end
             end
@@ -184,10 +181,11 @@ end
 --  You can have it run a callback on completion with the return value.
 --  It is meant for non-blocking Dijkstra calculation which runs a single iteration
 --  of Dijkstra's every time OnUpdate is called. (TODO: implement this)
--- @param location          Destination to get directions to
--- @param includeTaxi       True if including taxi/flight points in directions
+-- @param location              Destination to get directions to
+-- @param includeTaxi           True if including taxi/flight points in directions
+-- @param loadingScreenSeconds  Typical loading screen time in seconds
 -- @param completedCallback Callback function after function completes
-function addon:getDirections(location, includeTaxi, completedCallback)
+function addon:getDirections(location, includeTaxi, loadingScreenSeconds, completedCallback)
     local dist = {}
     local prev = {}
     local Q = addon.binaryheap.minUnique()
@@ -209,7 +207,7 @@ function addon:getDirections(location, includeTaxi, completedCallback)
         if u == "destination" then
             break
         else
-            local adjacentNodes = getAdjacentNodes(u, location.Pos0, location.Pos1, location.ContinentID, includeTaxi)
+            local adjacentNodes = getAdjacentNodes(u, location.Pos0, location.Pos1, location.ContinentID, includeTaxi, loadingScreenSeconds)
             
             for _, adjacentNode in pairs(adjacentNodes) do
                 local v = adjacentNode["nodeId"]
