@@ -1,8 +1,11 @@
 local addonName, addon = ...
 
-LOADING_SCREEN_WEIGHT = 1000 --TODO: set this to something sane
-TAXI_SCALING = 0.5 -- this sets the weight of taxi edges to the actual distance times this TODO: set this to something sane
+LOADING_SCREEN_SECONDS = 10 --TODO: make this configurable
 
+-- Taxis are 437% faster than base, but I add 1.5 scaling to make the algorithm
+-- prefer Taxis a little more (because of otherwise inaccessible areas like
+-- Oribos -> Revendreth and Silvermoon -> Quel'Danas)
+TAXI_SPEED_YdsPS = 1.5 * 4.37 * BASE_MOVEMENT_SPEED
 
 local function makeContinentWiseNodeTable(nodeList, continentColumnName)
     local continentWiseNodes = {}
@@ -18,6 +21,23 @@ end
 
 local continentWiseTaxiNodes = makeContinentWiseNodeTable(addon.JJTaxiNodes, "ContinentID")
 local continentWiseWaypointNodes = makeContinentWiseNodeTable(addon.JJWaypointNode, "MapID")
+
+--- Get travel time based on distance and speed (taking into account mounts and abilities)
+-- By default it uses GetUnitSpeed to find the top speed of the player, but this can be overridden
+-- @param distance          Distance to location
+-- @param speedOverride     Override the speed in yards/sec
+local function getTravelTime(distance, speedOverride)
+    local speed = speedOverride -- speed in yards per second
+    if speedOverride == nil then
+        local currentSpeed, maxRunSpeed, maxFlySpeed, maxSwimSpeed = GetUnitSpeed("player")
+        speed = max(maxRunSpeed, maxFlySpeed)
+    end
+    return distance / speed
+end
+
+local function getTravelTimeTo(x1, y1, x2, y2, speedOverride)
+    return getTravelTime(CalculateDistance(x1, y1, x2, y2), speedOverride)
+end
 
 local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationContinent, includeTaxi)
     if nodeId == "destination" or nodeId == nil then
@@ -38,7 +58,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
             for adjacentNodeId, adjacentNode in pairs(sameContinentNodes) do 
                 adjacentNodes[#adjacentNodes+1] = {
                     nodeId = addon.getDatasetSafeID("JJWaypointNode", adjacentNodeId),
-                    distance = CalculateDistance(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
+                    distance = getTravelTimeTo(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
                 }
             end
         end
@@ -50,7 +70,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
                     if addon.playerCanUseTaxiNode(adjacentNode) then
                         adjacentNodes[#adjacentNodes+1] = {
                             nodeId = addon.getDatasetSafeID("JJTaxiNodes", adjacentNodeId),
-                            distance = CalculateDistance(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
+                            distance = getTravelTimeTo(playerPosition.x, playerPosition.y, adjacentNode["Pos0"], adjacentNode["Pos1"])
                         }
                     end
                 end
@@ -60,7 +80,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         if destinationContinent == playerContinent then
             adjacentNodes[#adjacentNodes+1] = {
                 nodeId = "destination",
-                distance = CalculateDistance(playerPosition.x, playerPosition.y, destinationX, destinationY)
+                distance = getTravelTimeTo(playerPosition.x, playerPosition.y, destinationX, destinationY)
             }
         end
         return adjacentNodes
@@ -78,7 +98,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
                 if addon.playerMeetsPortalRequirements(edge["PlayerConditionID"]) then
                     adjacentNodes[#adjacentNodes+1] = {
                         nodeId = addon.getDatasetSafeID("JJWaypointNode", edge["End"]),
-                        distance = LOADING_SCREEN_WEIGHT
+                        distance = LOADING_SCREEN_SECONDS
                     }
                 end
             end
@@ -91,7 +111,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
                     if addon.playerCanUseTaxiNode(addon.JJTaxiNodes[toTaxiNodeId]) then
                         adjacentNodes[#adjacentNodes+1] = {
                             nodeId = addon.getDatasetSafeID("JJTaxiNodes", toTaxiNodeId),
-                            distance = edge["Distance"] * TAXI_SCALING
+                            distance = getTravelTime(edge["Distance"], TAXI_SPEED_YdsPS)
                         }
                     end
                 end
@@ -104,7 +124,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
         for adjacentNodeId, adjacentNode in pairs(sameContinentNodes) do
             adjacentNodes[#adjacentNodes+1] = {
                 nodeId = addon.getDatasetSafeID("JJWaypointNode", adjacentNodeId),
-                distance = CalculateDistance(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
+                distance = getTravelTimeTo(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
             }
         end
     end
@@ -116,7 +136,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
                 if addon.playerCanUseTaxiNode(adjacentNode) then
                     adjacentNodes[#adjacentNodes+1] = {
                         nodeId = addon.getDatasetSafeID("JJTaxiNodes", adjacentNodeId),
-                        distance = CalculateDistance(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
+                        distance = getTravelTimeTo(nodeX, nodeY, adjacentNode["Pos0"], adjacentNode["Pos1"])
                     }
                 end
             end
@@ -127,7 +147,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
     if destinationContinent == nodeMapID then
         adjacentNodes[#adjacentNodes+1] = {
             nodeId = "destination",
-            distance = CalculateDistance(nodeX, nodeY, destinationX, destinationY)
+            distance = getTravelTimeTo(nodeX, nodeY, destinationX, destinationY)
         }
     end
     return adjacentNodes
