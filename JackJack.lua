@@ -100,10 +100,18 @@ end
 -- @return x            X coordinate of the waypoint
 -- @return y            Y coordinate of the waypoint
 function addon:getBestZoomMapPositionFor(location)
-    -- TODO: make this recursive
     local globalCoords = CreateVector2D(location.Pos0, location.Pos1)
     local uiMapId, mapPosition = C_Map.GetMapPosFromWorldPos(location.ContinentID, globalCoords)
-    local uiMapId, x, y = getHigherZoomMapPosition(uiMapId, mapPosition.x, mapPosition.y)
+    local x, y = mapPosition.x, mapPosition.y
+    while true do
+        local newUiMapId, newX, newY = getHigherZoomMapPosition(uiMapId, x, y)
+
+        if newUiMapId == uiMapId then
+            break
+        else
+            uiMapId, x, y = newUiMapId, newX, newY
+        end
+    end
     return uiMapId, x, y
 end
 
