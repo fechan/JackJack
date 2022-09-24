@@ -38,10 +38,12 @@ local function processDirectionsList(directions, locationListContainerContainer)
     for i, direction in ipairs(directions) do
         local locationButton = addon:LocationButton(direction)
         locationList:AddChild(locationButton)
-
-        addon:createDirectionWaypointFor(direction)
-
         -- print(direction.DirectionNbr, direction.Name_lang)
+    end
+    
+    for i=#directions,1,-1 do
+        local direction = directions[i]
+        addon:createDirectionWaypointFor(direction)
     end
     TomTom:SetClosestWaypoint()
 
