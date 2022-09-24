@@ -119,6 +119,9 @@ function Ace:OnInitialize ()
             },
             waypoints = {
                 autoRemove = true
+            },
+            directions = {
+                includeTaxi = true
             }
         }
     })
@@ -128,6 +131,20 @@ function Ace:OnInitialize ()
         handler = addon,
         type = "group",
         args = {
+            directions = {
+                name = "Directions",
+                type = "group",
+                args = {
+                    includeTaxi = {
+                        name = "Include flight points in directions",
+                        desc = "This makes calculating directions MUCH slower, but more accurate and with flight directions.",
+                        type = "toggle",
+                        width = "full",
+                        set = function(info, val) addon.Settings.profile.directions.includeTaxi = val end,
+                        get = function(info) return addon.Settings.profile.directions.includeTaxi end
+                    }
+                }
+            },
             waypoints = {
                 name = "Waypoints",
                 type = "group",
