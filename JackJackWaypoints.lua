@@ -9,7 +9,7 @@ function addon:initWaypoints()
     waypointEventListener:SetScript("OnEvent", function (self, event, ...)
         -- show the next directions waypoint when you load into a new zone
         if event == "PLAYER_ENTERING_WORLD" and #addon.AddonState.directionWaypoints > 0 then
-            C_Timer.After(1, function() TomTom:SetClosestWaypoint(true) end)
+            C_Timer.After(1, function() TomTom:SetClosestWaypoint() end)
         end
     end)
 
