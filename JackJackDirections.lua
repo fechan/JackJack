@@ -25,6 +25,8 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
     end
     
     local adjacentNodes = {} -- array of {nodeId, distance}
+
+    -- step 0: if the node is the player, get everything adjacent to the player and quit before step 1
     if nodeId == "player" then
         local playerMap = C_Map.GetBestMapForUnit("player")
         local playerMapPosition = C_Map.GetPlayerMapPosition(playerMap, "player")
