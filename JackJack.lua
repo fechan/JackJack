@@ -116,9 +116,46 @@ function Ace:OnInitialize ()
             gui = {
                 maximizedHeight = 500,
                 minimized = false
+            },
+            waypoints = {
+                autoRemove = true
             }
         }
     })
+
+    local aceConfigOptions = {
+        name = "JackJack",
+        handler = addon,
+        type = "group",
+        args = {
+            waypoints = {
+                name = "Waypoints",
+                type = "group",
+                args = {
+                    autoRemoveWaypoints = {
+                        name = "Auto remove direction waypoints",
+                        desc = "Auto remove direction waypoints when you're closer to a more advanced waypoint. \n\n" ..
+                               "e.g. There are steps 1-4 in the directions, but you skipped all the way to 3, so 1 and 2 are autoremoved.",
+                        type = "toggle",
+                        width = "full",
+                        set = function(info, val) addon.Settings.profile.waypoints.autoRemove = val end,
+                        get = function(info) return addon.Settings.profile.waypoints.autoRemove end
+                    }
+                }
+            }
+        }
+
+    }
+
+    LibStub("AceConfig-3.0"):RegisterOptionsTable("JackJack", aceConfigOptions, {"jjconfig"})
+
+    local profileChanger = LibStub("AceDBOptions-3.0"):GetOptionsTable(addon.Settings)
+    LibStub("AceConfig-3.0"):RegisterOptionsTable("JackJackProfiles", profileChanger, nil)
+
+    LibStub("AceConfigDialog-3.0"):AddToBlizOptions("JackJack", "JackJack", nil);
+    LibStub("AceConfigDialog-3.0"):AddToBlizOptions("JackJackProfiles", "Profiles", "JackJack");
+
+    addon:initWaypoints()
     addon:initGUI()
 end
 

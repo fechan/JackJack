@@ -1,45 +1,47 @@
 local addonName, addon = ...
 
-local AUTO_REMOVE_WAYPOINTS = true -- TODO: make this a configuration option
+function addon:initWaypoints()
+    local waypointSettings = addon.Settings.profile.waypoints
 
-local waypointEventListener = CreateFrame("FRAME", "waypointEventListener");
-waypointEventListener:RegisterEvent("PLAYER_ENTERING_WORLD")
+    local waypointEventListener = CreateFrame("FRAME", "waypointEventListener");
+    waypointEventListener:RegisterEvent("PLAYER_ENTERING_WORLD")
 
-waypointEventListener:SetScript("OnEvent", function (self, event, ...)
-    -- show the next directions waypoint when you load into a new zone
-    if event == "PLAYER_ENTERING_WORLD" and #addon.AddonState.directionWaypoints > 0 then
-        TomTom:SetClosestWaypoint()
-    end
-end)
+    waypointEventListener:SetScript("OnEvent", function (self, event, ...)
+        -- show the next directions waypoint when you load into a new zone
+        if event == "PLAYER_ENTERING_WORLD" and #addon.AddonState.directionWaypoints > 0 then
+            TomTom:SetClosestWaypoint()
+        end
+    end)
 
-if AUTO_REMOVE_WAYPOINTS then
     waypointEventListener:SetScript("OnUpdate", function ()
-        local waypoints = addon.AddonState.directionWaypoints
-        local playerMap, x, y = TomTom:GetCurrentPlayerPosition()
+        if waypointSettings.autoRemoveWaypoints and #waypoints > 0 then
+            local waypoints = addon.AddonState.directionWaypoints
+            local playerMap, x, y = TomTom:GetCurrentPlayerPosition()
 
-        for i=#waypoints, 1, -1 do -- i points to the most advanced direction in the list
-            if waypoints[i] == nil then break end
-            
-            local uid, map = unpack(waypoints[i])
-            if map == playerMap then
-                -- if a waypoint is supposed to be on the same map as the player but we can't find the
-                -- distance, the waypoint UID is invalid (e.g. removed by player)
-                if TomTom:GetDistanceToWaypoint(uid) == nil then
-                    waypoints[i] = nil
-                    break
-                end
-
-                for j=i, 1, -1 do -- start checking if the less advanced directions are farther away
-                    if waypoints[j] == nil then break end
-                    local uid2, map2 = unpack(waypoints[j])
-
-                    if TomTom:GetDistanceToWaypoint(uid2) == nil then waypoints[j] = nil -- remove waypoint if it's invalid
-                    elseif TomTom:GetDistanceToWaypoint(uid2) > TomTom:GetDistanceToWaypoint(uid) then
-                        TomTom:RemoveWaypoint(uid2)
-                        waypoints[j] = nil
+            for i=#waypoints, 1, -1 do -- i points to the most advanced direction in the list
+                if waypoints[i] == nil then break end
+                
+                local uid, map = unpack(waypoints[i])
+                if map == playerMap then
+                    -- if a waypoint is supposed to be on the same map as the player but we can't find the
+                    -- distance, the waypoint UID is invalid (e.g. removed by player)
+                    if TomTom:GetDistanceToWaypoint(uid) == nil then
+                        waypoints[i] = nil
+                        break
                     end
-                end
-            end        
+
+                    for j=i, 1, -1 do -- start checking if the less advanced directions are farther away
+                        if waypoints[j] == nil then break end
+                        local uid2, map2 = unpack(waypoints[j])
+
+                        if TomTom:GetDistanceToWaypoint(uid2) == nil then waypoints[j] = nil -- remove waypoint if it's invalid
+                        elseif TomTom:GetDistanceToWaypoint(uid2) > TomTom:GetDistanceToWaypoint(uid) then
+                            TomTom:RemoveWaypoint(uid2)
+                            waypoints[j] = nil
+                        end
+                    end
+                end        
+            end
         end
     end);
 end
