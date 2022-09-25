@@ -1,5 +1,12 @@
 local addonName, addon = ...
 
+--- This may get added to TomTom in the future
+local function SetActiveCrazyArrowWaypoint(uid)
+    local data = uid
+    local arrival = TomTom.profile.arrow.arrival
+    TomTom:SetCrazyArrow(uid, arrival, data.title)
+end
+
 function addon:initWaypoints()
     local waypointSettings = addon.Settings.profile.waypoints
 
@@ -8,8 +15,25 @@ function addon:initWaypoints()
 
     waypointEventListener:SetScript("OnEvent", function (self, event, ...)
         -- show the next directions waypoint when you load into a new zone
+        local waypoints = addon.AddonState.directionWaypoints
+
         if event == "PLAYER_ENTERING_WORLD" and #addon.AddonState.directionWaypoints > 0 then
-            C_Timer.After(1, function() TomTom:SetClosestWaypoint() end)
+            local closestUid = nil
+            local closestDist = math.huge
+            
+            for i, waypoint in ipairs(waypoints) do
+                local uid, map = unpack(waypoint)
+
+                local dist = TomTom:GetDistanceToWaypoint(uid)
+                if dist and dist < closestDist then
+                    closestDist = dist
+                    closestUid = uid
+                end
+            end
+
+            if closestUid then
+                SetActiveCrazyArrowWaypoint(closestUid)
+            end
         end
     end)
 
