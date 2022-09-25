@@ -18,21 +18,19 @@ function addon:initWaypoints()
         local waypoints = addon.AddonState.directionWaypoints
 
         if event == "PLAYER_ENTERING_WORLD" and #addon.AddonState.directionWaypoints > 0 then
-            local closestUid = nil
+            local closestWaypoint = nil
             local closestDist = math.huge
             
             for i, waypoint in ipairs(waypoints) do
-                local uid, map = unpack(waypoint)
-
-                local dist = TomTom:GetDistanceToWaypoint(uid)
+                local dist = TomTom:GetDistanceToWaypoint(waypoint)
                 if dist and dist < closestDist then
                     closestDist = dist
-                    closestUid = uid
+                    closestWaypoint = waypoint
                 end
             end
 
-            if closestUid then
-                SetActiveCrazyArrowWaypoint(closestUid)
+            if closestWaypoint then
+                SetActiveCrazyArrowWaypoint(closestWaypoint)
             end
         end
     end)
@@ -45,7 +43,8 @@ function addon:initWaypoints()
             for i=#waypoints, 1, -1 do -- i points to the most advanced direction in the list
                 if waypoints[i] == nil then break end
                 
-                local uid, map = unpack(waypoints[i])
+                local uid = waypoints[i]
+                local map = uid[1]
                 if map == playerMap then
                     -- if a waypoint is supposed to be on the same map as the player but we can't find the
                     -- distance, the waypoint UID is invalid (e.g. removed by player)
@@ -56,7 +55,8 @@ function addon:initWaypoints()
 
                     for j=i, 1, -1 do -- start checking if the less advanced directions are farther away
                         if waypoints[j] == nil then break end
-                        local uid2, map2 = unpack(waypoints[j])
+                        local uid2 = waypoints[j]
+                        local map2 = uid2[1]
 
                         if TomTom:GetDistanceToWaypoint(uid2) == nil then waypoints[j] = nil -- remove waypoint if it's invalid
                         elseif TomTom:GetDistanceToWaypoint(uid2) > TomTom:GetDistanceToWaypoint(uid) then
@@ -64,7 +64,7 @@ function addon:initWaypoints()
                             waypoints[j] = nil
                         end
                     end
-                end        
+                end
             end
         end
     end);
@@ -108,13 +108,12 @@ function addon:createDirectionWaypointFor(direction)
         world = true,
         crazy = true
     })
-    addon.AddonState.directionWaypoints[direction.DirectionNbr] = {uid, uiMapId}
+    addon.AddonState.directionWaypoints[direction.DirectionNbr] = uid
 end
 
 function addon:clearDirectionWaypoints()
     for directionNbr, directionWaypoint in pairs(addon.AddonState.directionWaypoints) do
-        local uid, waypointMap = unpack(directionWaypoint)
-        TomTom:RemoveWaypoint(uid)
+        TomTom:RemoveWaypoint(directionWaypoint)
     end
     addon.AddonState.directionWaypoints = {}
 end
