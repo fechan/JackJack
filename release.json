@@ -1,0 +1,16 @@
+{
+  "releases": [
+    {
+      "name": "JackJack",
+      "version": "2.1",
+      "filename": "JackJack-2.2-retail10.0.0.46313.zip",
+      "nolib": false,
+      "metadata": [
+        {
+          "flavor": "mainline",
+          "interface": 100000
+        }
+      ]
+    }
+  ]
+}

@@ -32,7 +32,7 @@ end
 function addon:initGUI()
     -- main JJWindow
     mainFrame = AceGUI:Create("JJWindow")
-    mainFrame.frame:SetParent("WorldMapFrame")
+    mainFrame.frame:SetParent(WorldMapFrame)
     mainFrame:SetTitle("JackJack")
     mainFrame:SetPoint("TOPLEFT", "WorldMapFrame", "TOPRIGHT")
     mainFrame:SetWidth(MAIN_FRAME_STYLE.WIDTH)
