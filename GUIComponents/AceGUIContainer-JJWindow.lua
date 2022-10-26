@@ -320,7 +320,7 @@ do
 		right:SetTexCoord(0.1171875, 0.2421875, 0, 1)
 
 		local minimize = CreateFrame("Button", nil, frame, "UIPanelHideButtonNoScripts")
-		minimize:SetPoint("TOPRIGHT", 2, 1)
+		minimize:SetPoint("TOPRIGHT", -2, -3)
 		minimize:SetScript("OnClick", minimizeOnClick)
 		self.hidebutton = minimize
 		minimize.obj = self
