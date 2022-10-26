@@ -38,7 +38,10 @@ function addon:locationsMatching(locationName, limit, sameInstance)
     }
     for datasetNbr, dataset in pairs({addon.JJAreaPOI, addon.JJTaxiNodes}) do
         for rowNumber, poi in pairs(dataset) do
-            if ((not sameInstance) or (addon.JJMap[poi.ContinentID].InstanceType == 0) or (getPlayerInstance() == poi.ContinentID)) and
+            local mapForPoi = addon.JJMap[poi.ContinentID]
+            -- TODO: checking that mapForPoi exists before adding excludes any POIs whose FK into ContinentID doesn't exist
+            --       I might want to enforce this in the data processing side with an inner join or something instead
+            if (mapForPoi and ((not sameInstance) or (mapForPoi.InstanceType == 0) or (getPlayerInstance() == poi.ContinentID))) and
                     addon.fzy.has_match(locationName, poi.Name_lang) then
                 -- significantly faster to precompute score and put it in memory than
                 -- computing every time a comparison is made in the sort

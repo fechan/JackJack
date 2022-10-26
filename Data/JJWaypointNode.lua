@@ -269,5 +269,22 @@ addon.JJWaypointNode = {
 	[301]={["Name_lang"]="Speak to Tal-Inara within Oribos to travel to Zereth Mortis",["Type"]=1,["Pos0"]=-1941.27,["Pos1"]=1390.69,["MapID"]=2222},
 	[302]={["Name_lang"]="Take the portal from Ruins of Lordaeron to Orgrimmar",["Type"]=1,["Pos0"]=1820.73,["Pos1"]=344.564,["MapID"]=0},
 	[303]={["Name_lang"]="Take the portal from Ruins of Lordaeron to Stranglethorn Vale",["Type"]=1,["Pos0"]=1790.59,["Pos1"]=344.559,["MapID"]=0},
-	[304]={["Name_lang"]="Take the portal from Ruins of Lordaeron to Howling Fjord",["Type"]=1,["Pos0"]=1821.2,["Pos1"]=317.399,["MapID"]=0}
+	[304]={["Name_lang"]="Take the portal from Ruins of Lordaeron to Howling Fjord",["Type"]=1,["Pos0"]=1821.2,["Pos1"]=317.399,["MapID"]=0},
+	[305]={["Name_lang"]="Take the boat from Stormwind to the Waking Shores",["Type"]=1,["Pos0"]=-8645.21,["Pos1"]=1330.57,["MapID"]=0},
+	[316]={["Name_lang"]="Boat to Stormwind",["Type"]=2,["Pos0"]=-8645.21,["Pos1"]=1330.57,["MapID"]=0},
+	[306]={["Name_lang"]="Boat to the Waking Shores",["Type"]=2,["Pos0"]=3735.75,["Pos1"]=-1901.38,["MapID"]=2444},
+	[315]={["Name_lang"]="Take the boat from the Waking Shores to Stormwind",["Type"]=1,["Pos0"]=3735.75,["Pos1"]=-1901.38,["MapID"]=2444},
+	[307]={["Name_lang"]="Zeppelin to the Waking Shores",["Type"]=2,["Pos0"]=3885.17,["Pos1"]=-1859.14,["MapID"]=2444},
+	[321]={["Name_lang"]="Take the zeppelin from the Waking Shores to Orgrimmar",["Type"]=1,["Pos0"]=3885.17,["Pos1"]=-1859.14,["MapID"]=2444},
+	[308]={["Name_lang"]="Take the zeppelin from Orgrimmar to the Waking Shores",["Type"]=1,["Pos0"]=1343.66,["Pos1"]=-4921.98,["MapID"]=1},
+	[320]={["Name_lang"]="Zeppelin to Orgrimmar",["Type"]=2,["Pos0"]=1343.66,["Pos1"]=-4921.98,["MapID"]=1},
+	[309]={["Name_lang"]="Take the portal from Orgrimmar to Valdrakken",["Type"]=1,["Pos0"]=1473.53,["Pos1"]=-4499.38,["MapID"]=1},
+	[318]={["Name_lang"]="Portal to Orgrimmar",["Type"]=2,["Pos0"]=1473.53,["Pos1"]=-4499.38,["MapID"]=1},
+	[310]={["Name_lang"]="Portal to Valdrakken",["Type"]=2,["Pos0"]=275.702,["Pos1"]=-1025.99,["MapID"]=2444},
+	[319]={["Name_lang"]="Take the portal from Valdrakken to Orgrimmar",["Type"]=1,["Pos0"]=275.702,["Pos1"]=-1025.99,["MapID"]=2444},
+	[311]={["Name_lang"]="Portal to Valdrakken",["Type"]=2,["Pos0"]=247.353,["Pos1"]=-1064.72,["MapID"]=2444},
+	[313]={["Name_lang"]="Take the portal from Valdrakken to Stormwind",["Type"]=1,["Pos0"]=247.353,["Pos1"]=-1064.72,["MapID"]=2444},
+	[312]={["Name_lang"]="Take the portal from Stormwind to Valdrakken",["Type"]=1,["Pos0"]=-9077.96,["Pos1"]=873.264,["MapID"]=0},
+	[314]={["Name_lang"]="Portal to Stormwind",["Type"]=1,["Pos0"]=-9077.96,["Pos1"]=873.264,["MapID"]=0},
+	[317]={["Name_lang"]="Exit the Wizard's Sanctum",["Type"]=1,["Pos0"]=-9077.96,["Pos1"]=873.264,["MapID"]=0}
 }

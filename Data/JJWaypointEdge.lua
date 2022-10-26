@@ -178,5 +178,15 @@ addon.JJWaypointEdge = {
 	[175]={["Start"]=301,["End"]=298,["PlayerConditionID"]=0},
 	[176]={["Start"]=304,["End"]=216,["PlayerConditionID"]=923},
 	[177]={["Start"]=302,["End"]=101,["PlayerConditionID"]=923},
-	[178]={["Start"]=303,["End"]=217,["PlayerConditionID"]=923}
+	[178]={["Start"]=303,["End"]=217,["PlayerConditionID"]=923},
+	[179]={["Start"]=305,["End"]=306,["PlayerConditionID"]=924},
+	[180]={["Start"]=308,["End"]=307,["PlayerConditionID"]=923},
+	[181]={["Start"]=309,["End"]=310,["PlayerConditionID"]=103380},
+	[182]={["Start"]=312,["End"]=311,["PlayerConditionID"]=103379},
+	[183]={["Start"]=8,["End"]=312,["PlayerConditionID"]=924},
+	[184]={["Start"]=314,["End"]=8,["PlayerConditionID"]=924},
+	[185]={["Start"]=313,["End"]=314,["PlayerConditionID"]=103379},
+	[186]={["Start"]=315,["End"]=316,["PlayerConditionID"]=924},
+	[187]={["Start"]=319,["End"]=318,["PlayerConditionID"]=103380},
+	[188]={["Start"]=321,["End"]=320,["PlayerConditionID"]=923}
 }
