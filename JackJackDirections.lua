@@ -46,7 +46,7 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
     -- step 0: if the node is the player, get everything adjacent to the player and quit before step 1
     if nodeId == "player" then
         local playerMap = C_Map.GetBestMapForUnit("player")
-        local playerMapPosition = C_Map.GetPlayerMapPosition(playerMap, "player")
+        local playerMapPosition = C_Map.GetPlayerMapPosition(playerMap, "player") or CreateVector2D(.5, .5) -- this function is noinstance restricted, so if we're instanced, fake being in the middle of the map
         local playerContinent, playerPosition = C_Map.GetWorldPosFromMapPos(playerMap, playerMapPosition)
 
         -- get all the WaypointNodes in the same continent as the player
