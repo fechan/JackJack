@@ -42,9 +42,10 @@ function addon:initWaypoints()
         --- Implementation of the auto remove waypoints feature.
         --  Steps backwards to determine the most advanced waypoint the player is closest to
         --  then removes all waypoints before it.
-        if waypointSettings.autoRemove and #waypoints > 0 then
+        local playerMap, x, y = TomTom:GetCurrentPlayerPosition()
+        if (waypointSettings.autoRemove and #waypoints > 0
+                and playerMap) then -- playerMap will be nil if you're in an instance (restricted), so we don't auto remove waypoints in those
             local waypoints = addon.AddonState.directionWaypoints
-            local playerMap, x, y = TomTom:GetCurrentPlayerPosition()
 
             local minDistance = math.huge
             local minDistanceWaypoint
