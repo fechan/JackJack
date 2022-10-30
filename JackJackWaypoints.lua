@@ -36,9 +36,18 @@ function addon:initWaypoints()
     end)
 
     waypointEventListener:SetScript("OnUpdate", function ()
-        if waypointSettings.autoRemoveWaypoints and #waypoints > 0 then
+        local waypointSettings = addon.Settings.profile.waypoints
+        local waypoints = addon.AddonState.directionWaypoints
+
+        --- Implementation of the auto remove waypoints feature.
+        --  Steps backwards to determine the most advanced waypoint the player is closest to
+        --  then removes all waypoints before it.
+        if waypointSettings.autoRemove and #waypoints > 0 then
             local waypoints = addon.AddonState.directionWaypoints
             local playerMap, x, y = TomTom:GetCurrentPlayerPosition()
+
+            local minDistance = math.huge
+            local minDistanceWaypoint
 
             for i=#waypoints, 1, -1 do -- i points to the most advanced direction in the list
                 if waypoints[i] == nil then break end
@@ -46,24 +55,26 @@ function addon:initWaypoints()
                 local uid = waypoints[i]
                 local map = uid[1]
                 if map == playerMap then
+                    local distance = TomTom:GetDistanceToWaypoint(uid)
+
                     -- if a waypoint is supposed to be on the same map as the player but we can't find the
                     -- distance, the waypoint UID is invalid (e.g. removed by player)
-                    if TomTom:GetDistanceToWaypoint(uid) == nil then
+                    if distance == nil then
                         waypoints[i] = nil
-                        break
-                    end
-
-                    for j=i, 1, -1 do -- start checking if the less advanced directions are farther away
-                        if waypoints[j] == nil then break end
-                        local uid2 = waypoints[j]
-                        local map2 = uid2[1]
-
-                        if TomTom:GetDistanceToWaypoint(uid2) == nil then waypoints[j] = nil -- remove waypoint if it's invalid
-                        elseif TomTom:GetDistanceToWaypoint(uid2) > TomTom:GetDistanceToWaypoint(uid) then
-                            TomTom:RemoveWaypoint(uid2)
-                            waypoints[j] = nil
+                    else
+                        if distance < minDistance then
+                            minDistance = distance
+                            minDistanceWaypoint = i
                         end
                     end
+                end
+            end
+
+            if minDistanceWaypoint then
+                for i=minDistanceWaypoint-1, 1, -1 do
+                    local uid = waypoints[i]
+                    TomTom:RemoveWaypoint(uid)
+                    waypoints[i] = nil
                 end
             end
         end
