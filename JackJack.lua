@@ -123,6 +123,7 @@ end
 local function jackjack(mainwindow)
     WorldMapFrame:Show()
     mainwindow:Show()
+    addon.Settings.profile.gui.closed = false
 end
 
 local function jjsearch(query)
@@ -181,7 +182,8 @@ function Ace:OnInitialize ()
             showInstances = true,
             gui = {
                 maximizedHeight = 500,
-                minimized = false
+                minimized = false,
+                closed = false
             },
             waypoints = {
                 autoRemove = true
