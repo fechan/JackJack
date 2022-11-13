@@ -64,4 +64,6 @@ function addon:initGUI()
     mainFrame:SetMaximizedHeight(addon.Settings.profile.gui.maximizedHeight)
     mainFrame:Minimize(addon.Settings.profile.gui.minimized)
     minimizeFunc(addon.Settings.profile.gui.minimized)
+
+    return mainFrame
 end

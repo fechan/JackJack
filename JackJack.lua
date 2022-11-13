@@ -120,6 +120,19 @@ end
 
 ---=== INITIALIZE ADDON GUI AND COMMANDS ===---
 
+local function initCommands(mainwindow)
+    Ace:RegisterChatCommand("jj", function ()
+        mainwindow:Show()
+        WorldMapFrame:Show()
+    end)
+    
+    Ace:RegisterChatCommand("jjsearch", function (query)
+        for idx, location in ipairs(addon:locationsMatching(query, 20)) do
+            Ace:Print(location.Name_lang)
+        end
+    end)
+end
+
 function Ace:OnInitialize ()
     addon.Settings = LibStub("AceDB-3.0"):New("JackJackSettings", {
         profile = {
@@ -197,11 +210,6 @@ function Ace:OnInitialize ()
     LibStub("AceConfigDialog-3.0"):AddToBlizOptions("JackJackProfiles", "Profiles", "JackJack");
 
     addon:initWaypoints()
-    addon:initGUI()
+    local mainwindow = addon:initGUI()
+    initCommands(mainwindow)
 end
-
-Ace:RegisterChatCommand("jjsearch", function (query)
-    for idx, location in ipairs(addon:locationsMatching(query, 20)) do
-        Ace:Print(location.Name_lang)
-    end
-end)
