@@ -3,7 +3,9 @@ Adds TomTom waypoints based on location name. Locations and their coordinates ar
 
 Don't know where Kalimgrimmardrassil is? Now you don't have to waste time searching on Google where everything is and just add a waypoint directly there!
 
-![Partial JackJack screenshot](https://user-images.githubusercontent.com/56131910/191909018-2b00b953-d34d-4a43-8aa9-48dee3f9ce19.png)
+![image](https://user-images.githubusercontent.com/56131910/202392891-05155258-6e1f-4ed8-8263-ad8cf7f931bf.png)
+
+![image](https://user-images.githubusercontent.com/56131910/202392818-c1f395a7-9f4d-4d22-9a57-ad2e1fce9754.png)
 
 ## Download and install
 ### With Wowup
