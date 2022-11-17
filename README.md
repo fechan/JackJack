@@ -32,6 +32,11 @@ This is an experimental feature, meaning it might be wrong. For example, it migh
 
 ![Directions list](https://user-images.githubusercontent.com/56131910/191909189-17fe210e-9f45-4de1-bfc8-cc579c88960c.png)
 
+### Commands
+- `/jackjack` and `/jj` will open/close the JackJack window
+- `/jjsearch <location>`  will return a list of the first 8 matching locations. For example, `/jjsearch orgrimmar` shows the following:
+![image](https://user-images.githubusercontent.com/56131910/202388526-69f0c744-57fe-4589-aec3-06e0c06f8966.png)
+- `/jjset <number>` will add a TomTom waypoint to the location with that number in your last jjsearch. So if you did `/jjsearch org` and Orgrimmar was the first result, then `/jjset 1` will set a waypoint for Orgrimmar
 
 ## Current datasets used
 * AreaPOI - Points of Interest
