@@ -61,7 +61,7 @@ function addon:initGUI()
     end)
 
     -- set close behavior
-    mainFrame:SetCallback("OnClose", function()
+    mainFrame:SetCallback("ClosedWithCloseBtn", function()
         addon.Settings.profile.gui.closed = true
     end)
     

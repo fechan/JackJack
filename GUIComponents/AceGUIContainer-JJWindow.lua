@@ -34,6 +34,7 @@ do
 	local function closeOnClick(this)
 		PlaySound(799) -- SOUNDKIT.GS_TITLE_OPTION_EXIT
 		this.obj:Hide()
+		this.obj:Fire("ClosedWithCloseBtn")
 	end
 
 	--- Perform the actual minimizing/maximizing

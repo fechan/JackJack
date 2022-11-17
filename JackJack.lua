@@ -121,9 +121,18 @@ end
 
 ---=== COMMAND HANDLERS ===---
 local function jackjack(mainwindow)
-    WorldMapFrame:Show()
-    mainwindow:Show()
-    addon.Settings.profile.gui.closed = false
+    if WorldMapFrame:IsVisible() then
+        if addon.Settings.profile.gui.closed then
+            mainwindow:Show()
+            addon.Settings.profile.gui.closed = false
+        else
+            WorldMapFrame:Hide()
+        end
+    else
+        WorldMapFrame:Show()
+        mainwindow:Show()
+        addon.Settings.profile.gui.closed = false
+    end
 end
 
 local function jjsearch(query)
