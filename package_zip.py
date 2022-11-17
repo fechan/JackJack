@@ -30,5 +30,6 @@ with ZipFile(os.path.join("Releases", version + ".zip"), "w", ZIP_DEFLATED) as j
         jjzip.write(file, arcname=os.path.join("JackJack", file))
     jjzip.write("JackJack.toc", arcname=os.path.join("JackJack", "JackJack.toc"))
     jjzip.write("directions.blp", arcname=os.path.join("JackJack", "directions.blp"))
+    jjzip.write("minimapicon.blp", arcname=os.path.join("JackJack", "minimapicon.blp"))
     jjzip.write("LICENSE", arcname=os.path.join("JackJack", "LICENSE"))
     zipdir("Libs", jjzip) # add the entire libs folder because some libs have their own TOC and I'm not dealing with that

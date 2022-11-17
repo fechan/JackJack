@@ -6,7 +6,7 @@ function addon:createMinimapButton(onclick)
     local miniButton = LibStub("LibDataBroker-1.1"):NewDataObject("JackJackDataBroker", {
         type = "data source",
         text = "JackJack",
-        icon = "Interface\\HELPFRAME\\HelpIcon-KnowledgeBase",
+        icon = "Interface\\AddOns\\JackJack\\minimapicon",
         OnClick = onclick,
         OnTooltipShow = function(tooltip)
             if not tooltip or not tooltip.AddLine then return end
