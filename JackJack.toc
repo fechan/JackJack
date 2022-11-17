@@ -4,7 +4,7 @@
 ## Author: artifexsev/fechan
 ## Notes: Lets you search for known points of interest from WoW.tools and put them on the map as TomTom waypoints
 ## Dependencies: TomTom
-## SavedVariables: JackJackSettings
+## SavedVariables: JackJackSettings, JackJackDataBroker
 ## X-WoWI-ID: 26250
 
 # LIBRARY: ACE3
@@ -16,6 +16,10 @@ Libs\AceConsole-3.0\AceConsole-3.0.xml
 Libs\AceDB-3.0\AceDB-3.0.xml
 Libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
 Libs\AceGUI-3.0\AceGUI-3.0.xml
+
+# LIBRARY: LibDBIcon (minimap button)
+Libs\LibDBIcon-1.0\embeds.xml
+Libs\LibDBIcon-1.0\LibDBIcon-1.0\lib.xml
 
 # MISC LIBRARIES
 Libs\fzy_lua.lua
@@ -40,6 +44,7 @@ GUIComponents\SearchResult.lua
 GUIComponents\ScrollingList.lua
 GUIComponents\SearchPanel.lua
 GUIComponents\DirectionsPanel.lua
+GUIComponents\MinimapButton.lua
 
 # JackJack CORE FILES
 JackJackUtil.lua

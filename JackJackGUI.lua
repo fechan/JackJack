@@ -70,7 +70,6 @@ function addon:initGUI()
     mainFrame:Minimize(addon.Settings.profile.gui.minimized)
     minimizeFunc(addon.Settings.profile.gui.minimized)
 
-    print("jj window close status " .. tostring(addon.Settings.profile.gui.closed))
     if addon.Settings.profile.gui.closed then
         mainFrame:Hide()
     end

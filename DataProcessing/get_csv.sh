@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # Get all the CSVs from WoW.tools with wget, because pandas.read_csv runs into HTTP 403 for some reason
-BUILD="10.0.0.46313"
+BUILD="10.0.0.46366"
 
 cd raw-csv-data
 

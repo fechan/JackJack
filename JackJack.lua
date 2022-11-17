@@ -256,4 +256,5 @@ function Ace:OnInitialize ()
     addon:initWaypoints()
     local mainwindow = addon:initGUI()
     initCommands(mainwindow)
+    addon:createMinimapButton(function () jackjack(mainwindow) end)
 end
