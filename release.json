@@ -3,12 +3,12 @@
     {
       "name": "JackJack",
       "version": "2.3",
-      "filename": "JackJack-2.3-retail10.0.0.46313.zip",
+      "filename": "JackJack-2.3-retail10.0.2.46689.zip",
       "nolib": false,
       "metadata": [
         {
           "flavor": "mainline",
-          "interface": 100000
+          "interface": 100002
         }
       ]
     }

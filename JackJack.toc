@@ -1,5 +1,5 @@
-## Interface: 100000
-## Version: JackJack-2.2-retail10.0.0.46313
+## Interface: 100002
+## Version: JackJack-2.3-retail10.0.2.46689
 ## Title: JackJack
 ## Author: artifexsev/fechan
 ## Notes: Lets you search for known points of interest from WoW.tools and put them on the map as TomTom waypoints
