@@ -59,9 +59,20 @@ function addon:initGUI()
         addon.Settings.profile.gui.minimized = minimize
         minimizeFunc(minimize)
     end)
+
+    -- set close behavior
+    mainFrame:SetCallback("ClosedWithCloseBtn", function()
+        addon.Settings.profile.gui.closed = true
+    end)
     
     -- restore gui state from saved variables
     mainFrame:SetMaximizedHeight(addon.Settings.profile.gui.maximizedHeight)
     mainFrame:Minimize(addon.Settings.profile.gui.minimized)
     minimizeFunc(addon.Settings.profile.gui.minimized)
+
+    if addon.Settings.profile.gui.closed then
+        mainFrame:Hide()
+    end
+
+    return mainFrame
 end

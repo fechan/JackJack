@@ -10,6 +10,7 @@ local Ace = LibStub("AceAddon-3.0"):NewAddon("JackJack", "AceConsole-3.0")
 addon.AddonState = {
     ["directions"] = nil, -- current set of directions currently active
     ["directionWaypoints"] = {},
+    ["jjsearchResults"] = nil,
 }
 
 ---=== DATA FUNCTIONS ===---
@@ -118,7 +119,71 @@ function addon:getBestZoomMapPositionFor(location)
     return uiMapId, x, y
 end
 
+---=== COMMAND HANDLERS ===---
+local function jackjack(mainwindow)
+    if WorldMapFrame:IsVisible() then
+        if addon.Settings.profile.gui.closed then
+            mainwindow:Show()
+            addon.Settings.profile.gui.closed = false
+        else
+            WorldMapFrame:Hide()
+        end
+    else
+        WorldMapFrame:Show()
+        mainwindow:Show()
+        addon.Settings.profile.gui.closed = false
+    end
+end
+
+local function jjsearch(query)
+    local results = addon:locationsMatching(query, 8)
+    if #results > 0 then
+        Ace:Print("Search results for: " .. query)
+
+        addon.AddonState.jjsearchResults = results
+        for idx, location in ipairs(results) do
+            Ace:Print(idx .. ": " .. location.Name_lang)
+        end
+    else
+        Ace:Print("Could not find any locations matching: " .. query)
+    end
+end
+
+local function jjset(query)
+    local selection = tonumber(query, 10) -- if the query is a number, then this returns an int instead of nil
+    if selection then
+        if addon.AddonState.jjsearchResults then
+            local selectedLocation = addon.AddonState.jjsearchResults[selection]
+            if selectedLocation then
+                addon:createWaypointFor(selectedLocation)
+                Ace:Print("Added a waypoint to: " .. selectedLocation.Name_lang)
+            else
+                Ace:Print("No location numbered " .. selection .. " in last /jjsearch!")
+            end
+        else
+            Ace:Print("You need to search for locations with /jjsearch <location> first!")
+        end
+    else
+        local result = addon:locationsMatching(query, 1)[1]
+        if result then
+            Ace:Print("Added a waypoint to: " .. result.Name_lang)
+            addon:createWaypointFor(result)
+        else
+            Ace:Print("Could not find any locations matching: " .. query)
+        end
+    end
+end
+
 ---=== INITIALIZE ADDON GUI AND COMMANDS ===---
+
+local function initCommands(mainwindow)
+    Ace:RegisterChatCommand("jj", function (query) jackjack(mainwindow) end)
+    Ace:RegisterChatCommand("jackjack", function (query) jackjack(mainwindow) end)
+    
+    Ace:RegisterChatCommand("jjsearch", jjsearch)
+
+    Ace:RegisterChatCommand("jjset", jjset)
+end
 
 function Ace:OnInitialize ()
     addon.Settings = LibStub("AceDB-3.0"):New("JackJackSettings", {
@@ -126,7 +191,8 @@ function Ace:OnInitialize ()
             showInstances = true,
             gui = {
                 maximizedHeight = 500,
-                minimized = false
+                minimized = false,
+                closed = false
             },
             waypoints = {
                 autoRemove = true
@@ -197,11 +263,7 @@ function Ace:OnInitialize ()
     LibStub("AceConfigDialog-3.0"):AddToBlizOptions("JackJackProfiles", "Profiles", "JackJack");
 
     addon:initWaypoints()
-    addon:initGUI()
+    local mainwindow = addon:initGUI()
+    initCommands(mainwindow)
+    addon:createMinimapButton(function () jackjack(mainwindow) end)
 end
-
-Ace:RegisterChatCommand("jjsearch", function (query)
-    for idx, location in ipairs(addon:locationsMatching(query, 20)) do
-        Ace:Print(location.Name_lang)
-    end
-end)

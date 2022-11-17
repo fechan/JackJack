@@ -21,7 +21,7 @@ local CreateFrame, UIParent = CreateFrame, UIParent
 ]]
 do
 	local Type = "JJWindow"
-	local Version = 1
+	local Version = 2
 
 	local function frameOnShow(this)
 		this.obj:Fire("OnShow")
@@ -29,6 +29,12 @@ do
 
 	local function frameOnClose(this)
 		this.obj:Fire("OnClose")
+	end
+
+	local function closeOnClick(this)
+		PlaySound(799) -- SOUNDKIT.GS_TITLE_OPTION_EXIT
+		this.obj:Hide()
+		this.obj:Fire("ClosedWithCloseBtn")
 	end
 
 	--- Perform the actual minimizing/maximizing
@@ -320,10 +326,16 @@ do
 		right:SetTexCoord(0.1171875, 0.2421875, 0, 1)
 
 		local minimize = CreateFrame("Button", nil, frame, "UIPanelHideButtonNoScripts")
-		minimize:SetPoint("TOPRIGHT", -2, -3)
+		minimize:SetPoint("TOPRIGHT", -26, -3)
 		minimize:SetScript("OnClick", minimizeOnClick)
 		self.hidebutton = minimize
 		minimize.obj = self
+
+		local close = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
+		close:SetPoint("TOPRIGHT", -2, -3)
+		close:SetScript("OnClick", closeOnClick)
+		self.closebutton = close
+		close.obj = self
 
 		local titletext = frame:CreateFontString(nil, "ARTWORK")
 		titletext:SetFontObject(GameFontNormal)
