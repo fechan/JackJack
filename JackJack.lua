@@ -200,6 +200,9 @@ function Ace:OnInitialize ()
             directions = {
                 includeTaxi = true,
                 loadingScreenSeconds = 10
+            },
+            interface = {
+                showLocationsOnWorldMapOnHover = false
             }
         }
     })
@@ -249,7 +252,23 @@ function Ace:OnInitialize ()
                         get = function(info) return addon.Settings.profile.waypoints.autoRemove end
                     }
                 }
-            }
+            },
+            interface = {
+                name = "Interface",
+                type = "group",
+                args = {
+                    showLocationsOnWorldMapOnHover = {
+                        name = "Show locations on world map on hover",
+                        desc = "When hovering over a button for a location/direction, show it on the world map.\n\n" ..
+                               "This is disabled by default because a WoW bug introduced in 10.0 would screw up action bars " ..
+                               "if an addon tried to change the world map's currently displayed map.",
+                        type = "toggle",
+                        width = "full",
+                        set = function(info, val) addon.Settings.profile.interface.showLocationsOnWorldMapOnHover = val end,
+                        get = function(info) return addon.Settings.profile.interface.showLocationsOnWorldMapOnHover end
+                    }
+                }
+            },
         }
 
     }

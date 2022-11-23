@@ -120,6 +120,8 @@ end
 -- @param   location        Location to make a waypoint for
 -- @return  destroyCallback Function that destroys the temporary waypoint
 function addon:createAndFocusTempWaypointFor(location)
+    local focusLocation = addon.Settings.profile.interface.showLocationsOnWorldMapOnHover
+
     local uiMapId, x, y = addon:getBestZoomMapPositionFor(location)
     local tempWaypointUid = TomTom:AddWaypoint(uiMapId, x, y, {
         title = location.Name_lang .. " (temp)", -- (temp) is to prevent collisions with permanent waypoint, otherwise new waypoint won't be added
@@ -129,12 +131,17 @@ function addon:createAndFocusTempWaypointFor(location)
         world = true,
         crazy = false
     })
-    local oldUiMapId = WorldMapFrame:GetMapID()
-    WorldMapFrame:SetMapID(uiMapId)
+    
+    if focusLocation then
+        local oldUiMapId = WorldMapFrame:GetMapID()
+        WorldMapFrame:SetMapID(uiMapId)
+    end
 
     local destroyCallback = function()
         TomTom:RemoveWaypoint(tempWaypointUid)
-        WorldMapFrame:SetMapID(oldUiMapId)
+        if focusLocation then
+            WorldMapFrame:SetMapID(oldUiMapId)
+        end
     end
 
     return destroyCallback
