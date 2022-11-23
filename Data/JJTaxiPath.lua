@@ -3521,5 +3521,19 @@ addon.JJTaxiPath = {
 	[3518]={["FromTaxiNode"]=2815,["ToTaxiNode"]=2811,["Distance"]=1763.0},
 	[3519]={["FromTaxiNode"]=2816,["ToTaxiNode"]=2811,["Distance"]=1038.0},
 	[3520]={["FromTaxiNode"]=2818,["ToTaxiNode"]=2811,["Distance"]=2247.0},
-	[3521]={["FromTaxiNode"]=2816,["ToTaxiNode"]=2812,["Distance"]=288.0}
+	[3521]={["FromTaxiNode"]=2816,["ToTaxiNode"]=2812,["Distance"]=288.0},
+	[3522]={["FromTaxiNode"]=2847,["ToTaxiNode"]=2849,["Distance"]=840.0},
+	[3523]={["FromTaxiNode"]=2851,["ToTaxiNode"]=2849,["Distance"]=1902.0},
+	[3524]={["FromTaxiNode"]=2847,["ToTaxiNode"]=2851,["Distance"]=1806.0},
+	[3525]={["FromTaxiNode"]=2849,["ToTaxiNode"]=2851,["Distance"]=1902.0},
+	[3526]={["FromTaxiNode"]=2850,["ToTaxiNode"]=2851,["Distance"]=1481.0},
+	[3527]={["FromTaxiNode"]=2847,["ToTaxiNode"]=2850,["Distance"]=1993.0},
+	[3528]={["FromTaxiNode"]=2851,["ToTaxiNode"]=2850,["Distance"]=1481.0},
+	[3529]={["FromTaxiNode"]=2848,["ToTaxiNode"]=2850,["Distance"]=1122.0},
+	[3530]={["FromTaxiNode"]=2847,["ToTaxiNode"]=2848,["Distance"]=1250.0},
+	[3531]={["FromTaxiNode"]=2850,["ToTaxiNode"]=2848,["Distance"]=1122.0},
+	[3532]={["FromTaxiNode"]=2849,["ToTaxiNode"]=2847,["Distance"]=840.0},
+	[3533]={["FromTaxiNode"]=2851,["ToTaxiNode"]=2847,["Distance"]=1806.0},
+	[3534]={["FromTaxiNode"]=2850,["ToTaxiNode"]=2847,["Distance"]=1993.0},
+	[3535]={["FromTaxiNode"]=2848,["ToTaxiNode"]=2847,["Distance"]=1250.0}
 }
