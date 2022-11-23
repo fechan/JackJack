@@ -1,5 +1,5 @@
 # JackJack
-Adds TomTom waypoints based on location name. Locations and their coordinates are based on data from [WoW.tools](https://wow.tools/).
+Adds TomTom waypoints based on location name. Locations, coordinates, and other data are extracted directly from WoW.
 
 Don't know where Kalimgrimmardrassil is? Now you don't have to waste time searching on Google where everything is and just add a waypoint directly there!
 
