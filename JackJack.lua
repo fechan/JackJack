@@ -202,7 +202,7 @@ function Ace:OnInitialize ()
                 loadingScreenSeconds = 10
             },
             interface = {
-                showLocationsOnWorldMapOnHover = false
+                showLocationsOnWorldMapOnHover = true
             }
         }
     })

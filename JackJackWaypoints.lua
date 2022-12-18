@@ -132,8 +132,9 @@ function addon:createAndFocusTempWaypointFor(location)
         crazy = false
     })
     
+    local oldUiMapId = WorldMapFrame:GetMapID()
+
     if focusLocation then
-        local oldUiMapId = WorldMapFrame:GetMapID()
         WorldMapFrame:SetMapID(uiMapId)
     end
 
