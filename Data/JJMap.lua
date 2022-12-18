@@ -994,6 +994,7 @@ addon.JJMap = {
 	[2532]={["MapName_lang"]="Tirisfal Glades",["InstanceType"]=0},
 	[2534]={["MapName_lang"]="10.0 Dragon Isles -  Black Dragon Citadel - Narrative Version",["InstanceType"]=0},
 	[2547]={["MapName_lang"]="Enigma Crucible",["InstanceType"]=4},
+	[2556]={["MapName_lang"]="Emerald Dreamway",["InstanceType"]=5},
 	[2559]={["MapName_lang"]="Shadowlands",["InstanceType"]=2},
 	[2563]={["MapName_lang"]="Nokhudon Proving Grounds",["InstanceType"]=4},
 	[2570]={["MapName_lang"]="10.0 The Forbidden Reach (Child of 2444)",["InstanceType"]=0},
