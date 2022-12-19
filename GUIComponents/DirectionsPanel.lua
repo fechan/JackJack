@@ -92,14 +92,16 @@ function addon:DirectionsPanel(directions)
         directionsPanel:AddChild(clearDirectionsButton)
 
         -- checkbox for showing taxi directions in the directions list
-        local showTaxiCheckbox = AceGUI:Create("CheckBox")
-        showTaxiCheckbox:SetLabel("Show flight masters")
-        showTaxiCheckbox:SetCallback("OnValueChanged", function (checkbox, callbackName, value)
-            addon.Settings.profile.showTaxiDirections = value
-            addon:showDirections()
-        end)
-        showTaxiCheckbox:SetValue(addon.Settings.profile.showTaxiDirections)
-        directionsPanel:AddChild(showTaxiCheckbox)
+        if addon.Settings.profile.directions.includeTaxi then
+            local showTaxiCheckbox = AceGUI:Create("CheckBox")
+            showTaxiCheckbox:SetLabel("Show flight masters (if any)")
+            showTaxiCheckbox:SetCallback("OnValueChanged", function (checkbox, callbackName, value)
+                addon.Settings.profile.showTaxiDirections = value
+                addon:showDirections()
+            end)
+            showTaxiCheckbox:SetValue(addon.Settings.profile.showTaxiDirections)
+            directionsPanel:AddChild(showTaxiCheckbox)
+        end
     end
 
     if directions["ErrorGettingTo"] == nil then
