@@ -101,7 +101,7 @@ function addon:createDirectionWaypointFor(direction)
     local uid = TomTom:AddWaypoint(uiMapId, x, y, {
         title = addon.getLocationDisplayName(direction),
         source = "JackJack (directions)",
-        persistent = true,
+        persistent = false,
         minimap = true,
         world = true,
         crazy = true
