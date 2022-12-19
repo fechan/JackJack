@@ -218,7 +218,7 @@ function Ace:OnInitialize ()
                 type = "group",
                 args = {
                     includeTaxi = {
-                        name = "Include flight points in directions",
+                        name = "Use high-accuracy directions calculation",
                         desc = "This makes calculating directions MUCH slower, but more accurate and with flight directions.",
                         type = "toggle",
                         width = "full",
