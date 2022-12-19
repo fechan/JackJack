@@ -189,6 +189,7 @@ function Ace:OnInitialize ()
     addon.Settings = LibStub("AceDB-3.0"):New("JackJackSettings", {
         profile = {
             showInstances = true,
+            showTaxiDirections = true,
             gui = {
                 maximizedHeight = 500,
                 minimized = false,

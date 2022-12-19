@@ -36,14 +36,19 @@ local function processDirectionsList(directions, locationListContainerContainer)
     addon:clearDirectionWaypoints()
 
     for i, direction in ipairs(directions) do
-        local locationButton = addon:LocationButton(direction)
-        locationList:AddChild(locationButton)
-        -- print(direction.DirectionNbr, direction.Name_lang)
+        if (addon.Settings.profile.showTaxiDirections or
+                direction.Transport:find("^taxinode") == nil) then
+            local locationButton = addon:LocationButton(direction)
+            locationList:AddChild(locationButton)
+        end
     end
     
     for i=#directions,1,-1 do
         local direction = directions[i]
-        addon:createDirectionWaypointFor(direction)
+        if (addon.Settings.profile.showTaxiDirections or
+                direction.Transport:find("^taxinode") == nil) then
+            addon:createDirectionWaypointFor(direction)
+        end
     end
     TomTom:SetClosestWaypoint()
 
@@ -85,6 +90,16 @@ function addon:DirectionsPanel(directions)
         clearDirectionsButton:SetWidth(80)
         clearDirectionsButton:SetCallback("OnClick", clearDirections)
         directionsPanel:AddChild(clearDirectionsButton)
+
+        -- checkbox for showing taxi directions in the directions list
+        local showTaxiCheckbox = AceGUI:Create("CheckBox")
+        showTaxiCheckbox:SetLabel("Show flight masters")
+        showTaxiCheckbox:SetCallback("OnValueChanged", function (checkbox, callbackName, value)
+            addon.Settings.profile.showTaxiDirections = value
+            addon:showDirections()
+        end)
+        showTaxiCheckbox:SetValue(addon.Settings.profile.showTaxiDirections)
+        directionsPanel:AddChild(showTaxiCheckbox)
     end
 
     if directions["ErrorGettingTo"] == nil then
