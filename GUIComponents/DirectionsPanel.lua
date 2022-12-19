@@ -50,6 +50,12 @@ local function processDirectionsList(directions, locationListContainerContainer)
     locationListContainerContainer:AddChild(locationListContainer)
 end
 
+local function clearDirections()
+    addon.AddonState.directions = nil
+    addon:clearDirectionWaypoints()
+    addon:showDirections()
+end
+
 function addon:DirectionsPanel(directions)
     if directions == nil then return ExplanationText() end
 
@@ -57,19 +63,29 @@ function addon:DirectionsPanel(directions)
     directionsPanel:SetFullHeight(true)
     directionsPanel:SetFullWidth(true)
     directionsPanel:SetLayout("Flow")
-    
+
     -- header that says "Directions to [location]"
-    local header = AceGUI:Create("Label")
     if directions["ErrorGettingTo"] then
+        local header = AceGUI:Create("Label")
         header:SetText("Couldn't find a path to " .. directions["ErrorGettingTo"].Name_lang .. " from your location!" ..
                         "\n\n" ..
                         "It might be inside a dungeon or raid you're not currently in!")
+        applyFont(STYLE.EXPLANATION_FONT, header)
+        header:SetFullWidth(true)
+        directionsPanel:AddChild(header)
     else
+        local header = AceGUI:Create("Heading")
         header:SetText("Directions to " .. directions[#directions].Name_lang .. "\n")
+        header:SetRelativeWidth(1)
+        directionsPanel:AddChild(header)
+
+        -- button that lets you clear directions
+        local clearDirectionsButton = AceGUI:Create("Button")
+        clearDirectionsButton:SetText("Clear")
+        clearDirectionsButton:SetWidth(80)
+        clearDirectionsButton:SetCallback("OnClick", clearDirections)
+        directionsPanel:AddChild(clearDirectionsButton)
     end
-    applyFont(STYLE.EXPLANATION_FONT, header)
-    header:SetFullWidth(true)
-    directionsPanel:AddChild(header)
 
     if directions["ErrorGettingTo"] == nil then
         -- container for the locationListContainer
