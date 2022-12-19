@@ -16,8 +16,6 @@ function addon:createMinimapButton(onclick)
 
     local icon = LibStub("LibDBIcon-1.0")
     icon:Register("JackJackDataBroker", miniButton, JackJackDataBroker)
-    -- self.db = LibStub("AceDB-3.0"):New("BunniesDB", { profile = { minimap = { hide = false, }, }, })
-    -- icon:Register("Bunnies!", bunnyLDB, self.db.profile.minimap) self:RegisterChatCommand("bunnies", "CommandTheBunnies")
 
     return icon
 end
