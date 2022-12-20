@@ -59,6 +59,17 @@ local function getAdjacentNodes(nodeId, destinationX, destinationY, destinationC
                 }
             end
         end
+
+        -- get all the mage portals the player can use
+        for adjacentNodeId, adjacentNode in pairs(addon.JJMagePortals) do
+            if addon.playerMeetsPortalRequirements(adjacentNode["PlayerConditionID"]) then
+                adjacentNodes[#adjacentNodes+1] = {
+                    nodeId = addon.getDatasetSafeID("JJMagePortals", adjacentNodeId),
+                    distance = loadingScreenSeconds
+                }
+            end
+        end
+        
         -- get all the TaxiNodes in the same continent as the player
         if includeTaxi then
             local sameContinentNodes = continentWiseTaxiNodes[playerContinent]
@@ -197,6 +208,10 @@ function addon:getDirections(location, includeTaxi, loadingScreenSeconds, comple
         local nodeId = addon.getDatasetSafeID("JJTaxiNodes", taxiNodeId)
         addNodeToDijkstraGraph(nodeId, dist, math.huge, prev, nil, Q)
     end
+    for magePortalId, node in pairs(addon.JJMagePortals) do
+        local nodeId = addon.getDatasetSafeID("JJMagePortals", magePortalId)
+        addNodeToDijkstraGraph(nodeId, dist, math.huge, prev, node, Q)
+    end
     addNodeToDijkstraGraph("destination", dist, math.huge, prev, nil, Q)
     addNodeToDijkstraGraph("player", dist, 0, prev, "player", Q)
 
@@ -264,6 +279,10 @@ function addon:getDirections(location, includeTaxi, loadingScreenSeconds, comple
                     directionNbr = directionNbr + 1
                     table.insert(directions, direction)
                 end
+            elseif datasetName == "JJMagePortals" then
+                direction.Transport = "mageportal"
+                directionNbr = directionNbr + 1
+                table.insert(directions, direction)
             elseif datasetName == "JJTaxiNodes" then
                 direction.Transport = "taxinode"
                 directionNbr = directionNbr + 1

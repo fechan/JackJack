@@ -33,6 +33,7 @@ Data\JJTaxiNodes.lua
 Data\JJTaxiPath.lua
 Data\JJWaypointEdge.lua
 Data\JJWaypointNode.lua
+Data\JJMagePortals.lua
 
 # JackJack GUI COMPONENTS
 GUIComponents\AceGUIWidget-IconButton.lua
