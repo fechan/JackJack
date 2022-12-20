@@ -126,5 +126,5 @@ WaypointNode_mageonly.merge(WaypointEdge, how="inner", left_on="ID_from", right_
                      .merge(WaypointNode[["ID", "SafeLocID"]], how="inner", left_on="End", right_on="ID")
                      .merge(WaypointSafeLocs, how="inner", left_on="SafeLocID", right_on="ID")
 )
-mageportals = mageportals[["ID_from", "Name_lang_from", "PlayerConditionID", "Pos[0]", "Pos[1]", "MapID"]].rename({"ID_from": "ID", "Name_lang_from": "Name_lang"})
+mageportals = mageportals[["ID_from", "Name_lang_from", "PlayerConditionID", "Pos[0]", "Pos[1]", "MapID"]].rename(columns={"ID_from": "ID", "Name_lang_from": "Name_lang"})
 mageportals.to_csv(f"{OUT_DATA_DIR}/JJMagePortals.csv", index=False)
