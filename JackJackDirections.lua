@@ -210,7 +210,7 @@ function addon:getDirections(location, includeTaxi, loadingScreenSeconds, comple
     end
     for magePortalId, node in pairs(addon.JJMagePortals) do
         local nodeId = addon.getDatasetSafeID("JJMagePortals", magePortalId)
-        addNodeToDijkstraGraph(nodeId, dist, math.huge, prev, node, Q)
+        addNodeToDijkstraGraph(nodeId, dist, math.huge, prev, nil, Q)
     end
     addNodeToDijkstraGraph("destination", dist, math.huge, prev, nil, Q)
     addNodeToDijkstraGraph("player", dist, 0, prev, "player", Q)
