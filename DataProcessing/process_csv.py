@@ -70,7 +70,7 @@ TaxiPath_calc.to_csv(f"{OUT_DATA_DIR}/JJTaxiPath.csv", index=False)
 # since we need them separately anyway during the walking/cross-join part
 
 # WaypointNode: Portal entrances and exits
-WaypointNode = pd.read_csv(f"{RAW_DATA_DIR}/waypointnode.csv", usecols=["ID", "Name_lang", "SafeLocID", "Field_8_2_0_30080_005"])
+WaypointNode = pd.read_csv(f"{RAW_DATA_DIR}/waypointnode.csv", usecols=["ID", "Name_lang", "SafeLocID", "Field_8_2_0_30080_005", "PlayerConditionID"])
 # WaypointSafeLocs: Locations of portals
 WaypointSafeLocs = pd.read_csv(f"{RAW_DATA_DIR}/waypointsafelocs.csv").drop(columns="Pos[2]")
 
@@ -79,7 +79,7 @@ WaypointNode_Loc = (pd.merge(WaypointNode, WaypointSafeLocs,
                             left_on="SafeLocID",
                             right_on="ID",
                             suffixes=["", "_WSL"])
-                        .drop(columns=["ID_WSL", "SafeLocID"])
+                        .drop(columns=["ID_WSL", "SafeLocID", "PlayerConditionID"])
                         .rename(columns={"Field_8_2_0_30080_005": "Type"}))
 WaypointNode_Loc.to_csv(f"{OUT_DATA_DIR}/JJWaypointNode.csv", index=False)
 
@@ -92,7 +92,7 @@ WaypointEdgeReduced.to_csv(f"{OUT_DATA_DIR}/JJWaypointEdge.csv", index=False)
 
 # PlayerCondition: Prerequisites for using a portal connection/taxi node/etc. Keep this separate from the WaypointEdge because otherwise
 # there would be a lot of duplicate data
-PlayerCondition = pd.read_csv(f"{RAW_DATA_DIR}/playercondition.csv", usecols=["ID", "RaceMask"])
+PlayerCondition = pd.read_csv(f"{RAW_DATA_DIR}/playercondition.csv", usecols=["ID", "RaceMask", "SpellID[0]", "SpellID[1]"])
 PlayerCondition_edgeonly = PlayerCondition[PlayerCondition.ID.isin(WaypointEdge.PlayerConditionID)]
 
 ChrRaces = pd.read_csv(f"{RAW_DATA_DIR}/chrraces.csv", usecols=["ID", "PlayableRaceBit"])
@@ -114,3 +114,17 @@ def expand_racemask(PlayerCondition):
 (expand_racemask(PlayerCondition_edgeonly)
     .drop(columns=["RaceMask"])
     .to_csv(f"{OUT_DATA_DIR}/JJPlayerCondition.csv", index=False))
+
+### Process mage portals
+WaypointNode_mageonly = WaypointNode[WaypointNode.SafeLocID == 0] # get only portals without perm location (mage portals)
+PlayerCondition_mageonly = PlayerCondition[PlayerCondition.ID.isin(WaypointNode_mageonly.PlayerConditionID)] # get only PlayerConditions used by mage portals
+
+WaypointNode_mageonly = WaypointNode_mageonly[["ID", "Name_lang"]]
+WaypointNode_mageonly.columns = WaypointNode_mageonly.columns.map(lambda x: str(x) + '_from')
+mageportals = (
+WaypointNode_mageonly.merge(WaypointEdge, how="inner", left_on="ID_from", right_on="Start")
+                     .merge(WaypointNode[["ID", "SafeLocID"]], how="inner", left_on="End", right_on="ID")
+                     .merge(WaypointSafeLocs, how="inner", left_on="SafeLocID", right_on="ID")
+)
+mageportals = mageportals[["ID_from", "Name_lang_from", "PlayerConditionID", "Pos[0]", "Pos[1]", "MapID"]].rename(columns={"ID_from": "ID", "Name_lang_from": "Name_lang"})
+mageportals.to_csv(f"{OUT_DATA_DIR}/JJMagePortals.csv", index=False)

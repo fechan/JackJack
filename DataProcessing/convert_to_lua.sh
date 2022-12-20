@@ -23,3 +23,6 @@ mv -f JJWaypointEdge.lua ../../Data
 
 node ../csv-to-lua/Converter.js JJWaypointNode.csv luaDict
 mv -f JJWaypointNode.lua ../../Data
+
+node ../csv-to-lua/Converter.js JJMagePortals.csv luaDict
+mv -f JJMagePortals.lua ../../Data

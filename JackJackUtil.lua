@@ -29,8 +29,28 @@ addon.playerMeetsPortalRequirements = function(playerConditionId)
     if playerConditionId == 0 then
         return true
     end
+    local playerCondition = addon.JJPlayerCondition[playerConditionId]
+
+    -- check player race
     local _, _, raceId = UnitRace("player")
-    return addon.JJPlayerCondition[playerConditionId]["race_" .. raceId] == 1
+    local playerMeetsRaceReq = playerCondition["race_" .. raceId] == 1
+
+    -- check if player can use any of the spells
+    local spell0, spell1 = playerCondition["SpellID0"], playerCondition["SpellID1"]
+    local spell0Known, spell1Known = true, true
+    local spell0Usable, spell1Usable, spell0NoMana, spell1NoMana = true, true, false, false
+    if spell0 ~= 0 then
+        spell0Known = IsSpellKnown(spell0)
+        spell0Usable, spell0NoMana = IsUsableSpell(spell0)
+    end
+    if spell1 ~= 0 then
+        spell1Known = IsSpellKnown(spell1)
+        spell1Usable, spell1NoMana = IsUsableSpell(spell1)
+    end
+    
+    local playerMeetsSpellReq = (spell0Known and spell0Usable) or (spell1Known and spell1Usable)
+
+    return playerMeetsRaceReq and playerMeetsSpellReq
 end
 
 addon.playerCanUseTaxiNode = function(taxiNode)
